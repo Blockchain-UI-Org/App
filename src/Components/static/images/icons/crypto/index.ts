@@ -1,6 +1,7 @@
 import { CryptoSymbols } from '../../../types/crypto';
 
 import { default as APE } from './APE.svg';
+import { default as BTC } from './BTC.svg';
 import { default as DAI } from './DAI.svg';
 import { default as ASTR } from './ASTR.svg';
 import { default as CDOT } from './CDOT.svg';
@@ -26,6 +27,7 @@ import { FunctionComponent, SVGAttributes } from 'react';
 
 export const cryptoIcons: Record<CryptoSymbols, FunctionComponent<SVGAttributes<SVGElement>>> = {
   APE,
+  BTC,
   DAI,
   ASTR,
   CDOT,

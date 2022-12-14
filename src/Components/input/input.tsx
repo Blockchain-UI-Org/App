@@ -1,6 +1,6 @@
-import { FunctionComponent } from 'react';
-import styled, { css } from 'styled-components';
-import { theme } from '../theme/';
+import { FunctionComponent } from "react";
+import styled, { css } from "styled-components";
+import { theme } from "../theme";
 
 const { black, grey300, grey500, blue500, error500 } = theme.colors;
 const { FONT_FAMILY } = theme.typography;
@@ -10,7 +10,8 @@ export interface ErrorAction {
   text: string;
 }
 
-export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   error?: string;
   block?: boolean;
@@ -34,7 +35,9 @@ export const Input: FunctionComponent<InputProps> = ({
       <StyledInput hasError={hasError} id={label} {...props} />
       <ErrorWrapper>
         {hasError && <ErrorMessage>{error}</ErrorMessage>}
-        {errorAction?.onClick && <button onClick={errorAction.onClick}>{errorAction.text}</button>}
+        {errorAction?.onClick && (
+          <button onClick={errorAction.onClick}>{errorAction.text}</button>
+        )}
       </ErrorWrapper>
     </Container>
   );
@@ -43,15 +46,15 @@ export const Input: FunctionComponent<InputProps> = ({
 export const Container = styled.div<{ block: boolean }>`
   display: flex;
   flex-direction: column;
-  width: ${({ block }) => (block ? '100%' : '416px')};
+  width: ${({ block }) => (block ? "100%" : "416px")};
 
-  input[type='number']::-webkit-inner-spin-button,
-  input[type='number']::-webkit-outer-spin-button {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
 
-  input[type='number'] {
+  input[type="number"] {
     -moz-appearance: textfield;
   }
 `;
@@ -118,6 +121,6 @@ export const ErrorMessage = styled.span`
   font-weight: 400;
 
   &&::after {
-    content: '.';
+    content: ".";
   }
 `;

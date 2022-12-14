@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import styled, { css } from "styled-components";
-import { theme } from "../theme/";
+import { theme } from "../theme";
 import {
   ErrorMessage,
   Label,
