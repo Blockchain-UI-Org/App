@@ -26,10 +26,10 @@ const CreditCard: FC<CreditCardType> = ({
   //@ts-ignore
   const colorMode: Record<ThemeColor, any> = {
     green: {
-      color: "#027B55",
+      color: "#015249",
       background: "#C8FACD",
     },
-    brown: { color: "#B78004", background: "#FFF7CC" },
+    brown: { color: "#7A4F01", background: "#FFF7CC" },
     default: { color: "#FFFFFF", background: "" },
   };
 
@@ -96,6 +96,7 @@ const CardItemStyle = styled.div<CardStyle>`
   border-radius: 20px;
   padding: 20px;
   font-family: Public Sans;
+  opacity: 0.95;
 `;
 
 const Title = styled.div`
