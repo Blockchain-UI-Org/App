@@ -1,13 +1,16 @@
-import typography from './typography/typography';
-import media from './media';
-import { defaultColors, colorsWithDarkMode, shadow } from './colors';
+import typography from "./typography/typography";
+import media from "./media";
+import { defaultColors, colorsWithDarkMode, shadow } from "./colors";
 
-import { IconSizes, IconType } from '../static/types/icons';
-import { DefaultTheme } from 'styled-components';
-import { getIconSize } from './icons';
+import { IconSizes, IconType } from "../static/types/icons";
+import { DefaultTheme } from "styled-components";
+import { getIconSize } from "./icons";
 
 export interface ThemeInterface extends DefaultTheme {
-  colors: Record<keyof typeof defaultColors | keyof ReturnType<typeof colorsWithDarkMode>, string>;
+  colors: Record<
+    keyof typeof defaultColors | keyof ReturnType<typeof colorsWithDarkMode>,
+    string
+  >;
   media: typeof media;
   shadow: string;
   typography: typeof typography;
