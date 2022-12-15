@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Body, Container, ColumnTitle, Header, Row, Cell } from "./Styled";
-import Pagination from "../PaginationV2";
+import Pagination from "../pagination";
 
 type Cell = string | number | React.ReactNode;
 
