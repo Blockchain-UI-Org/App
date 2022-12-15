@@ -1,5 +1,5 @@
 import React from "react";
-import Menu from "./component/menus";
+import Menu from "./component/menu";
 import styled from "styled-components";
 
 function App() {
