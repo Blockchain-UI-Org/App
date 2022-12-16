@@ -13,6 +13,7 @@ export interface ProgressBarProps {
   errorMessage?: string | ReactElement;
   title: string;
   themeColor: ThemeColor;
+  $percent?: number;
 }
 const {
   error100,
@@ -107,7 +108,7 @@ const ErrorMessage = styled.div`
   }
 `;
 
-const GradientProgressBar: FC<ProgressBarProps> = ({
+const ProgressBar: FC<ProgressBarProps> = ({
   minValue,
   maxValue,
   value,
@@ -143,4 +144,5 @@ const GradientProgressBar: FC<ProgressBarProps> = ({
     )}
   </Container>
 );
-export default GradientProgressBar;
+
+export default ProgressBar;
