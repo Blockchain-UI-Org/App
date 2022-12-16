@@ -108,6 +108,7 @@ const Layout = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  border-radius: 5px;
 `;
 interface DisplayProps {
   bColor?: string;
@@ -117,6 +118,7 @@ const ColorBlock = styled.div<DisplayProps>`
   height: 40px;
   background-color: ${({ bColor }) => bColor};
   border: 1px solid black;
+  border-radius: 5px;
 `;
 
 const Wrapper = styled.div`
