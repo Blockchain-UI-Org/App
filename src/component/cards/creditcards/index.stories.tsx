@@ -1,7 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import CreditCard from "./";
-import { ThemeColor } from "./";
 import styled from "styled-components";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -11,7 +10,7 @@ export default {
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     themeColor: {
-      options: ["default", "green", "brown"],
+      options: ["default", "green", "brown", "red", "blue"],
       control: { type: "select" }, // Automatically inferred when 'options' is defined
     },
   },

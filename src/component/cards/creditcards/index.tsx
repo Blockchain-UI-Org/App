@@ -2,14 +2,9 @@ import React, { FC, useState } from "react";
 import { Icon } from "@iconify/react";
 import styled from "styled-components";
 import Image from "../../image/image";
+import { colorMode, ThemeColor } from "../../theme/colors";
 
-export type ThemeColor =
-  | "green"
-  | "brown"
-  | "blue"
-  | "red"
-  | "default"
-  | undefined;
+
 
 interface CreditCardType {
   balance?: string;
@@ -29,17 +24,6 @@ const CreditCard: FC<CreditCardType> = ({
   const [showBalance, setShowBalance] = useState(true);
   const [showCvv, setShowCvv] = useState(false);
 
-  //@ts-ignore
-  const colorMode: Record<ThemeColor, any> = {
-    green: {
-      color: "#015249",
-      background: "#C8FACD",
-    },
-    brown: { color: "#7A4F01", background: "#FFF7CC" },
-    blue: { color: "#042979", background: "#D0F2FE" },
-    red: { color: "#7A0B2E", background: "#FFE7D9" },
-    default: { color: "#FFFFFF", background: "" },
-  };
 
   return (
     <CardItemStyle $colorMode={colorMode[themeColor]}>
