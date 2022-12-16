@@ -12,7 +12,7 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof NftCard> = (args) => (
-  <NftCard {...args} />
+  <NftCard {...args} src={`url("/assets/nft9.jpeg")`} />
 );
 
 const GroupTemplate: ComponentStory<typeof NftCard> = (args) => (
@@ -24,6 +24,18 @@ const GroupTemplate: ComponentStory<typeof NftCard> = (args) => (
     <NftCard {...args} src={`url("/assets/nft3.jpeg")`} />
     <br />
     <NftCard {...args} src={`url("/assets/nft4.png")`} />
+    <br />
+    <NftCard {...args} src={`url("/assets/nft5.webp")`} />
+    <br />
+    <NftCard {...args} src={`url("/assets/nft6.jpeg")`} />
+    <br />
+    <NftCard {...args} src={`url("/assets/nft7.jpeg")`} />
+    <br />
+    <NftCard {...args} src={`url("/assets/nft8.jpeg")`} />
+    <br />
+    <NftCard {...args} src={`url("/assets/nft9.jpeg")`} />
+    <br />
+    <NftCard {...args} src={`url("/assets/nft10.png")`} />
   </Container>
 );
 
@@ -34,4 +46,5 @@ export const Group = GroupTemplate.bind({});
 const Container = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 `;

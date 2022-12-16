@@ -38,6 +38,12 @@ export const Stacked = () => {
       <BrownCard>
         <Template themeColor="brown" />
       </BrownCard>
+      <RedCard>
+        <Template themeColor="red" />
+      </RedCard>
+      <BlueCard>
+        <Template themeColor="blue" />
+      </BlueCard>
     </StackedWrapper>
   );
 };
@@ -54,4 +60,13 @@ const GreenCard = styled.div`
 const BrownCard = styled.div`
   position: fixed;
   top: 200px;
+`;
+const RedCard = styled.div`
+  position: fixed;
+  top: 300px;
+`;
+
+const BlueCard = styled.div`
+  position: fixed;
+  top: 400px;
 `;

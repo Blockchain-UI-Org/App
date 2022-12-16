@@ -125,6 +125,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 20px;
+  color: white;
 `;
 
 const BreakPointBox = styled.div`
@@ -137,4 +138,5 @@ const BreakPointBox = styled.div`
   height: 200px;
   font-size: 25px;
   border: 1px solid black;
+  color: white;
 `;

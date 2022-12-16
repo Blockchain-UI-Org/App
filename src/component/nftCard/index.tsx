@@ -25,6 +25,7 @@ const Container = styled.div`
   border-radius: 15px;
   overflow: hidden;
   margin: 10px 15px;
+  
 `;
 
 interface ImageProps {
@@ -41,4 +42,7 @@ const Image = styled.div<ImageProps>`
 
 const Details = styled.div`
   padding: 10px;
+  :hover {
+    cursor: pointer;
+  }
 `;
