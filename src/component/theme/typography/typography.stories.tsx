@@ -32,7 +32,7 @@ const Wrapper = styled.div`
 
 export default {
   component: Text,
-  title: "Themes/Typography",
+  title: "Theme/Typography",
 };
 
 //@ts-ignore

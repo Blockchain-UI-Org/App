@@ -3,7 +3,7 @@ import { Notification, NotificationProps } from './notification';
 
 export default {
   component: Notification,
-  title: 'Atoms/ Notification',
+  title: 'General/ Notification',
 } as Meta;
 
 const Template: Story<NotificationProps> = args => <Notification {...args}></Notification>;

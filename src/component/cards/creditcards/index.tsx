@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 import { Icon } from "@iconify/react";
 import styled from "styled-components";
 import Image from "../../image/image";
-import { colorMode, ThemeColor } from "../../theme/colors";
+import { colors, ThemeColor } from "../../theme/colors";
 
 
 
@@ -26,7 +26,7 @@ const CreditCard: FC<CreditCardType> = ({
 
 
   return (
-    <CardItemStyle $colorMode={colorMode[themeColor]}>
+    <CardItemStyle $colorMode={colors[themeColor]}>
       <div>
         <Title>Balance</Title>
         <BalanceWrapper onClick={() => setShowBalance(!showBalance)}>

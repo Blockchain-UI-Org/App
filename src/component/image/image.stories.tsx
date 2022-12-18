@@ -6,7 +6,7 @@ import * as crowdloanBanner from '../static/images/icons/regular/apps.svg';
 
 export default {
   component: Image,
-  title: 'Atoms/ Image',
+  title: 'General/ Image',
 } as Meta;
 
 const Template: Story<ImageProps> = args => (

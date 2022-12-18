@@ -3,7 +3,7 @@ import { Alert, AlertProps } from './alert';
 
 export default {
   component: Alert,
-  title: 'Molecules/Alert',
+  title: 'General/Alert',
 } as Meta;
 
 const Template: Story<AlertProps> = args => (

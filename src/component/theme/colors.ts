@@ -1,13 +1,7 @@
-export type ThemeColor =
-  | "green"
-  | "brown"
-  | "blue"
-  | "red"
-  | "default"
-  | undefined;
+export type ThemeColor = "green" | "brown" | "blue" | "red" | undefined;
 
 //@ts-ignore
-export const colorMode: Record<ThemeColor, any> = {
+export const colors: Record<ThemeColor, any> = {
   green: {
     color: "#015249",
     background: "#C8FACD",
@@ -16,7 +10,6 @@ export const colorMode: Record<ThemeColor, any> = {
   brown: { color: "#7A4F01", background: "#FFF7CC", midtone: "#FFC007" },
   blue: { color: "#042979", background: "#D0F2FE", midtone: "#1990FF" },
   red: { color: "#7A0B2E", background: "#FFE7D9", midtone: "#FE4842" },
-  default: { color: "", background: "" },
 };
 
 export const defaultColors = {

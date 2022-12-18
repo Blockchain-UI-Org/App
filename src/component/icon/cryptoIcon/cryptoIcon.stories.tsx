@@ -7,7 +7,7 @@ import { Inline, Stack } from "../../theme/layouts";
 
 export default {
   component: CryptoIcon,
-  title: "Atoms/Crypto Icon",
+  title: "General/Crypto Icon",
 } as Meta;
 
 const Layout = styled(Inline)`

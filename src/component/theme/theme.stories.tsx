@@ -87,7 +87,7 @@ const Theme: React.FC<ThemeProps> = ({
 
 export default {
   component: Theme,
-  title: "Themes",
+  title: "Theme",
 } as Meta;
 
 const Template: Story = (args) => <Theme {...args} />;

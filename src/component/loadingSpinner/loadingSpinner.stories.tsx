@@ -5,7 +5,7 @@ import { Button } from '../button/Button';
 
 export default {
   component: LoadingSpinner,
-  title: 'Atoms/  LoadingSpinner',
+  title: 'Indicators/LoadingSpinner',
 } as Meta;
 
 const Template: Story<LoadingSpinnerProps> = args => <LoadingSpinner {...args} />;

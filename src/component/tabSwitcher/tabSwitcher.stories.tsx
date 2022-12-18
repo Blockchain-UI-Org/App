@@ -4,7 +4,7 @@ import { mockedTabs } from './mockedTabs';
 
 export default {
   component: TabSwitcher,
-  title: 'Molecules/ Tab Switcher',
+  title: 'General/ Tab Switcher',
 } as Meta;
 
 const Template: Story<TabSwitcherProps> = args => <TabSwitcher {...args}></TabSwitcher>;

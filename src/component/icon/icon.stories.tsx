@@ -6,7 +6,7 @@ import { regularIcons } from "../static/images/icons/regular";
 
 export default {
   component: Icon,
-  title: "Atoms/Regular Icon",
+  title: "General/Regular Icon",
 } as Meta;
 
 const Button = styled.button`

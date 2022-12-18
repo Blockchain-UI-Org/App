@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "New/CreditCard",
+  title: "Finance/CreditCards",
   component: CreditCard,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {

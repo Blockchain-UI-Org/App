@@ -4,7 +4,7 @@ import Table, { TableProps } from "./index";
 import styled from "@emotion/styled";
 
 export default {
-  title: "Org/Table",
+  title: "Table/Table",
   component: Table,
 } as Meta;
 
