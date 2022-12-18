@@ -11,7 +11,7 @@ describe("Button", () => {
         maxValue={100}
         value={50}
         title="mock title"
-        themeColor="default"
+        themeColor="blue"
       />
     );
     const component = screen.getByTestId("gradient-progress-bar");
@@ -27,7 +27,6 @@ describe("Button", () => {
         value={500}
         title="mock title"
         showValue={true}
-        themeColor="default"
       />
     );
     const component = screen.getByTestId("gradient-progress-bar-value");
@@ -43,7 +42,6 @@ describe("Button", () => {
         title="mock title"
         showValue={true}
         errorMessage="mock error"
-        themeColor="default"
       />
     );
     const component = screen.getByTestId("gradient-progress-bar-error-msg");

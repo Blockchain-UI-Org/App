@@ -8,7 +8,7 @@ export default {
   title: "Indicators/ProgressBar/Line",
   argTypes: {
     themeColor: {
-      options: ["green", "brown", "red", "blue"],
+      options: ["green", "yellow", "red", "blue"],
       control: { type: "select" }, // Automatically inferred when 'options' is defined
     },
   },
@@ -87,7 +87,7 @@ export const Stacked = () => {
           minValue={0}
           maxValue={10}
           value={5}
-          themeColor="brown"
+          themeColor="yellow"
           title="brownProgressBar"
         />
       </BrownBar>

@@ -8,7 +8,7 @@ export default {
   title: "Indicators/ProgressBar/Circle",
   argTypes: {
     themeColor: {
-      options: ["default", "green", "brown", "red", "blue"],
+      options: ["green", "yellow", "red", "blue"],
       control: { type: "select" }, // Automatically inferred when 'options' is defined
     },
   },
@@ -22,7 +22,6 @@ const Template: Story<CircleBarProps> = (args) => (
 );
 
 const Container = styled.div`
- 
   width: 200px;
   height: 200px;
 `;

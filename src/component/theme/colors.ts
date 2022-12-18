@@ -1,4 +1,4 @@
-export type ThemeColor = "green" | "brown" | "blue" | "red" | undefined;
+export type ThemeColor = "green" | "yellow" | "blue" | "red" | undefined;
 
 //@ts-ignore
 export const colors: Record<ThemeColor, any> = {
@@ -7,7 +7,7 @@ export const colors: Record<ThemeColor, any> = {
     background: "#C8FACD",
     midtone: "#00AA55",
   },
-  brown: { color: "#7A4F01", background: "#FFF7CC", midtone: "#FFC007" },
+  yellow: { color: "#7A4F01", background: "#FFF7CC", midtone: "#FFC007" },
   blue: { color: "#042979", background: "#D0F2FE", midtone: "#1990FF" },
   red: { color: "#7A0B2E", background: "#FFE7D9", midtone: "#FE4842" },
 };

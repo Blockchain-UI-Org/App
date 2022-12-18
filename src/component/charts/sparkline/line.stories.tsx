@@ -1,7 +1,6 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react";
-import { SparkLine } from "./line";
-import styled from "styled-components";
+import { SparkLine } from ".";
 
 export default {
   component: SparkLine,
@@ -13,24 +12,16 @@ export default {
   },
 
   argTypes: {
+    chartType: { options: ["line", "bar"], control: { type: "select" } },
     color: {
-      options: ["green", "brown", "red", "blue"],
+      options: ["green", "yellow", "red", "blue"],
       control: { type: "select" }, // Automatically inferred when 'options' is defined
     },
   },
 } as Meta<typeof SparkLine>;
 
 const Template: Story = (args) => {
-  return (
-    <Container>
-      <SparkLine chartData={[]} {...args} />
-    </Container>
-  );
+  return <SparkLine chartData={[]} {...args} chartType="line"/>;
 };
-
-const Container = styled.div`
-  width: 1000px;
-  height: 1000px;
-`;
 
 export const Basic = Template.bind({});
