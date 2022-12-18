@@ -3,6 +3,8 @@ import { Icon } from "@iconify/react";
 import styled from "styled-components";
 import Image from "../../image/image";
 import { colors, ThemeColor } from "../../theme/colors";
+import { CryptoIcon } from "../../icon/icon";
+import { CryptoSymbols } from "../../static/types";
 
 interface CreditCardType {
   balance?: string;
@@ -10,14 +12,16 @@ interface CreditCardType {
   expDate?: string;
   cvv?: string;
   themeColor?: ThemeColor;
+  currency?: CryptoSymbols;
 }
 
 const CreditCard: FC<CreditCardType> = ({
-  balance = "$20,000.00",
+  balance = "20,000.00",
   name = "Your Name",
   expDate = "01/01",
   cvv = "123",
   themeColor,
+  currency,
 }) => {
   const [showBalance, setShowBalance] = useState(true);
   const [showCvv, setShowCvv] = useState(false);
@@ -28,7 +32,14 @@ const CreditCard: FC<CreditCardType> = ({
         <Title>Balance</Title>
         <BalanceWrapper onClick={() => setShowBalance(!showBalance)}>
           <div style={{ marginRight: "10px" }}>
-            {showBalance ? balance : "*******"}
+            {showBalance ? (
+              <div style={{ display: "flex", alignItems: "center" }}>
+                {currency ? <CryptoIcon cryptoSymbol={currency} /> : "$"}{" "}
+                <div style={{ marginLeft: "10px" }}>{balance}</div>
+              </div>
+            ) : (
+              "*******"
+            )}
           </div>
           <Icon
             width={20}
@@ -76,12 +87,12 @@ const CardItemStyle = styled.div<CardStyle>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url("/assets/bg_card.png");
+  background-image: url("/assets/carbon_fiber1.webp");
   background-size: cover;
   background: ${({ $colorMode }) => $colorMode?.background};
   height: 300px;
   width: 525px;
-  color: ${({ $colorMode }) => $colorMode?.color};
+  color: ${({ $colorMode }) => ($colorMode ? $colorMode?.color : "#FFFFFF")};
   border-radius: 20px;
   padding: 20px;
   font-family: Public Sans;

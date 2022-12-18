@@ -21,28 +21,30 @@ const Template: ComponentStory<typeof CreditCard> = (args) => (
   <CreditCard {...args} />
 );
 
-const Group: ComponentStory<typeof CreditCard> = (args) => (
-  <CreditCard {...args} />
-);
-
 export const Default = Template.bind({});
+
+Default.args = {
+  currency: "BTC",
+};
 
 export const Stacked = () => {
   return (
     <StackedWrapper>
-      <Template />
       <GreenCard>
-        <Template themeColor="green" />
+        <Template themeColor="green" currency="BTC" />
       </GreenCard>
-      <BrownCard>
+      <YellowCard>
         <Template themeColor="yellow" />
-      </BrownCard>
+      </YellowCard>
       <RedCard>
         <Template themeColor="red" />
       </RedCard>
       <BlueCard>
-        <Template themeColor="blue" />
+        <Template themeColor="blue" currency="USDC" />
       </BlueCard>
+      <BlackCard>
+        <Template />
+      </BlackCard>
     </StackedWrapper>
   );
 };
@@ -53,19 +55,24 @@ const StackedWrapper = styled.div`
 
 const GreenCard = styled.div`
   position: fixed;
-  top: 100px;
+  top: 10px;
 `;
 
-const BrownCard = styled.div`
+const YellowCard = styled.div`
+  position: fixed;
+  top: 100px;
+`;
+const RedCard = styled.div`
   position: fixed;
   top: 200px;
 `;
-const RedCard = styled.div`
+
+const BlueCard = styled.div`
   position: fixed;
   top: 300px;
 `;
 
-const BlueCard = styled.div`
+const BlackCard = styled.div`
   position: fixed;
   top: 400px;
 `;
