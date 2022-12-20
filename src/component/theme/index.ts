@@ -1,6 +1,6 @@
 import typography from "./typography/typography";
 import media from "./media";
-import { defaultColors, colorsWithDarkMode, shadow } from "./colors";
+import { legacyColors, colorsWithDarkMode, shadow } from "./colors";
 
 import { IconSizes, IconType } from "../static/types/icons";
 import { DefaultTheme } from "styled-components";
@@ -8,7 +8,7 @@ import { getIconSize } from "./icons";
 
 export interface ThemeInterface extends DefaultTheme {
   colors: Record<
-    keyof typeof defaultColors | keyof ReturnType<typeof colorsWithDarkMode>,
+    keyof typeof legacyColors | keyof ReturnType<typeof colorsWithDarkMode>,
     string
   >;
   media: typeof media;
@@ -18,7 +18,7 @@ export interface ThemeInterface extends DefaultTheme {
 }
 
 const theme: ThemeInterface = {
-  colors: { ...colorsWithDarkMode(), ...defaultColors },
+  colors: { ...colorsWithDarkMode(), ...legacyColors },
   media,
   typography,
   shadow,
@@ -26,7 +26,7 @@ const theme: ThemeInterface = {
 };
 
 const themeWithDarkMode = (darkMode = true): ThemeInterface => ({
-  colors: { ...colorsWithDarkMode(darkMode), ...defaultColors },
+  colors: { ...colorsWithDarkMode(darkMode), ...legacyColors },
   media,
   typography,
   shadow,

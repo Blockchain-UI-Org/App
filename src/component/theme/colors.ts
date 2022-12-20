@@ -12,7 +12,7 @@ export const colors: Record<ThemeColor, any> = {
   red: { color: "#7A0B2E", background: "#FFE7D9", midtone: "#FE4842" },
 };
 
-export const defaultColors = {
+export const legacyColors = {
   white: "#FFFFFF",
   black: "#2F2F2F",
 
@@ -58,39 +58,39 @@ export const defaultColors = {
 
 export const colorsWithDarkMode = (darkMode = false) => {
   return {
-    preloader: darkMode ? "#1b1c21" : defaultColors.white,
-    main: darkMode ? "#cb2d74" : defaultColors.blue500,
+    preloader: darkMode ? "#1b1c21" : legacyColors.white,
+    main: darkMode ? "#cb2d74" : legacyColors.blue500,
     subtle: darkMode ? "#cb2d74" : "#e7edff",
-    header: darkMode ? "#0e0f15" : defaultColors.white,
+    header: darkMode ? "#0e0f15" : legacyColors.white,
 
     // icons background
-    icon1: darkMode ? "#ff67ab , #cb2d74" : `${defaultColors.blue500}, #25a6ee`,
+    icon1: darkMode ? "#ff67ab , #cb2d74" : `${legacyColors.blue500}, #25a6ee`,
     icon2: darkMode
       ? "#cbb22d , #cb492d"
-      : `#1fdeea, ${defaultColors.success500}`,
+      : `#1fdeea, ${legacyColors.success500}`,
     icon3: darkMode ? "#e30cc1 , #ee2525" : "#85d9ef, #3fadfc",
 
     // background
-    bg1: darkMode ? "#1b1c21" : defaultColors.white,
-    bg2: darkMode ? "rgba(255, 255, 255, 0.1)" : defaultColors.blue100,
+    bg1: darkMode ? "#1b1c21" : legacyColors.white,
+    bg2: darkMode ? "rgba(255, 255, 255, 0.1)" : legacyColors.blue100,
     bg3: darkMode ? "" : "#f2f2f2",
 
     // text
-    text1: darkMode ? "#ffffff" : defaultColors.black,
+    text1: darkMode ? "#ffffff" : legacyColors.black,
     text2: darkMode ? "#757575" : "#6b707e",
     text3: darkMode ? "" : "#cfdbf2",
 
     // button
-    btn1: defaultColors.blue500,
+    btn1: legacyColors.blue500,
     "btn1-press": "#001352",
-    btn2: defaultColors.success500,
+    btn2: legacyColors.success500,
     "btn2-press": "#02684E",
     "btn-disabled": "#bdbdbd",
 
     // disabled colors
 
-    disable1: defaultColors.grey500,
-    disable2: defaultColors.grey200,
+    disable1: legacyColors.grey500,
+    disable2: legacyColors.grey200,
   };
 };
 
