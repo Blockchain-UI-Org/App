@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { colors, ThemeColor } from "../../theme/colors";
+import { colors, ThemeColor, legacyColors } from "../../theme/colors";
 import { SparkLine } from "../../charts/sparkline";
 import { CryptoSymbols } from "../../static/types";
 import { CryptoIcon } from "../../icon/icon";
@@ -30,33 +30,37 @@ const HighlightCard: FC<HighlightCardProps> = ({
   percent,
 }) => {
   return (
-    <Container $height={height} $width={width} $color={colors[color]}>
+    <Container $height={height} $width={width} $color={color}>
       <Details>
         <div className="title">{title}</div>
         <div className="amount">
-          {currency && <CryptoIcon cryptoSymbol={currency} />}
+          {currency && <CryptoIcon cryptoSymbol={currency} size="medium" />}
           <div style={{ marginLeft: "10px" }}>{amount}</div>
         </div>
 
         <div className="additionalDetails">
           {" "}
           <IconWrapperStyle
-            $color={percent >= 0 ? colors["green"] : colors["red"]}
+            $color={color}
+            $positive={percent >= 0 ? "green" : "red"}
           >
             <Iconify
-              width={16}
-              height={16}
+              width={14}
+              height={14}
               icon={
                 percent >= 0 ? "eva:trending-up-fill" : "eva:trending-down-fill"
               }
             />
           </IconWrapperStyle>
-          {percent > 0 && "+"} {percent}% in 24hrs
+          <T1 $color={color}>
+            {percent > 0 && "+"} {percent}%{" "}
+          </T1>
+          <T2> in 24hrs</T2>
         </div>
       </Details>
 
       <SparkLine
-        color={color}
+        color={color === "default" ? "blue" : color}
         chartType={chartType}
         chartData={chartData}
         width="50%"
@@ -71,7 +75,7 @@ export default HighlightCard;
 interface CardProps {
   $width?: string;
   $height?: string;
-  $color: Record<string, any>;
+  $color: ThemeColor;
 }
 
 const Container = styled.div<CardProps>`
@@ -79,22 +83,22 @@ const Container = styled.div<CardProps>`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: ${({ $color }) => $color.color};
+  color: ${({ $color }) => colors[$color].color};
   width: ${({ $width }) => $width};
   height: ${({ $height }) => $height};
-  background-color: ${({ $color }) => $color.background};
+  background-color: ${({ $color }) => colors[$color].background};
   border-radius: 15px;
   padding: 25px;
 
   .title {
-    font-size: 20px;
-    color: ${({ $color }) => $color.color};
+    font-size: 14px;
+    color: ${({ $color }) => colors[$color].color};
   }
   .amount {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
   }
 
@@ -103,7 +107,7 @@ const Container = styled.div<CardProps>`
     flex-direction: row;
     align-items: center;
     font-size: 14px;
-    color: ${({ $color }) => $color.midtone};
+    color: ${({ $color }) => colors[$color].midtone};
   }
 `;
 
@@ -114,7 +118,14 @@ const Details = styled.div`
   height: 100%;
 `;
 
-const IconWrapperStyle = styled.div<CardProps>`
+interface WrapperStyleProps {
+  $width?: string;
+  $height?: string;
+  $color: ThemeColor;
+  $positive: "green" | "red";
+}
+
+const IconWrapperStyle = styled.div<WrapperStyleProps>`
   width: 24px;
   height: 24px;
   display: flex;
@@ -122,6 +133,22 @@ const IconWrapperStyle = styled.div<CardProps>`
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  background-color: ${({ $color }) => $color.background};
-  color: ${({ $color }) => $color.color};
+  background-color: ${({ $color, $positive }) =>
+    $color === "default"
+      ? colors[$positive].highlightDark
+      : colors[$positive].background};
+  color: ${({ $color, $positive }) => colors[$positive].highlightLight};
+`;
+
+interface T1Props {
+  $color: string;
+}
+const T1 = styled.div<T1Props>`
+  color: ${({ $color }) =>
+    $color === "default" ? legacyColors.grey100 : legacyColors.grey700};
+`;
+
+const T2 = styled.div`
+  margin-left: 5px;
+  color: ${legacyColors.grey500};
 `;

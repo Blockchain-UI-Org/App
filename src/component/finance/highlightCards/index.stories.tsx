@@ -15,7 +15,7 @@ export default {
     },
 
     color: {
-      options: ["green", "yellow", "red", "blue"],
+      options: ["green", "yellow", "red", "blue", "default"],
       control: { type: "select" }, // Automatically inferred when 'options' is defined
     },
   },
@@ -33,7 +33,7 @@ export const Line = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Line.args = {
   title: "Title",
-  amount: "20,000.00",
+  amount: "20,000",
   percent: 10,
   currency: "BTC",
 };
@@ -43,7 +43,7 @@ export const Bar = Template.bind({});
 Bar.args = {
   chartType: "bar",
   title: "Title",
-  amount: "20,000.00",
+  amount: "20,000",
   percent: -10,
   currency: "USDC",
 };

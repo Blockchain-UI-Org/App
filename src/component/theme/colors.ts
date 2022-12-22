@@ -1,15 +1,30 @@
-export type ThemeColor = "green" | "yellow" | "blue" | "red" | undefined;
+export type ThemeColor =
+  | "green"
+  | "yellow"
+  | "blue"
+  | "red"
+  | "grey"
+  | "default";
 
 //@ts-ignore
 export const colors: Record<ThemeColor, any> = {
   green: {
     color: "#015249",
     background: "#C8FACD",
+    highlightLight: "#53D62B",
+    highlightDark: "#2B4737",
     midtone: "#00AA55",
   },
   yellow: { color: "#7A4F01", background: "#FFF7CC", midtone: "#FFC007" },
   blue: { color: "#042979", background: "#D0F2FE", midtone: "#1990FF" },
-  red: { color: "#7A0B2E", background: "#FFE7D9", midtone: "#FE4842" },
+  red: {
+    color: "#7A0B2E",
+    background: "#FFE7D9",
+    highlightDark: "#463138",
+    highlightLight: "#FE4842",
+    midtone: "#FE4842",
+  },
+  default: { background: "#212B36", color: "#FFF", midtone: "#212B36" },
 };
 
 export const legacyColors = {
