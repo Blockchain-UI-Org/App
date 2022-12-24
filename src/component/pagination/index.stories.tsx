@@ -24,10 +24,10 @@ const Template: Story<PaginationProps> = (args) => {
   );
 };
 
-export const Default = Template.bind({});
+// export const Default = Template.bind({});
 
-export const MaxPageCount = Template.bind({});
+// export const MaxPageCount = Template.bind({});
 
-MaxPageCount.args = {
-  totalPageCount: 5,
-};
+// MaxPageCount.args = {
+//   totalPageCount: 5,
+// };
