@@ -53,7 +53,7 @@ const HighlightCard: FC<HighlightCardProps> = ({
             />
           </IconWrapperStyle>
           <T1 $color={color}>
-            {percent > 0 && "+"} {percent}%{" "}
+            {percent > 0 && "+"} {percent}%{""}
           </T1>
           <T2> in 24hrs</T2>
         </div>
