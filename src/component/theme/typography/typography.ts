@@ -1,10 +1,10 @@
-import styled, { AnyStyledComponent } from 'styled-components';
+import styled, { AnyStyledComponent } from "styled-components";
 
-export const FONT_FAMILY = 'DM Sans, sans-serif';
+export const FONT_FAMILY = "CircularStd, Public Sans";
 
-export type FontWeightTypes = 'regular' | 'medium' | 'bold';
+export type FontWeightTypes = "regular" | "medium" | "bold";
 
-export type FontTypes = 'display' | 'body' | 'header';
+export type FontTypes = "display" | "body" | "header";
 
 export const FONT_WEIGHTS: Record<FontWeightTypes, number> = {
   regular: 400,
@@ -14,50 +14,50 @@ export const FONT_WEIGHTS: Record<FontWeightTypes, number> = {
 
 export const FONT_DISPLAY_STYLES: Record<string, Record<string, string>> = {
   Display1: {
-    'font-size': '48px',
-    'line-height': '62px',
+    "font-size": "48px",
+    "line-height": "62px",
   },
   Display2: {
-    'font-size': '36px',
-    'line-height': '48px',
+    "font-size": "36px",
+    "line-height": "48px",
   },
 };
 
 export const FONT_HEADER_STYLES = {
   H1: {
-    'font-size': '32px',
-    'line-height': '48px',
+    "font-size": "32px",
+    "line-height": "48px",
   },
   H2: {
-    'font-size': '24px',
-    'line-height': '36px',
+    "font-size": "24px",
+    "line-height": "36px",
   },
   H3: {
-    'font-size': '20px',
-    'line-height': '30px',
+    "font-size": "20px",
+    "line-height": "30px",
   },
   H4: {
-    'font-size': '18px',
-    lineHeight: '28px',
+    "font-size": "18px",
+    lineHeight: "28px",
   },
   H5: {
-    'font-size': '16px',
-    'line-height': '24px',
+    "font-size": "16px",
+    "line-height": "24px",
   },
   H6: {
-    'font-size': '14px',
-    'line-height': '20px',
+    "font-size": "14px",
+    "line-height": "20px",
   },
 };
 
 export const FONT_BODY_STYLES = {
   Body1: {
-    'font-size': '16px',
-    'line-height': '24px',
+    "font-size": "16px",
+    "line-height": "24px",
   },
   Body2: {
-    'font-size': '14px',
-    'line-height': '20px',
+    "font-size": "14px",
+    "line-height": "20px",
   },
 };
 //@ts-ignore
@@ -66,14 +66,14 @@ const generateFontType = (fontType, fontWeight) => {
   for (const [key] of Object.entries(fontType)) {
     newObj[key] = {
       ...fontType[key],
-      'font-weight': fontWeight,
-      'font-family': FONT_FAMILY,
+      "font-weight": fontWeight,
+      "font-family": FONT_FAMILY,
     };
   }
   return newObj;
 };
 //@ts-ignore
-const generateComponent = fontType => {
+const generateComponent = (fontType) => {
   const newObj: Record<string, AnyStyledComponent> = {};
   for (const [key] of Object.entries(fontType)) {
     const StyledParagraph = styled.p`
@@ -87,19 +87,19 @@ const generateComponent = fontType => {
 
 const tStyles = {
   display: {
-    regular: generateFontType(FONT_DISPLAY_STYLES, FONT_WEIGHTS['regular']),
-    medium: generateFontType(FONT_DISPLAY_STYLES, FONT_WEIGHTS['medium']),
-    bold: generateFontType(FONT_DISPLAY_STYLES, FONT_WEIGHTS['bold']),
+    regular: generateFontType(FONT_DISPLAY_STYLES, FONT_WEIGHTS["regular"]),
+    medium: generateFontType(FONT_DISPLAY_STYLES, FONT_WEIGHTS["medium"]),
+    bold: generateFontType(FONT_DISPLAY_STYLES, FONT_WEIGHTS["bold"]),
   },
   header: {
-    regular: generateFontType(FONT_HEADER_STYLES, FONT_WEIGHTS['regular']),
-    medium: generateFontType(FONT_HEADER_STYLES, FONT_WEIGHTS['medium']),
-    bold: generateFontType(FONT_HEADER_STYLES, FONT_WEIGHTS['bold']),
+    regular: generateFontType(FONT_HEADER_STYLES, FONT_WEIGHTS["regular"]),
+    medium: generateFontType(FONT_HEADER_STYLES, FONT_WEIGHTS["medium"]),
+    bold: generateFontType(FONT_HEADER_STYLES, FONT_WEIGHTS["bold"]),
   },
   body: {
-    regular: generateFontType(FONT_BODY_STYLES, FONT_WEIGHTS['regular']),
-    medium: generateFontType(FONT_BODY_STYLES, FONT_WEIGHTS['medium']),
-    bold: generateFontType(FONT_BODY_STYLES, FONT_WEIGHTS['bold']),
+    regular: generateFontType(FONT_BODY_STYLES, FONT_WEIGHTS["regular"]),
+    medium: generateFontType(FONT_BODY_STYLES, FONT_WEIGHTS["medium"]),
+    bold: generateFontType(FONT_BODY_STYLES, FONT_WEIGHTS["bold"]),
   },
 
   FONT_FAMILY,

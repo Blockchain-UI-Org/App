@@ -58,7 +58,6 @@ const Wrapper = styled.div<SliderProps>`
       //@ts-ignore
       $colorMode !== "gradient" && $colorMode?.midtone};
     outline: none;
-    opacity: 0.7;
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;
   }

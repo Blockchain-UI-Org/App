@@ -4,6 +4,7 @@ export type ThemeColor =
   | "blue"
   | "red"
   | "grey"
+  | "background"
   | "default";
 
 //@ts-ignore
@@ -13,7 +14,7 @@ export const colors: Record<ThemeColor, any> = {
     background: "#C8FACD",
     highlightLight: "#53D62B",
     highlightDark: "#2B4737",
-    midtone: "#00AA55",
+    midtone: "#53D62B",
   },
   yellow: { color: "#7A4F01", background: "#FFF7CC", midtone: "#FFC007" },
   blue: { color: "#042979", background: "#D0F2FE", midtone: "#1990FF" },
@@ -25,15 +26,16 @@ export const colors: Record<ThemeColor, any> = {
     midtone: "#FE4842",
   },
   default: { background: "#212B36", color: "#FFF", midtone: "#212B36" },
+  background: { dark: "#020028", light: "#550B40" },
 };
 
 export const legacyColors = {
   white: "#FFFFFF",
   black: "#2F2F2F",
 
-  blue100: "#F0F3FB",
-  blue500: "#0C3EE3",
-  blue900: "#0B2C9A",
+  blue100: "#D0F2FE",
+  blue500: "#1990FF",
+  blue900: "#042979",
 
   purple100: "#E9E0FF",
   purple500: "#5314F1",
