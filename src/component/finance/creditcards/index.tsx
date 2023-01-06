@@ -49,7 +49,7 @@ const CreditCard: FC<CreditCardType> = ({
       </div>
       <CardNumber>
         <img width={40} alt="credit-card" src="/assets/Mastercard-logo.svg" />
-        <Info style={{ marginLeft: "10px" }}>**** **** **** 1234</Info>
+        <Info style={{ marginLeft: "10px" }}>**** **** **** 9234</Info>
       </CardNumber>
       <OtherDetails>
         <div>

@@ -2,7 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Menu = () => {
-  return <Wrapper> Web3-UI. A Design System Built For Web3 Products.</Wrapper>;
+  return (
+    <Wrapper>
+      {" "}
+      Blockchain-UI. A Component Library Built For Blockchain Applications.
+    </Wrapper>
+  );
 };
 
 export default Menu;
