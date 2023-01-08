@@ -2,26 +2,22 @@ import React from "react";
 import Menu from "./component/menu";
 import styled from "styled-components";
 
+import Landing from "./pages/landing";
+
 function App() {
   return (
-    <div className="App">
-      <Wrapper>
-        <Menu></Menu>
-        <ImageContainer>
-          <img
-            alt="underConstruction"
-            src="images/underConstruction.jpg"
-            height="1000px"
-          ></img>
-        </ImageContainer>
-      </Wrapper>
-    </div>
+    <Wrapper>
+      {/* <Menu></Menu> */}
+      <Landing />
+    </Wrapper>
   );
 }
 
 export default App;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  height: 100%;
+`;
 
 const ImageContainer = styled.div`
   display: flex;
