@@ -5,7 +5,8 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/preset-create-react-app",
-    "@storybook/addon-knobs",
+    // Not Installed but used
+    // "@storybook/addon-knobs",
     // Preinstalled with Addon - Essentials
     // "@storybook/addon-docs",
     // "@storybook/addon-backgrounds",
