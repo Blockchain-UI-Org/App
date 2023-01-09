@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Menu = () => {
   return (
     <Container>
-      <LeftSection>blockhain-ui</LeftSection>
+      <LeftSection>BUI</LeftSection>
       <RightSection>
         <MenuItem>Home</MenuItem>
         <MenuItem>Components</MenuItem>

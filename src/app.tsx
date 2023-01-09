@@ -1,7 +1,6 @@
 import React from "react";
 import Menu from "./component/menu";
 import styled from "styled-components";
-
 import Landing from "./pages/landing";
 
 function App() {

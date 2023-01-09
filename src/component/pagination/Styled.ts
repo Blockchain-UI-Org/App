@@ -26,16 +26,16 @@ export const Pagination = styled(Flex)<PaginationProps>`
     padding: 2px 8px;
     user-select: none;
     :hover {
-      cursor: ${({ $disablePrev }) =>
+      cursor: ${({ $disablePrev }: any) =>
         $disablePrev ? "not-allowed" : "pointer"};
-      background-color: ${({ $disablePrev }) =>
+      background-color: ${({ $disablePrev }: any) =>
         $disablePrev ? "inherit" : "#0091ff"};
     }
 
-    color: ${({ $disablePrev }) =>
+    color: ${({ $disablePrev }: any) =>
       $disablePrev ? theme?.colors?.["grey700"] : theme?.colors?.["grey200"]};
 
-    border: ${({ $disablePrev }) =>
+    border: ${({ $disablePrev }: any) =>
       $disablePrev ? "2px solid inherit" : "2px solid #0091ff"};
   }
 
@@ -46,16 +46,16 @@ export const Pagination = styled(Flex)<PaginationProps>`
     padding: 2px 8px;
     user-select: none;
     :hover {
-      cursor: ${({ $disableNext }) =>
+      cursor: ${({ $disableNext }: any) =>
         $disableNext ? "not-allowed" : "pointer"};
-      background-color: ${({ $disableNext }) =>
+      background-color: ${({ $disableNext }: any) =>
         $disableNext ? "inherit" : "#0091ff"};
     }
 
-    color: ${({ $disableNext }) =>
+    color: ${({ $disableNext }: any) =>
       $disableNext ? theme?.colors["grey700"] : theme?.colors["grey200"]};
 
-    border: ${({ $disableNext }) =>
+    border: ${({ $disableNext }: any) =>
       $disableNext ? "2px solid inherit" : "2px solid #0091ff"};
   }
 `;
@@ -68,7 +68,8 @@ export const PageButton = styled(Flex)<PageButtonProps>`
   display: flex;
   justify-content: center;
   width: 30px;
-  background-color: ${({ $highlight }) => ($highlight ? "#0091ff" : "inherit")};
+  background-color: ${({ $highlight }: any) =>
+    $highlight ? "#0091ff" : "inherit"};
   border-radius: 3px;
   margin: 0;
 `;
