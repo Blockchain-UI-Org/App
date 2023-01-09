@@ -183,7 +183,7 @@ export const FeatureCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 280px;
+  width: 25%;
   height: 264px;
   padding: 0 40px;
 
@@ -271,7 +271,7 @@ export const Components = styled.div`
     img {
       width: 31%;
       height: auto;
-      border-radius: 50%;
+      border-radius: 15px;
 
       :hover {
         cursor: pointer;
