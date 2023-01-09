@@ -100,12 +100,12 @@ const CardItemStyle = styled.div<CardStyle>`
 `;
 
 const Title = styled.div`
-  color: #fffff;
+  color: #ffffff;
   opacity: 0.7;
 `;
 
 const Subtitle = styled.div`
-  color: #fffff;
+  color: #ffffff;
   opacity: 0.7;
   font-weight: thin;
   font-size: 15px;
