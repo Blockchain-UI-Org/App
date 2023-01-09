@@ -5,9 +5,10 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/preset-create-react-app",
-    "@storybook/addon-backgrounds",
     "@storybook/addon-knobs",
-    "@storybook/addon-docs",
+    // Preinstalled with Addon - Essentials
+    // "@storybook/addon-docs",
+    // "@storybook/addon-backgrounds",
   ],
   framework: "@storybook/react",
   core: {

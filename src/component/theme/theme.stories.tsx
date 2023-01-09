@@ -10,8 +10,8 @@ interface ThemeProps {
   story?: "colors" | "fonts" | "breakpoints";
 }
 
-//@ts-ignore
-const colorDisplay = (darkTheme) => {
+
+const colorDisplay = (darkTheme: boolean) => {
   const display: ReactElement[] = [];
   for (const [key, value] of Object.entries(
     darkTheme ? themeWithDarkMode().colors : theme.colors
@@ -34,8 +34,8 @@ const colorDisplay = (darkTheme) => {
   return display;
 };
 
-//@ts-ignore
-const breakPointsDisplay = (width) => {f
+
+const breakPointsDisplay = (width: number) => {
   const { small, medium } = MEDIA_WIDTHS;
   const getDeviceType = () => {
     if (width < small) {

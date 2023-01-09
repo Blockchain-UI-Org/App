@@ -64,6 +64,7 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@iconify/react": "^4.0.1",
+    "date-fns": "2.29.3",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-backgrounds": "^6.5.13",
     "@storybook/addon-controls": "^6.5.13",
@@ -92,7 +93,6 @@
     "prettier": "^2.8.0",
     "prop-types": "^15.8.1",
     "storybook": "^6.5.13",
-    "theme-ui": "^0.15.4",
     "webpack": "^5.75.0"
   },
   "readme": "ERROR: No README data found!",
