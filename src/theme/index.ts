@@ -2,7 +2,7 @@ import typography from "./typography/typography";
 import media from "./media";
 import { DarkColorPallette, DefaultColorsPallete, IColorsPallette, legacyColors as colors, shadow } from "./colors";
 
-import { IconSizes, IconType } from "../static/types/icons";
+import { IconSizes, IconType } from "../component/static/types/icons";
 import { DefaultTheme } from "styled-components";
 import { getIconSize } from "./icons";
 

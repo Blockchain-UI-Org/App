@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { colors, ThemeColor } from "../../theme/colors";
+import { colors, ThemeColor } from "theme/colors";
 
 export interface CircleBarProps {
   showValue?: boolean;

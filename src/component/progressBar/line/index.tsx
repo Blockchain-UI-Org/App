@@ -2,8 +2,8 @@ import React, { FC, ReactElement } from "react";
 import styled from "styled-components";
 
 import { formatNumber } from "../../../utils/format";
-import { theme } from "../../theme";
-import { colors, ThemeColor, legacyColors as themeColors } from "../../theme/colors";
+import { theme } from "theme";
+import { colors, ThemeColor, legacyColors as themeColors } from "theme/colors";
 
 
 export interface ProgressBarProps {

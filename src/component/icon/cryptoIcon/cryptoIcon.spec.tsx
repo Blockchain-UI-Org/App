@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import { CryptoIcon } from '../icon';
 import { cryptoIcons } from '../../static/images/icons/crypto';
 import { CryptoSymbols } from '../../static/types/crypto';
-import { getIconSize } from '../../theme/icons';
+import { getIconSize } from 'theme/icons';
 
 describe('Crypto Icon Components Tests...', () => {
   for (const [key] of Object.entries(cryptoIcons)) {

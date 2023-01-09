@@ -1,7 +1,7 @@
 import { FC, ImgHTMLAttributes, useEffect, useState } from "react";
 import styled from "styled-components";
 import * as availableImages from "../static/images";
-import { legacyColors, IColorsPallette } from "../theme/colors";
+import { legacyColors, IColorsPallette } from "theme/colors";
 
 export interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
   name: string;

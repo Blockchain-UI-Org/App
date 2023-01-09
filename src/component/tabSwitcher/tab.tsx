@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 import styled, { css } from 'styled-components';
-import { colors } from '../theme';
+import { colors } from 'theme';
 
 const { black, grey700 } = colors;
 

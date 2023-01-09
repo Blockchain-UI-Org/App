@@ -2,7 +2,7 @@ import { FC } from 'react';
 import Image from '../image/image';
 import { CryptoSymbols } from '../static/types/crypto';
 import { IconSizes } from '../static/types/icons';
-import { getIconSize } from '../theme/icons';
+import { getIconSize } from 'theme/icons';
 
 export interface IconProps {
   name: string;

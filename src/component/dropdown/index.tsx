@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, memo, ReactNode, ReactElement, CSSProperti
 import styled, { css } from 'styled-components';
 import { useClickAway, useWindowSize } from 'react-use';
 import { motion, AnimatePresence } from 'framer-motion';
-import {  colors, theme } from '../theme';
+import {  colors, theme } from 'theme';
 
 import { Icon } from '../icon/icon';
 import Image from '../image/image';

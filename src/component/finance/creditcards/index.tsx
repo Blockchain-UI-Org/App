@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 import { Icon } from "@iconify/react";
 import styled from "styled-components";
 import Image from "../../image/image";
-import { colors, ThemeColor } from "../../theme/colors";
+import { colors, ThemeColor } from "theme/colors";
 import { CryptoIcon } from "../../icon/icon";
 import { CryptoSymbols } from "../../static/types";
 

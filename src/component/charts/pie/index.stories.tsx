@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentMeta, Story } from "@storybook/react";
 import PieChart, { ChartProps } from "./";
-import { colors } from "../../theme/colors";
+import { colors } from "theme/colors";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {

@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Icon } from './icon';
 import { regularIcons } from '../static/images/icons/regular';
-import { getIconSize } from '../theme/icons';
+import { getIconSize } from 'theme/icons';
 
 describe('Regular Icon Components Tests...', () => {
   for (const [key] of Object.entries(regularIcons)) {

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 import ReactApexChart from "react-apexcharts";
-import { colors, ThemeColor } from "../../theme/colors";
+import { colors, ThemeColor } from "theme/colors";
 
 interface SparkLineProps {
   chartData: number[];

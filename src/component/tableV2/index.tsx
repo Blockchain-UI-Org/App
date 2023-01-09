@@ -18,7 +18,7 @@ import TableHeadCustom from "./tableHeadCustom";
 import { Icon as Iconify } from "@iconify/react";
 import { fCurrency } from "../../utils/number";
 import Label from "../label";
-// import palette from "../theme/palette";
+// import palette from "theme/palette";
 
 export type RowProps = {
   id: string;

@@ -1,6 +1,6 @@
 import Flex from "../flex";
 import styled from "styled-components";
-import { colors } from "../theme";
+import { colors } from "theme";
 
 const { grey700, grey200 } = colors;
 

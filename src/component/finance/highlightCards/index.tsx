@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { colors, ThemeColor, legacyColors } from "../../theme/colors";
+import { colors, ThemeColor, legacyColors } from "theme/colors";
 import { SparkLine } from "../../charts/sparkline";
 import { CryptoSymbols } from "../../static/types";
 import { CryptoIcon } from "../../icon/icon";

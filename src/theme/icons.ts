@@ -1,4 +1,4 @@
-import { IconSizes, IconType } from '../static/types/icons';
+import { IconSizes, IconType } from '../component/static/types/icons';
 
 const regular = {
   small: '16px',

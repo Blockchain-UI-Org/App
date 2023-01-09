@@ -1,6 +1,6 @@
 import { FunctionComponent, useState } from 'react';
 import styled from 'styled-components';
-import { colors } from '../theme';
+import { colors } from 'theme';
 import { Tab } from './tab';
 
 const { grey100, white } = colors;

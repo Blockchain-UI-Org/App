@@ -2,8 +2,8 @@ import merge from "lodash/merge";
 import React, { FC } from "react";
 import ReactApexChart from "react-apexcharts";
 import styled from "styled-components";
-import { colors, ThemeColor } from "../../theme/colors";
-import BaseOptionChart from "../../theme/charts";
+import { colors, ThemeColor } from "theme/colors";
+import BaseOptionChart from "theme/charts";
 import { CryptoIcon } from "../../icon/icon";
 import { CryptoSymbols } from "../../static/types";
 

@@ -2,9 +2,9 @@ import { FC, ReactNode } from 'react';
 import styled from 'styled-components';
 
 import { Icon } from '../icon/icon';
-import typography from '../theme/typography/typography';
-import { Inline, Stack } from '../theme/layouts';
-import {  colors } from '../theme';
+import typography from 'theme/typography/typography';
+import { Inline, Stack } from 'theme/layouts';
+import {  colors } from 'theme';
 
 const { blue100, grey900, error100, error500 } = colors;
 

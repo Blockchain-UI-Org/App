@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import styled from 'styled-components';
-import { colors } from '../theme';
+import { colors } from 'theme';
 const { blue100, success100, yellow100, error100, black, success500, warning500, error500 } =
   colors;
 

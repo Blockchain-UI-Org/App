@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import styled from "styled-components";
-import { colors } from "../theme";
+import { colors } from "theme";
 import Image from "../image/image";
 import { regularIcons } from "../static/images/icons/regular/index";
 

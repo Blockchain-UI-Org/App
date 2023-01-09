@@ -1,4 +1,4 @@
-import { IconSizes } from "../static/types/icons";
+import { IconSizes } from "../component/static/types/icons";
 
 export const buttonSizes = {
   small: { width: "69px", height: "24px" },
