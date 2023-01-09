@@ -1,10 +1,10 @@
-import { DefaultColorsPallete } from "./colors";
+import { colors, DefaultColorsPallete } from "./colors";
 // import typography from "../component/typography/typography";
 import media from "./media";
 import {
   DarkColorPallette,
   IColorsPallette,
-  legacyColors as colors,
+  // legacyColors as colors,
   shadow,
 } from "./colors";
 
@@ -20,10 +20,36 @@ type IFontInterface = {
   fontFamily?: string;
 };
 
+type IVariant = {
+  bg: string;
+  // bgLight: string;
+  // bgDark: string;
+  color: string;
+}
+
 export interface ThemeInterface extends IDefaultTheme {
-  colors: IColorsPallette;
+  colors: {
+    primary: IVariant,
+    secondary: IVariant,
+    error: IVariant,
+    warning:IVariant,
+    info: IVariant,
+    success: IVariant,
+  };
   media: typeof media;
-  shadow: string;
+  shadow: {depth1: string};
+  chart: {
+    colors: string[];
+    foreColor: string;
+    gridBorderColor: string;
+    markerColor: string;
+    labelColor: string;
+    radialBarBackground: string;
+    radarStrokeColor: string;
+    radarConnectorColor: string;
+    polarRingColor: string;
+    polarSpokeConnectorColor: string;
+  }
   typography: {
     common:IFontInterface;
     h1: IFontInterface;
@@ -37,6 +63,9 @@ export interface ThemeInterface extends IDefaultTheme {
     body1: IFontInterface,
     body2: IFontInterface,
   };
+
+
+
   getIconSize: Record<IconType, IconSizes>;
 }
 
@@ -85,30 +114,51 @@ const createTypography = (): ThemeInterface["typography"] => {
     }
   };
 };
-const typography = createTypography();
 
-export const createTheme = () => {
+const createChartConfig = (): ThemeInterface["chart"] => {
+  return {
+    colors: [],
+    foreColor: "",
+    gridBorderColor: "",
+    markerColor: "",
+    labelColor: "",
+    radialBarBackground: "",
+    radarStrokeColor: "",
+    radarConnectorColor: "",
+    polarRingColor: "",
+    polarSpokeConnectorColor: "",
+  }
+}
+
+const typography = createTypography();
+const chart = createChartConfig();
+export const createTheme = (): ThemeInterface => {
+  const typography = createTypography();
+  const chart = createChartConfig();
   return {
     colors: {
-      primary: {},
-      secondary: {},
-      error: {},
-      warning: {},
-      info: {},
-      success: {},
-      preloader: "",
-      main: "",
-    },
-    typography: {
-      common: {},
-      p: {},
-      headings: {},
+      primary: {
+    
 
-      body1: {},
-      body2: {},
-      display1: {},
-      display2: {},
+      },
+      secondary: {},
+      error: {
+        bg: colors.error100,
+        color: colors.error500,
+      },
+      warning: {
+
+      },
+      info: {
+        bg: colors.blue100,
+        color: colors.grey900,
+      },
+      success: {},
+
     },
+    typography,
+    chart,
+    
     shadows: {
       depth1: shadow,
     },
@@ -117,22 +167,24 @@ export const createTheme = () => {
 };
 
 const themeWithDarkMode = (darkMode = true): ThemeInterface => ({
-  colors: DarkColorPallette,
+  // colors: DarkColorPallette,
   media,
+  chart,
   typography,
-  shadow,
+  shadow: {depth1: shadow},
   getIconSize,
 });
 
 
  const theme: ThemeInterface = {
-  colors: DefaultColorsPallete,
+  // colors: DefaultColorsPallete,
   media,
+  chart,
   typography,
-  shadow,
+  shadow: {depth1: shadow},
   getIconSize,
 };
 
 const DefaultTheme = theme;
 
-export { theme, DefaultTheme, themeWithDarkMode, colors };
+export { theme, DefaultTheme, themeWithDarkMode };

@@ -2,26 +2,26 @@ import { FC, ReactNode } from 'react';
 import styled from 'styled-components';
 import { Icon } from '../icon/icon';
 import { Inline, Stack } from 'theme/layouts';
-import {  colors, t } from 'theme';
+import {   t } from 'theme';
 import { Paragraph } from 'component/typography';
 
-const { blue100, grey900, error100, error500 } = colors;
+// const { blue100, grey900, error100, error500 } = colors;
 
 
 export interface AlertProps {
   message: ReactNode;
-  type?: 'info' | 'warning';
+  type?: 'info' | 'error';
 }
 
 const Container = styled(Inline)`
   border-radius: 8px;
   &.info {
-    background-color: ${t(({theme}) => theme)};
-    color: ${grey900};
+    background-color: ${t(({theme}) => theme.colors.info.bg)};
+    color: ${t(({theme}) => theme.colors.info.color)};
   }
-  &.warning {
-    background-color: ${error100};
-    color: ${error500};
+  &.error {
+    background-color: ${t(({theme}) => theme.colors.error.bg)};
+    color: ${t(({theme}) => theme.colors.error.color)};
   }
 `;
 

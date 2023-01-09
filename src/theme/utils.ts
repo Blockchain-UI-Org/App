@@ -1,12 +1,12 @@
-import styled, { css, FlattenInterpolation, OmitU, ThemedStyledProps } from "styled-components";
+import styled, { css, Interpolation, OmitU, ThemedStyledProps } from "styled-components";
 import { DefaultTheme, ThemeInterface } from "./theme";
 
 
 
-export const t = <P extends object, >(
-  callback: (props: P & {theme: ThemeInterface}) => FlattenInterpolation<P>
+export const t = (
+  callback: (props:  {theme: ThemeInterface}) => Interpolation<any>
 ) => {
-  return (props: P & {theme: ThemeInterface}) => {
+  return (props: {theme: ThemeInterface}) => {
     if (props.theme) {
       return callback(props);
     }

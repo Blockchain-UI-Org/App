@@ -7,29 +7,8 @@ export type ThemeColor =
   | "background"
   | "default";
 
-//@ts-ignore
-export const colors: Record<ThemeColor, any> = {
-  green: {
-    color: "#015249",
-    background: "#C8FACD",
-    highlightLight: "#53D62B",
-    highlightDark: "#2B4737",
-    midtone: "#53D62B",
-  },
-  yellow: { color: "#7A4F01", background: "#FFF7CC", midtone: "#FFC007" },
-  blue: { color: "#042979", background: "#D0F2FE", midtone: "#1990FF" },
-  red: {
-    color: "#7A0B2E",
-    background: "#FFE7D9",
-    highlightDark: "#463138",
-    highlightLight: "#FE4842",
-    midtone: "#FE4842",
-  },
-  default: { background: "#212B36", color: "#FFF", midtone: "#212B36" },
-  background: { dark: "#020028", light: "#550B40" },
-};
 
-export const legacyColors = {
+export const colors = {
   white: "#FFFFFF",
   black: "#2F2F2F",
 
@@ -84,98 +63,117 @@ export type IColorsPallette = {
 
   // Icon Background Colors
 
-  icon1: string,
-  icon2: string,
-  icon3:  string,
+  // icon1: string,
+  // icon2: string,
+  // icon3:  string,
 
 
   // Background Colors
-  bg1: string,
-  bg2: string,
-  bg3: string,
+  // bg1: string,
+  // bg2: string,
+  // bg3: string,
 
-  // Text Colors
-  text1: string,
-  text2: string,
-  text3:  string,
+  // // Text Colors
+  // text1: string,
+  // text2: string,
+  // text3:  string,
 
   // Button Colors
 
-  btn1: string,
-  btn1Press: string,
-  btn2: string,
-  btn2Press: string,
-  btnDisabled: string,
+  // btn1: string,
+  // btn1Press: string,
+  // btn2: string,
+  // btn2Press: string,
+  // btnDisabled: string,
 
-  // Disabled Colors
-  disable1: string,
-  disable2: string,
+  // // Disabled Colors
+  // disable1: string,
+  // disable2: string,
 }
 
-export const DefaultColorsPallete: IColorsPallette = {
-  preloader: legacyColors.white,
-  main: legacyColors.blue500,
+export const DefaultColorsPallete = {
+
+  main: colors.blue500,
   subtle: "#e7edff",
-  header: legacyColors.white,
+  header: colors.white,
 
   // Icon Background Colors
 
-  icon1: `${legacyColors.blue500}, #25a6ee`,
-  icon2: `#1fdeea, ${legacyColors.success500}`,
-  icon3:  "#85d9ef, #3fadfc",
+  // icon1: `${colors.blue500}, #25a6ee`,
+  // icon2: `#1fdeea, ${colors.success500}`,
+  // icon3:  "#85d9ef, #3fadfc",
 
 
   // Background Colors
-  bg1: legacyColors.white,
-  bg2: legacyColors.blue100,
-  bg3: "#f2f2f2",
+  // bg1: colors.white,
+  // bg2: colors.blue100,
+  // bg3: "#f2f2f2",
 
-  text1: legacyColors.black,
-  text2: "#6b707e",
-  text3:  "#cfdbf2",
+  // text1: colors.black,
+  // text2: "#6b707e",
+  // text3:  "#cfdbf2",
 
-  // Button Colors
+  // // Button Colors
 
-  btn1: legacyColors.blue500,
-  btn1Press: "#001352",
-  btn2: legacyColors.success500,
-  btn2Press: "#02684E",
-  btnDisabled: "#bdbdbd",
+  // btn1: colors.blue500,
+  // btn1Press: "#001352",
+  // btn2: colors.success500,
+  // btn2Press: "#02684E",
+  // btnDisabled: "#bdbdbd",
 
-  // Disabled Colors
-  disable1: legacyColors.grey500,
-  disable2: legacyColors.grey200,
+  // // Disabled Colors
+  // disable1: colors.grey500,
+  // disable2: colors.grey200,
+
+  green: {
+    color: "#015249",
+    background: "#C8FACD",
+    highlightLight: "#53D62B",
+    highlightDark: "#2B4737",
+    midtone: "#53D62B",
+  },
+  yellow: { color: "#7A4F01", background: "#FFF7CC", midtone: "#FFC007" },
+  blue: { color: "#042979", background: "#D0F2FE", midtone: "#1990FF" },
+  red: {
+    color: "#7A0B2E",
+    background: "#FFE7D9",
+    highlightDark: "#463138",
+    highlightLight: "#FE4842",
+    midtone: "#FE4842",
+  },
+  default: { background: "#212B36", color: "#FFF", midtone: "#212B36" },
+  background: { dark: "#020028", light: "#550B40" },
 }
 
 
 
-export const createColorsPallette = (overrides: Partial<IColorsPallette> = {}): IColorsPallette => {
-  return {
+// export const createColorsPallette = (overrides: Partial<IColorsPallette> = {}): IColorsPallette => {
+//   return {
    
-    ...DefaultColorsPallete,
-    ...overrides
-  }
-}
+//     ...DefaultColorsPallete,
+//     ...overrides
+//   }
+// }
 
-export const DarkColorPallette = createColorsPallette({
-  preloader: "#1b1c21",
-  main: legacyColors.red100,
-  subtle: legacyColors.red100,
-  header: "#0e0f15",
+// export const DarkColorPallette = createColorsPallette({
+//   preloader: "#1b1c21",
+//   main: colors.red100,
+//   subtle: colors.red100,
+//   header: "#0e0f15",
   
-  icon1:  "#ff67ab , #cb2d74",
-  icon2: "#cbb22d , #cb492d",
-  icon3: "#e30cc1 , #ee2525",
+//   icon1:  "#ff67ab , #cb2d74",
+//   icon2: "#cbb22d , #cb492d",
+//   icon3: "#e30cc1 , #ee2525",
 
-  bg1: "#1b1c21",
-  bg2: "rgba(255, 255, 255, 0.1)",
-  bg3: "",
+//   bg1: "#1b1c21",
+//   bg2: "rgba(255, 255, 255, 0.1)",
+//   bg3: "",
 
-  text1: legacyColors.white,
-  text2: "#757575",
-  text3: "",
+//   text1: colors.white,
+//   text2: "#757575",
+//   text3: "",
 
-})
+// })
 
 
 export const shadow = "0 0 16px rgb(58 78 88 / 5%)";
