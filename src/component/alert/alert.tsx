@@ -1,14 +1,12 @@
 import { FC, ReactNode } from 'react';
 import styled from 'styled-components';
-
 import { Icon } from '../icon/icon';
-import typography from 'theme/typography/typography';
 import { Inline, Stack } from 'theme/layouts';
-import {  colors } from 'theme';
+import {  colors, t } from 'theme';
+import { Paragraph } from 'component/typography';
 
 const { blue100, grey900, error100, error500 } = colors;
 
-const { Body1 } = typography.components.body.regular;
 
 export interface AlertProps {
   message: ReactNode;
@@ -18,7 +16,7 @@ export interface AlertProps {
 const Container = styled(Inline)`
   border-radius: 8px;
   &.info {
-    background-color: ${blue100};
+    background-color: ${t(({theme}) => theme)};
     color: ${grey900};
   }
   &.warning {
@@ -36,7 +34,7 @@ export const Alert: FC<AlertProps> = ({ message, type = 'info' }) => {
         <Icon name="alertWarningThinRed" />
       )}
       <Stack gap="0.5rem">
-        <Body1>{message}</Body1>
+        <Paragraph variant='body1'>{message}</Paragraph>
       </Stack>
     </Container>
   );

@@ -2,7 +2,8 @@ import { Story, Meta } from "@storybook/react";
 import { ReactElement } from "react";
 import { useWindowSize } from "react-use";
 import styled from "styled-components";
-import { theme, themeWithDarkMode } from ".";
+import { themeWithDarkMode } from ".";
+import { theme } from "theme";
 import { MEDIA_WIDTHS } from "./media";
 
 interface ThemeProps {

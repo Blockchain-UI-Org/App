@@ -1,9 +1,10 @@
 import { FunctionComponent } from "react";
 import styled, { css } from "styled-components";
-import { colors, theme } from "theme";
+import { colors } from "theme";
+import { theme } from "theme";
 
 const { black, grey300, grey500, blue500, error500 } = colors;
-const { FONT_FAMILY } = theme.typography;
+
 
 export interface ErrorAction {
   onClick: () => void;
@@ -110,7 +111,7 @@ export const ErrorWrapper = styled.div`
     background: none;
     cursor: pointer;
     color: ${blue500};
-    font-family: ${FONT_FAMILY};
+    font-family: ${theme.typography.common.fontFamily};
     font-size: 16px;
   }
 `;
