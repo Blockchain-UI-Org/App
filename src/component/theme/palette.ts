@@ -187,4 +187,4 @@ const palette = {
   },
 } as const;
 
-export default palette;
+// export default palette;

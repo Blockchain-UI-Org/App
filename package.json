@@ -7,7 +7,6 @@
     "@storybook/theming": "^6.5.14",
     "@types/numeral": "^2.0.2",
     "apexcharts": "^3.35.0",
-    "baseui": "^12.2.0",
     "framer-motion": "^7.9.1",
     "numbro": "^2.3.6",
     "numeral": "^2.0.6",
@@ -93,8 +92,6 @@
     "prettier": "^2.8.0",
     "prop-types": "^15.8.1",
     "storybook": "^6.5.13",
-    "styletron-engine-monolithic": "^1.0.0",
-    "styletron-react": "^6.1.0",
     "theme-ui": "^0.15.4",
     "webpack": "^5.75.0"
   },

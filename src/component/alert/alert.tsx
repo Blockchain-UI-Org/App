@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import { Icon } from '../icon/icon';
 import typography from '../theme/typography/typography';
 import { Inline, Stack } from '../theme/layouts';
-import { theme } from '../theme';
+import {  colors } from '../theme';
 
-const { blue100, grey900, error100, error500 } = theme.colors;
+const { blue100, grey900, error100, error500 } = colors;
 
 const { Body1 } = typography.components.body.regular;
 

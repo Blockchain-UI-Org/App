@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import styled, { css } from "styled-components";
-import { theme } from "../theme";
+import { colors } from "../theme";
 import {
   ErrorMessage,
   Label,
@@ -11,7 +11,7 @@ import {
 import { CryptoIcon } from "../icon/icon";
 import { CryptoSymbols } from "../static/types/crypto";
 
-const { black, grey300, blue100, blue500, error500, grey700 } = theme.colors;
+const { black, grey300, blue100, blue500, error500, grey700 } = colors;
 
 export interface NumberInputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {

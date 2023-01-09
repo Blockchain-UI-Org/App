@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 import { formatNumber } from "../../../utils/format";
 import { theme } from "../../theme";
-import { colors, ThemeColor } from "../../theme/colors";
+import { colors, ThemeColor, legacyColors as themeColors } from "../../theme/colors";
+
 
 export interface ProgressBarProps {
   minValue: number;
@@ -24,7 +25,7 @@ const {
   white,
   black,
   blue500,
-} = theme.colors;
+} = themeColors;
 
 const Container = styled.div`
   display: flex;

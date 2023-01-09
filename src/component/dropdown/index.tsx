@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, memo, ReactNode, ReactElement, CSSProperti
 import styled, { css } from 'styled-components';
 import { useClickAway, useWindowSize } from 'react-use';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ThemeInterface, theme } from '../theme';
+import {  colors, theme } from '../theme';
 
 import { Icon } from '../icon/icon';
 import Image from '../image/image';
@@ -61,7 +61,7 @@ interface ItemProps extends HoverProps {
   minHeight: string;
 }
 
-const { subtle, bg2, bg1, grey300, grey500, text1, btn2 } = theme.colors;
+const { grey300, grey500, } = colors;
 const Hover = css<HoverProps>`
   background-color: ${({ showHover, theme }) =>
     showHover ? theme.colors['subtle'] : theme.colors['bg1']};
@@ -99,7 +99,7 @@ const Display = styled(Inline)<{ withBorder: boolean; showShadow: boolean }>`
   box-shadow: ${({ showShadow }) => (showShadow ? '0px 4px 16px rgba(58, 78, 88, 0.15)' : 'none')};
   cursor: pointer;
   &:hover {
-    background-color: ${subtle};
+    background-color: ${theme.colors.subtle};
   }
 `;
 

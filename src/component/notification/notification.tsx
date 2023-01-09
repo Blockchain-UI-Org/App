@@ -1,10 +1,10 @@
 import { FunctionComponent } from "react";
 import styled from "styled-components";
-import { theme } from "../theme";
+import { colors } from "../theme";
 import Image from "../image/image";
 import { regularIcons } from "../static/images/icons/regular/index";
 
-const { success500, error500, white, black } = theme.colors;
+const { success500, error500, white, black } = colors;
 
 type NotificationType = "loading" | "positive" | "negative";
 

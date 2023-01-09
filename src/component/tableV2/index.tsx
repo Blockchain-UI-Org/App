@@ -12,15 +12,13 @@ import {
   Card,
   CardHeader,
   CardProps,
-  colors,
   Divider,
-  TableHead,
 } from "@mui/material";
 import TableHeadCustom from "./tableHeadCustom";
 import { Icon as Iconify } from "@iconify/react";
 import { fCurrency } from "../../utils/number";
 import Label from "../label";
-import palette from "../theme/palette";
+// import palette from "../theme/palette";
 
 export type RowProps = {
   id: string;
@@ -156,7 +154,7 @@ const StyledTable = styled(Table)`
   border-bottom: none;
   .MuiTableHead-root {
     border-bottom: none;
-    margin: 0 5px
+    margin: 0 5px;
     background-color: blue;
     color: red;
   }

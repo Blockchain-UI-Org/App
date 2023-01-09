@@ -45,6 +45,8 @@ export const legacyColors = {
   skyblue500: "#04E2FF",
   skyblue900: "#00C0D9",
 
+  red100: "#cb2d74",
+
   pink100: "#FFE0F5",
   pink500: "#EF18AC",
   pink900: "#AC0678",
@@ -73,42 +75,107 @@ export const legacyColors = {
   error900: "#782424",
 };
 
-export const colorsWithDarkMode = (darkMode = false) => {
+
+export type IColorsPallette = {
+  preloader: string,
+  main: string,
+  subtle: string,
+  header: string,
+
+  // Icon Background Colors
+
+  icon1: string,
+  icon2: string,
+  icon3:  string,
+
+
+  // Background Colors
+  bg1: string,
+  bg2: string,
+  bg3: string,
+
+  // Text Colors
+  text1: string,
+  text2: string,
+  text3:  string,
+
+  // Button Colors
+
+  btn1: string,
+  btn1Press: string,
+  btn2: string,
+  btn2Press: string,
+  btnDisabled: string,
+
+  // Disabled Colors
+  disable1: string,
+  disable2: string,
+}
+
+export const DefaultColorsPallete: IColorsPallette = {
+  preloader: legacyColors.white,
+  main: legacyColors.blue500,
+  subtle: "#e7edff",
+  header: legacyColors.white,
+
+  // Icon Background Colors
+
+  icon1: `${legacyColors.blue500}, #25a6ee`,
+  icon2: `#1fdeea, ${legacyColors.success500}`,
+  icon3:  "#85d9ef, #3fadfc",
+
+
+  // Background Colors
+  bg1: legacyColors.white,
+  bg2: legacyColors.blue100,
+  bg3: "#f2f2f2",
+
+  text1: legacyColors.black,
+  text2: "#6b707e",
+  text3:  "#cfdbf2",
+
+  // Button Colors
+
+  btn1: legacyColors.blue500,
+  btn1Press: "#001352",
+  btn2: legacyColors.success500,
+  btn2Press: "#02684E",
+  btnDisabled: "#bdbdbd",
+
+  // Disabled Colors
+  disable1: legacyColors.grey500,
+  disable2: legacyColors.grey200,
+}
+
+
+
+export const createColorsPallette = (overrides: Partial<IColorsPallette> = {}): IColorsPallette => {
   return {
-    preloader: darkMode ? "#1b1c21" : legacyColors.white,
-    main: darkMode ? "#cb2d74" : legacyColors.blue500,
-    subtle: darkMode ? "#cb2d74" : "#e7edff",
-    header: darkMode ? "#0e0f15" : legacyColors.white,
+   
+    ...DefaultColorsPallete,
+    ...overrides
+  }
+}
 
-    // icons background
-    icon1: darkMode ? "#ff67ab , #cb2d74" : `${legacyColors.blue500}, #25a6ee`,
-    icon2: darkMode
-      ? "#cbb22d , #cb492d"
-      : `#1fdeea, ${legacyColors.success500}`,
-    icon3: darkMode ? "#e30cc1 , #ee2525" : "#85d9ef, #3fadfc",
+export const DarkColorPallette = createColorsPallette({
+  preloader: "#1b1c21",
+  main: legacyColors.red100,
+  subtle: legacyColors.red100,
+  header: "#0e0f15",
+  
+  icon1:  "#ff67ab , #cb2d74",
+  icon2: "#cbb22d , #cb492d",
+  icon3: "#e30cc1 , #ee2525",
 
-    // background
-    bg1: darkMode ? "#1b1c21" : legacyColors.white,
-    bg2: darkMode ? "rgba(255, 255, 255, 0.1)" : legacyColors.blue100,
-    bg3: darkMode ? "" : "#f2f2f2",
+  bg1: "#1b1c21",
+  bg2: "rgba(255, 255, 255, 0.1)",
+  bg3: "",
 
-    // text
-    text1: darkMode ? "#ffffff" : legacyColors.black,
-    text2: darkMode ? "#757575" : "#6b707e",
-    text3: darkMode ? "" : "#cfdbf2",
+  text1: legacyColors.white,
+  text2: "#757575",
+  text3: "",
 
-    // button
-    btn1: legacyColors.blue500,
-    "btn1-press": "#001352",
-    btn2: legacyColors.success500,
-    "btn2-press": "#02684E",
-    "btn-disabled": "#bdbdbd",
+})
 
-    // disabled colors
-
-    disable1: legacyColors.grey500,
-    disable2: legacyColors.grey200,
-  };
-};
 
 export const shadow = "0 0 16px rgb(58 78 88 / 5%)";

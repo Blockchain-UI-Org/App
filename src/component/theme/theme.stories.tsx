@@ -35,7 +35,7 @@ const colorDisplay = (darkTheme) => {
 };
 
 //@ts-ignore
-const breakPointsDisplay = (width) => {
+const breakPointsDisplay = (width) => {f
   const { small, medium } = MEDIA_WIDTHS;
   const getDeviceType = () => {
     if (width < small) {

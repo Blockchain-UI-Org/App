@@ -44,7 +44,7 @@ const Inline = styled.div<InlineProps>`
 `;
 
 const Responsive = styled(Inline)`
-  ${({ theme }) => theme.mediaWidth.upToMedium`
+  ${({ theme }) => theme.mediaWidth.upToMedium}
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -52,7 +52,7 @@ const Responsive = styled(Inline)`
       margin-left: 0;
       margin-top: 1rem;
     }
-  `};
+  ;
 `;
 
 export type { StackProps, InlineProps };

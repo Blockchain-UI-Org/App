@@ -1,9 +1,9 @@
 import { FunctionComponent, useState } from 'react';
 import styled from 'styled-components';
-import { theme } from '../theme';
+import { colors } from '../theme';
 import { Tab } from './tab';
 
-const { grey100, white } = theme.colors;
+const { grey100, white } = colors;
 
 export interface TabProp {
   title: string | JSX.Element;

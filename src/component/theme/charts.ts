@@ -4,7 +4,6 @@ import { useTheme } from "@mui/material/styles";
 import { colors, legacyColors } from "./colors";
 import { cp } from "fs";
 
-// ----------------------------------------------------------------------
 
 export default function BaseOptionChart(): ApexOptions {
   const LABEL_TOTAL = {

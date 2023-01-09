@@ -1,6 +1,8 @@
 import { Flex, Text } from "theme-ui";
 import styled from "@emotion/styled";
-import { theme } from "../theme";
+import { colors } from "../theme";
+
+const {grey700, grey200} = colors
 
 interface PaginationProps {
   $disablePrev?: boolean;
@@ -33,7 +35,7 @@ export const Pagination = styled(Flex)<PaginationProps>`
     }
 
     color: ${({ $disablePrev }) =>
-      $disablePrev ? theme?.colors?.["grey700"] : theme?.colors?.["grey200"]};
+      $disablePrev ? grey700 : grey200};
 
     border: ${({ $disablePrev }) =>
       $disablePrev ? "2px solid inherit" : "2px solid #0091ff"};
@@ -53,7 +55,7 @@ export const Pagination = styled(Flex)<PaginationProps>`
     }
 
     color: ${({ $disableNext }) =>
-      $disableNext ? theme?.colors["grey700"] : theme?.colors["grey200"]};
+      $disableNext ? grey700 : grey200};
 
     border: ${({ $disableNext }) =>
       $disableNext ? "2px solid inherit" : "2px solid #0091ff"};
