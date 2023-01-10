@@ -26,7 +26,7 @@ export const Pagination = styled(Flex)<PaginationProps>`
     padding: 2px 8px;
     user-select: none;
     :hover {
-      cursor: ${({ $disablePrev }) =>
+      cursor: ${({ $disablePrev }: any) =>
         $disablePrev ? "not-allowed" : "pointer"};
       background-color: ${t(({ $disablePrev, theme }) =>
         $disablePrev ? "inherit" : theme.colors.info.midtone
@@ -51,7 +51,7 @@ export const Pagination = styled(Flex)<PaginationProps>`
     padding: 2px 8px;
     user-select: none;
     :hover {
-      cursor: ${({ $disableNext }) =>
+      cursor: ${({ $disableNext }: any) =>
         $disableNext ? "not-allowed" : "pointer"};
       background-color: ${t(({ $disableNext, theme }) =>
         $disableNext ? "inherit" : theme.colors.info.midtone
