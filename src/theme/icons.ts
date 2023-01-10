@@ -24,20 +24,20 @@ export type IIconTheme = {
     thin: IIconSize;
   };
 };
-const DefaultIconTheme: IIconTheme = {
-  sizes: {
-    crypto: {
-      xsmall: "24px",
-      small: "32px",
-      medium: "40px",
-      large: "48px",
+
+export const createIconTheme = (): IIconTheme => {
+  return {
+    sizes: {
+      crypto: {
+        xsmall: "24px",
+        small: "32px",
+        medium: "40px",
+        large: "48px",
+      },
+      regular: regular,
+      account: regular,
+      filled: regular,
+      thin: regular,
     },
-    regular: regular,
-    account: regular,
-    filled: regular,
-    thin: regular,
-  },
-};
-export const createIconTheme = () => {
-  return DefaultIconTheme;
+  };
 };
