@@ -1,7 +1,7 @@
 import { FC, ReactNode } from "react";
 import styled from "styled-components";
 import { Icon } from "../icon/icon";
-import { Inline, Stack } from "theme/layouts";
+import { Inline, Stack } from "component/layout";
 import { t } from "theme";
 import { Paragraph } from "component/typography";
 
