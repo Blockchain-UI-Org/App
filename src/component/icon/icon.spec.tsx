@@ -3,7 +3,11 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Icon } from './icon';
 import { regularIcons } from '../static/images/icons/regular';
-import { getIconSize } from 'theme/icons';
+import { DefaultTheme } from 'theme';
+
+
+const sizes = DefaultTheme.components.Icons.sizes;
+
 
 describe('Regular Icon Components Tests...', () => {
   for (const [key] of Object.entries(regularIcons)) {
@@ -12,7 +16,7 @@ describe('Regular Icon Components Tests...', () => {
       const icon = screen.getByTestId(`${key}-image`);
       expect(icon).toBeInTheDocument();
       expect(icon).toHaveAttribute('alt', `${key}-image`);
-      expect(icon).toHaveAttribute('width', getIconSize['regular']['small']);
+      expect(icon).toHaveAttribute('width', sizes['regular']['small']);
     });
   }
 
@@ -22,7 +26,7 @@ describe('Regular Icon Components Tests...', () => {
       const icon = screen.getByTestId(`${key}-image`);
       expect(icon).toBeInTheDocument();
       expect(icon).toHaveAttribute('alt', `${key}-image`);
-      expect(icon).toHaveAttribute('width', getIconSize['regular']['medium']);
+      expect(icon).toHaveAttribute('width', sizes['regular']['medium']);
     });
   }
 
@@ -32,7 +36,7 @@ describe('Regular Icon Components Tests...', () => {
       const icon = screen.getByTestId(`${key}-image`);
       expect(icon).toBeInTheDocument();
       expect(icon).toHaveAttribute('alt', `${key}-image`);
-      expect(icon).toHaveAttribute('width', getIconSize['regular']['large']);
+      expect(icon).toHaveAttribute('width', sizes['regular']['large']);
     });
   }
 });

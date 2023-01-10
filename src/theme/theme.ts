@@ -1,44 +1,21 @@
-import { colors  } from "./colors";
-// import typography from "../component/typography/typography";
+import { colors } from "./colors";
 import media from "./media";
-import {
-  // legacyColors as colors,
-  shadow,
-} from "./colors";
+import { shadow } from "./shadow";
+import {  createIconTheme, IIconTheme } from "./icons";
+import { Subset } from "typeutils";
+import { ICreditCardTheme } from "./creditcard";
+import { IChartTheme } from "./chart";
+import { IProgressBarTheme } from "./progressbar";
+import { IInputTheme } from "./input";
+import { createTypography, ITypographyTheme } from "./typography";
 
-import { IconSizes, IconType } from "../component/static/types/icons";
-import { DefaultTheme as IDefaultTheme } from "styled-components";
-import { getIconSize } from "./icons";
-
-type IFontInterface = {
-  fontWeight?: number | string;
-  fontSize?: string | number;
-  lineHeight?: number | string;
-  fontFamily?: string;
-};
 
 type IColorVariant = {
   bg: string;
-  // bgLight: string;
-  // bgDark: string;
   color: string;
 };
 
-type ICreditCardVariant = {
-  color: string;
-  background: string;
-  highlightLight?: string;
-  highlightDark?: string;
-  midtone?: string;
-};
-
-type IProgressBarVariant = {
-  midtone: string;
-};
-
-type IChartVariant = IProgressBarVariant;
-
-export interface ThemeInterface extends IDefaultTheme {
+export interface ThemeInterface {
   colors: {
     common: {
       black: string;
@@ -60,146 +37,25 @@ export interface ThemeInterface extends IDefaultTheme {
   };
   media: typeof media;
   components: {
-    CreditCard: {
-      variants: {
-        green: ICreditCardVariant;
-        yellow: ICreditCardVariant;
-        blue: ICreditCardVariant;
-        red: ICreditCardVariant;
-        default: ICreditCardVariant;
-      };
-    };
-    Chart: {
-      variants: {
-        default: IChartVariant;
-        green: IChartVariant;
-        yellow: IChartVariant;
-        blue: IChartVariant;
-        red: IChartVariant;
-      };
-      common: {
-        colors: string[];
-        foreColor: string;
-        gridBorderColor: string;
-        markerColor: string;
-        labelColor: string;
-        radialBarBackground: string;
-        radarStrokeColor: string;
-        radarConnectorColor: string;
-        polarRingColor: string;
-        polarSpokeConnectorColor: string;
-      };
-    };
-    ProgressBar: {
-      variants: {
-        default: IProgressBarVariant;
-        green: IProgressBarVariant;
-        yellow: IProgressBarVariant;
-        blue: IProgressBarVariant;
-        red: IProgressBarVariant;
-      };
-    };
-    Input: {
-      label: {
-        color: string;
-      };
-      box: {
-        common: {
-          color: string;
-          border: string;
-        };
-        focusVisible: {
-          borderColor: string;
-        };
-        error: {
-          color: string;
-        };
-      };
-    };
+    CreditCard: ICreditCardTheme;
+    Chart: IChartTheme;
+    ProgressBar: IProgressBarTheme;
+    Input: IInputTheme;
+    Icons: IIconTheme;
   };
-  typography: {
-    common: IFontInterface;
-    h1: IFontInterface;
-    h2: IFontInterface;
-    h3: IFontInterface;
-    h4: IFontInterface;
-    h5: IFontInterface;
-    h6: IFontInterface;
-    display1: IFontInterface;
-    display2: IFontInterface;
-    body1: IFontInterface;
-    body2: IFontInterface;
-  };
+  typography: ITypographyTheme;
   shadows: {
     depth1: string;
     depth2: string;
   };
-  getIconSize: Record<IconType, IconSizes>;
 }
 
-const createTypography = (): ThemeInterface["typography"] => {
-  return {
-    common: { fontFamily: "CircularStd, Public Sans" },
-    h1: {
-      fontSize: 32,
-      lineHeight: "48px",
-    },
-    h2: {
-      fontSize: 24,
-      lineHeight: "36px",
-    },
-    h3: {
-      fontSize: 20,
-      lineHeight: "30px",
-    },
-    h4: {
-      fontSize: 18,
-      lineHeight: "28px",
-    },
-    h5: {
-      fontSize: 16,
-      lineHeight: "24px",
-    },
-    h6: {
-      fontSize: 14,
-      lineHeight: "20px",
-    },
-    body1: {
-      fontSize: 16,
-      lineHeight: "24px",
-    },
-    body2: {
-      fontSize: 14,
-      lineHeight: "20px",
-    },
-    display1: {
-      fontSize: 48,
-      lineHeight: "62px",
-    },
-    display2: {
-      fontSize: 36,
-      lineHeight: "48px",
-    },
-  };
-};
 
 
-
-
-type Subset<K> = {
-  [attr in keyof K]?: K[attr] extends object
-    ? Subset<K[attr]>
-    : K[attr] extends object | null
-    ? Subset<K[attr]> | null
-    : K[attr] extends object | null | undefined
-    ? Subset<K[attr]> | null | undefined
-    : K[attr];
-};
 export const createTheme = (
   args: Subset<ThemeInterface> = {}
 ): ThemeInterface => {
   const typography = createTypography();
-
 
   const green = {
     color: colors.darkgreen800,
@@ -296,7 +152,6 @@ export const createTheme = (
           },
         },
       },
-
       ProgressBar: {
         variants: {
           default: { midtone: defaultVariant.color },
@@ -315,7 +170,7 @@ export const createTheme = (
           yellow,
         },
         common: {
-          colors: [yellow.color, blue.color,red.color, green.color],
+          colors: [yellow.color, blue.color, red.color, green.color],
           foreColor: colors.grey500,
           gridBorderColor: colors.grey700,
           markerColor: colors.grey500,
@@ -325,17 +180,18 @@ export const createTheme = (
           radarConnectorColor: colors.grey500,
           polarRingColor: colors.grey500,
           polarSpokeConnectorColor: colors.grey500,
-        }
-      }
+        },
+      },
+      Icons: createIconTheme()
     },
     shadows: shadow,
-    getIconSize,
+
     media,
   };
 };
 
-const DefaultTheme = createTheme({});
+const DefaultTheme = createTheme();
 
-const themeWithDarkMode = createTheme();
+const DarkTheme = createTheme();
 
-export { DefaultTheme, themeWithDarkMode };
+export { DefaultTheme, DarkTheme };

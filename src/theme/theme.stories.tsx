@@ -2,7 +2,7 @@ import { Story, Meta } from "@storybook/react";
 import { ReactElement } from "react";
 import { useWindowSize } from "react-use";
 import styled from "styled-components";
-import { themeWithDarkMode, DefaultTheme } from "./theme";
+import { DarkTheme, DefaultTheme } from "./theme";
 import { MEDIA_WIDTHS } from "./media";
 
 interface ThemeProps {
@@ -13,7 +13,7 @@ interface ThemeProps {
 const colorDisplay = (darkTheme: boolean) => {
   const display: ReactElement[] = [];
   for (const [key, value] of Object.entries(
-    darkTheme ? themeWithDarkMode.colors : DefaultTheme.colors
+    darkTheme ? DarkTheme.colors : DefaultTheme.colors
   ).sort(function (a, b) {
     const nameA = a[0].toLowerCase(),
       nameB = b[0].toLowerCase();
