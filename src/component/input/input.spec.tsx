@@ -1,9 +1,11 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { colors } from 'theme';
-
 import { Input } from './input';
-const { error500, blue500 } = colors;
+import { DefaultTheme } from 'theme';
+
+const error500 = DefaultTheme.colors.error.color;
+const blue500= DefaultTheme.colors.info.midtone;
+
 
 describe('Input', () => {
   it('successfully creates an Input ', () => {

@@ -2,8 +2,7 @@ import { Story, Meta } from "@storybook/react";
 import { ReactElement } from "react";
 import { useWindowSize } from "react-use";
 import styled from "styled-components";
-import { themeWithDarkMode } from ".";
-import { theme } from "theme";
+import { themeWithDarkMode, DefaultTheme } from "./theme";
 import { MEDIA_WIDTHS } from "./media";
 
 interface ThemeProps {
@@ -11,11 +10,10 @@ interface ThemeProps {
   story?: "colors" | "fonts" | "breakpoints";
 }
 
-
 const colorDisplay = (darkTheme: boolean) => {
   const display: ReactElement[] = [];
   for (const [key, value] of Object.entries(
-    darkTheme ? themeWithDarkMode().colors : theme.colors
+    darkTheme ? themeWithDarkMode.colors : DefaultTheme.colors
   ).sort(function (a, b) {
     const nameA = a[0].toLowerCase(),
       nameB = b[0].toLowerCase();
@@ -25,16 +23,18 @@ const colorDisplay = (darkTheme: boolean) => {
     if (nameA > nameB) return 1;
     return 0; //default return value (no sorting)
   })) {
-    display.push(
-      <Wrapper>
-        {key}
-        <ColorBlock bColor={value} />
-      </Wrapper>
-    );
+    const names = Object.keys(value);
+    names.forEach((name) => {
+      display.push(
+        <Wrapper>
+          {key} - {name}
+          <ColorBlock bColor={(value as any)[name]} />
+        </Wrapper>
+      );
+    });
   }
   return display;
 };
-
 
 const breakPointsDisplay = (width: number) => {
   const { small, medium } = MEDIA_WIDTHS;

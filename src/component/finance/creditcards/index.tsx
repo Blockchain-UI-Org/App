@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 import { Icon } from "@iconify/react";
 import styled from "styled-components";
 import Image from "../../image/image";
-import { colors, ThemeColor } from "theme/colors";
+import { t, ThemeInterface } from "theme";
 import { CryptoIcon } from "../../icon/icon";
 import { CryptoSymbols } from "../../static/types";
 
@@ -11,7 +11,7 @@ interface CreditCardType {
   name?: string;
   expDate?: string;
   cvv?: string;
-  themeColor?: ThemeColor;
+  themeColor?: keyof ThemeInterface["components"]["CreditCard"]["variants"];
   currency?: CryptoSymbols;
 }
 
@@ -20,14 +20,14 @@ const CreditCard: FC<CreditCardType> = ({
   name = "Your Name",
   expDate = "01/01",
   cvv = "123",
-  themeColor,
+  themeColor = "default",
   currency,
 }) => {
   const [showBalance, setShowBalance] = useState(true);
   const [showCvv, setShowCvv] = useState(false);
 
   return (
-    <CardItemStyle $colorMode={themeColor && colors[themeColor]}>
+    <CardItemStyle $colorMode={themeColor}>
       <div>
         <Title>Balance</Title>
         <BalanceWrapper onClick={() => setShowBalance(!showBalance)}>
@@ -80,7 +80,7 @@ const CreditCard: FC<CreditCardType> = ({
 export default CreditCard;
 
 interface CardStyle {
-  $colorMode?: Record<string, string>;
+  $colorMode: keyof ThemeInterface["components"]["CreditCard"]["variants"];
 }
 
 const CardItemStyle = styled.div<CardStyle>`
@@ -89,10 +89,10 @@ const CardItemStyle = styled.div<CardStyle>`
   justify-content: space-between;
   background-image: url("/assets/carbon_fiber1.webp");
   background-size: cover;
-  background: ${({ $colorMode }) => $colorMode?.background};
+  background: ${t(({ $colorMode, theme }) => theme.components.CreditCard.variants[$colorMode].background)};
   height: 300px;
   width: 525px;
-  color: ${({ $colorMode }) => ($colorMode ? $colorMode?.color : "#FFFFFF")};
+  color: ${t(({ $colorMode, theme }) => theme.components.CreditCard.variants[$colorMode].color)};
   border-radius: 20px;
   padding: 20px;
   font-family: Public Sans;

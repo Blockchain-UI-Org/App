@@ -1,9 +1,9 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { colors } from 'theme';
+import { DefaultTheme } from 'theme';
 
 import { NumberInput } from './numberInput';
-const { blue100, blue500 } = colors;
+// const { blue100, blue500 } = colors;
 
 describe('Input', () => {
   it('successfully creates an Number Input', () => {
@@ -18,7 +18,7 @@ describe('Input', () => {
 
     const maxButton = screen.getByText('Max');
     expect(maxButton).toBeInTheDocument();
-    expect(maxButton).toHaveStyle(`background-color: ${blue100}; color: ${blue500};`);
+    expect(maxButton).toHaveStyle(`background-color: ${DefaultTheme.colors.info.bg}; color: ${DefaultTheme.colors.info.midtone};`);
 
     fireEvent.click(maxButton);
     expect(onClickHandler).toHaveBeenCalledTimes(1);

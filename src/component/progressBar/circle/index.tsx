@@ -1,21 +1,21 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
-import { colors, ThemeColor } from "theme/colors";
+import { t, ThemeInterface } from "theme";
+import { colors } from "theme/colors";
 
 export interface CircleBarProps {
   showValue?: boolean;
   title: string;
-  themeColor: ThemeColor;
+  themeColor?: keyof ThemeInterface["components"]["ProgressBar"]["variants"];
   percent: number;
 }
 
-export const CircleProgressBar = ({ themeColor = "default", percent = 0 }) => {
+export const CircleProgressBar: FC<CircleBarProps> = ({
+  themeColor = "default",
+  percent = 0,
+}) => {
   return (
-    <CircleProgressBarBase
-      //@ts-ignore
-      $colorMode={colors[themeColor]}
-      $percent={100 - percent}
-    >
+    <CircleProgressBarBase $colorMode={themeColor} $percent={100 - percent}>
       <svg
         className="circleContainer"
         viewBox="2 -2 28 36"
@@ -39,7 +39,7 @@ export default colors;
 interface CircleBarBaseProps {
   showValue?: boolean;
   $percent: number;
-  $colorMode: Record<string, string>;
+  $colorMode: keyof ThemeInterface["components"]["ProgressBar"]["variants"];
 }
 
 const Percent = styled.div`
@@ -60,7 +60,10 @@ export const CircleProgressBarBase = styled.div<CircleBarBaseProps>`
     --dot-diameter: 100%;
     --circle-border-width: 4px;
     --default-color: #545454;
-    --completion-color: ${({ $colorMode }) => $colorMode?.midtone};
+    --completion-color: ${t(
+      ({ $colorMode, theme }) =>
+        theme.components.ProgressBar.variants[$colorMode].midtone
+    )};
     width: var(--dot-diameter);
     height: var(--dot-diameter);
     transform: rotate(-90deg);

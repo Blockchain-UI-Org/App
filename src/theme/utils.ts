@@ -1,16 +1,16 @@
-import styled, { css, Interpolation, OmitU, ThemedStyledProps } from "styled-components";
+import { Interpolation, ThemedStyledProps } from "styled-components";
 import { DefaultTheme, ThemeInterface } from "./theme";
+import isEmpty from "lodash/isEmpty";
 
 
-
-export const t = (
-  callback: (props:  {theme: ThemeInterface}) => Interpolation<any>
+export const t = <P extends object>(
+  callback: (props: P & {theme: ThemeInterface}) => Interpolation<ThemedStyledProps<P,ThemeInterface>>
 ) => {
-  return (props: {theme: ThemeInterface}) => {
-    if (props.theme) {
+  return (props: P & {theme: ThemeInterface}) => {
+    const {theme} = props;
+    if (!isEmpty(theme)) {
       return callback(props);
     }
-
     return callback({ ...props, theme: DefaultTheme });
   };
 };

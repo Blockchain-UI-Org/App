@@ -1,8 +1,6 @@
 import Flex from "../flex";
 import styled from "styled-components";
-import { colors } from "theme";
-
-const { grey700, grey200 } = colors;
+import { t } from "theme";
 
 interface PaginationProps {
   $disablePrev?: boolean;
@@ -30,14 +28,20 @@ export const Pagination = styled(Flex)<PaginationProps>`
     :hover {
       cursor: ${({ $disablePrev }) =>
         $disablePrev ? "not-allowed" : "pointer"};
-      background-color: ${({ $disablePrev }) =>
-        $disablePrev ? "inherit" : "#0091ff"};
+      background-color: ${t(({ $disablePrev, theme }) =>
+        $disablePrev ? "inherit" : theme.colors.info.midtone
+      )};
     }
 
-    color: ${({ $disablePrev }) => ($disablePrev ? grey700 : grey200)};
+    color: ${t(({ $disablePrev, theme }) =>
+      $disablePrev ? theme.colors.grey[700] : theme.colors.grey[200]
+    )};
 
-    border: ${({ $disablePrev }) =>
-      $disablePrev ? "2px solid inherit" : "2px solid #0091ff"};
+    border: ${t(({ $disablePrev, theme }) =>
+      $disablePrev
+        ? "2px solid inherit"
+        : `2px solid ${theme.colors.info.midtone}`
+    )};
   }
 
   .nextStep {
@@ -49,14 +53,20 @@ export const Pagination = styled(Flex)<PaginationProps>`
     :hover {
       cursor: ${({ $disableNext }) =>
         $disableNext ? "not-allowed" : "pointer"};
-      background-color: ${({ $disableNext }) =>
-        $disableNext ? "inherit" : "#0091ff"};
+      background-color: ${t(({ $disableNext, theme }) =>
+        $disableNext ? "inherit" : theme.colors.info.midtone
+      )};
     }
 
-    color: ${({ $disableNext }) => ($disableNext ? grey700 : grey200)};
+    color: ${t(({ $disableNext, theme }) =>
+      $disableNext ? theme.colors.grey[700] : theme.colors.grey[200]
+    )};
 
-    border: ${({ $disableNext }) =>
-      $disableNext ? "2px solid inherit" : "2px solid #0091ff"};
+    border: ${t(({ $disableNext, theme }) =>
+      $disableNext
+        ? "2px solid inherit"
+        : `2px solid ${theme.colors.info.midtone}`
+    )};
   }
 `;
 
@@ -68,7 +78,7 @@ export const PageButton = styled(Flex)<PageButtonProps>`
   display: flex;
   justify-content: center;
   width: 30px;
-  background-color: ${({ $highlight }) => ($highlight ? "#0091ff" : "inherit")};
+  background-color: ${t(({ $highlight, theme }) => ($highlight ? theme.colors.info.midtone : "inherit"))};
   border-radius: 3px;
   margin: 0;
 `;

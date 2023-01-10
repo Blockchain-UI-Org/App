@@ -1,18 +1,11 @@
 import { FunctionComponent } from "react";
-import styled from "styled-components";
-import { colors } from "theme";
+import styled, { css } from "styled-components";
+import { t } from "theme";
+
 import Image from "../image/image";
 import { regularIcons } from "../static/images/icons/regular/index";
 
-const { success500, error500, white, black } = colors;
-
 type NotificationType = "loading" | "positive" | "negative";
-
-const TypeToColor: { [key in NotificationType]: string } = {
-  loading: white,
-  positive: success500,
-  negative: error500,
-};
 
 type Icon = keyof typeof regularIcons;
 
@@ -42,12 +35,20 @@ export const Notification: FunctionComponent<NotificationProps> = ({
 };
 
 const NotificationWrapper = styled.div<{ type: NotificationType }>`
-  color: ${white};
+  color: ${t(({ theme }) => theme.colors.common.white)};
   font-size: 16px;
   width: 280px;
   margin: 0 auto;
-  background-color: ${({ type }) => TypeToColor[type]};
-  color: ${({ type }) => (type === "loading" ? black : white)};
+  background-color: ${t(({ type, theme }) => {
+    return css`
+      ${type === "loading" && theme.colors.common.white}
+      ${type === "negative" && theme.colors.error.color}
+      ${type === "positive" && theme.colors.success.color}
+    `;
+  })};
+  color: ${t(({ type, theme }) =>
+    type === "loading" ? theme.colors.common.black : theme.colors.common.white
+  )};
   border-radius: 8px;
   padding: 16px;
   box-sizing: border-box;

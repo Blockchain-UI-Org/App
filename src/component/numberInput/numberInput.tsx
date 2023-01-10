@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import styled, { css } from "styled-components";
-import { colors } from "theme";
+// import { colors } from "theme";
 import {
   ErrorMessage,
   Label,
@@ -10,8 +10,9 @@ import {
 } from "../input/input";
 import { CryptoIcon } from "../icon/icon";
 import { CryptoSymbols } from "../static/types/crypto";
+import { t } from "theme";
 
-const { black, grey300, blue100, blue500, error500, grey700 } = colors;
+// const { black, grey300, blue100, blue500, error500, grey700 } = colors;
 
 export interface NumberInputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
@@ -73,7 +74,7 @@ export const NumberInput: FunctionComponent<NumberInputProps> = ({
 
 const InputContainer = styled.div<{ hasError: boolean }>`
   display: flex;
-  border: 1px solid ${grey300};
+  border: 1px solid ${t(({theme}) => theme.colors.grey[300])};
   border-radius: 8px;
   width: auto;
   align-items: center;
@@ -84,14 +85,14 @@ const InputContainer = styled.div<{ hasError: boolean }>`
   box-sizing: border-box;
 
   &:focus-within {
-    border-color: ${blue500};
-    color: ${black};
+    border-color: ${t(({theme}) => theme.colors.grey[300])};
+    color: ${t(({theme}) => theme.colors.common.black)};
   }
 
   ${({ hasError }) =>
     hasError &&
     css`
-      border-color: ${error500};
+      border-color: ${t(({theme}) => theme.colors.error.color)};
     `}
 `;
 
@@ -101,8 +102,8 @@ const CustomInput = styled(StyledInput)`
 `;
 
 const MaxButton = styled.button`
-  background-color: ${blue100};
-  color: ${blue500};
+  background-color: ${t(({theme}) => theme.colors.info.bg)};
+  color: ${t(({theme}) => theme.colors.info.midtone)};
   border: none;
   border-radius: 20px;
   height: 24px;
@@ -116,7 +117,7 @@ const MaxButton = styled.button`
 const Balance = styled.div<{ size: "regular" | "small" }>`
   font-size: ${({ size }) => (size === "regular" ? "16px" : "14px")};
   font-weight: 400;
-  color: ${grey700};
+  color: ${t(({theme}) => theme.colors.grey[700])};;
   font-family: inherit;
 `;
 

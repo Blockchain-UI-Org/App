@@ -1,10 +1,6 @@
 import { FunctionComponent } from "react";
 import styled, { css } from "styled-components";
-import { colors } from "theme";
-import { theme } from "theme";
-
-const { black, grey300, grey500, blue500, error500 } = colors;
-
+import { t } from "theme";
 
 export interface ErrorAction {
   onClick: () => void;
@@ -63,7 +59,7 @@ export const Container = styled.div<{ block: boolean }>`
 export const Label = styled.label`
   font-size: 16px;
   font-weight: 700;
-  color: ${black};
+  color: ${t(({ theme }) => theme.components.Input.label.color)};
 `;
 
 type StyledInputType = React.InputHTMLAttributes<HTMLInputElement> & {
@@ -72,33 +68,33 @@ type StyledInputType = React.InputHTMLAttributes<HTMLInputElement> & {
 
 export const StyledInput = styled.input<StyledInputType>`
   border-radius: 8px;
-  border: 1px solid ${grey300};
+
   height: 64px;
   box-sizing: border-box;
   padding: 16px;
   font-size: 20px;
   font-weight: 700;
-  color: ${grey500};
   margin: 12px 0;
   font-family: inherit;
-
+  ${t(({ theme }) => css(theme.components.Input.box.common))}
   &:focus {
     outline: none;
   }
-
   &:focus-visible {
-    border-color: ${blue500};
-    color: ${black};
+    border-color: ${t(
+      ({ theme }) => theme.components.Input.box.focusVisible.borderColor
+    )};
+    color: ${t(({ theme }) => theme.colors.common.black)};
   }
 
   &:not(:placeholder-shown) {
-    color: ${black};
+    color: ${t(({ theme }) => theme.colors.common.black)};
   }
 
   ${({ hasError }) =>
     hasError &&
     css`
-      border-color: ${error500};
+      border-color: ${t(({ theme }) => theme.components.Input.box.error.color)};
     `};
 `;
 
@@ -110,14 +106,16 @@ export const ErrorWrapper = styled.div`
     border: none;
     background: none;
     cursor: pointer;
-    color: ${blue500};
-    font-family: ${theme.typography.common.fontFamily};
+    color: ${t(
+      ({ theme }) => theme.components.Input.box.focusVisible.borderColor
+    )};;
+    font-family: ${t(({ theme }) => theme.typography.common.fontFamily)};
     font-size: 16px;
   }
 `;
 
 export const ErrorMessage = styled.span`
-  color: ${error500};
+  color: ${t(({ theme }) => theme.components.Input.box.error.color)};
   font-size: 16px;
   font-weight: 400;
 

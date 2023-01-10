@@ -1,18 +1,13 @@
-export type ThemeColor =
-  | "green"
-  | "yellow"
-  | "blue"
-  | "red"
-  | "grey"
-  | "background"
-  | "default";
 
 
 export const colors = {
   white: "#FFFFFF",
   black: "#2F2F2F",
 
+  black800: "#212B36",
+
   blue100: "#D0F2FE",
+  // blue400: "#0091ff",
   blue500: "#1990FF",
   blue900: "#042979",
 
@@ -24,22 +19,36 @@ export const colors = {
   skyblue500: "#04E2FF",
   skyblue900: "#00C0D9",
 
-  red100: "#cb2d74",
-
   pink100: "#FFE0F5",
   pink500: "#EF18AC",
+  pink600: "#CB2d74",
   pink900: "#AC0678",
 
+  grey50: "#e7edff",
   grey100: "#F8F8F8",
   grey200: "#EEEEEE",
   grey300: "#D7D9E1",
   grey500: "#9BA4AE",
   grey700: "#5E6D7C",
-  grey900: "#2F2F2F",
+  // grey900: "#2F2F2F",
 
   yellow100: "#FFF6DC",
   yellow500: "#FAD972",
+  yellow800: "#FFC007",
   yellow900: "#E4BB3B",
+
+  brown50: "#FFE7D9",
+  brown100: "#FFF7CC",
+  brown700: "#7A4F01",
+  brown800: "#463138",
+
+  red500: "#FE4842",
+  red900: "#7A0B2E",
+
+  green100: "#C8FACD",
+  green900: "#53D62B",
+  darkgreen800: "#015249",
+  darkgreen900: "#2B4737",
 
   success100: "#E7F8F4",
   success500: "#11BC91",
@@ -55,101 +64,62 @@ export const colors = {
 };
 
 
-export type IColorsPallette = {
-  preloader: string,
-  main: string,
-  subtle: string,
-  header: string,
 
-  // Icon Background Colors
+// export const DefaultColorsPallete = {
+//   main: colors.blue500,
+//   // subtle: "#e7edff",
+//   header: colors.white,
 
-  // icon1: string,
-  // icon2: string,
-  // icon3:  string,
+//   // Icon Background Colors
 
+//   // icon1: `${colors.blue500}, #25a6ee`,
+//   // icon2: `#1fdeea, ${colors.success500}`,
+//   // icon3:  "#85d9ef, #3fadfc",
 
-  // Background Colors
-  // bg1: string,
-  // bg2: string,
-  // bg3: string,
+//   // Background Colors
+//   // bg1: colors.white,
+//   // bg2: colors.blue100,
+//   // bg3: "#f2f2f2",
 
-  // // Text Colors
-  // text1: string,
-  // text2: string,
-  // text3:  string,
+//   // text1: colors.black,
+//   // text2: "#6b707e",
+//   // text3:  "#cfdbf2",
 
-  // Button Colors
+//   // // Button Colors
 
-  // btn1: string,
-  // btn1Press: string,
-  // btn2: string,
-  // btn2Press: string,
-  // btnDisabled: string,
+//   // btn1: colors.blue500,
+//   // btn1Press: "#001352",
+//   // btn2: colors.success500,
+//   // btn2Press: "#02684E",
+//   // btnDisabled: "#bdbdbd",
 
-  // // Disabled Colors
-  // disable1: string,
-  // disable2: string,
-}
+//   // // Disabled Colors
+//   // disable1: colors.grey500,
+//   // disable2: colors.grey200,
 
-export const DefaultColorsPallete = {
-
-  main: colors.blue500,
-  subtle: "#e7edff",
-  header: colors.white,
-
-  // Icon Background Colors
-
-  // icon1: `${colors.blue500}, #25a6ee`,
-  // icon2: `#1fdeea, ${colors.success500}`,
-  // icon3:  "#85d9ef, #3fadfc",
-
-
-  // Background Colors
-  // bg1: colors.white,
-  // bg2: colors.blue100,
-  // bg3: "#f2f2f2",
-
-  // text1: colors.black,
-  // text2: "#6b707e",
-  // text3:  "#cfdbf2",
-
-  // // Button Colors
-
-  // btn1: colors.blue500,
-  // btn1Press: "#001352",
-  // btn2: colors.success500,
-  // btn2Press: "#02684E",
-  // btnDisabled: "#bdbdbd",
-
-  // // Disabled Colors
-  // disable1: colors.grey500,
-  // disable2: colors.grey200,
-
-  green: {
-    color: "#015249",
-    background: "#C8FACD",
-    highlightLight: "#53D62B",
-    highlightDark: "#2B4737",
-    midtone: "#53D62B",
-  },
-  yellow: { color: "#7A4F01", background: "#FFF7CC", midtone: "#FFC007" },
-  blue: { color: "#042979", background: "#D0F2FE", midtone: "#1990FF" },
-  red: {
-    color: "#7A0B2E",
-    background: "#FFE7D9",
-    highlightDark: "#463138",
-    highlightLight: "#FE4842",
-    midtone: "#FE4842",
-  },
-  default: { background: "#212B36", color: "#FFF", midtone: "#212B36" },
-  background: { dark: "#020028", light: "#550B40" },
-}
-
-
+//   // green: {
+//   //   color: "#015249",
+//   //   background: "#C8FACD",
+//   //   highlightLight: "#53D62B",
+//   //   highlightDark: "#2B4737",
+//   //   midtone: "#53D62B",
+//   // },
+//   // yellow: { color: "#7A4F01", background: "#FFF7CC", midtone: "#FFC007" },
+//   // blue: { color: "#042979", background: "#D0F2FE", midtone: "#1990FF" },
+//   // red: {
+//   //   color: "#7A0B2E",
+//   //   background: "#FFE7D9",
+//   //   highlightDark: "#463138",
+//   //   highlightLight: "#FE4842",
+//   //   midtone: "#FE4842",
+//   // },
+//   // default: { background: "#212B36", color: "#FFF", midtone: "#212B36" },
+//   // background: { dark: "#020028", light: "#550B40" },
+// };
 
 // export const createColorsPallette = (overrides: Partial<IColorsPallette> = {}): IColorsPallette => {
 //   return {
-   
+
 //     ...DefaultColorsPallete,
 //     ...overrides
 //   }
@@ -160,7 +130,7 @@ export const DefaultColorsPallete = {
 //   main: colors.red100,
 //   subtle: colors.red100,
 //   header: "#0e0f15",
-  
+
 //   icon1:  "#ff67ab , #cb2d74",
 //   icon2: "#cbb22d , #cb492d",
 //   icon3: "#e30cc1 , #ee2525",
@@ -175,5 +145,7 @@ export const DefaultColorsPallete = {
 
 // })
 
-
-export const shadow = "0 0 16px rgb(58 78 88 / 5%)";
+export const shadow = {
+  depth1: "0 0 16px rgb(58 78 88 / 5%)",
+  depth2: "0px 4px 16px rgba(58, 78, 88, 0.15)",
+};

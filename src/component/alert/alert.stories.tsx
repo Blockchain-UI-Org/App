@@ -31,5 +31,5 @@ InfoAlert.args = {
 export const WarningAlert = Template.bind({});
 WarningAlert.args = {
   message: 'You have 0 BTC in your wallet. You may want to deposit here.',
-  type: 'warning',
+  type: 'error',
 };

@@ -1,40 +1,38 @@
-import { FC } from 'react';
-import styled from 'styled-components';
-import { colors } from 'theme';
-const { blue100, success100, yellow100, error100, black, success500, warning500, error500 } =
-  colors;
+import { FC } from "react";
+import styled from "styled-components";
+import { t } from "theme";
 
-type TagType = 'neutral' | 'positive' | 'warning' | 'error';
+type TagType = "neutral" | "positive" | "warning" | "error";
 
-const BackgroundColor: { [key in TagType]: string } = {
-  neutral: blue100,
-  positive: success100,
-  warning: yellow100,
-  error: error100,
-};
+const BackgroundColor = {
+  neutral: "info",
+  positive: "success",
+  warning: "warning",
+  error: "error",
+} as const;
 
-const TextColor: { [key in TagType]: string } = {
-  neutral: black,
-  positive: success500,
-  warning: warning500,
-  error: error500,
-};
+const TextColor = {
+  neutral: "info",
+  positive: "success",
+  warning: "warning",
+  error: "error",
+} as const;
 
-type TagSize = 'small' | 'large';
+type TagSize = "small" | "large";
 
 const Padding: { [key in TagSize]: string } = {
-  small: '2px 12px',
-  large: '4px 16px',
+  small: "2px 12px",
+  large: "4px 16px",
 };
 
 const FontSize: { [key in TagSize]: string } = {
-  small: '14px',
-  large: '16px',
+  small: "14px",
+  large: "16px",
 };
 
 const LineHeight: { [key in TagSize]: string } = {
-  small: '20px',
-  large: '24px',
+  small: "20px",
+  large: "24px",
 };
 
 export interface TagProps extends React.HTMLAttributes<HTMLSpanElement> {
@@ -51,8 +49,8 @@ export const Tag: FC<TagProps> = ({ type, size, children, ...props }) => {
 };
 
 const TagWrapper = styled.span<{ type: TagType; size: TagSize }>`
-  background: ${({ type }) => BackgroundColor[type]};
-  color: ${({ type }) => TextColor[type]};
+  background: ${t(({ type, theme }) => theme.colors[BackgroundColor[type]].bg)};
+  color: ${t(({ type, theme }) => theme.colors[TextColor[type]].color)};
   border-radius: 39px;
   padding: ${({ size }) => Padding[size]};
   height: 1.5rem;

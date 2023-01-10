@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styled, {  css } from "styled-components";
-import { theme, useTheme  } from "theme";
+import { t, useTheme  } from "theme";
 
 export type FontWeightTypes = "regular" | "medium" | "bold";
 
@@ -37,7 +37,7 @@ const genStyles = (props: IFontProps) =>
   } as IFontProps);
 
 export const Typography: FC<ITypographyProps> = styled("p")`
-  font-family: ${theme.typography.common.fontFamily};
+  font-family: ${t(({theme}) => theme.typography.common.fontFamily)};
   font-size: 16px;
   line-height: 24px;
   font-weight: ${FONT_WEIGHTS.regular};

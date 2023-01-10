@@ -1,13 +1,13 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 import ReactApexChart from "react-apexcharts";
-import { colors, ThemeColor } from "theme/colors";
+import { ThemeInterface, useTheme } from "theme";
 
 interface SparkLineProps {
   chartData: number[];
   width?: string;
   height?: string;
-  color?: ThemeColor;
+  color?: keyof ThemeInterface["components"]["Chart"]["variants"];
   chartType?: "bar" | "line";
 }
 
@@ -18,8 +18,9 @@ export const SparkLine: FC<SparkLineProps> = ({
   color = "blue",
   chartType = "line",
 }) => {
+  const theme = useTheme();
   const chartOptions = {
-    colors: [colors[color]?.midtone, "#1990FF"],
+    colors: [theme.components.Chart.variants[color].midtone, theme.colors.info.midtone],
     chart: { animations: { enabled: true }, sparkline: { enabled: true } },
     stroke: { width: 2 },
     tooltip: {

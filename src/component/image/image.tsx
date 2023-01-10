@@ -1,19 +1,19 @@
 import { FC, ImgHTMLAttributes, useEffect, useState } from "react";
 import styled from "styled-components";
 import * as availableImages from "../static/images";
-import { legacyColors, IColorsPallette } from "theme/colors";
+
 
 export interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
   name: string;
   src?: string;
   width?: string;
   height?: string;
-  bgColor?: keyof typeof legacyColors | keyof  IColorsPallette;
+  bgColor?: string;
   iconType?: "crypto" | "regular";
 }
 
 interface StyledImageProps {
-  bgColor?: keyof typeof legacyColors | keyof  IColorsPallette;
+  bgColor?: string;
 }
 const StyledImage = styled.img<StyledImageProps>`
   width: ${({ width }) => width || "auto"};

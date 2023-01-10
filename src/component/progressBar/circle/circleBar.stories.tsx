@@ -8,7 +8,8 @@ export default {
   title: "Indicators/ProgressBar/Circle",
   argTypes: {
     themeColor: {
-      options: ["green", "yellow", "red", "blue"],
+      defaultValue: "default",
+      options: ["green", "yellow", "red", "blue", "default"],
       control: { type: "select" }, // Automatically inferred when 'options' is defined
     },
   },

@@ -2,8 +2,7 @@ import { useState, useRef, useEffect, memo, ReactNode, ReactElement, CSSProperti
 import styled, { css } from 'styled-components';
 import { useClickAway, useWindowSize } from 'react-use';
 import { motion, AnimatePresence } from 'framer-motion';
-import {  colors } from 'theme';
-import { theme } from "theme";
+import { t } from 'theme';
 
 import { Icon } from '../icon/icon';
 import Image from '../image/image';
@@ -62,10 +61,10 @@ interface ItemProps extends HoverProps {
   minHeight: string;
 }
 
-const { grey300, grey500, } = colors;
+
 const Hover = css<HoverProps>`
-  background-color: ${({ showHover, theme }) =>
-    showHover ? theme.colors['subtle'] : theme.colors['bg1']};
+  background-color: ${t(({ showHover, theme }) =>
+    showHover ? theme.colors.default.bg : theme.colors.common.white)};
   border-top-right-radius: ${props => (props.first ? '10px' : '0px')};
   border-top-left-radius: ${props => (props.first ? '10px' : '0px')};
   border-bottom-right-radius: ${props => (props.last ? '10px' : '0px')};
@@ -94,21 +93,21 @@ const Wrapper = styled.div`
 `;
 
 const Display = styled(Inline)<{ withBorder: boolean; showShadow: boolean }>`
-  background-color: ${({ theme }) => theme.colors['bg2']};
-  border: ${({ withBorder }) => (withBorder ? `1px solid ${grey300}` : 'none')};
+  background-color: ${t(({ theme }) => theme.colors.info.bg)};
+  border: ${t(({ withBorder, theme }) => (withBorder ? `1px solid ${theme.colors.grey[300]}` : 'none'))};
   border-radius: 100px;
-  box-shadow: ${({ showShadow }) => (showShadow ? '0px 4px 16px rgba(58, 78, 88, 0.15)' : 'none')};
+  box-shadow: ${t(({ showShadow , theme}) => (showShadow ? theme.shadows.depth2 : 'none'))};
   cursor: pointer;
   &:hover {
-    background-color: ${theme.colors.subtle};
+    background-color: ${t(({theme}) => theme.colors.default.bg)};
   }
 `;
 
 const Card = styled.div<{ position: Position }>`
   position: relative;
-  background-color: ${({ theme }) => theme.colors['bg1']};
+  background-color: ${t(({ theme }) => theme.colors.common.white)};
   border-radius: 12px;
-  box-shadow: 0px 0px 16px rgba(58, 78, 88, 0.05);
+  box-shadow: ${t(({theme}) => theme.shadows.depth1)};
 `;
 
 const Options = styled(Card)<{ position: Position; minWidth: string }>`
@@ -120,7 +119,7 @@ const Options = styled(Card)<{ position: Position; minWidth: string }>`
 
 const Item = styled(Inline)<ItemProps>`
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-  color: ${({ disabled, theme }) => (disabled ? grey500 : theme.colors['text1'])};
+  color: ${t(({ disabled, theme }) => (disabled ? theme.colors.grey[500] : theme.colors.default.color))};
   min-height: ${({ minHeight }) => minHeight};
   &:hover {
     ${Hover}
