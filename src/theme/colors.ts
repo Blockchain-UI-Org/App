@@ -1,5 +1,3 @@
-
-
 export const colors = {
   white: "#FFFFFF",
   black: "#2F2F2F",
@@ -62,7 +60,5 @@ export const colors = {
   error500: "#EB5757",
   error900: "#782424",
 };
-
-
 
 

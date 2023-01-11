@@ -35,19 +35,19 @@ export const Notification: FunctionComponent<NotificationProps> = ({
 };
 
 const NotificationWrapper = styled.div<{ type: NotificationType }>`
-  color: ${withTheme(({ theme }) => theme.colors.common.white)};
+  color: ${withTheme(({ theme }) => theme.palette.common.white)};
   font-size: 16px;
   width: 280px;
   margin: 0 auto;
   background-color: ${withTheme(({ type, theme }) => {
     return css`
-      ${type === "loading" && theme.colors.common.white}
-      ${type === "negative" && theme.colors.error.color}
-      ${type === "positive" && theme.colors.success.color}
+      ${type === "loading" && theme.palette.common.white}
+      ${type === "negative" && theme.palette.error.color}
+      ${type === "positive" && theme.palette.success.color}
     `;
   })};
   color: ${withTheme(({ type, theme }) =>
-    type === "loading" ? theme.colors.common.black : theme.colors.common.white
+    type === "loading" ? theme.palette.common.black : theme.palette.common.white
   )};
   border-radius: 8px;
   padding: 16px;

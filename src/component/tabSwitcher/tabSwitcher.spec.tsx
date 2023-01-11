@@ -5,8 +5,8 @@ import { mockedTabs } from './mockedTabs';
 import { TabSwitcher } from './tabSwitcher';
 import { DefaultTheme } from 'theme';
 
-const grey700= DefaultTheme.colors.grey[700];
-const black = DefaultTheme.colors.common.black;
+const grey700= DefaultTheme.palette.grey[700];
+const black = DefaultTheme.palette.common.black;
 
 describe('Tab Switcher', () => {
   it('successfully creates a Tab Switcher', () => {

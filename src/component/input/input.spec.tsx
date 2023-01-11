@@ -3,8 +3,8 @@ import '@testing-library/jest-dom';
 import { Input } from './input';
 import { DefaultTheme } from 'theme';
 
-const error500 = DefaultTheme.colors.error.color;
-const blue500= DefaultTheme.colors.info.midtone;
+const error500 = DefaultTheme.palette.error.color;
+const blue500= DefaultTheme.palette.info.midtone;
 
 
 describe('Input', () => {

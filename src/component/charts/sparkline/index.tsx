@@ -20,7 +20,7 @@ export const SparkLine: FC<SparkLineProps> = ({
 }) => {
   const theme = useTheme();
   const chartOptions = {
-    colors: [theme.components.Chart.variants[color].midtone, theme.colors.info.midtone],
+    colors: [theme.components.Chart.variants[color].midtone, theme.palette.info.midtone],
     chart: { animations: { enabled: true }, sparkline: { enabled: true } },
     stroke: { width: 2 },
     tooltip: {

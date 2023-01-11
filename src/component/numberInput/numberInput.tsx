@@ -74,7 +74,7 @@ export const NumberInput: FunctionComponent<NumberInputProps> = ({
 
 const InputContainer = styled.div<{ hasError: boolean }>`
   display: flex;
-  border: 1px solid ${withTheme(({theme}) => theme.colors.grey[300])};
+  border: 1px solid ${withTheme(({theme}) => theme.palette.grey[300])};
   border-radius: 8px;
   width: auto;
   align-items: center;
@@ -85,14 +85,14 @@ const InputContainer = styled.div<{ hasError: boolean }>`
   box-sizing: border-box;
 
   &:focus-within {
-    border-color: ${withTheme(({theme}) => theme.colors.grey[300])};
-    color: ${withTheme(({theme}) => theme.colors.common.black)};
+    border-color: ${withTheme(({theme}) => theme.palette.grey[300])};
+    color: ${withTheme(({theme}) => theme.palette.common.black)};
   }
 
   ${({ hasError }) =>
     hasError &&
     css`
-      border-color: ${withTheme(({theme}) => theme.colors.error.color)};
+      border-color: ${withTheme(({theme}) => theme.palette.error.color)};
     `}
 `;
 
@@ -102,8 +102,8 @@ const CustomInput = styled(StyledInput)`
 `;
 
 const MaxButton = styled.button`
-  background-color: ${withTheme(({theme}) => theme.colors.info.bg)};
-  color: ${withTheme(({theme}) => theme.colors.info.midtone)};
+  background-color: ${withTheme(({theme}) => theme.palette.info.bg)};
+  color: ${withTheme(({theme}) => theme.palette.info.midtone)};
   border: none;
   border-radius: 20px;
   height: 24px;
@@ -117,7 +117,7 @@ const MaxButton = styled.button`
 const Balance = styled.div<{ size: "regular" | "small" }>`
   font-size: ${({ size }) => (size === "regular" ? "16px" : "14px")};
   font-weight: 400;
-  color: ${withTheme(({theme}) => theme.colors.grey[700])};;
+  color: ${withTheme(({theme}) => theme.palette.grey[700])};;
   font-family: inherit;
 `;
 
