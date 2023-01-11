@@ -46,7 +46,7 @@ const Percent = styled.div`
   position: fixed;
   top: 15%;
   left: 5%;
-  color: white;
+  color: ${withTheme(({theme}) => theme.colors.common.white)};
   font-size: 20px;
   z-index: 1;
 `;
