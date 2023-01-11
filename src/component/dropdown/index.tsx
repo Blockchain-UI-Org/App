@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, memo, ReactNode, ReactElement, CSSProperti
 import styled, { css } from 'styled-components';
 import { useClickAway, useWindowSize } from 'react-use';
 import { motion, AnimatePresence } from 'framer-motion';
-import { t } from 'theme';
+import { withTheme } from 'theme';
 
 import { Icon } from '../icon/icon';
 import Image from '../image/image';
@@ -63,7 +63,7 @@ interface ItemProps extends HoverProps {
 
 
 const Hover = css<HoverProps>`
-  background-color: ${t(({ showHover, theme }) =>
+  background-color: ${withTheme(({ showHover, theme }) =>
     showHover ? theme.colors.default.bg : theme.colors.common.white)};
   border-top-right-radius: ${props => (props.first ? '10px' : '0px')};
   border-top-left-radius: ${props => (props.first ? '10px' : '0px')};
@@ -93,21 +93,21 @@ const Wrapper = styled.div`
 `;
 
 const Display = styled(Inline)<{ withBorder: boolean; showShadow: boolean }>`
-  background-color: ${t(({ theme }) => theme.colors.info.bg)};
-  border: ${t(({ withBorder, theme }) => (withBorder ? `1px solid ${theme.colors.grey[300]}` : 'none'))};
+  background-color: ${withTheme(({ theme }) => theme.colors.info.bg)};
+  border: ${withTheme(({ withBorder, theme }) => (withBorder ? `1px solid ${theme.colors.grey[300]}` : 'none'))};
   border-radius: 100px;
-  box-shadow: ${t(({ showShadow , theme}) => (showShadow ? theme.shadows.depth2 : 'none'))};
+  box-shadow: ${withTheme(({ showShadow , theme}) => (showShadow ? theme.shadows.depth2 : 'none'))};
   cursor: pointer;
   &:hover {
-    background-color: ${t(({theme}) => theme.colors.default.bg)};
+    background-color: ${withTheme(({theme}) => theme.colors.default.bg)};
   }
 `;
 
 const Card = styled.div<{ position: Position }>`
   position: relative;
-  background-color: ${t(({ theme }) => theme.colors.common.white)};
+  background-color: ${withTheme(({ theme }) => theme.colors.common.white)};
   border-radius: 12px;
-  box-shadow: ${t(({theme}) => theme.shadows.depth1)};
+  box-shadow: ${withTheme(({theme}) => theme.shadows.depth1)};
 `;
 
 const Options = styled(Card)<{ position: Position; minWidth: string }>`
@@ -119,7 +119,7 @@ const Options = styled(Card)<{ position: Position; minWidth: string }>`
 
 const Item = styled(Inline)<ItemProps>`
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-  color: ${t(({ disabled, theme }) => (disabled ? theme.colors.grey[500] : theme.colors.default.color))};
+  color: ${withTheme(({ disabled, theme }) => (disabled ? theme.colors.grey[500] : theme.colors.default.color))};
   min-height: ${({ minHeight }) => minHeight};
   &:hover {
     ${Hover}

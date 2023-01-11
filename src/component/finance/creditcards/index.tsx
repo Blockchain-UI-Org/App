@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 import { Icon } from "@iconify/react";
 import styled from "styled-components";
 import Image from "../../image/image";
-import { t, ThemeInterface } from "theme";
+import { withTheme, ThemeInterface } from "theme";
 import { CryptoIcon } from "../../icon/icon";
 import { CryptoSymbols } from "../../static/types";
 
@@ -89,10 +89,10 @@ const CardItemStyle = styled.div<CardStyle>`
   justify-content: space-between;
   background-image: url("/assets/carbon_fiber1.webp");
   background-size: cover;
-  background: ${t(({ $colorMode, theme }) => theme.components.CreditCard.variants[$colorMode].background)};
+  background: ${withTheme(({ $colorMode, theme }) => theme.components.CreditCard.variants[$colorMode].background)};
   height: 300px;
   width: 525px;
-  color: ${t(({ $colorMode, theme }) => theme.components.CreditCard.variants[$colorMode].color)};
+  color: ${withTheme(({ $colorMode, theme }) => theme.components.CreditCard.variants[$colorMode].color)};
   border-radius: 20px;
   padding: 20px;
   font-family: Public Sans;

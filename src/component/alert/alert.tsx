@@ -2,7 +2,7 @@ import { FC, ReactNode } from "react";
 import styled from "styled-components";
 import { Icon } from "../icon/icon";
 import { Inline, Stack } from "component/layout";
-import { t } from "theme";
+import { withTheme } from "theme";
 import { Paragraph } from "component/typography";
 
 export interface AlertProps {
@@ -13,12 +13,12 @@ export interface AlertProps {
 const Container = styled(Inline)`
   border-radius: 8px;
   &.info {
-    background-color: ${t(({ theme }) => theme.colors.info.bg)};
-    color: ${t(({ theme }) => theme.colors.info.color)};
+    background-color: ${withTheme(({ theme }) => theme.colors.info.bg)};
+    color: ${withTheme(({ theme }) => theme.colors.info.color)};
   }
   &.error {
-    background-color: ${t(({ theme }) => theme.colors.error.bg)};
-    color: ${t(({ theme }) => theme.colors.error.color)};
+    background-color: ${withTheme(({ theme }) => theme.colors.error.bg)};
+    color: ${withTheme(({ theme }) => theme.colors.error.color)};
   }
 `;
 

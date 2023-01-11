@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 import styled, { css } from 'styled-components';
-import { t } from 'theme';
+import { withTheme } from 'theme';
 
 
 export interface TabProps {
@@ -39,7 +39,7 @@ const TabWrapper = styled.div<{
   border-radius: 100px;
   min-width: 48px;
   width: ${({ isText }) => (isText ? '204px' : 'fit-content')};
-  color: ${t(({ isActive, theme }) => (isActive ? theme.colors.common.black : theme.colors.grey[700]))};
+  color: ${withTheme(({ isActive, theme }) => (isActive ? theme.colors.common.black : theme.colors.grey[700]))};
   display: flex;
   justify-content: center;
   align-items: center;

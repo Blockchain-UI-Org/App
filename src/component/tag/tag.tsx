@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styled from "styled-components";
-import { t } from "theme";
+import { withTheme } from "theme";
 
 type TagType = "neutral" | "positive" | "warning" | "error";
 
@@ -49,8 +49,8 @@ export const Tag: FC<TagProps> = ({ type, size, children, ...props }) => {
 };
 
 const TagWrapper = styled.span<{ type: TagType; size: TagSize }>`
-  background: ${t(({ type, theme }) => theme.colors[BackgroundColor[type]].bg)};
-  color: ${t(({ type, theme }) => theme.colors[TextColor[type]].color)};
+  background: ${withTheme(({ type, theme }) => theme.colors[BackgroundColor[type]].bg)};
+  color: ${withTheme(({ type, theme }) => theme.colors[TextColor[type]].color)};
   border-radius: 39px;
   padding: ${({ size }) => Padding[size]};
   height: 1.5rem;

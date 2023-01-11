@@ -1,6 +1,6 @@
 import { FunctionComponent, useState } from 'react';
 import styled from 'styled-components';
-import { t } from 'theme';
+import { withTheme } from 'theme';
 import { Tab } from './tab';
 
 
@@ -61,7 +61,7 @@ const Tabs = styled.div`
   position: relative;
   padding: 4px;
   border-radius: 100px;
-  background-color: ${t(({theme}) => theme.colors.grey[100])};
+  background-color: ${withTheme(({theme}) => theme.colors.grey[100])};
   display: flex;
   width: auto;
 `;
@@ -71,7 +71,7 @@ const Glider = styled.span<{ tabCount: number }>`
   display: flex;
   height: calc(100% - (8px));
   width: ${({ tabCount }) => `calc((100% - 8px) / ${tabCount})`};
-  background-color: ${t(({theme}) => theme.colors.common.white)};
+  background-color: ${withTheme(({theme}) => theme.colors.common.white)};
   z-index: 1;
   border-radius: 100px;
   transition: 0.25s ease-out;

@@ -1,6 +1,6 @@
 import React, { FC, ReactElement } from "react";
 import styled, { css } from "styled-components";
-import { t, ThemeInterface } from "theme";
+import { withTheme, ThemeInterface } from "theme";
 
 import { formatNumber } from "../../../utils/format";
 
@@ -39,7 +39,7 @@ const Wrapper = styled.div<SliderProps>`
     width: 100%;
     height: 6px;
     border-radius: 24px;
-    ${t(
+    ${withTheme(
       ({ theme }) => css`
         background: linear-gradient(
           90deg,
@@ -63,16 +63,16 @@ const Wrapper = styled.div<SliderProps>`
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: ${t(({ theme }) => theme.colors.common.white)};
+    background: ${withTheme(({ theme }) => theme.colors.common.white)};
     cursor: pointer;
-    border: 2px solid ${t(({ theme }) => theme.colors.success.color)};
+    border: 2px solid ${withTheme(({ theme }) => theme.colors.success.color)};
   }
 
   .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: ${t(({ theme }) => theme.colors.success.color)};
+    background: ${withTheme(({ theme }) => theme.colors.success.color)};
     cursor: pointer;
   }
 `;
@@ -82,13 +82,13 @@ const StyledValue = styled.div`
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  color: ${t(({ theme }) => theme.colors.common.black)};
+  color: ${withTheme(({ theme }) => theme.colors.common.black)};
 `;
 
 const ErrorMessage = styled.div`
   width: 416px;
   height: 80px;
-  color: ${t(({ theme }) => theme.colors.error.color)};
+  color: ${withTheme(({ theme }) => theme.colors.error.color)};
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -96,11 +96,11 @@ const ErrorMessage = styled.div`
   margin-top: 28px;
   /* Error/Error 100 */
 
-  background: ${t(({ theme }) => theme.colors.error.bg)};
+  background: ${withTheme(({ theme }) => theme.colors.error.bg)};
   border-radius: 8px;
 
   a {
-    color: ${t(({ theme }) => theme.colors.info.midtone)};
+    color: ${withTheme(({ theme }) => theme.colors.info.midtone)};
   }
 `;
 

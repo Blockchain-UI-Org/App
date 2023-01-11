@@ -10,7 +10,7 @@ import {
 } from "../input/input";
 import { CryptoIcon } from "../icon/icon";
 import { CryptoSymbols } from "../static/types/crypto";
-import { t } from "theme";
+import { withTheme } from "theme";
 
 // const { black, grey300, blue100, blue500, error500, grey700 } = colors;
 
@@ -74,7 +74,7 @@ export const NumberInput: FunctionComponent<NumberInputProps> = ({
 
 const InputContainer = styled.div<{ hasError: boolean }>`
   display: flex;
-  border: 1px solid ${t(({theme}) => theme.colors.grey[300])};
+  border: 1px solid ${withTheme(({theme}) => theme.colors.grey[300])};
   border-radius: 8px;
   width: auto;
   align-items: center;
@@ -85,14 +85,14 @@ const InputContainer = styled.div<{ hasError: boolean }>`
   box-sizing: border-box;
 
   &:focus-within {
-    border-color: ${t(({theme}) => theme.colors.grey[300])};
-    color: ${t(({theme}) => theme.colors.common.black)};
+    border-color: ${withTheme(({theme}) => theme.colors.grey[300])};
+    color: ${withTheme(({theme}) => theme.colors.common.black)};
   }
 
   ${({ hasError }) =>
     hasError &&
     css`
-      border-color: ${t(({theme}) => theme.colors.error.color)};
+      border-color: ${withTheme(({theme}) => theme.colors.error.color)};
     `}
 `;
 
@@ -102,8 +102,8 @@ const CustomInput = styled(StyledInput)`
 `;
 
 const MaxButton = styled.button`
-  background-color: ${t(({theme}) => theme.colors.info.bg)};
-  color: ${t(({theme}) => theme.colors.info.midtone)};
+  background-color: ${withTheme(({theme}) => theme.colors.info.bg)};
+  color: ${withTheme(({theme}) => theme.colors.info.midtone)};
   border: none;
   border-radius: 20px;
   height: 24px;
@@ -117,7 +117,7 @@ const MaxButton = styled.button`
 const Balance = styled.div<{ size: "regular" | "small" }>`
   font-size: ${({ size }) => (size === "regular" ? "16px" : "14px")};
   font-weight: 400;
-  color: ${t(({theme}) => theme.colors.grey[700])};;
+  color: ${withTheme(({theme}) => theme.colors.grey[700])};;
   font-family: inherit;
 `;
 
