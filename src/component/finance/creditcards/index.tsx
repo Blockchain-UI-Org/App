@@ -41,10 +41,7 @@ const CreditCard: FC<CreditCardType> = ({
               "*******"
             )}
           </div>
-          <Icon
-            width={20}
-            icon={showBalance ? "eva:eye-fill" : "eva:eye-off-fill"}
-          />
+          <Icon width={20} icon={showBalance ? "eva:eye-fill" : "eva:eye-off-fill"} />
         </BalanceWrapper>
       </div>
       <CardNumber>
@@ -65,10 +62,7 @@ const CreditCard: FC<CreditCardType> = ({
           <Info>
             <div> {showCvv ? cvv : "***"}</div>
             <Cvv onClick={() => setShowCvv(!showCvv)}>
-              <Icon
-                width={20}
-                icon={showCvv ? "eva:eye-fill" : "eva:eye-off-fill"}
-              />
+              <Icon width={20} icon={showCvv ? "eva:eye-fill" : "eva:eye-off-fill"} />
             </Cvv>
           </Info>
         </div>
@@ -93,16 +87,12 @@ const CardItemStyle = styled.div<CardStyle>`
     $colorMode === "default"
       ? css``
       : css`
-          background: ${theme.components.CreditCard.variants[$colorMode]
-            .background};
+          background: ${theme.components.CreditCard.variants[$colorMode].background};
         `
   )};
   height: 300px;
   width: 525px;
-  color: ${withTheme(
-    ({ $colorMode, theme }) =>
-      theme.components.CreditCard.variants[$colorMode].color
-  )};
+  color: ${withTheme(({ $colorMode, theme }) => theme.components.CreditCard.variants[$colorMode].color)};
   border-radius: 20px;
   padding: 20px;
   font-family: Public Sans;

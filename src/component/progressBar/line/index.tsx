@@ -11,9 +11,7 @@ export interface ProgressBarProps {
   showValue?: boolean;
   errorMessage?: string | ReactElement;
   title: string;
-  themeColor?:
-    | keyof ThemeInterface["components"]["ProgressBar"]["variants"]
-    | "gradient";
+  themeColor?: keyof ThemeInterface["components"]["ProgressBar"]["variants"] | "gradient";
   $percent?: number;
 }
 
@@ -24,9 +22,7 @@ const Container = styled.div`
 `;
 
 interface SliderProps {
-  $colorMode:
-    | keyof ThemeInterface["components"]["ProgressBar"]["variants"]
-    | "gradient";
+  $colorMode: keyof ThemeInterface["components"]["ProgressBar"]["variants"] | "gradient";
 }
 
 const Wrapper = styled.div<SliderProps>`
@@ -52,8 +48,7 @@ const Wrapper = styled.div<SliderProps>`
             );
           `
         : css`
-            background: ${theme.components.ProgressBar.variants[$colorMode]
-              .midtone};
+            background: ${theme.components.ProgressBar.variants[$colorMode].midtone};
           `
     )};
 
@@ -139,9 +134,7 @@ const ProgressBar: FC<ProgressBarProps> = ({
       />
     </Wrapper>
     {errorMessage && (
-      <ErrorMessage data-testid="gradient-progress-bar-error-msg">
-        {errorMessage}
-      </ErrorMessage>
+      <ErrorMessage data-testid="gradient-progress-bar-error-msg">{errorMessage}</ErrorMessage>
     )}
   </Container>
 );
