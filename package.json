@@ -1,7 +1,7 @@
 {
-  "name": "app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "blockchain-ui",
+  "version": "0.0.1",
+  "private": false,
   "dependencies": {
     "@mui/material": "^5.11.0",
     "@storybook/theming": "^6.5.14",
@@ -95,6 +95,21 @@
     "storybook": "^6.5.13",
     "webpack": "^5.75.0"
   },
-  "readme": "ERROR: No README data found!",
-  "_id": "app@0.1.0"
+  "description": "A component library for blockchain apps.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blockchain-UI-Org/Library.git"
+  },
+  "keywords": [
+    "blockchain",
+    "web3",
+    "ui"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Blockchain-UI-Org/Library/issues"
+  },
+  "homepage": "https://github.com/Blockchain-UI-Org/Library#readme"
 }
