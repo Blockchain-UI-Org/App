@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { t, ThemeInterface } from "theme";
+import { withTheme, ThemeInterface } from "theme";
 import { colors } from "theme/colors";
 
 export interface CircleBarProps {
@@ -46,7 +46,7 @@ const Percent = styled.div`
   position: fixed;
   top: 15%;
   left: 5%;
-  color: white;
+  color: ${withTheme(({theme}) => theme.colors.common.white)};
   font-size: 20px;
   z-index: 1;
 `;
@@ -60,7 +60,7 @@ export const CircleProgressBarBase = styled.div<CircleBarBaseProps>`
     --dot-diameter: 100%;
     --circle-border-width: 4px;
     --default-color: #545454;
-    --completion-color: ${t(
+    --completion-color: ${withTheme(
       ({ $colorMode, theme }) =>
         theme.components.ProgressBar.variants[$colorMode].midtone
     )};

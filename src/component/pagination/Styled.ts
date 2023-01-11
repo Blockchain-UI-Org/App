@@ -1,6 +1,6 @@
 import Flex from "../flex";
 import styled from "styled-components";
-import { t } from "theme";
+import { withTheme } from "theme";
 
 interface PaginationProps {
   $disablePrev?: boolean;
@@ -28,16 +28,16 @@ export const Pagination = styled(Flex)<PaginationProps>`
     :hover {
       cursor: ${({ $disablePrev }: any) =>
         $disablePrev ? "not-allowed" : "pointer"};
-      background-color: ${t(({ $disablePrev, theme }) =>
+      background-color: ${withTheme(({ $disablePrev, theme }) =>
         $disablePrev ? "inherit" : theme.colors.info.midtone
       )};
     }
 
-    color: ${t(({ $disablePrev, theme }) =>
+    color: ${withTheme(({ $disablePrev, theme }) =>
       $disablePrev ? theme.colors.grey[700] : theme.colors.grey[200]
     )};
 
-    border: ${t(({ $disablePrev, theme }) =>
+    border: ${withTheme(({ $disablePrev, theme }) =>
       $disablePrev
         ? "2px solid inherit"
         : `2px solid ${theme.colors.info.midtone}`
@@ -53,16 +53,16 @@ export const Pagination = styled(Flex)<PaginationProps>`
     :hover {
       cursor: ${({ $disableNext }: any) =>
         $disableNext ? "not-allowed" : "pointer"};
-      background-color: ${t(({ $disableNext, theme }) =>
+      background-color: ${withTheme(({ $disableNext, theme }) =>
         $disableNext ? "inherit" : theme.colors.info.midtone
       )};
     }
 
-    color: ${t(({ $disableNext, theme }) =>
+    color: ${withTheme(({ $disableNext, theme }) =>
       $disableNext ? theme.colors.grey[700] : theme.colors.grey[200]
     )};
 
-    border: ${t(({ $disableNext, theme }) =>
+    border: ${withTheme(({ $disableNext, theme }) =>
       $disableNext
         ? "2px solid inherit"
         : `2px solid ${theme.colors.info.midtone}`
@@ -78,7 +78,7 @@ export const PageButton = styled(Flex)<PageButtonProps>`
   display: flex;
   justify-content: center;
   width: 30px;
-  background-color: ${t(({ $highlight, theme }) => ($highlight ? theme.colors.info.midtone : "inherit"))};
+  background-color: ${withTheme(({ $highlight, theme }) => ($highlight ? theme.colors.info.midtone : "inherit"))};
   border-radius: 3px;
   margin: 0;
 `;

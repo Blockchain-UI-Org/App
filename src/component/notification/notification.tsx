@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import styled, { css } from "styled-components";
-import { t } from "theme";
+import { withTheme } from "theme";
 
 import Image from "../image/image";
 import { regularIcons } from "../static/images/icons/regular/index";
@@ -35,18 +35,18 @@ export const Notification: FunctionComponent<NotificationProps> = ({
 };
 
 const NotificationWrapper = styled.div<{ type: NotificationType }>`
-  color: ${t(({ theme }) => theme.colors.common.white)};
+  color: ${withTheme(({ theme }) => theme.colors.common.white)};
   font-size: 16px;
   width: 280px;
   margin: 0 auto;
-  background-color: ${t(({ type, theme }) => {
+  background-color: ${withTheme(({ type, theme }) => {
     return css`
       ${type === "loading" && theme.colors.common.white}
       ${type === "negative" && theme.colors.error.color}
       ${type === "positive" && theme.colors.success.color}
     `;
   })};
-  color: ${t(({ type, theme }) =>
+  color: ${withTheme(({ type, theme }) =>
     type === "loading" ? theme.colors.common.black : theme.colors.common.white
   )};
   border-radius: 8px;

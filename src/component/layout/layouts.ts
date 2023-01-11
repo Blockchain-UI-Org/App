@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import type { CSSProperties } from 'react';
-import { t } from 'theme';
+import { withTheme } from 'theme';
 
 interface StackProps {
   justifyContent?: CSSProperties['justifyContent'];
@@ -45,7 +45,7 @@ const Inline = styled.div<InlineProps>`
 `;
 
 const Responsive = styled(Inline)`
-  ${t(({ theme }) => theme.media.breakpoints.up.mobile)}
+  ${withTheme(({ theme }) => theme.media.breakpoints.up.mobile)}
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;

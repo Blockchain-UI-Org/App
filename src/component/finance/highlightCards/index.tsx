@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { t, ThemeInterface } from "theme";
+import { withTheme, ThemeInterface } from "theme";
 import { SparkLine } from "../../charts/sparkline";
 import { CryptoSymbols } from "../../static/types";
 import { CryptoIcon } from "../../icon/icon";
@@ -83,16 +83,16 @@ const Container = styled.div<CardProps>`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: ${t(({ $color, theme }) => theme.components.CreditCard.variants[$color].color)};
+  color: ${withTheme(({ $color, theme }) => theme.components.CreditCard.variants[$color].color)};
   width: ${({ $width }) => $width};
   height: ${({ $height }) => $height};
-  background-color: ${t(({ $color, theme }) => theme.components.CreditCard.variants[$color].background)};
+  background-color: ${withTheme(({ $color, theme }) => theme.components.CreditCard.variants[$color].background)};
   border-radius: 15px;
   padding: 25px;
 
   .title {
     font-size: 14px;
-    color: ${t(({ $color, theme }) => theme.components.CreditCard.variants[$color].color)};
+    color: ${withTheme(({ $color, theme }) => theme.components.CreditCard.variants[$color].color)};
   }
   .amount {
     display: flex;
@@ -107,7 +107,7 @@ const Container = styled.div<CardProps>`
     flex-direction: row;
     align-items: center;
     font-size: 14px;
-    color: ${t(({ $color, theme }) => theme.components.CreditCard.variants[$color].midtone)};
+    color: ${withTheme(({ $color, theme }) => theme.components.CreditCard.variants[$color].midtone)};
   }
 `;
 
@@ -133,22 +133,22 @@ const IconWrapperStyle = styled.div<WrapperStyleProps>`
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  background-color: ${t(({ $color, $positive, theme }) =>
+  background-color: ${withTheme(({ $color, $positive, theme }) =>
     $color === "default"
       ? theme.components.CreditCard.variants[$positive].highlightDark
       : theme.components.CreditCard.variants[$positive].background)};
-  color: ${t(({  $positive, theme }) => theme.components.CreditCard.variants[$positive].highlightLight)};
+  color: ${withTheme(({  $positive, theme }) => theme.components.CreditCard.variants[$positive].highlightLight)};
 `;
 
 interface T1Props {
   $color: string;
 }
 const T1 = styled.div<T1Props>`
-  color: ${t(({ $color, theme }) =>
+  color: ${withTheme(({ $color, theme }) =>
     $color === "default" ? theme.colors.grey[100] : theme.colors.grey[700])};
 `;
 
 const T2 = styled.div`
   margin-left: 5px;
-  color: ${t(({ theme }) => theme.colors.grey[500])};
+  color: ${withTheme(({ theme }) => theme.colors.grey[500])};
 `;
