@@ -24,7 +24,9 @@ const Container = styled.div`
 `;
 
 interface SliderProps {
-  $colorMode: Record<string, string> | string;
+  $colorMode:
+    | keyof ThemeInterface["components"]["ProgressBar"]["variants"]
+    | "gradient";
 }
 
 const Wrapper = styled.div<SliderProps>`
@@ -39,19 +41,22 @@ const Wrapper = styled.div<SliderProps>`
     width: 100%;
     height: 6px;
     border-radius: 24px;
-    ${withTheme(
-      ({ theme }) => css`
-        background: linear-gradient(
-          90deg,
-          ${theme.colors.secondary.color} 0%,
-          ${theme.colors.warning.color} 50%,
-          ${theme.colors.success.color} 100%
-        );
-      `
+    ${withTheme(({ theme, $colorMode }) =>
+      $colorMode === "gradient"
+        ? css`
+            background: linear-gradient(
+              90deg,
+              ${theme.colors.secondary.color} 0%,
+              ${theme.colors.warning.color} 50%,
+              ${theme.colors.success.color} 100%
+            );
+          `
+        : css`
+            background: ${theme.components.ProgressBar.variants[$colorMode]
+              .midtone};
+          `
     )};
-    background: ${({ $colorMode }) =>
-      //@ts-ignore
-      $colorMode !== "gradient" && $colorMode?.midtone};
+
     outline: none;
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;

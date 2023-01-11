@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
 import { Icon } from "@iconify/react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Image from "../../image/image";
 import { withTheme, ThemeInterface } from "theme";
 import { CryptoIcon } from "../../icon/icon";
@@ -89,10 +89,20 @@ const CardItemStyle = styled.div<CardStyle>`
   justify-content: space-between;
   background-image: url("/assets/carbon_fiber1.webp");
   background-size: cover;
-  background: ${withTheme(({ $colorMode, theme }) => theme.components.CreditCard.variants[$colorMode].background)};
+  ${withTheme(({ $colorMode, theme }) =>
+    $colorMode === "default"
+      ? css``
+      : css`
+          background: ${theme.components.CreditCard.variants[$colorMode]
+            .background};
+        `
+  )};
   height: 300px;
   width: 525px;
-  color: ${withTheme(({ $colorMode, theme }) => theme.components.CreditCard.variants[$colorMode].color)};
+  color: ${withTheme(
+    ({ $colorMode, theme }) =>
+      theme.components.CreditCard.variants[$colorMode].color
+  )};
   border-radius: 20px;
   padding: 20px;
   font-family: Public Sans;
@@ -100,12 +110,10 @@ const CardItemStyle = styled.div<CardStyle>`
 `;
 
 const Title = styled.div`
-  color: #ffffff;
   opacity: 0.7;
 `;
 
 const Subtitle = styled.div`
-  color: #ffffff;
   opacity: 0.7;
   font-weight: thin;
   font-size: 15px;
