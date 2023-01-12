@@ -1,6 +1,4 @@
 import React from "react";
-import { Client as Styletron } from "styletron-engine-monolithic";
-import { Provider as StyletronProvider } from "styletron-react";
 
 export const parameters = {
   backgrounds: {
@@ -30,7 +28,7 @@ export const parameters = {
   },
 };
 
-const engine = new Styletron();
+
 
 export const decorators = [
   (Story) => (
@@ -40,9 +38,7 @@ export const decorators = [
         fontWeight: "400",
       }}
     >
-      <StyletronProvider value={engine}>
-        <Story />
-      </StyletronProvider>
+      <Story />
     </div>
   ),
 ];

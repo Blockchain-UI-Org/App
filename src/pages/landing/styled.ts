@@ -11,6 +11,10 @@ export const Container = styled.div`
 export const IphoneMock = styled.img`
   height: 100%;
   width: auto;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 export const GetStarted = styled.div`
@@ -31,6 +35,7 @@ export const GetStarted = styled.div`
   }
 
   .rightSection {
+    display: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,6 +131,11 @@ export const Partners = styled.div`
     width: 100%;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 `;
 
@@ -133,6 +143,12 @@ export const Partner = styled.img`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 150px;
+
+  @media (max-width: 1200px) {
+    width: 100px;
+    margin: 20px 0px;
+  }
 `;
 
 export const Features = styled.div`
@@ -165,8 +181,14 @@ export const Features = styled.div`
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-
     color: #2d3766;
+
+    @media (max-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: grey;
+    }
   }
 
   .features {
@@ -175,6 +197,12 @@ export const Features = styled.div`
     justify-content: space-between;
     width: 100%;
     margin: 50px 0px;
+
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 0px;
+    }
   }
 `;
 
@@ -183,12 +211,19 @@ export const FeatureCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 280px;
+  width: 25%;
   height: 264px;
-  padding: 0 40px;
+  padding: 20px 40px;
+  margin: 0 10px;
 
   background: linear-gradient(180deg, #e7e8fb 0%, rgba(242, 244, 249, 0) 100%);
   border-radius: 10px;
+
+  @media (max-width: 1200px) {
+    background: #ffff;
+    height: 100px;
+    margin: 10px 0px;
+  }
 
   .header {
     display: flex;
@@ -215,6 +250,10 @@ export const FeatureCard = styled.div`
     line-height: 26px;
     color: #475569;
     opacity: 0.8;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 
   .featureIcon {
@@ -222,6 +261,10 @@ export const FeatureCard = styled.div`
     align-items: center;
     justify-content: left;
     width: 100%;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 `;
 
@@ -262,16 +305,25 @@ export const Components = styled.div`
   }
 
   .carousel {
-    margin: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+    }
+
     img {
-      width: 31%;
-      height: auto;
-      border-radius: 50%;
+      width: auto;
+      height: 400px;
+      border-radius: 15px;
+      margin: 100px 10px;
+
+      @media (max-width: 1200px) {
+        margin: 30px;
+      }
 
       :hover {
         cursor: pointer;

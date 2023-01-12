@@ -1,7 +1,8 @@
 import React from "react";
 import { ComponentMeta, Story } from "@storybook/react";
 import PieChart, { ChartProps } from "./";
-import { colors } from "../../theme/colors";
+import { DefaultTheme } from "theme";
+
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -27,5 +28,5 @@ Pie.args = {
     { label: "ETH", value: 53345 },
     { label: "USDC", value: 44313 },
   ],
-  chartColors: [colors.blue.color, colors.blue.midtone, colors.blue.background],
+  chartColors: [DefaultTheme.palette.info.midtone, DefaultTheme.palette.success.color, DefaultTheme.palette.info.bg],
 };

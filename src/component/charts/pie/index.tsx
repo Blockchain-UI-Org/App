@@ -2,15 +2,16 @@ import merge from "lodash/merge";
 import React, { FC } from "react";
 import ReactApexChart from "react-apexcharts";
 import styled from "styled-components";
-import { colors, legacyColors, ThemeColor } from "../../theme/colors";
-import BaseOptionChart from "../../theme/charts";
+import { ThemeInterface } from "theme";
+
 import { fNumber } from "../../../utils/number";
 
 export interface ChartProps {
-  color?: ThemeColor;
-  title?: string;
-  subtitle?: string;
-  chartLabels: string[];
+  // Unused Props
+  // color?: keyof ThemeInterface["components"]["Chart"]["variants"];
+  // title?: string;
+  // subtitle?: string;
+  // chartLabels: string[];
   chartData: {
     label: string;
     value: number;
@@ -55,14 +56,13 @@ const PieChart: FC<ChartProps> = ({ diameter, chartData, chartColors }) => {
         },
       },
     },
-  };
+  } as const;
 
   return (
     <Container>
       <ReactApexChart
         type="donut"
         series={chartSeries}
-        //@ts-ignore
         options={options}
         height={diameter}
       />

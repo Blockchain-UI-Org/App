@@ -2,19 +2,18 @@ import { Story, Meta } from "@storybook/react";
 import { ReactElement } from "react";
 import { useWindowSize } from "react-use";
 import styled from "styled-components";
-import { theme, themeWithDarkMode } from ".";
-import { MEDIA_WIDTHS } from "./media";
+import { DarkTheme, DefaultTheme } from "./theme";
+
 
 interface ThemeProps {
   darkTheme?: boolean;
   story?: "colors" | "fonts" | "breakpoints";
 }
 
-//@ts-ignore
-const colorDisplay = (darkTheme) => {
+const colorDisplay = (darkTheme: boolean) => {
   const display: ReactElement[] = [];
   for (const [key, value] of Object.entries(
-    darkTheme ? themeWithDarkMode().colors : theme.colors
+    darkTheme ? DarkTheme.palette : DefaultTheme.palette
   ).sort(function (a, b) {
     const nameA = a[0].toLowerCase(),
       nameB = b[0].toLowerCase();
@@ -24,19 +23,21 @@ const colorDisplay = (darkTheme) => {
     if (nameA > nameB) return 1;
     return 0; //default return value (no sorting)
   })) {
-    display.push(
-      <Wrapper>
-        {key}
-        <ColorBlock bColor={value} />
-      </Wrapper>
-    );
+    const names = Object.keys(value);
+    names.forEach((name) => {
+      display.push(
+        <Wrapper>
+          {key} - {name}
+          <ColorBlock bColor={(value as any)[name]} />
+        </Wrapper>
+      );
+    });
   }
   return display;
 };
 
-//@ts-ignore
-const breakPointsDisplay = (width) => {
-  const { small, medium } = MEDIA_WIDTHS;
+const breakPointsDisplay = (width: number) => {
+  const { small, medium } = DefaultTheme.media.devices;
   const getDeviceType = () => {
     if (width < small) {
       return "Mobile";

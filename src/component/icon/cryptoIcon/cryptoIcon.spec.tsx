@@ -4,7 +4,10 @@ import '@testing-library/jest-dom';
 import { CryptoIcon } from '../icon';
 import { cryptoIcons } from '../../static/images/icons/crypto';
 import { CryptoSymbols } from '../../static/types/crypto';
-import { getIconSize } from '../../theme/icons';
+import { DefaultTheme } from 'theme';
+
+
+const sizes = DefaultTheme.components.Icons.sizes;
 
 describe('Crypto Icon Components Tests...', () => {
   for (const [key] of Object.entries(cryptoIcons)) {
@@ -13,7 +16,7 @@ describe('Crypto Icon Components Tests...', () => {
       const icon = screen.getByTestId(`${key}-image`);
       expect(icon).toBeInTheDocument();
       expect(icon).toHaveAttribute('alt', `${key}-image`);
-      expect(icon).toHaveAttribute('width', getIconSize['crypto']['small']);
+      expect(icon).toHaveAttribute('width', sizes['crypto']['small']);
     });
   }
 
@@ -23,7 +26,7 @@ describe('Crypto Icon Components Tests...', () => {
       const icon = screen.getByTestId(`${key}-image`);
       expect(icon).toBeInTheDocument();
       expect(icon).toHaveAttribute('alt', `${key}-image`);
-      expect(icon).toHaveAttribute('width', getIconSize['crypto']['medium']);
+      expect(icon).toHaveAttribute('width', sizes['crypto']['medium']);
     });
   }
 
@@ -33,7 +36,7 @@ describe('Crypto Icon Components Tests...', () => {
       const icon = screen.getByTestId(`${key}-image`);
       expect(icon).toBeInTheDocument();
       expect(icon).toHaveAttribute('alt', `${key}-image`);
-      expect(icon).toHaveAttribute('width', getIconSize['crypto']['large']);
+      expect(icon).toHaveAttribute('width', sizes['crypto']['large']);
     });
   }
 });

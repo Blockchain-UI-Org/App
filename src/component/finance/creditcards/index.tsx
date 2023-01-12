@@ -1,8 +1,8 @@
 import React, { FC, useState } from "react";
 import { Icon } from "@iconify/react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Image from "../../image/image";
-import { colors, ThemeColor } from "../../theme/colors";
+import { withTheme, ThemeInterface } from "theme";
 import { CryptoIcon } from "../../icon/icon";
 import { CryptoSymbols } from "../../static/types";
 
@@ -11,7 +11,7 @@ interface CreditCardType {
   name?: string;
   expDate?: string;
   cvv?: string;
-  themeColor?: ThemeColor;
+  themeColor?: keyof ThemeInterface["components"]["CreditCard"]["variants"];
   currency?: CryptoSymbols;
 }
 
@@ -20,14 +20,14 @@ const CreditCard: FC<CreditCardType> = ({
   name = "Your Name",
   expDate = "01/01",
   cvv = "123",
-  themeColor,
+  themeColor = "default",
   currency,
 }) => {
   const [showBalance, setShowBalance] = useState(true);
   const [showCvv, setShowCvv] = useState(false);
 
   return (
-    <CardItemStyle $colorMode={themeColor && colors[themeColor]}>
+    <CardItemStyle $colorMode={themeColor}>
       <div>
         <Title>Balance</Title>
         <BalanceWrapper onClick={() => setShowBalance(!showBalance)}>
@@ -41,10 +41,7 @@ const CreditCard: FC<CreditCardType> = ({
               "*******"
             )}
           </div>
-          <Icon
-            width={20}
-            icon={showBalance ? "eva:eye-fill" : "eva:eye-off-fill"}
-          />
+          <Icon width={20} icon={showBalance ? "eva:eye-fill" : "eva:eye-off-fill"} />
         </BalanceWrapper>
       </div>
       <CardNumber>
@@ -65,10 +62,7 @@ const CreditCard: FC<CreditCardType> = ({
           <Info>
             <div> {showCvv ? cvv : "***"}</div>
             <Cvv onClick={() => setShowCvv(!showCvv)}>
-              <Icon
-                width={20}
-                icon={showCvv ? "eva:eye-fill" : "eva:eye-off-fill"}
-              />
+              <Icon width={20} icon={showCvv ? "eva:eye-fill" : "eva:eye-off-fill"} />
             </Cvv>
           </Info>
         </div>
@@ -80,7 +74,7 @@ const CreditCard: FC<CreditCardType> = ({
 export default CreditCard;
 
 interface CardStyle {
-  $colorMode?: Record<string, string>;
+  $colorMode: keyof ThemeInterface["components"]["CreditCard"]["variants"];
 }
 
 const CardItemStyle = styled.div<CardStyle>`
@@ -89,10 +83,16 @@ const CardItemStyle = styled.div<CardStyle>`
   justify-content: space-between;
   background-image: url("/assets/carbon_fiber1.webp");
   background-size: cover;
-  background: ${({ $colorMode }) => $colorMode?.background};
+  ${withTheme(({ $colorMode, theme }) =>
+    $colorMode === "default"
+      ? css``
+      : css`
+          background: ${theme.components.CreditCard.variants[$colorMode].background};
+        `
+  )};
   height: 300px;
   width: 525px;
-  color: ${({ $colorMode }) => ($colorMode ? $colorMode?.color : "#FFFFFF")};
+  color: ${withTheme(({ $colorMode, theme }) => theme.components.CreditCard.variants[$colorMode].color)};
   border-radius: 20px;
   padding: 20px;
   font-family: Public Sans;
@@ -100,12 +100,10 @@ const CardItemStyle = styled.div<CardStyle>`
 `;
 
 const Title = styled.div`
-  color: #fffff;
   opacity: 0.7;
 `;
 
 const Subtitle = styled.div`
-  color: #fffff;
   opacity: 0.7;
   font-weight: thin;
   font-size: 15px;

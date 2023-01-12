@@ -1,18 +1,11 @@
 import { FunctionComponent } from "react";
-import styled from "styled-components";
-import { theme } from "../theme";
+import styled, { css } from "styled-components";
+import { withTheme } from "theme";
+
 import Image from "../image/image";
 import { regularIcons } from "../static/images/icons/regular/index";
 
-const { success500, error500, white, black } = theme.colors;
-
 type NotificationType = "loading" | "positive" | "negative";
-
-const TypeToColor: { [key in NotificationType]: string } = {
-  loading: white,
-  positive: success500,
-  negative: error500,
-};
 
 type Icon = keyof typeof regularIcons;
 
@@ -42,12 +35,20 @@ export const Notification: FunctionComponent<NotificationProps> = ({
 };
 
 const NotificationWrapper = styled.div<{ type: NotificationType }>`
-  color: ${white};
+  color: ${withTheme(({ theme }) => theme.palette.common.white)};
   font-size: 16px;
   width: 280px;
   margin: 0 auto;
-  background-color: ${({ type }) => TypeToColor[type]};
-  color: ${({ type }) => (type === "loading" ? black : white)};
+  background-color: ${withTheme(({ type, theme }) => {
+    return css`
+      ${type === "loading" && theme.palette.common.white}
+      ${type === "negative" && theme.palette.error.color}
+      ${type === "positive" && theme.palette.success.color}
+    `;
+  })};
+  color: ${withTheme(({ type, theme }) =>
+    type === "loading" ? theme.palette.common.black : theme.palette.common.white
+  )};
   border-radius: 8px;
   padding: 16px;
   box-sizing: border-box;

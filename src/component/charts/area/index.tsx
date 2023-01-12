@@ -1,14 +1,14 @@
 import merge from "lodash/merge";
-import React, { FC } from "react";
+import React, { FC, useMemo } from "react";
 import ReactApexChart from "react-apexcharts";
 import styled from "styled-components";
-import { colors, ThemeColor } from "../../theme/colors";
-import BaseOptionChart from "../../theme/charts";
+import { createBasicChartOptions } from "utils";
 import { CryptoIcon } from "../../icon/icon";
 import { CryptoSymbols } from "../../static/types";
+import { ThemeInterface, useTheme } from "theme";
 
 export interface ChartProps {
-  color?: ThemeColor;
+  color?: keyof ThemeInterface["components"]["Chart"]["variants"];
   title?: string;
   subtitle?: string;
   chartLabels: string[];
@@ -28,13 +28,19 @@ const LineChart: FC<ChartProps> = ({
   name,
   currency,
 }) => {
-  const chartOptions = merge(BaseOptionChart(), {
-    colors: [colors[color]?.midtone, "#1990FF"],
-    fill: { type: "gradient" },
-    xaxis: {
-      categories: chartLabels,
-    },
-  });
+  const theme = useTheme();
+  const chartOptions = useMemo(() => {
+    return merge(createBasicChartOptions(theme.components.Chart.common), {
+      colors: [
+        theme.components.Chart.variants[color].midtone,
+        theme.palette.info.midtone,
+      ],
+      fill: { type: "gradient" },
+      xaxis: {
+        categories: chartLabels,
+      },
+    });
+  }, [theme.components.Chart, theme.palette.info.midtone]);
 
   return (
     <Container>

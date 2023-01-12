@@ -2,8 +2,9 @@ import merge from "lodash/merge";
 import React, { FC } from "react";
 import ReactApexChart from "react-apexcharts";
 import styled from "styled-components";
-import { colors, ThemeColor } from "../../theme/colors";
-import BaseOptionChart from "../../theme/charts";
+import { useTheme } from "theme";
+import { createBasicChartOptions } from "utils";
+
 import { CryptoIcon } from "../../icon/icon";
 import { CryptoSymbols } from "../../static/types";
 
@@ -26,7 +27,8 @@ const LineChart: FC<ChartProps> = ({
   upwardsColor = "#3C90EB",
   downwardsColor = "#DF7D46",
 }) => {
-  const chartOptions = merge(BaseOptionChart(), {
+  const theme = useTheme()
+  const chartOptions = merge(createBasicChartOptions(theme.components.Chart.common), {
     plotOptions: {
       candlestick: {
         colors: {

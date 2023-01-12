@@ -1,12 +1,10 @@
 import { ApexOptions } from "apexcharts";
-// @mui
-import { useTheme } from "@mui/material/styles";
-import { colors, legacyColors } from "./colors";
-import { cp } from "fs";
+import { ThemeInterface } from "theme";
 
-// ----------------------------------------------------------------------
 
-export default function BaseOptionChart(): ApexOptions {
+
+export function createBasicChartOptions(chartColors: ThemeInterface["components"]["Chart"]["common"]): ApexOptions {
+
   const LABEL_TOTAL = {
     show: true,
     label: "Total",
@@ -22,19 +20,20 @@ export default function BaseOptionChart(): ApexOptions {
 
   return {
     // Colors
-    colors: [
-      colors.yellow.color,
-      colors.blue.color,
-      colors.red.color,
-      colors.green.color,
-    ],
+    // colors: [
+    //   colors.yellow.color,
+    //   colors.blue.color,
+    //   colors.red.color,
+    //   colors.green.color,
+    // ],
+    colors: chartColors.colors,
 
     // Chart
     chart: {
       toolbar: { show: false },
       zoom: { enabled: false },
       // animations: { enabled: false },
-      foreColor: legacyColors.grey500,
+      foreColor: chartColors.foreColor,
     },
 
     // States
@@ -78,7 +77,7 @@ export default function BaseOptionChart(): ApexOptions {
     // Grid
     grid: {
       strokeDashArray: 3,
-      borderColor: legacyColors.grey700,
+      borderColor: chartColors.gridBorderColor,
     },
 
     // Xaxis
@@ -90,7 +89,7 @@ export default function BaseOptionChart(): ApexOptions {
     // Markers
     markers: {
       size: 0,
-      strokeColors: legacyColors.grey500,
+      strokeColors: chartColors.markerColor,
     },
 
     // Tooltip
@@ -112,7 +111,7 @@ export default function BaseOptionChart(): ApexOptions {
       fontWeight: 500,
       itemMargin: { horizontal: 12 },
       labels: {
-        colors: legacyColors.grey500,
+        colors: chartColors.labelColor,
       },
     },
 
@@ -137,7 +136,7 @@ export default function BaseOptionChart(): ApexOptions {
       radialBar: {
         track: {
           strokeWidth: "100%",
-          background: legacyColors.grey500,
+          background: chartColors.radialBarBackground,
         },
         dataLabels: {
           value: LABEL_VALUE,
@@ -148,17 +147,17 @@ export default function BaseOptionChart(): ApexOptions {
       radar: {
         polygons: {
           fill: { colors: ["transparent"] },
-          strokeColors: legacyColors.grey500,
-          connectorColors: legacyColors.grey500,
+          strokeColors: chartColors.radarStrokeColor,
+          connectorColors: chartColors.radarConnectorColor,
         },
       },
       // polarArea
       polarArea: {
         rings: {
-          strokeColor: legacyColors.grey500,
+          strokeColor: chartColors.polarRingColor,
         },
         spokes: {
-          connectorColors: legacyColors.grey500,
+          connectorColors: chartColors.polarSpokeConnectorColor,
         },
       },
     },

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { colors, ThemeColor, legacyColors } from "../../theme/colors";
+import { withTheme, ThemeInterface } from "theme";
 import { SparkLine } from "../../charts/sparkline";
 import { CryptoSymbols } from "../../static/types";
 import { CryptoIcon } from "../../icon/icon";
@@ -9,7 +9,7 @@ import { Icon as Iconify } from "@iconify/react";
 export interface HighlightCardProps {
   width?: string;
   height?: string;
-  color: ThemeColor;
+  color: keyof ThemeInterface["components"]["CreditCard"]["variants"];
   chartData: number[];
   chartType: "bar" | "line";
   title?: string;
@@ -75,7 +75,7 @@ export default HighlightCard;
 interface CardProps {
   $width?: string;
   $height?: string;
-  $color: ThemeColor;
+  $color: keyof ThemeInterface["components"]["CreditCard"]["variants"];
 }
 
 const Container = styled.div<CardProps>`
@@ -83,16 +83,16 @@ const Container = styled.div<CardProps>`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: ${({ $color }) => colors[$color].color};
+  color: ${withTheme(({ $color, theme }) => theme.components.CreditCard.variants[$color].color)};
   width: ${({ $width }) => $width};
   height: ${({ $height }) => $height};
-  background-color: ${({ $color }) => colors[$color].background};
+  background-color: ${withTheme(({ $color, theme }) => theme.components.CreditCard.variants[$color].background)};
   border-radius: 15px;
   padding: 25px;
 
   .title {
     font-size: 14px;
-    color: ${({ $color }) => colors[$color].color};
+    color: ${withTheme(({ $color, theme }) => theme.components.CreditCard.variants[$color].color)};
   }
   .amount {
     display: flex;
@@ -107,7 +107,7 @@ const Container = styled.div<CardProps>`
     flex-direction: row;
     align-items: center;
     font-size: 14px;
-    color: ${({ $color }) => colors[$color].midtone};
+    color: ${withTheme(({ $color, theme }) => theme.components.CreditCard.variants[$color].midtone)};
   }
 `;
 
@@ -121,7 +121,7 @@ const Details = styled.div`
 interface WrapperStyleProps {
   $width?: string;
   $height?: string;
-  $color: ThemeColor;
+  $color: keyof ThemeInterface["components"]["CreditCard"]["variants"];
   $positive: "green" | "red";
 }
 
@@ -133,22 +133,22 @@ const IconWrapperStyle = styled.div<WrapperStyleProps>`
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  background-color: ${({ $color, $positive }) =>
+  background-color: ${withTheme(({ $color, $positive, theme }) =>
     $color === "default"
-      ? colors[$positive].highlightDark
-      : colors[$positive].background};
-  color: ${({ $color, $positive }) => colors[$positive].highlightLight};
+      ? theme.components.CreditCard.variants[$positive].highlightDark
+      : theme.components.CreditCard.variants[$positive].background)};
+  color: ${withTheme(({  $positive, theme }) => theme.components.CreditCard.variants[$positive].highlightLight)};
 `;
 
 interface T1Props {
   $color: string;
 }
 const T1 = styled.div<T1Props>`
-  color: ${({ $color }) =>
-    $color === "default" ? legacyColors.grey100 : legacyColors.grey700};
+  color: ${withTheme(({ $color, theme }) =>
+    $color === "default" ? theme.palette.grey[100] : theme.palette.grey[700])};
 `;
 
 const T2 = styled.div`
   margin-left: 5px;
-  color: ${legacyColors.grey500};
+  color: ${withTheme(({ theme }) => theme.palette.grey[500])};
 `;

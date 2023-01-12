@@ -1,9 +1,8 @@
 import React, { FC, ReactElement } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { withTheme, ThemeInterface } from "theme";
 
 import { formatNumber } from "../../../utils/format";
-import { theme } from "../../theme";
-import { colors, ThemeColor } from "../../theme/colors";
 
 export interface ProgressBarProps {
   minValue: number;
@@ -12,19 +11,9 @@ export interface ProgressBarProps {
   showValue?: boolean;
   errorMessage?: string | ReactElement;
   title: string;
-  themeColor?: ThemeColor;
+  themeColor?: keyof ThemeInterface["components"]["ProgressBar"]["variants"] | "gradient";
   $percent?: number;
 }
-const {
-  error100,
-  error500,
-  yellow500,
-  pink500,
-  success500,
-  white,
-  black,
-  blue500,
-} = theme.colors;
 
 const Container = styled.div`
   display: flex;
@@ -33,7 +22,7 @@ const Container = styled.div`
 `;
 
 interface SliderProps {
-  $colorMode: Record<string, string> | string;
+  $colorMode: keyof ThemeInterface["components"]["ProgressBar"]["variants"] | "gradient";
 }
 
 const Wrapper = styled.div<SliderProps>`
@@ -48,15 +37,21 @@ const Wrapper = styled.div<SliderProps>`
     width: 100%;
     height: 6px;
     border-radius: 24px;
-    background: linear-gradient(
-      90deg,
-      ${pink500} 0%,
-      ${yellow500} 50%,
-      ${success500} 100%
-    );
-    background: ${({ $colorMode }) =>
-      //@ts-ignore
-      $colorMode !== "gradient" && $colorMode?.midtone};
+    ${withTheme(({ theme, $colorMode }) =>
+      $colorMode === "gradient"
+        ? css`
+            background: linear-gradient(
+              90deg,
+              ${theme.palette.secondary.color} 0%,
+              ${theme.palette.warning.color} 50%,
+              ${theme.palette.success.color} 100%
+            );
+          `
+        : css`
+            background: ${theme.components.ProgressBar.variants[$colorMode].midtone};
+          `
+    )};
+
     outline: none;
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;
@@ -68,16 +63,16 @@ const Wrapper = styled.div<SliderProps>`
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: ${white};
+    background: ${withTheme(({ theme }) => theme.palette.common.white)};
     cursor: pointer;
-    border: 2px solid ${success500};
+    border: 2px solid ${withTheme(({ theme }) => theme.palette.success.color)};
   }
 
   .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: ${success500};
+    background: ${withTheme(({ theme }) => theme.palette.success.color)};
     cursor: pointer;
   }
 `;
@@ -87,13 +82,13 @@ const StyledValue = styled.div`
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  color: ${black};
+  color: ${withTheme(({ theme }) => theme.palette.common.black)};
 `;
 
 const ErrorMessage = styled.div`
   width: 416px;
   height: 80px;
-  color: ${error500};
+  color: ${withTheme(({ theme }) => theme.palette.error.color)};
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -101,11 +96,11 @@ const ErrorMessage = styled.div`
   margin-top: 28px;
   /* Error/Error 100 */
 
-  background: ${error100};
+  background: ${withTheme(({ theme }) => theme.palette.error.bg)};
   border-radius: 8px;
 
   a {
-    color: ${blue500};
+    color: ${withTheme(({ theme }) => theme.palette.info.midtone)};
   }
 `;
 
@@ -116,10 +111,10 @@ const ProgressBar: FC<ProgressBarProps> = ({
   showValue = false,
   errorMessage,
   title,
-  themeColor,
+  themeColor = "gradient",
 }) => (
   <Container>
-    <Wrapper $colorMode={themeColor ? colors[themeColor] : "gradient"}>
+    <Wrapper $colorMode={themeColor}>
       {showValue && value && (
         <StyledValue data-testid="gradient-progress-bar-value">
           {value > maxValue ? `${maxValue}+` : formatNumber(value, 2)}
@@ -139,9 +134,7 @@ const ProgressBar: FC<ProgressBarProps> = ({
       />
     </Wrapper>
     {errorMessage && (
-      <ErrorMessage data-testid="gradient-progress-bar-error-msg">
-        {errorMessage}
-      </ErrorMessage>
+      <ErrorMessage data-testid="gradient-progress-bar-error-msg">{errorMessage}</ErrorMessage>
     )}
   </Container>
 );

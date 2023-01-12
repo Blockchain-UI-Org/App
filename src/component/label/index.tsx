@@ -2,8 +2,15 @@
 import { alpha, Theme, useTheme, styled } from "@mui/material/styles";
 import { BoxProps, Box } from "@mui/material";
 // theme
-import { ColorSchema } from "../theme/palette";
 
+
+export type ColorSchema =
+  | "primary"
+  | "secondary"
+  | "info"
+  | "success"
+  | "warning"
+  | "error";
 // ----------------------------------------------------------------------
 
 type LabelColor =
@@ -74,13 +81,13 @@ const RootStyle = styled("span")(
             ...(variant === "outlined" && {
               backgroundColor: "transparent",
               color: theme.palette.text.primary,
-              border: `1px solid ${theme.palette.grey[500_32]}`,
+              border: `1px solid ${alpha("#919EAB", 0.16)}`,
             }),
             ...(variant === "ghost" && {
               color: isLight
                 ? theme.palette.text.secondary
                 : theme.palette.common.white,
-              backgroundColor: theme.palette.grey[500_16],
+              backgroundColor: alpha("#919EAB", 0.16),
             }),
           }),
     };

@@ -1,6 +1,6 @@
-import { Flex, Text } from "theme-ui";
-import styled from "@emotion/styled";
-import { theme } from "../theme";
+import Flex from "../flex";
+import styled from "styled-components";
+import { withTheme } from "theme";
 
 interface PaginationProps {
   $disablePrev?: boolean;
@@ -28,15 +28,20 @@ export const Pagination = styled(Flex)<PaginationProps>`
     :hover {
       cursor: ${({ $disablePrev }: any) =>
         $disablePrev ? "not-allowed" : "pointer"};
-      background-color: ${({ $disablePrev }: any) =>
-        $disablePrev ? "inherit" : "#0091ff"};
+      background-color: ${withTheme(({ $disablePrev, theme }) =>
+        $disablePrev ? "inherit" : theme.palette.info.midtone
+      )};
     }
 
-    color: ${({ $disablePrev }: any) =>
-      $disablePrev ? theme?.colors?.["grey700"] : theme?.colors?.["grey200"]};
+    color: ${withTheme(({ $disablePrev, theme }) =>
+      $disablePrev ? theme.palette.grey[700] : theme.palette.grey[200]
+    )};
 
-    border: ${({ $disablePrev }: any) =>
-      $disablePrev ? "2px solid inherit" : "2px solid #0091ff"};
+    border: ${withTheme(({ $disablePrev, theme }) =>
+      $disablePrev
+        ? "2px solid inherit"
+        : `2px solid ${theme.palette.info.midtone}`
+    )};
   }
 
   .nextStep {
@@ -48,15 +53,20 @@ export const Pagination = styled(Flex)<PaginationProps>`
     :hover {
       cursor: ${({ $disableNext }: any) =>
         $disableNext ? "not-allowed" : "pointer"};
-      background-color: ${({ $disableNext }: any) =>
-        $disableNext ? "inherit" : "#0091ff"};
+      background-color: ${withTheme(({ $disableNext, theme }) =>
+        $disableNext ? "inherit" : theme.palette.info.midtone
+      )};
     }
 
-    color: ${({ $disableNext }: any) =>
-      $disableNext ? theme?.colors["grey700"] : theme?.colors["grey200"]};
+    color: ${withTheme(({ $disableNext, theme }) =>
+      $disableNext ? theme.palette.grey[700] : theme.palette.grey[200]
+    )};
 
-    border: ${({ $disableNext }: any) =>
-      $disableNext ? "2px solid inherit" : "2px solid #0091ff"};
+    border: ${withTheme(({ $disableNext, theme }) =>
+      $disableNext
+        ? "2px solid inherit"
+        : `2px solid ${theme.palette.info.midtone}`
+    )};
   }
 `;
 
@@ -68,8 +78,7 @@ export const PageButton = styled(Flex)<PageButtonProps>`
   display: flex;
   justify-content: center;
   width: 30px;
-  background-color: ${({ $highlight }: any) =>
-    $highlight ? "#0091ff" : "inherit"};
+  background-color: ${withTheme(({ $highlight, theme }) => ($highlight ? theme.palette.info.midtone : "inherit"))};
   border-radius: 3px;
   margin: 0;
 `;

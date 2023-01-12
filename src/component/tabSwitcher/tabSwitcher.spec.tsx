@@ -1,11 +1,12 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { theme } from '../theme';
 import { mockedTabs } from './mockedTabs';
 
 import { TabSwitcher } from './tabSwitcher';
+import { DefaultTheme } from 'theme';
 
-const { black, grey700 } = theme.colors;
+const grey700= DefaultTheme.palette.grey[700];
+const black = DefaultTheme.palette.common.black;
 
 describe('Tab Switcher', () => {
   it('successfully creates a Tab Switcher', () => {

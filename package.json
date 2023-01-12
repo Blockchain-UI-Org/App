@@ -1,13 +1,12 @@
 {
-  "name": "app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "blockchain-ui",
+  "version": "0.0.1",
+  "private": false,
   "dependencies": {
     "@mui/material": "^5.11.0",
     "@storybook/theming": "^6.5.14",
     "@types/numeral": "^2.0.2",
     "apexcharts": "^3.35.0",
-    "baseui": "^12.2.0",
     "framer-motion": "^7.9.1",
     "numbro": "^2.3.6",
     "numeral": "^2.0.6",
@@ -27,6 +26,7 @@
     "s": "yarn storybook",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "prettify": "prettier --write ./src",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -65,6 +65,7 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@iconify/react": "^4.0.1",
+    "date-fns": "2.29.3",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-backgrounds": "^6.5.13",
     "@storybook/addon-controls": "^6.5.13",
@@ -93,11 +94,23 @@
     "prettier": "^2.8.0",
     "prop-types": "^15.8.1",
     "storybook": "^6.5.13",
-    "styletron-engine-monolithic": "^1.0.0",
-    "styletron-react": "^6.1.0",
-    "theme-ui": "^0.15.4",
     "webpack": "^5.75.0"
   },
-  "readme": "ERROR: No README data found!",
-  "_id": "app@0.1.0"
+  "description": "A component library for blockchain apps.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blockchain-UI-Org/Library.git"
+  },
+  "keywords": [
+    "blockchain",
+    "web3",
+    "ui"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Blockchain-UI-Org/Library/issues"
+  },
+  "homepage": "https://github.com/Blockchain-UI-Org/Library#readme"
 }
