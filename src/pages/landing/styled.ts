@@ -210,8 +210,9 @@ export const FeatureCard = styled.div`
   padding: 20px 40px;
   margin: 0 10px;
 
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 20px;
 
   @media (max-width: 1200px) {
     background: #ffff;
@@ -277,6 +278,17 @@ export const Components = styled.div`
   margin: 50px 10px;
   overflow: hidden;
 
+  .subHeader {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 61px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #fff;
+    margin: 200px 10px 20px 10px;
+  }
+
   .titleHeader {
     font-style: normal;
     font-weight: 700;
@@ -318,9 +330,9 @@ export const Components = styled.div`
 
     img {
       width: auto;
-      height: 500px;
+      height: 450px;
       border-radius: 15px;
-      margin: 100px 10px;
+      margin: 0 20px;
 
       @media (max-width: 1200px) {
         margin: 30px;
