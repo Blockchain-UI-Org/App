@@ -157,7 +157,8 @@ export const Features = styled.div`
   align-items: center;
   justify-content: center;
   height: 650px;
-  width: 60%;
+  width: 100%;
+  background-color: #f5f5f7;
 
   .titleHeader {
     font-style: normal;
@@ -166,13 +167,7 @@ export const Features = styled.div`
     line-height: 61px;
     text-align: center;
     letter-spacing: -1px;
-    color: #2d3766;
-
-    background: -webkit-linear-gradient(45deg, #6fbbc9, #b1a0f5, #ed434c);
-
-    // background-image: linear-gradient(45deg, #f3ec78, #af4261);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #00000;
   }
 
   .description {
@@ -195,7 +190,7 @@ export const Features = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     margin: 50px 0px;
 
     @media (max-width: 1200px) {
@@ -209,14 +204,13 @@ export const Features = styled.div`
 export const FeatureCard = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
+
+  width: 250px;
   height: 264px;
   padding: 20px 40px;
   margin: 0 10px;
 
-  background: linear-gradient(180deg, #e7e8fb 0%, rgba(242, 244, 249, 0) 100%);
+  background: #fff;
   border-radius: 10px;
 
   @media (max-width: 1200px) {
@@ -226,9 +220,15 @@ export const FeatureCard = styled.div`
   }
 
   .header {
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: left;
+    background: -webkit-linear-gradient(45deg, #6fbbc9, #b1a0f5, #ed434c);
+
+    // background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     font-style: normal;
     font-weight: 600;
@@ -241,9 +241,6 @@ export const FeatureCard = styled.div`
 
   .description {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -272,11 +269,13 @@ export const Components = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 50px 0;
   width: 100%;
-  min-height: 600px;
+  min-height: 900px;
   background-color: #000000;
-  margin: 50px 0 400px 0px;
+  margin: 50px 10px;
+  overflow: hidden;
 
   .titleHeader {
     font-style: normal;
@@ -309,6 +308,8 @@ export const Components = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
+    overflow: hidden;
 
     @media (max-width: 1200px) {
       display: flex;
@@ -317,7 +318,7 @@ export const Components = styled.div`
 
     img {
       width: auto;
-      height: 400px;
+      height: 500px;
       border-radius: 15px;
       margin: 100px 10px;
 
