@@ -10,9 +10,17 @@ export const Container = styled.div`
 
 export const IphoneMock = styled.img`
   height: 100%;
-  width: auto;
+  max-width: auto;
 
   @media (max-width: 1200px) {
+    height: 80%;
+  }
+
+  @media (max-width: 1000px) {
+    height: 70%;
+  }
+
+  @media (max-width: 700px) {
     display: none;
   }
 `;
@@ -35,6 +43,8 @@ export const GetStarted = styled.div`
   }
 
   .rightSection {
+    width: 50%;
+    height: 100%;
     display: none;
     display: flex;
     justify-content: center;
@@ -156,7 +166,7 @@ export const Features = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 650px;
+  min-height: 650px;
   width: 100%;
   background-color: #f5f5f7;
 
@@ -180,8 +190,7 @@ export const Features = styled.div`
 
     @media (max-width: 1200px) {
       display: flex;
-      align-items: center;
-      justify-content: center;
+
       color: grey;
     }
   }
@@ -196,7 +205,15 @@ export const Features = styled.div`
     @media (max-width: 1200px) {
       display: flex;
       flex-wrap: wrap;
-      margin: 20px 0px;
+
+      margin: 20px 20px;
+    }
+
+    @media (max-width: 1000px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 20px;
     }
   }
 `;
@@ -216,8 +233,8 @@ export const FeatureCard = styled.div`
 
   @media (max-width: 1200px) {
     background: #ffff;
-    height: 100px;
-    margin: 10px 0px;
+    min-height: 100px;
+    margin: 10px 10px;
   }
 
   .header {
@@ -248,10 +265,6 @@ export const FeatureCard = styled.div`
     line-height: 26px;
     color: #475569;
     opacity: 0.8;
-
-    @media (max-width: 1200px) {
-      display: none;
-    }
   }
 
   .featureIcon {
@@ -336,6 +349,8 @@ export const Components = styled.div`
 
       @media (max-width: 1200px) {
         margin: 30px;
+        width: 100%;
+        height: auto;
       }
 
       :hover {
