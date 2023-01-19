@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Blockchain-UI-Org/Library/static/css/main.f5081592.css",
+    "main.js": "/Blockchain-UI-Org/Library/static/js/main.fe2cf343.js",
+    "index.html": "/Blockchain-UI-Org/Library/index.html",
+    "main.f5081592.css.map": "/Blockchain-UI-Org/Library/static/css/main.f5081592.css.map",
+    "main.fe2cf343.js.map": "/Blockchain-UI-Org/Library/static/js/main.fe2cf343.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5081592.css",
+    "static/js/main.fe2cf343.js"
+  ]
+}
