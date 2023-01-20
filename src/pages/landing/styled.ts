@@ -40,6 +40,11 @@ export const GetStarted = styled.div`
     align-items: center;
     justify-content: center;
     padding: 0 150px;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+      padding: 0 50px;
+    }
   }
 
   .rightSection {
@@ -49,6 +54,10 @@ export const GetStarted = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
 
     // background-color: red;
     // background-image: url("/assets/iphone_mockup.jpg");
@@ -60,6 +69,15 @@ export const GetStarted = styled.div`
     font-size: 80px;
     font-weight: 700;
     color: #f5f5f7;
+
+    @media (max-width: 1000px) {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      font-size: 60px;
+    }
   }
 
   .description {
@@ -69,18 +87,32 @@ export const GetStarted = styled.div`
     font-size: 20px;
     line-height: 30px;
     color: #f5f5f7;
+
+    @media (max-width: 1000px) {
+      display: flex;
+      text-align: center;
+      font-size: 16px;
+      width: 70%;
+    }
   }
 
-  .getStartedButton {
+  .getStartedSection {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 25px;
     width: 100%;
+
+    @media (max-width: 1000px) {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
   }
 
   .contactUs {
-    margin-left: 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -89,6 +121,14 @@ export const GetStarted = styled.div`
 
     :hover {
       cursor: pointer;
+    }
+
+    @media (max-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 0px;
+      width: 100%;
     }
   }
 `;
@@ -178,6 +218,11 @@ export const Features = styled.div`
     text-align: center;
     letter-spacing: -1px;
     color: #00000;
+
+    @media (max-width: 1000px) {
+      margin-top: 20px;
+      font-size: 40px;
+    }
   }
 
   .description {
@@ -202,18 +247,18 @@ export const Features = styled.div`
     width: 90%;
     margin: 50px 0px;
 
+    // @media (max-width: 1200px) {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   margin: 50px 0px;
+    // }
+
     @media (max-width: 1200px) {
       display: flex;
       flex-wrap: wrap;
-
-      margin: 20px 20px;
-    }
-
-    @media (max-width: 1000px) {
-      display: flex;
       align-items: center;
       justify-content: center;
-      margin: 20px 20px;
+      margin: 50px 0px;
     }
   }
 `;
@@ -233,7 +278,7 @@ export const FeatureCard = styled.div`
 
   @media (max-width: 1200px) {
     background: #ffff;
-    min-height: 100px;
+    height: 150px;
     margin: 10px 10px;
   }
 
@@ -255,6 +300,11 @@ export const FeatureCard = styled.div`
     width: 100%;
 
     color: #2d3766;
+
+    @media (max-width: 1200px) {
+      margin-top: 10px;
+      font-size: 16px;
+    }
   }
 
   .description {
@@ -265,6 +315,10 @@ export const FeatureCard = styled.div`
     line-height: 26px;
     color: #475569;
     opacity: 0.8;
+
+    @media (max-width: 1200px) {
+      font-size: 16px;
+    }
   }
 
   .featureIcon {
@@ -300,6 +354,11 @@ export const Components = styled.div`
     letter-spacing: -1px;
     color: #fff;
     margin: 200px 10px 20px 10px;
+
+    @media (max-width: 1200px) {
+      font-size: 32px;
+      margin: 100px 10px 20px 10px;
+    }
   }
 
   .titleHeader {
@@ -316,6 +375,10 @@ export const Components = styled.div`
     // background-image: linear-gradient(45deg, #f3ec78, #af4261);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 1200px) {
+      font-size: 40px;
+    }
   }
 
   .description {

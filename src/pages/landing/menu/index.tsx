@@ -8,12 +8,21 @@ const Menu = () => {
         <MenuItem>
           <div className="homeButton">BUI</div>
         </MenuItem>
-        <MenuItem>Components</MenuItem>
-        <MenuItem>Documentation</MenuItem>
-        <MenuItem>Pricing</MenuItem>
         <MenuItem>
-          <LoginButton>Login</LoginButton>
+          <a
+            href="https://www.chromatic.com/library?appId=63a670b1ce0472f1c60a3f59&branch=main"
+            target="_blank"
+            rel="noreferrer noopener"
+            style={{ textDecoration: "none" }}
+          >
+            Library
+          </a>
         </MenuItem>
+        <MenuItem>Documentation</MenuItem>
+        {/* <MenuItem>Pricing</MenuItem> */}
+        {/* <MenuItem>
+          <LoginButton>Login</LoginButton>
+        </MenuItem> */}
       </Wrapper>
     </Container>
   );

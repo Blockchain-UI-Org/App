@@ -24,7 +24,7 @@ const ComponentsSection = () => {
         <img src="/assets/components/creditCard.png" alt="creditCard" />
         <img src="/assets/components/creditCard2.png" alt="creditCard" />
       </div>
-      <div className="subHeader">More</div>
+      {/* <div className="subHeader">More</div> */}
     </Components>
   );
 };
