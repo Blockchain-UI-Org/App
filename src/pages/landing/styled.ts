@@ -9,15 +9,12 @@ export const Container = styled.div`
 `;
 
 export const IphoneMock = styled.img`
-  height: 100%;
+  height: 90%;
   max-width: auto;
 
   @media (max-width: 1200px) {
-    height: 80%;
-  }
-
-  @media (max-width: 1000px) {
-    height: 70%;
+    height: 60%;
+    width: auto;
   }
 
   @media (max-width: 700px) {
@@ -39,7 +36,7 @@ export const GetStarted = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 150px;
+    padding: 0 50px 0 150px;
 
     @media (max-width: 1000px) {
       width: 100%;
@@ -50,10 +47,11 @@ export const GetStarted = styled.div`
   .rightSection {
     width: 50%;
     height: 100%;
-    display: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding: 0 0px;/assets/iphone_mockup.jpg
+    overflow: hidden;
 
     @media (max-width: 1000px) {
       display: none;
@@ -69,6 +67,10 @@ export const GetStarted = styled.div`
     font-size: 80px;
     font-weight: 700;
     color: #f5f5f7;
+
+    @media (max-width: 1200px) {
+      font-size: 60px;
+    }
 
     @media (max-width: 1000px) {
       display: flex;
@@ -87,6 +89,10 @@ export const GetStarted = styled.div`
     font-size: 20px;
     line-height: 30px;
     color: #f5f5f7;
+
+    @media (max-width: 1200px) {
+      font-size: 16px;
+    }
 
     @media (max-width: 1000px) {
       display: flex;
