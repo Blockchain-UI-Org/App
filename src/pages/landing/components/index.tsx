@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import { m } from "framer-motion";
-import _mock from "_mock";
 import { Components } from "../styled";
 import { MotionContainer, varFade } from "animate";
 import Typography from "@mui/material/Typography";
@@ -10,46 +9,55 @@ import CardContent from "@mui/material/CardContent";
 import Box from "@mui/material/Box";
 import ImageV2 from "components/ImageV2";
 import Card from "@mui/material/Card";
-import { alpha, styled, useTheme } from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
 import { CarouselArrows, CarouselDots } from "components/carousel";
+import { showcase } from "./showcase";
 
-const OverlayStyle = styled("div")(({ theme }) => ({
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  zIndex: 8,
-  position: "absolute",
-  // backgroundColor: alpha(theme.palette.grey[900], 0.64),
-}));
-
-const ComponentsSection = ({ ...other }) => {
+export default function ComponentsSection({ ...other }) {
   const theme = useTheme();
-  const list = [...Array(4)].map((_, index) => ({
-    id: _mock.id(index),
-    title: ["Charts", "Credits Cards", "NFT Cards"][index],
-    description: _mock.text.title(index),
-    image: "/assets/nft5.webp",
-  }));
 
   const carouselRef = useRef<Slider>(null);
-  const [currentIndex, setCurrentIndex] = useState(list.length - 1);
+  const [currentIndex, setCurrentIndex] = useState(showcase.length - 1);
 
   const settings = {
+    adaptiveHeight: true,
+    centerMode: true,
     speed: 800,
+    autoplaySpeed: 2000,
     dots: true,
-    arrows: false,
+    arrows: true,
     autoplay: true,
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 1500,
+        settings: {
+          className: "center",
+          centerMode: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      // {
+      //   breakpoint: 1000,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //     initialSlide: 1,
+      //     infinite: true,
+      //     dots: true,
+      //     centerPadding: "20px",
+      //   },
+      // },
+    ],
     rtl: Boolean(theme.direction === "rtl"),
     beforeChange: (current: number, next: number) => setCurrentIndex(next),
     ...CarouselDots({
-      zIndex: 9,
-      top: 24,
-      left: 24,
-      position: "absolute",
+      zIndex: 1,
     }),
   };
 
@@ -60,14 +68,14 @@ const ComponentsSection = ({ ...other }) => {
   const handleNext = () => {
     carouselRef.current?.slickNext();
   };
-  console.log(list);
+
   return (
     <Components>
       <div className="titleHeader">Explore Our Library</div>
 
       <Card {...other} style={{ backgroundColor: "black" }}>
         <Slider ref={carouselRef} {...settings}>
-          {list.map((app, index) => (
+          {showcase.map((app, index) => (
             <CarouselItem key={app.id} item={app} isActive={index === currentIndex} />
           ))}
         </Slider>
@@ -113,9 +121,7 @@ const ComponentsSection = ({ ...other }) => {
       {/* <div className="subHeader">More</div> */}
     </Components>
   );
-};
-
-export default ComponentsSection;
+}
 
 type ItemProps = {
   id: string;
@@ -133,7 +139,7 @@ function CarouselItem({ item, isActive }: CarouselItemProps) {
   const { image, title, description } = item;
 
   return (
-    <Box sx={{ position: "relative" }}>
+    <Box sx={{ position: "relative", margin: "0 20px" }}>
       <CardContent
         component={MotionContainer}
         animate={isActive}
@@ -147,11 +153,9 @@ function CarouselItem({ item, isActive }: CarouselItemProps) {
           color: "common.white",
         }}
       >
-        <m.div variants={varFade().inRight}>
-          <Typography variant="overline" component="div" sx={{ mb: 1, opacity: 0.48 }}>
-            Component
-          </Typography>
-        </m.div>
+        {/* <Typography variant="overline" component="div" sx={{ mb: 1, opacity: 0.48 }}>
+          Component
+        </Typography> */}
 
         <m.div variants={varFade().inRight}>
           <Link underline="none">
@@ -168,9 +172,8 @@ function CarouselItem({ item, isActive }: CarouselItemProps) {
         </m.div>
       </CardContent>
 
-      <OverlayStyle />
       {/* <div style={{ backgroundColor: "red", height: "600px", width: "500px" }}></div> */}
-      <ImageV2 alt={title} src={image} style={{ width: "auto", height: "500px" }} />
+      <ImageV2 alt={title} src={image} style={{ width: "auto", height: "350px", borderRadius: "20px" }} />
     </Box>
   );
 }

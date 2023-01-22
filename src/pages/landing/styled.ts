@@ -351,7 +351,7 @@ export const Components = styled.div`
   width: 100%;
   padding: 50px 0px;
 
-  min-height: 500px;
+  min-height: 600px;
   background-color: #000000;
   // margin: 50px 100px;
 
