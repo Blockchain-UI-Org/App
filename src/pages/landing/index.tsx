@@ -13,7 +13,7 @@ const Landing = () => {
       <GetStartedSection />
       <PartnersSection />
       <FeaturesSection />
-      <ComponentsSection/>
+      <ComponentsSection />
     </Container>
   );
 };

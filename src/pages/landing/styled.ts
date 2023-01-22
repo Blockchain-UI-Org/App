@@ -6,10 +6,13 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
+  overflow: hidden;
+  min-height: 0px;
+  min-width: 0px;
 `;
 
 export const IphoneMock = styled.img`
-  height: 90%;
+  height: 100%;
   max-width: auto;
 
   @media (max-width: 1200px) {
@@ -38,6 +41,10 @@ export const GetStarted = styled.div`
     justify-content: center;
     padding: 0 50px 0 150px;
 
+    @media (max-width: 1200px) {
+      padding: 0 50px;
+    }
+
     @media (max-width: 1000px) {
       width: 100%;
       padding: 0 50px;
@@ -50,9 +57,8 @@ export const GetStarted = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 0px;/assets/iphone_mockup.jpg
+    padding: 0 0px;
     overflow: hidden;
-
     @media (max-width: 1000px) {
       display: none;
     }
@@ -225,7 +231,7 @@ export const Features = styled.div`
     letter-spacing: -1px;
     color: #00000;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1200px) {
       margin-top: 20px;
       font-size: 40px;
     }
@@ -252,7 +258,6 @@ export const Features = styled.div`
     justify-content: space-between;
     width: 90%;
     margin: 50px 0px;
-
     // @media (max-width: 1200px) {
     //   display: flex;
     //   flex-wrap: wrap;
@@ -272,7 +277,6 @@ export const Features = styled.div`
 export const FeatureCard = styled.div`
   display: flex;
   flex-direction: column;
-
   width: 250px;
   height: 264px;
   padding: 20px 40px;
@@ -340,16 +344,16 @@ export const FeatureCard = styled.div`
 `;
 
 export const Components = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 0;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
   width: 100%;
-  min-height: 900px;
+  padding: 50px 0px;
+
+  min-height: 500px;
   background-color: #000000;
-  margin: 50px 10px;
-  overflow: hidden;
+  // margin: 50px 100px;
 
   .subHeader {
     font-style: normal;
@@ -375,9 +379,10 @@ export const Components = styled.div`
     text-align: center;
     letter-spacing: -1px;
     color: #2d3766;
+    margin-bottom: 30px;
 
     background: -webkit-linear-gradient(45deg, #6fbbc9, #b1a0f5, #ed434c);
-
+    background-color: red;
     // background-image: linear-gradient(45deg, #f3ec78, #af4261);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -393,7 +398,6 @@ export const Components = styled.div`
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-
     color: #f5f5f7;
   }
 

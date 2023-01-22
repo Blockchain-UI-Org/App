@@ -43,9 +43,7 @@ const FeaturesSection = () => {
             <img src="/assets/feature1.svg" alt="simple_feature_icon" />
           </div> */}
           <div className="header">Safe and Secure</div>
-          <div className="description">
-            Tested for vunerabilities.
-          </div>
+          <div className="description">Tested for vunerabilities.</div>
         </FeatureCard>
       </div>
     </Features>
