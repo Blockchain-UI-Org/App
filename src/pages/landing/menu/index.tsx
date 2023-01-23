@@ -31,12 +31,20 @@ export default Menu;
 
 const Container = styled.div`
   display: flex;
+  background-color: #fbfbfd;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: inherit;
-  height: 40px;
-  margin: 10px 0px;
+  height: 50px;
+  opacity: 0.97;
+  z-index:3;
+
+
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width *
 `;
 
 const Wrapper = styled.div`
@@ -79,19 +87,19 @@ const MenuItem = styled.div`
   }
 `;
 
-const LoginButton = styled.div`
-  font-style: normal;
-  font-weight: 700;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 108px;
-  height: 44px;
-  border: 1px solid #2d3766;
-  border-radius: 50px;
+// const LoginButton = styled.div`
+//   font-style: normal;
+//   font-weight: 700;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-items: center;
+//   width: 108px;
+//   height: 44px;
+//   border: 1px solid #2d3766;
+//   border-radius: 50px;
 
-  :hover {
-    border: 2px solid #2d3766;
-  }
-`;
+//   :hover {
+//     border: 2px solid #2d3766;
+//   }
+// `;
