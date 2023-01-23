@@ -12,14 +12,14 @@ const Menu = () => {
           <div className="homeButton">BUI</div>
         </MenuItem>
         <MenuItem>
-          <a
+          <Link
             href="https://www.chromatic.com/library?appId=63a670b1ce0472f1c60a3f59&branch=main"
             target="_blank"
             rel="noreferrer noopener"
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: "none", color: "inherit" }}
           >
             Library
-          </a>
+          </Link>
         </MenuItem>
         <MenuItem>Documentation</MenuItem>
         <Link key={"twitter_link"} href={"https://twitter.com/ui_blockchain"} rel="noreferrer noopener" target="_blank">
