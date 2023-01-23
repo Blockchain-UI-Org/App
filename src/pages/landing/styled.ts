@@ -344,7 +344,7 @@ export const FeatureCard = styled.div`
   }
 `;
 
-export const Components = styled.div`
+export const Library = styled.div`
   // display: flex;
   // flex-direction: column;
   // align-items: center;

@@ -1,5 +1,5 @@
 import React from "react";
-import ComponentsSection from "./components";
+import ComponentsSection from "./library";
 import FeaturesSection from "./features";
 import GetStartedSection from "./getStarted";
 import Menu from "./menu";

@@ -29,15 +29,15 @@ const FeaturesSection = () => {
           <div className="header">Simple</div>
           <div className="description">Easy-to-install and clear documentation.</div>
         </FeatureCard>
-        <FeatureCard>
-          {/* <div className="featureIcon">
+        {/* <FeatureCard>
+          <div className="featureIcon">
             <img src="/assets/feature1.svg" alt="simple_feature_icon" />
-          </div> */}
+          </div>
           <div className="header">Customizable</div>
           <div className="description">
             It can be tailored to fit the specific needs of your application and across all major blockchains.
           </div>
-        </FeatureCard>
+        </FeatureCard> */}
         <FeatureCard>
           {/* <div className="featureIcon">
             <img src="/assets/feature1.svg" alt="simple_feature_icon" />

@@ -1,3 +1,6 @@
+import Link from "@mui/material/Link";
+import Iconify from "components/Iconify";
+import SocialsButton from "components/SocialsButton";
 import React from "react";
 import styled from "styled-components";
 
@@ -19,6 +22,18 @@ const Menu = () => {
           </a>
         </MenuItem>
         <MenuItem>Documentation</MenuItem>
+        <Link key={"twitter_link"} href={"https://twitter.com/ui_blockchain"} rel="noreferrer noopener" target="_blank">
+          <Iconify icon="eva:twitter-fill" sx={{ width: 22, height: 22 }} color="#00AAEC" />
+        </Link>
+        <Link
+          key={"github_link"}
+          href={"https://github.com/Blockchain-UI-Org"}
+          style={{ marginLeft: "10px" }}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <Iconify icon="mdi:github" sx={{ width: 22, height: 22 }} color="#161B22"></Iconify>
+        </Link>
         {/* <MenuItem>Pricing</MenuItem> */}
         {/* <MenuItem>
           <LoginButton>Login</LoginButton>

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import { m } from "framer-motion";
-import { Components } from "../styled";
+import { Library } from "../styled";
 import { MotionContainer, varFade } from "animate";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
@@ -51,7 +51,7 @@ export default function ComponentsSection({ ...other }) {
   };
 
   return (
-    <Components>
+    <Library>
       <div className="titleHeader">Explore Our Library</div>
 
       <Card {...other} style={{ backgroundColor: "black", marginTop: "50px" }}>
@@ -61,7 +61,7 @@ export default function ComponentsSection({ ...other }) {
           ))}
         </Slider>
       </Card>
-    </Components>
+    </Library>
   );
 }
 
