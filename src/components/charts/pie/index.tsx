@@ -6,7 +6,7 @@ import { ThemeInterface } from "theme";
 
 import { fNumber } from "../../../utils/number";
 
-export interface ChartProps {
+export interface PieChartProps {
   // Unused Props
   // color?: keyof ThemeInterface["components"]["Chart"]["variants"];
   // title?: string;
@@ -20,7 +20,7 @@ export interface ChartProps {
   diameter: string;
 }
 
-const PieChart: FC<ChartProps> = ({ diameter, chartData, chartColors }) => {
+const PieChart: FC<PieChartProps> = ({ diameter, chartData, chartColors }) => {
   const chartLabels = chartData.map((i) => i?.label);
   const chartSeries = chartData.map((i) => i?.value);
 
@@ -60,12 +60,7 @@ const PieChart: FC<ChartProps> = ({ diameter, chartData, chartColors }) => {
 
   return (
     <Container>
-      <ReactApexChart
-        type="donut"
-        series={chartSeries}
-        options={options}
-        height={diameter}
-      />
+      <ReactApexChart type="donut" series={chartSeries} options={options} height={diameter} />
     </Container>
   );
 };

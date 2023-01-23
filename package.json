@@ -1,10 +1,11 @@
 {
   "name": "blockchain-ui",
-  "version": "0.0.1",
+  "version": "1.0.0-alpha",
   "license": "MIT",
   "private": false,
   "description": "A component library for blockchain apps.",
-  "main": "index.js",
+  "main": "components/index.ts",
+  "homepage": "https://www.blockchain-ui.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Blockchain-UI-Org/Library.git"

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentMeta, Story } from "@storybook/react";
-import PieChart, { ChartProps } from ".";
+import PieChart, { PieChartProps } from ".";
 import { DefaultTheme } from "theme";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -16,7 +16,7 @@ export default {
 } as ComponentMeta<typeof PieChart>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: Story<ChartProps> = (args) => <PieChart {...args} />;
+const Template: Story<PieChartProps> = (args) => <PieChart {...args} />;
 
 export const Pie = Template.bind({});
 

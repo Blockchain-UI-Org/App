@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta, Story } from "@storybook/react";
-import AreaChart, { ChartProps } from ".";
+import AreaChart, { AreaChartProps } from ".";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -20,7 +20,7 @@ export default {
 } as ComponentMeta<typeof AreaChart>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: Story<ChartProps> = (args) => <AreaChart {...args} />;
+const Template: Story<AreaChartProps> = (args) => <AreaChart {...args} />;
 
 export const Area = Template.bind({});
 

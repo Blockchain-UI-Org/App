@@ -195,7 +195,7 @@ export const Partners = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1000px) {
       display: flex;
       flex-wrap: wrap;
     }
@@ -207,10 +207,11 @@ export const Partner = styled.img`
   align-items: center;
   justify-content: center;
   width: 150px;
+  margin: 20px 20px;
 
   @media (max-width: 1200px) {
     width: 100px;
-    margin: 20px 0px;
+    margin: 20px 10px;
   }
 `;
 

@@ -7,7 +7,7 @@ import { CryptoIcon } from "../../icon/icon";
 import { CryptoSymbols } from "../../static/types";
 import { ThemeInterface, useTheme } from "theme";
 
-export interface ChartProps {
+export interface AreaChartProps {
   color?: keyof ThemeInterface["components"]["Chart"]["variants"];
   title?: string;
   subtitle?: string;
@@ -19,7 +19,7 @@ export interface ChartProps {
   currency?: CryptoSymbols;
 }
 
-const LineChart: FC<ChartProps> = ({
+const LineChart: FC<AreaChartProps> = ({
   color = "blue",
   width = "100%",
   height = "100%",
@@ -31,10 +31,7 @@ const LineChart: FC<ChartProps> = ({
   const theme = useTheme();
   const chartOptions = useMemo(() => {
     return merge(createBasicChartOptions(theme.components.Chart.common), {
-      colors: [
-        theme.components.Chart.variants[color].midtone,
-        theme.colors.info.midtone,
-      ],
+      colors: [theme.components.Chart.variants[color].midtone, theme.colors.info.midtone],
       fill: { type: "gradient" },
       xaxis: {
         categories: chartLabels,
