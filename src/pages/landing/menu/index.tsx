@@ -21,7 +21,7 @@ const Menu = () => {
             Library
           </Link>
         </MenuItem>
-        <MenuItem>Documentation</MenuItem>
+        {/* <MenuItem>Documentation</MenuItem> */}
         <Link key={"twitter_link"} href={"https://twitter.com/ui_blockchain"} rel="noreferrer noopener" target="_blank">
           <Iconify icon="eva:twitter-fill" sx={{ width: 22, height: 22 }} color="#00AAEC" />
         </Link>
