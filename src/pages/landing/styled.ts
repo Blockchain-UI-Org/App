@@ -6,13 +6,22 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
+  overflow: hidden;
+  min-height: 0px;
+  min-width: 0px;
+  margin-top: 50px;
 `;
 
 export const IphoneMock = styled.img`
   height: 100%;
-  width: auto;
+  max-width: auto;
 
   @media (max-width: 1200px) {
+    height: 60%;
+    width: auto;
+  }
+
+  @media (max-width: 700px) {
     display: none;
   }
 `;
@@ -31,14 +40,29 @@ export const GetStarted = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 150px;
+    padding: 0 50px 0 150px;
+
+    @media (max-width: 1200px) {
+      padding: 0 50px;
+    }
+
+    @media (max-width: 1000px) {
+      width: 100%;
+      padding: 0 50px;
+    }
   }
 
   .rightSection {
-    display: none;
+    width: 50%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding: 0 0px;
+    overflow: hidden;
+    @media (max-width: 1000px) {
+      display: none;
+    }
 
     // background-color: red;
     // background-image: url("/assets/iphone_mockup.jpg");
@@ -50,6 +74,19 @@ export const GetStarted = styled.div`
     font-size: 80px;
     font-weight: 700;
     color: #f5f5f7;
+
+    @media (max-width: 1200px) {
+      font-size: 60px;
+    }
+
+    @media (max-width: 1000px) {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      font-size: 60px;
+    }
   }
 
   .description {
@@ -59,18 +96,36 @@ export const GetStarted = styled.div`
     font-size: 20px;
     line-height: 30px;
     color: #f5f5f7;
+
+    @media (max-width: 1200px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 1000px) {
+      display: flex;
+      text-align: center;
+      font-size: 16px;
+      width: 70%;
+    }
   }
 
-  .getStartedButton {
+  .getStartedSection {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 25px;
     width: 100%;
+
+    @media (max-width: 1000px) {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
   }
 
   .contactUs {
-    margin-left: 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -79,6 +134,14 @@ export const GetStarted = styled.div`
 
     :hover {
       cursor: pointer;
+    }
+
+    @media (max-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 0px;
+      width: 100%;
     }
   }
 `;
@@ -132,7 +195,7 @@ export const Partners = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1000px) {
       display: flex;
       flex-wrap: wrap;
     }
@@ -144,10 +207,11 @@ export const Partner = styled.img`
   align-items: center;
   justify-content: center;
   width: 150px;
+  margin: 20px 20px;
 
   @media (max-width: 1200px) {
     width: 100px;
-    margin: 20px 0px;
+    margin: 20px 10px;
   }
 `;
 
@@ -156,8 +220,9 @@ export const Features = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 650px;
-  width: 60%;
+  min-height: 650px;
+  width: 100%;
+  background-color: #f5f5f7;
 
   .titleHeader {
     font-style: normal;
@@ -166,13 +231,12 @@ export const Features = styled.div`
     line-height: 61px;
     text-align: center;
     letter-spacing: -1px;
-    color: #2d3766;
+    color: #00000;
 
-    background: -webkit-linear-gradient(45deg, #6fbbc9, #b1a0f5, #ed434c);
-
-    // background-image: linear-gradient(45deg, #f3ec78, #af4261);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @media (max-width: 1200px) {
+      margin-top: 20px;
+      font-size: 40px;
+    }
   }
 
   .description {
@@ -185,8 +249,7 @@ export const Features = styled.div`
 
     @media (max-width: 1200px) {
       display: flex;
-      align-items: center;
-      justify-content: center;
+
       color: grey;
     }
   }
@@ -195,13 +258,20 @@ export const Features = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     margin: 50px 0px;
+    // @media (max-width: 1200px) {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   margin: 50px 0px;
+    // }
 
     @media (max-width: 1200px) {
       display: flex;
       flex-wrap: wrap;
-      margin: 20px 0px;
+      align-items: center;
+      justify-content: center;
+      margin: 50px 0px;
     }
   }
 `;
@@ -209,26 +279,31 @@ export const Features = styled.div`
 export const FeatureCard = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
+  width: 250px;
   height: 264px;
   padding: 20px 40px;
   margin: 0 10px;
 
-  background: linear-gradient(180deg, #e7e8fb 0%, rgba(242, 244, 249, 0) 100%);
-  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: #fff;
+  border-radius: 20px;
 
   @media (max-width: 1200px) {
     background: #ffff;
-    height: 100px;
-    margin: 10px 0px;
+    height: 150px;
+    margin: 10px 10px;
   }
 
   .header {
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: left;
+    background: -webkit-linear-gradient(45deg, #6fbbc9, #b1a0f5, #ed434c);
+
+    // background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     font-style: normal;
     font-weight: 600;
@@ -237,13 +312,15 @@ export const FeatureCard = styled.div`
     width: 100%;
 
     color: #2d3766;
+
+    @media (max-width: 1200px) {
+      margin-top: 10px;
+      font-size: 16px;
+    }
   }
 
   .description {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -252,7 +329,7 @@ export const FeatureCard = styled.div`
     opacity: 0.8;
 
     @media (max-width: 1200px) {
-      display: none;
+      font-size: 16px;
     }
   }
 
@@ -268,15 +345,33 @@ export const FeatureCard = styled.div`
   }
 `;
 
-export const Components = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 0;
+export const Library = styled.div`
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
   width: 100%;
+  padding: 50px 0px;
+
   min-height: 600px;
   background-color: #000000;
-  margin: 50px 0 400px 0px;
+  // margin: 50px 100px;
+
+  .subHeader {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 61px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #fff;
+    margin: 200px 10px 20px 10px;
+
+    @media (max-width: 1200px) {
+      font-size: 32px;
+      margin: 100px 10px 20px 10px;
+    }
+  }
 
   .titleHeader {
     font-style: normal;
@@ -286,12 +381,17 @@ export const Components = styled.div`
     text-align: center;
     letter-spacing: -1px;
     color: #2d3766;
+    margin-bottom: 30px;
 
     background: -webkit-linear-gradient(45deg, #6fbbc9, #b1a0f5, #ed434c);
-
+    background-color: red;
     // background-image: linear-gradient(45deg, #f3ec78, #af4261);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 1200px) {
+      font-size: 40px;
+    }
   }
 
   .description {
@@ -300,7 +400,6 @@ export const Components = styled.div`
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-
     color: #f5f5f7;
   }
 
@@ -309,6 +408,8 @@ export const Components = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
+    overflow: hidden;
 
     @media (max-width: 1200px) {
       display: flex;
@@ -317,12 +418,14 @@ export const Components = styled.div`
 
     img {
       width: auto;
-      height: 400px;
+      height: 450px;
       border-radius: 15px;
-      margin: 100px 10px;
+      margin: 0 20px;
 
       @media (max-width: 1200px) {
         margin: 30px;
+        width: 100%;
+        height: auto;
       }
 
       :hover {
