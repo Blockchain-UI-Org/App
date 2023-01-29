@@ -11,7 +11,7 @@ const Landing = () => {
     <Container>
       <Menu></Menu>
       <GetStartedSection />
-      <PartnersSection />
+      {/* <PartnersSection /> */}
       <FeaturesSection />
       <ComponentsSection />
     </Container>
