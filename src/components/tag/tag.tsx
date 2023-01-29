@@ -49,8 +49,8 @@ export const Tag: FC<TagProps> = ({ type, size, children, ...props }) => {
 };
 
 const TagWrapper = styled.span<{ type: TagType; size: TagSize }>`
-  background: ${withTheme(({ type, theme }) => theme.colors[BackgroundColor[type]].bg)};
-  color: ${withTheme(({ type, theme }) => theme.colors[TextColor[type]].color)};
+  background: ${withTheme(({ type, theme }) => theme.palette[BackgroundColor[type]].bg)};
+  color: ${withTheme(({ type, theme }) => theme.palette[TextColor[type]].color)};
   border-radius: 39px;
   padding: ${({ size }) => Padding[size]};
   height: 1.5rem;

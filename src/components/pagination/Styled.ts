@@ -29,18 +29,18 @@ export const Pagination = styled(Flex)<PaginationProps>`
       cursor: ${({ $disablePrev }: any) =>
         $disablePrev ? "not-allowed" : "pointer"};
       background-color: ${withTheme(({ $disablePrev, theme }) =>
-        $disablePrev ? "inherit" : theme.colors.info.midtone
+        $disablePrev ? "inherit" : theme.palette.info.midtone
       )};
     }
 
     color: ${withTheme(({ $disablePrev, theme }) =>
-      $disablePrev ? theme.colors.grey[700] : theme.colors.grey[200]
+      $disablePrev ? theme.palette.grey[700] : theme.palette.grey[200]
     )};
 
     border: ${withTheme(({ $disablePrev, theme }) =>
       $disablePrev
         ? "2px solid inherit"
-        : `2px solid ${theme.colors.info.midtone}`
+        : `2px solid ${theme.palette.info.midtone}`
     )};
   }
 
@@ -54,18 +54,18 @@ export const Pagination = styled(Flex)<PaginationProps>`
       cursor: ${({ $disableNext }: any) =>
         $disableNext ? "not-allowed" : "pointer"};
       background-color: ${withTheme(({ $disableNext, theme }) =>
-        $disableNext ? "inherit" : theme.colors.info.midtone
+        $disableNext ? "inherit" : theme.palette.info.midtone
       )};
     }
 
     color: ${withTheme(({ $disableNext, theme }) =>
-      $disableNext ? theme.colors.grey[700] : theme.colors.grey[200]
+      $disableNext ? theme.palette.grey[700] : theme.palette.grey[200]
     )};
 
     border: ${withTheme(({ $disableNext, theme }) =>
       $disableNext
         ? "2px solid inherit"
-        : `2px solid ${theme.colors.info.midtone}`
+        : `2px solid ${theme.palette.info.midtone}`
     )};
   }
 `;
@@ -78,7 +78,7 @@ export const PageButton = styled(Flex)<PageButtonProps>`
   display: flex;
   justify-content: center;
   width: 30px;
-  background-color: ${withTheme(({ $highlight, theme }) => ($highlight ? theme.colors.info.midtone : "inherit"))};
+  background-color: ${withTheme(({ $highlight, theme }) => ($highlight ? theme.palette.info.midtone : "inherit"))};
   border-radius: 3px;
   margin: 0;
 `;

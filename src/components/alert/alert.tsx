@@ -13,12 +13,12 @@ export interface AlertProps {
 const Container = styled(Inline)`
   border-radius: 8px;
   &.info {
-    background-color: ${withTheme(({ theme }) => theme.colors.info.bg)};
-    color: ${withTheme(({ theme }) => theme.colors.info.color)};
+    background-color: ${withTheme(({ theme }) => theme.palette.info.bg)};
+    color: ${withTheme(({ theme }) => theme.palette.info.color)};
   }
   &.error {
-    background-color: ${withTheme(({ theme }) => theme.colors.error.bg)};
-    color: ${withTheme(({ theme }) => theme.colors.error.color)};
+    background-color: ${withTheme(({ theme }) => theme.palette.error.bg)};
+    color: ${withTheme(({ theme }) => theme.palette.error.color)};
   }
 `;
 

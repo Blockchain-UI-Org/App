@@ -18,7 +18,7 @@ describe('Input', () => {
 
     const maxButton = screen.getByText('Max');
     expect(maxButton).toBeInTheDocument();
-    expect(maxButton).toHaveStyle(`background-color: ${DefaultTheme.colors.info.bg}; color: ${DefaultTheme.colors.info.midtone};`);
+    expect(maxButton).toHaveStyle(`background-color: ${DefaultTheme.palette.info.bg}; color: ${DefaultTheme.palette.info.midtone};`);
 
     fireEvent.click(maxButton);
     expect(onClickHandler).toHaveBeenCalledTimes(1);

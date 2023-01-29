@@ -64,7 +64,7 @@ interface ItemProps extends HoverProps {
 
 const Hover = css<HoverProps>`
   background-color: ${withTheme(({ showHover, theme }) =>
-    showHover ? theme.colors.default.bg : theme.colors.common.white)};
+    showHover ? theme.palette.default.bg : theme.palette.common.white)};
   border-top-right-radius: ${props => (props.first ? '10px' : '0px')};
   border-top-left-radius: ${props => (props.first ? '10px' : '0px')};
   border-bottom-right-radius: ${props => (props.last ? '10px' : '0px')};
@@ -93,19 +93,19 @@ const Wrapper = styled.div`
 `;
 
 const Display = styled(Inline)<{ withBorder: boolean; showShadow: boolean }>`
-  background-color: ${withTheme(({ theme }) => theme.colors.info.bg)};
-  border: ${withTheme(({ withBorder, theme }) => (withBorder ? `1px solid ${theme.colors.grey[300]}` : 'none'))};
+  background-color: ${withTheme(({ theme }) => theme.palette.info.bg)};
+  border: ${withTheme(({ withBorder, theme }) => (withBorder ? `1px solid ${theme.palette.grey[300]}` : 'none'))};
   border-radius: 100px;
   box-shadow: ${withTheme(({ showShadow , theme}) => (showShadow ? theme.shadows.depth2 : 'none'))};
   cursor: pointer;
   &:hover {
-    background-color: ${withTheme(({theme}) => theme.colors.default.bg)};
+    background-color: ${withTheme(({theme}) => theme.palette.default.bg)};
   }
 `;
 
 const Card = styled.div<{ position: Position }>`
   position: relative;
-  background-color: ${withTheme(({ theme }) => theme.colors.common.white)};
+  background-color: ${withTheme(({ theme }) => theme.palette.common.white)};
   border-radius: 12px;
   box-shadow: ${withTheme(({theme}) => theme.shadows.depth1)};
 `;
@@ -119,7 +119,7 @@ const Options = styled(Card)<{ position: Position; minWidth: string }>`
 
 const Item = styled(Inline)<ItemProps>`
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-  color: ${withTheme(({ disabled, theme }) => (disabled ? theme.colors.grey[500] : theme.colors.default.color))};
+  color: ${withTheme(({ disabled, theme }) => (disabled ? theme.palette.grey[500] : theme.palette.default.color))};
   min-height: ${({ minHeight }) => minHeight};
   &:hover {
     ${Hover}

@@ -31,13 +31,16 @@ const LineChart: FC<AreaChartProps> = ({
   const theme = useTheme();
   const chartOptions = useMemo(() => {
     return merge(createBasicChartOptions(theme.components.Chart.common), {
-      colors: [theme.components.Chart.variants[color].midtone, theme.colors.info.midtone],
+      colors: [
+        theme.components.Chart.variants[color].midtone,
+        theme.palette.info.midtone,
+      ],
       fill: { type: "gradient" },
       xaxis: {
         categories: chartLabels,
       },
     });
-  }, [theme.components.Chart, theme.colors.info.midtone]);
+  }, [theme.components.Chart, theme.palette.info.midtone]);
 
   return (
     <Container>

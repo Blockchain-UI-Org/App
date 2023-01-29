@@ -42,9 +42,9 @@ const Wrapper = styled.div<SliderProps>`
         ? css`
             background: linear-gradient(
               90deg,
-              ${theme.colors.secondary.color} 0%,
-              ${theme.colors.warning.color} 50%,
-              ${theme.colors.success.color} 100%
+              ${theme.palette.secondary.color} 0%,
+              ${theme.palette.warning.color} 50%,
+              ${theme.palette.success.color} 100%
             );
           `
         : css`
@@ -63,16 +63,16 @@ const Wrapper = styled.div<SliderProps>`
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: ${withTheme(({ theme }) => theme.colors.common.white)};
+    background: ${withTheme(({ theme }) => theme.palette.common.white)};
     cursor: pointer;
-    border: 2px solid ${withTheme(({ theme }) => theme.colors.success.color)};
+    border: 2px solid ${withTheme(({ theme }) => theme.palette.success.color)};
   }
 
   .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: ${withTheme(({ theme }) => theme.colors.success.color)};
+    background: ${withTheme(({ theme }) => theme.palette.success.color)};
     cursor: pointer;
   }
 `;
@@ -82,13 +82,13 @@ const StyledValue = styled.div`
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  color: ${withTheme(({ theme }) => theme.colors.common.black)};
+  color: ${withTheme(({ theme }) => theme.palette.common.black)};
 `;
 
 const ErrorMessage = styled.div`
   width: 416px;
   height: 80px;
-  color: ${withTheme(({ theme }) => theme.colors.error.color)};
+  color: ${withTheme(({ theme }) => theme.palette.error.color)};
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -96,11 +96,11 @@ const ErrorMessage = styled.div`
   margin-top: 28px;
   /* Error/Error 100 */
 
-  background: ${withTheme(({ theme }) => theme.colors.error.bg)};
+  background: ${withTheme(({ theme }) => theme.palette.error.bg)};
   border-radius: 8px;
 
   a {
-    color: ${withTheme(({ theme }) => theme.colors.info.midtone)};
+    color: ${withTheme(({ theme }) => theme.palette.info.midtone)};
   }
 `;
 

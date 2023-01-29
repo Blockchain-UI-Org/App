@@ -1,29 +1,48 @@
-export type Device = 'xsmall' | 'mobile' | 'tablet' | 'desktop';
+import { Subset } from "typeutils";
+import merge from "lodash/merge";
 
-export type DeviceSizes = 'xSmall' | 'small' | 'medium' | 'large';
+export type Device = "xsmall" | "mobile" | "tablet" | "desktop";
 
-export type BreakPointDirection = 'up' | 'down';
+export type DeviceSizes = "xSmall" | "small" | "medium" | "large";
 
-export const MEDIA_WIDTHS: Record<DeviceSizes, number> = {
+export type BreakPointDirection = "up" | "down";
+export type IMediaTheme = {
+  devices: Record<DeviceSizes, number>;
+  breakpoints: Record<BreakPointDirection, Record<Device, string>>;
+};
+const DefaultDevices: IMediaTheme["devices"] = {
   xSmall: 480, // small phone
   small: 720, // large phone
   medium: 960, // tablet
   large: 1200, // laptop
 };
 
-const breakpoints: Record<BreakPointDirection, Record<Device, string>> = {
-  up: {
-    xsmall: `(min-width: ${MEDIA_WIDTHS['xSmall']}px)`,
-    mobile: `(min-width: ${MEDIA_WIDTHS['small']}px)`,
-    tablet: `(min-width: ${MEDIA_WIDTHS['medium']}px)`,
-    desktop: `(min-width: ${MEDIA_WIDTHS['large']}px)`,
-  },
-  down: {
-    xsmall: `(max-width: ${MEDIA_WIDTHS['xSmall']}px)`,
-    mobile: `(max-width: ${MEDIA_WIDTHS['small']}px)`,
-    tablet: `(max-width: ${MEDIA_WIDTHS['medium']}px)`,
-    desktop: `(max-width: ${MEDIA_WIDTHS['large']}px)`,
-  },
+const createBreakpoints = (devices: Partial<IMediaTheme["devices"]>): IMediaTheme["breakpoints"] => {
+  return {
+    up: {
+      xsmall: `(min-width: ${devices["xSmall"]}px)`,
+      mobile: `(min-width: ${devices["small"]}px)`,
+      tablet: `(min-width: ${devices["medium"]}px)`,
+      desktop: `(min-width: ${devices["large"]}px)`,
+    },
+    down: {
+      xsmall: `(max-width: ${devices["xSmall"]}px)`,
+      mobile: `(max-width: ${devices["small"]}px)`,
+      tablet: `(max-width: ${devices["medium"]}px)`,
+      desktop: `(max-width: ${devices["large"]}px)`,
+    },
+  };
 };
 
-export default { MEDIA_WIDTHS, breakpoints };
+const DefaultBreakpoints: IMediaTheme["breakpoints"] = createBreakpoints(DefaultDevices);
+
+const DefaultMedia: IMediaTheme = {
+  breakpoints: DefaultBreakpoints,
+  devices: DefaultDevices,
+};
+
+export const createMedia = (devices: Subset<IMediaTheme["devices"]> = {}): IMediaTheme => {
+  const mergedDevices = merge(DefaultDevices, devices);
+  const newBreakPoints = createBreakpoints(mergedDevices);
+  return merge(DefaultMedia, { breakpoints: newBreakPoints, devices: mergedDevices });
+};

@@ -3,7 +3,7 @@ import { ReactElement } from "react";
 import { useWindowSize } from "react-use";
 import styled from "styled-components";
 import { DarkTheme, DefaultTheme } from "./theme";
-import { MEDIA_WIDTHS } from "./media";
+
 
 interface ThemeProps {
   darkTheme?: boolean;
@@ -13,7 +13,7 @@ interface ThemeProps {
 const colorDisplay = (darkTheme: boolean) => {
   const display: ReactElement[] = [];
   for (const [key, value] of Object.entries(
-    darkTheme ? DarkTheme.colors : DefaultTheme.colors
+    darkTheme ? DarkTheme.palette : DefaultTheme.palette
   ).sort(function (a, b) {
     const nameA = a[0].toLowerCase(),
       nameB = b[0].toLowerCase();
@@ -37,7 +37,7 @@ const colorDisplay = (darkTheme: boolean) => {
 };
 
 const breakPointsDisplay = (width: number) => {
-  const { small, medium } = MEDIA_WIDTHS;
+  const { small, medium } = DefaultTheme.media.devices;
   const getDeviceType = () => {
     if (width < small) {
       return "Mobile";

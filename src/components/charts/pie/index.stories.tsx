@@ -27,5 +27,5 @@ Pie.args = {
     { label: "ETH", value: 53345 },
     { label: "USDC", value: 44313 },
   ],
-  chartColors: [DefaultTheme.colors.info.midtone, DefaultTheme.colors.success.color, DefaultTheme.colors.info.bg],
+  chartColors: [DefaultTheme.palette.info.midtone, DefaultTheme.palette.success.color, DefaultTheme.palette.info.bg],
 };

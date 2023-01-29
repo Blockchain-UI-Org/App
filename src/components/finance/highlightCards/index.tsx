@@ -145,10 +145,10 @@ interface T1Props {
 }
 const T1 = styled.div<T1Props>`
   color: ${withTheme(({ $color, theme }) =>
-    $color === "default" ? theme.colors.grey[100] : theme.colors.grey[700])};
+    $color === "default" ? theme.palette.grey[100] : theme.palette.grey[700])};
 `;
 
 const T2 = styled.div`
   margin-left: 5px;
-  color: ${withTheme(({ theme }) => theme.colors.grey[500])};
+  color: ${withTheme(({ theme }) => theme.palette.grey[500])};
 `;

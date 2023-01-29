@@ -84,11 +84,11 @@ export const StyledInput = styled.input<StyledInputType>`
     border-color: ${withTheme(
       ({ theme }) => theme.components.Input.box.focusVisible.borderColor
     )};
-    color: ${withTheme(({ theme }) => theme.colors.common.black)};
+    color: ${withTheme(({ theme }) => theme.palette.common.black)};
   }
 
   &:not(:placeholder-shown) {
-    color: ${withTheme(({ theme }) => theme.colors.common.black)};
+    color: ${withTheme(({ theme }) => theme.palette.common.black)};
   }
 
   ${({ hasError }) =>
