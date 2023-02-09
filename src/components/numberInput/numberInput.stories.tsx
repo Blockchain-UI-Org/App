@@ -4,6 +4,12 @@ import { NumberInput, NumberInputProps } from "./numberInput";
 export default {
   component: NumberInput,
   title: "Input/ Numerical Input",
+  parameters: {
+    backgrounds: {
+      default: "white",
+      values: [{ name: "white", value: "#fff" }],
+    },
+  },
 } as Meta;
 
 const Template: Story<NumberInputProps> = (args) => (
