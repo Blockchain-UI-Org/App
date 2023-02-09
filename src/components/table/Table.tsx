@@ -9,8 +9,6 @@ export const TableContainer = styled.div<{ maxWidth?: number }>`
   ${({ maxWidth }) => css({ maxWidth })}
 `;
 
-
-
 export const THead = styled.thead`
   border-bottom: 1px solid #e5e7f3;
 `;
@@ -19,16 +17,9 @@ export const Th = styled.th<{ color?: string }>`
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
-  padding-bottom: 15px;
-  padding-top: 15px;
   text-align: start;
-  ${({color}) => css({ color })}
-  /* &:first-child { */
-    padding-left: 26px;
-  /* } */
-  /* &:last-child{ */
-  padding-right: 26px;
-  /* } */
+  padding: 15px 26px;
+  ${({ color }) => css({ color })}
 `;
 export const Table = styled.table<{ minWidth?: number; variant?: "light" | "dark" }>`
   width: 100%;
@@ -56,14 +47,15 @@ export const Table = styled.table<{ minWidth?: number; variant?: "light" | "dark
     `;
   }}
 `;
-export const Tbody = styled.tbody``;
+export const Tbody = styled.tbody`
+  tr:hover {
+    background-color: #f4f5fa;
+  }
+`;
 
 export const Tr = styled.tr`
   border-bottom: 1px solid #e5e7f3;
   transition: all 0.3s linear;
-  &:hover {
-    background-color: #f4f5fa;
-  }
 `;
 
 const TdCell = styled.td`

@@ -1,6 +1,6 @@
-import { ArcElement, Chart, ChartData, Tooltip } from "chart.js";
+import type { ChartData } from "chart.js";
 import { Typography } from "components/typography";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Doughnut } from "react-chartjs-2";
 import styled from "styled-components";
 import { useTheme } from "theme";
@@ -45,16 +45,29 @@ export const DoughnutChart = ({
   info?: { title?: string; subtitle?: React.ReactElement };
 }) => {
   const theme = useTheme();
+
+  const [ChartLib, setChartLib] = useState<typeof import("chart.js") | null>(null);
+
+  useEffect(() => {
+    import("chart.js").then((lib) => setChartLib(lib));
+  }, []);
+
   useMemo(() => {
     // Import Required Utils
-    Chart.register(ArcElement);
-    Chart.register(Tooltip);
-  }, []);
+    if (ChartLib) {
+      const { Chart, ArcElement, Tooltip } = ChartLib;
+      Chart.register(ArcElement);
+      Chart.register(Tooltip);
+    }
+  }, [ChartLib]);
   const options = useMemo(() => {
     return createBasicDoughnutOptions(theme.typography.common.fontFamily as string, PrimaryColor);
   }, [theme.typography.common.fontFamily]);
 
   const doughnutMarkup = useMemo(() => {
+    if(!ChartLib){
+      return null;
+    }
     const data: ChartData<"doughnut", number[], unknown> = {
       datasets: [
         {
@@ -65,13 +78,17 @@ export const DoughnutChart = ({
       labels: chartData.map((item) => item.label),
     };
     return <Doughnut data={data} options={options} />;
-  }, [chartData]);
+  }, [chartData, ChartLib]);
 
   return (
     <Wrapper maxWidth={maxWidth}>
       {(info?.title || info?.subtitle) && (
         <InfoWrapper>
-          {info.title && <Typography style={{marginBottom: 0}} fontSize={24}>{info.title}</Typography>}
+          {info.title && (
+            <Typography style={{ marginBottom: 0 }} fontSize={24}>
+              {info.title}
+            </Typography>
+          )}
           {info.subtitle && <SubtitleWrapper>{info.subtitle}</SubtitleWrapper>}
         </InfoWrapper>
       )}

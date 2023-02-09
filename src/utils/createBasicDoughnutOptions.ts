@@ -1,6 +1,6 @@
 import { applyStyle } from "./applyStyle";
 import { formatNumber } from "./format";
-import { ChartOptions, TooltipOptions, Chart, TooltipModel } from "chart.js";
+import type { ChartOptions, Chart, TooltipModel } from "chart.js";
 import tinycolor from "tinycolor2";
 import { getShades } from "./getShades";
 
