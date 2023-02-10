@@ -44,14 +44,16 @@ const Input = styled.input<{ width?: string; align: ICryptoInputProps["align"] }
   line-height: 24px;
   font-size: 24px;
   max-width: 100%;
-  margin-right: 5px;
+
   ${({ width, align }) => {
     let styles = ``;
     if (width) {
       styles += ` width: ${width};`;
     }
     if (align === "right") {
-      styles += `text-align: right;`;
+      styles += `text-align: right;
+      margin-right: 5px;
+      `;
     }
 
     return styles;
@@ -123,7 +125,7 @@ export const CryptoInput = ({ value = "", price, onChange, symbol, align = "left
       </InputWrapper>
       <PriceWrapper>
         <Typography fontSize={10} lineHeight="24px" color="#8F91A0">
-          $({value ? formatNumber(parseFloat(value as string) * parseFloat(price as string)): 0})
+          $({value ? formatNumber(parseFloat(value as string) * parseFloat(price as string)) : 0})
         </Typography>
       </PriceWrapper>
     </CryptInputWrapper>
