@@ -5,7 +5,7 @@
   "private": false,
   "description": "A component library for blockchain apps.",
   "main": "components/index.ts",
-  "types": "components/index.ts",
+  "types": "./src/index.ts",
   "homepage": "https://www.blockchain-ui.com",
   "repository": {
     "type": "git",
@@ -36,12 +36,12 @@
     "react-apexcharts": "^1.4.0",
     "react-chartjs-2": "^4.3.1",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-inlinesvg": "^3.0.1",
     "react-lazy-load-image-component": "^1.5.6",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "react-use": "^17.4.0",
-    "react-icons": "^4.7.1",
     "simplebar-react": "^2.4.3",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.6",
@@ -123,6 +123,7 @@
     "prettier": "^2.8.0",
     "prop-types": "^15.8.1",
     "storybook": "^6.5.13",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
     "webpack": "^5.75.0"
   }
 }

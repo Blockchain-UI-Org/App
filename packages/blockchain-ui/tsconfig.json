@@ -2,6 +2,11 @@
   "extends": "../../tsconfig",
   "compilerOptions": {
     "target": "es5",
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "outDir": "./dist",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
