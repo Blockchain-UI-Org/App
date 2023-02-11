@@ -4,7 +4,7 @@ import type { ChartOptions, Chart, TooltipModel } from "chart.js";
 import tinycolor from "tinycolor2";
 import { getShades } from "./getShades";
 
-const createCaret = (primaryColor: string) => {
+const createCaret = () => {
   const caretWrapper = document.createElement("div");
   const caret1 = document.createElement("div");
   const caret2 = document.createElement("div");
@@ -67,7 +67,7 @@ const createTooltipHTMLElement = (chart: Chart, primaryColor: string) => {
     const table = document.createElement("div");
     table.id = "tooltip";
     applyStyle(table, { margin: "0px", padding: "6px" });
-    const caretWrapper = createCaret(primaryColor);
+    const caretWrapper = createCaret();
 
     tooltipEl.appendChild(caretWrapper);
 

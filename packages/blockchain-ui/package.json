@@ -41,6 +41,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "react-use": "^17.4.0",
+    "react-icons": "^4.7.1",
     "simplebar-react": "^2.4.3",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.6",

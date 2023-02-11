@@ -9,7 +9,7 @@ type Query = 'up' | 'down' | 'between' | 'only';
 type Key = Breakpoint | number;
 type Start = Breakpoint | number;
 type End = Breakpoint | number;
-
+//@ts-ignore
 export default function useResponsive(query: Query, key?: Key, start?: Start, end?: End) {
   const theme = useTheme();
 
