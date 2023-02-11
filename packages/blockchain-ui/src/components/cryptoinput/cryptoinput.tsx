@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
-import { CryptoIcon } from "components/icon/icon";
+import { CryptoIcon } from "blockchain-ui/components/icon/icon";
 import { useEffect, useMemo, useRef, useState } from "react";
 import styled, { css } from "styled-components";
 import { BiChevronDown } from "react-icons/bi";
-import { CryptoSymbols } from "components/static/types";
-import { formatNumber } from "utils";
+import { CryptoSymbols } from "blockchain-ui/components/static/types";
+import { formatNumber } from "blockchain-ui/utils";
 const CryptInputWrapper = styled.div`
   padding: 24px;
   border-radius: 10px;

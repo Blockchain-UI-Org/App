@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import styled, { css } from "styled-components";
-import { withTheme } from "theme";
+import { withTheme } from "blockchain-ui/theme";
 
 import Image from "../image/image";
 import { regularIcons } from "../static/images/icons/regular/index";

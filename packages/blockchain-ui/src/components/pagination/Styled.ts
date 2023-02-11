@@ -1,6 +1,6 @@
 import Flex from "../flex";
 import styled from "styled-components";
-import { withTheme } from "theme";
+import { withTheme } from "blockchain-ui/theme";
 
 interface PaginationProps {
   $disablePrev?: boolean;

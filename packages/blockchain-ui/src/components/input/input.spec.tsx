@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Input } from './input';
-import { DefaultTheme } from 'theme';
+import { DefaultTheme } from "blockchain-ui/theme";
 
 const error500 = DefaultTheme.palette.error.color;
 const blue500= DefaultTheme.palette.info.midtone;

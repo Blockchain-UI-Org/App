@@ -1,6 +1,6 @@
 import { FunctionComponent, useState } from 'react';
 import styled from 'styled-components';
-import { withTheme } from 'theme';
+import { withTheme } from "blockchain-ui/theme";
 import { Tab } from './tab';
 
 

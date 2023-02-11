@@ -2,8 +2,8 @@ import merge from "lodash/merge";
 import React, { FC, useMemo } from "react";
 import ReactApexChart from "react-apexcharts";
 import styled from "styled-components";
-import { ThemeInterface, useTheme } from "theme";
-import {createBasicChartOptions} from "utils";
+import { ThemeInterface, useTheme } from "blockchain-ui/theme";
+import {createBasicChartOptions} from "blockchain-ui/utils";
 import { CryptoIcon } from "../../icon/icon";
 import { CryptoSymbols } from "../../static/types";
 

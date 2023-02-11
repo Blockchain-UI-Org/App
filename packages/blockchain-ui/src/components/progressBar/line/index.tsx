@@ -1,6 +1,6 @@
 import React, { FC, ReactElement } from "react";
 import styled, { css } from "styled-components";
-import { withTheme, ThemeInterface } from "theme";
+import { withTheme, ThemeInterface } from "blockchain-ui/theme";
 
 import { formatNumber } from "../../../utils/format";
 

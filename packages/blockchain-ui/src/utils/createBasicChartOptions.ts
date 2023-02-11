@@ -1,5 +1,5 @@
 import { ApexOptions } from "apexcharts";
-import { ThemeInterface } from "theme";
+import { ThemeInterface } from "blockchain-ui/theme";
 
 
 

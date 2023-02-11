@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 import ReactApexChart from "react-apexcharts";
-import { ThemeInterface, useTheme } from "theme";
+import { ThemeInterface, useTheme } from "blockchain-ui/theme";
 
 interface SparkLineProps {
   chartData: number[];

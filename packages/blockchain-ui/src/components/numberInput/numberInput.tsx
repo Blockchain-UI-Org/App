@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import styled, { css } from "styled-components";
-// import { colors } from "theme";
+// import { colors } from "blockchain-ui/theme";
 import {
   ErrorMessage,
   Label,
@@ -10,7 +10,7 @@ import {
 } from "../input/input";
 import { CryptoIcon } from "../icon/icon";
 import { CryptoSymbols } from "../static/types/crypto";
-import { withTheme } from "theme";
+import { withTheme } from "blockchain-ui/theme";
 
 // const { black, grey300, blue100, blue500, error500, grey700 } = colors;
 

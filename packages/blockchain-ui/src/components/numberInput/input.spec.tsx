@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { DefaultTheme } from 'theme';
+import { DefaultTheme } from "blockchain-ui/theme";
 
 import { NumberInput } from './numberInput';
 // const { blue100, blue500 } = colors;

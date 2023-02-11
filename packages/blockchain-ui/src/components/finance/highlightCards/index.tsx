@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { withTheme, ThemeInterface } from "theme";
+import { withTheme, ThemeInterface } from "blockchain-ui/theme";
 import { SparkLine } from "../../charts/sparkline";
 import { CryptoSymbols } from "../../static/types";
 import { CryptoIcon } from "../../icon/icon";

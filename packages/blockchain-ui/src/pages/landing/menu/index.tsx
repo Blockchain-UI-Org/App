@@ -1,6 +1,6 @@
 import Link from "@mui/material/Link";
-import Iconify from "components/Iconify";
-import SocialsButton from "components/SocialsButton";
+import Iconify from "blockchain-ui/components/Iconify";
+import SocialsButton from "blockchain-ui/components/SocialsButton";
 import React from "react";
 import styled from "styled-components";
 

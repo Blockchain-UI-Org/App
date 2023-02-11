@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import { CryptoIcon } from '../icon';
 import { cryptoIcons } from '../../static/images/icons/crypto';
 import { CryptoSymbols } from '../../static/types/crypto';
-import { DefaultTheme } from 'theme';
+import { DefaultTheme } from "blockchain-ui/theme";
 
 
 const sizes = DefaultTheme.components.Icons.sizes;

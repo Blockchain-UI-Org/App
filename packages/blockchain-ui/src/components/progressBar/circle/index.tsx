@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { withTheme, ThemeInterface } from "theme";
-import { colors } from "theme/colors";
+import { withTheme, ThemeInterface } from "blockchain-ui/theme";
+import { colors } from "blockchain-ui/theme/colors";
 
 export interface CircleBarProps {
   showValue?: boolean;

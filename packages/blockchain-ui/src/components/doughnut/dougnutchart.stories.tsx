@@ -1,9 +1,9 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { DoughnutChart } from "./dougnutchart";
-import { Icon } from "components/icon/icon";
-import { Typography } from "components/typography";
-import { formatNumber } from "utils";
+import { Icon } from "blockchain-ui/components/icon/icon";
+import { Typography } from "blockchain-ui/components/typography";
+import { formatNumber } from "blockchain-ui/utils";
 
 export default {
   title: "General/DoughnutChart",

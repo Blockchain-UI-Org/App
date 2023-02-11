@@ -1,4 +1,4 @@
-import { CryptoIcon } from "components/icon/icon";
+import { CryptoIcon } from "blockchain-ui/components/icon/icon";
 import { Table, TableContainer, Tbody, Td, Th, THead, Tr } from "./Table";
 
 export default {

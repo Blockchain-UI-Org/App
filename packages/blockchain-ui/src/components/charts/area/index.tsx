@@ -2,10 +2,10 @@ import merge from "lodash/merge";
 import React, { FC, useMemo } from "react";
 import ReactApexChart from "react-apexcharts";
 import styled from "styled-components";
-import { createBasicChartOptions } from "utils";
+import { createBasicChartOptions } from "blockchain-ui/utils";
 import { CryptoIcon } from "../../icon/icon";
 import { CryptoSymbols } from "../../static/types";
-import { ThemeInterface, useTheme } from "theme";
+import { ThemeInterface, useTheme } from "blockchain-ui/theme";
 
 export interface AreaChartProps {
   color?: keyof ThemeInterface["components"]["Chart"]["variants"];

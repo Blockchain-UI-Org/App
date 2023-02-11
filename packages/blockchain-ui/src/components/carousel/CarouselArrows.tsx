@@ -5,7 +5,7 @@ import { useTheme, styled } from "@mui/material/styles";
 import { Box, BoxProps, Stack, StackProps, IconButtonProps } from "@mui/material";
 //
 import Iconify from "../Iconify";
-import { IconButtonAnimate } from "animate";
+import { IconButtonAnimate } from "blockchain-ui/animate";
 
 // ----------------------------------------------------------------------
 

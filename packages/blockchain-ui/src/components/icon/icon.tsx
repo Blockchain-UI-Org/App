@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { useTheme } from 'theme';
+import { useTheme } from "blockchain-ui/theme";
 import Image from '../image/image';
 import { CryptoSymbols } from '../static/types/crypto';
 import { IconSizes } from '../static/types/icons';

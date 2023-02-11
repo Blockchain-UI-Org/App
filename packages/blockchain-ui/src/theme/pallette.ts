@@ -1,4 +1,4 @@
-import { Subset } from "typeutils";
+import { Subset } from "blockchain-ui/typeutils";
 import { colors } from "./colors";
 import { colorVariants, IColorVariants } from "./variants";
 import merge from "lodash/merge";

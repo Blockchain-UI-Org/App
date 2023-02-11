@@ -1,9 +1,9 @@
 import { FC, ReactNode } from "react";
 import styled from "styled-components";
 import { Icon } from "../icon/icon";
-import { Inline, Stack } from "components/layout";
-import { withTheme } from "theme";
-import { Paragraph } from "components/typography";
+import { Inline, Stack } from "blockchain-ui/components/layout";
+import { withTheme } from "blockchain-ui/theme";
+import { Paragraph } from "blockchain-ui/components/typography";
 
 export interface AlertProps {
   message: ReactNode;

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styled from "styled-components";
-import { withTheme } from "theme";
+import { withTheme } from "blockchain-ui/theme";
 
 type TagType = "neutral" | "positive" | "warning" | "error";
 

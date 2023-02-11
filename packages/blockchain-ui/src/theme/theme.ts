@@ -1,5 +1,5 @@
 import { createShadow, IShadowTheme } from "./shadow";
-import { Subset } from "typeutils";
+import { Subset } from "blockchain-ui/typeutils";
 import { ITypographyTheme, createTypography } from "./typography";
 import { createColorPalette, IColorPalette } from "./pallette";
 import { createComponents, IComponentTheme } from "./components";

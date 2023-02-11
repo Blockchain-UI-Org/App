@@ -1,4 +1,4 @@
-import { Subset } from "typeutils";
+import { Subset } from "blockchain-ui/typeutils";
 import merge from "lodash/merge";
 
 export type Device = "xsmall" | "mobile" | "tablet" | "desktop";

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { ReactElement } from "react";
 import { CryptoIcon, CryptoIconProps } from "../icon";
 import { cryptoIcons } from "../../static/images/icons/crypto";
-import { Inline, Stack } from "components/layout";
+import { Inline, Stack } from "blockchain-ui/components/layout";
 
 export default {
   component: CryptoIcon,

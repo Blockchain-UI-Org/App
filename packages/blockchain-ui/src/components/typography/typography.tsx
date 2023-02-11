@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styled, {  css } from "styled-components";
-import { withTheme, useTheme  } from "theme";
+import { withTheme, useTheme  } from "blockchain-ui/theme";
 
 export type FontWeightTypes = "regular" | "medium" | "bold";
 

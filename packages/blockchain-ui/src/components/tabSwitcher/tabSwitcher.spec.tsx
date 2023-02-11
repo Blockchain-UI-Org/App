@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { mockedTabs } from './mockedTabs';
 
 import { TabSwitcher } from './tabSwitcher';
-import { DefaultTheme } from 'theme';
+import { DefaultTheme } from "blockchain-ui/theme";
 
 const grey700= DefaultTheme.palette.grey[700];
 const black = DefaultTheme.palette.common.black;

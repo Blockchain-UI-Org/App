@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, memo, ReactNode, ReactElement, CSSProperti
 import styled, { css } from 'styled-components';
 import { useClickAway, useWindowSize } from 'react-use';
 import { motion, AnimatePresence } from 'framer-motion';
-import { withTheme } from 'theme';
+import { withTheme } from "blockchain-ui/theme";
 
 import { Icon } from '../icon/icon';
 import Image from '../image/image';

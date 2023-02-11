@@ -1,10 +1,10 @@
 import type { ChartData } from "chart.js";
-import { Typography } from "components/typography";
+import { Typography } from "blockchain-ui/components/typography";
 import { useEffect, useMemo, useState } from "react";
 import { Doughnut } from "react-chartjs-2";
 import styled from "styled-components";
-import { useTheme } from "theme";
-import { createBasicDoughnutOptions } from "utils/createBasicDoughnutOptions";
+import { useTheme } from "blockchain-ui/theme";
+import { createBasicDoughnutOptions } from "blockchain-ui/utils";
 
 const PrimaryColor = "#0A8270";
 

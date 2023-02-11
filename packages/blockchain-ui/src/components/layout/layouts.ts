@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import type { CSSProperties } from 'react';
-import { withTheme } from 'theme';
+import { withTheme } from "blockchain-ui/theme";
 
 interface StackProps {
   justifyContent?: CSSProperties['justifyContent'];

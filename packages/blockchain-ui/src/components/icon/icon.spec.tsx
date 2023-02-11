@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Icon } from './icon';
 import { regularIcons } from '../static/images/icons/regular';
-import { DefaultTheme } from 'theme';
+import { DefaultTheme } from "blockchain-ui/theme";
 
 
 const sizes = DefaultTheme.components.Icons.sizes;
