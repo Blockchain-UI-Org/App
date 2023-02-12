@@ -5,6 +5,10 @@
   "private": false,
   "description": "A component library for blockchain apps.",
   "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    "import": "./dist/index.js"
+  },
   "types": "./dist/index.d.ts",
   "homepage": "https://www.blockchain-ui.com",
   "repository": {
@@ -21,6 +25,7 @@
   "bugs": {
     "url": "https://github.com/Blockchain-UI-Org/Library/issues"
   },
+  "files": ["./dist/*"],
   "dependencies": {
     "@mui/material": "^5.11.0",
     "@storybook/theming": "^6.5.14",
@@ -106,6 +111,7 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@iconify/react": "^4.0.1",
+    "@skypack/package-check": "^0.2.2",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-backgrounds": "^6.5.13",
     "@storybook/addon-controls": "^6.5.13",
