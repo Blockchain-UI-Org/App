@@ -30,6 +30,7 @@ const ArrowStyle = styled(IconButton)(({ theme }) => ({
 
 interface Props extends BoxProps {
   index: number;
+  
   total: number;
   customIcon?: IconifyIcon | string;
   onNext?: VoidFunction;

@@ -4,7 +4,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import {Button} from "blockchain-ui/src/component/button";
+import {Button} from "blockchain-ui";
 import styles from "./index.module.css";
 
 function HomepageHeader() {
