@@ -278,8 +278,8 @@ export const Features = styled.div`
 export const FeatureCard = styled.div`
   display: flex;
   flex-direction: column;
-  width: 250px;
-  height: 264px;
+  width: 330px;
+  height: 304px;
   padding: 20px 40px;
   margin: 0 10px;
 

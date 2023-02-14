@@ -4,7 +4,7 @@ import { FeatureCard, Features } from "../styled";
 const FeaturesSection = () => {
   return (
     <Features>
-      <div className="titleHeader">Amazing Benefits</div>
+      <div className="titleHeader" style={{color: "#333"}}>Amazing Benefits</div>
 
       <div className="features">
         <FeatureCard>
