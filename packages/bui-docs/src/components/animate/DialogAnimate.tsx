@@ -3,7 +3,7 @@ import { m, AnimatePresence } from 'framer-motion';
 import { Dialog, Box, Paper, DialogProps } from '@mui/material';
 //
 import { varFade } from './variants';
-
+import React from "react";
 // ----------------------------------------------------------------------
 
 export interface Props extends DialogProps {

@@ -3,7 +3,7 @@ import { m, MotionProps } from 'framer-motion';
 import { Box, BoxProps } from '@mui/material';
 //
 import { varFade } from './variants';
-
+import React from "react";
 // ----------------------------------------------------------------------
 
 type Props = BoxProps & MotionProps;

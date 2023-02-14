@@ -6,9 +6,6 @@
   "description": "A component library for blockchain apps.",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
-  "exports": {
-    "import": "./dist/index.js"
-  },
   "types": "./dist/index.d.ts",
   "homepage": "https://www.blockchain-ui.com",
   "repository": {

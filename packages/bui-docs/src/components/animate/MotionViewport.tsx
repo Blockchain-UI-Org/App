@@ -3,10 +3,10 @@ import { ReactNode } from 'react';
 // @mui
 import { Box, BoxProps } from '@mui/material';
 // hooks
-import useResponsive from '../hooks/useResponsive';
+import useResponsive from 'blockchain-ui/src/hooks/useResponsive';
 //
 import { varContainer } from '.';
-
+import React from "react";
 // ----------------------------------------------------------------------
 
 type IProps = BoxProps & MotionProps;

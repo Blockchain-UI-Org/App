@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 // @mui
 import { styled } from '@mui/material/styles';
 import { Box, BoxProps } from '@mui/material';
-
+import React from "react";
 // ----------------------------------------------------------------------
 
 type RootStyleProps = {

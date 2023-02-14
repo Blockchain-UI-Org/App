@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { LazyMotion } from 'framer-motion';
-
+import React from "react";
 // ----------------------------------------------------------------------
 
 // eslint-disable-next-line import/extensions

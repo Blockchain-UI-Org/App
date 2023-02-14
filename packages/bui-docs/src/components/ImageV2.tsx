@@ -2,7 +2,7 @@ import { LazyLoadImage, LazyLoadImageProps } from "react-lazy-load-image-compone
 // @mui
 import { Theme } from "@mui/material/styles";
 import { Box, BoxProps, SxProps } from "@mui/material";
-
+import React from "react";
 // ----------------------------------------------------------------------
 
 export type ImageRato = "4/3" | "3/4" | "6/4" | "4/6" | "16/9" | "9/16" | "21/9" | "9/21" | "1/1";

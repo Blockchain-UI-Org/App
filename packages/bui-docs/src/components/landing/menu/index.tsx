@@ -1,8 +1,8 @@
 import Link from "@mui/material/Link";
-import Iconify from "blockchain-ui/components/Iconify";
-import SocialsButton from "blockchain-ui/components/SocialsButton";
+
 import React from "react";
 import styled from "styled-components";
+import Iconify from "../../Iconify";
 
 const Menu = () => {
   return (
@@ -59,7 +59,7 @@ const Container = styled.div`
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width *
+  width: 100%; /* Full width */
 `;
 
 const Wrapper = styled.div`

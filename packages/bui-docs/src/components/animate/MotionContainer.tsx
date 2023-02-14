@@ -3,6 +3,7 @@ import { m, MotionProps } from 'framer-motion';
 import { Box, BoxProps } from '@mui/material';
 //
 import { varContainer } from './variants';
+import React from "react";
 
 // ----------------------------------------------------------------------
 

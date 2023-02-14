@@ -231,7 +231,7 @@ export const Features = styled.div`
     line-height: 61px;
     text-align: center;
     letter-spacing: -1px;
-    color: #00000;
+    /* color: #00000; */
 
     @media (max-width: 1200px) {
       margin-top: 20px;

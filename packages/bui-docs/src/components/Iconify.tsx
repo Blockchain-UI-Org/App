@@ -2,7 +2,7 @@
 import { Icon, IconifyIcon } from '@iconify/react';
 // @mui
 import { Box, BoxProps, SxProps } from '@mui/material';
-
+import React from "react";
 // ----------------------------------------------------------------------
 
 interface Props extends BoxProps {
