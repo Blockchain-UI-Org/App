@@ -9,7 +9,6 @@ export const Container = styled.div`
   overflow: hidden;
   min-height: 0px;
   min-width: 0px;
-  margin-top: 50px;
 `;
 
 export const IphoneMock = styled.img`

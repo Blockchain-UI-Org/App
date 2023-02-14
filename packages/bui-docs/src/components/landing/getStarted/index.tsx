@@ -15,7 +15,7 @@ const GetStartedSection = () => {
         </div>
       </div>
       <div className="rightSection">
-        <IphoneMock src="/assets/iphone_mockup.jpg" alt="iphone_mockup" />
+        <IphoneMock src="/img/iphone_mockup.jpg" alt="iphone_mockup" />
       </div>
     </GetStarted>
   );
