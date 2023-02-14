@@ -1,6 +1,6 @@
 {
   "name": "blockchain-ui",
-  "version": "1.0.0-alpha",
+  "version": "1.0.12-alpha",
   "license": "MIT",
   "private": false,
   "description": "A component library for blockchain apps.",
@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/Blockchain-UI-Org/Library/issues"
   },
-  "files": ["./dist/*"],
+  "files": ["./dist", "./Readme.md"],
   "dependencies": {
     "@mui/material": "^5.11.0",
     "@storybook/theming": "^6.5.14",
