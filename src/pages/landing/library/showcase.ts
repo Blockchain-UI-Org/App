@@ -6,6 +6,12 @@ export const showcase = [
     image: "/assets/components/areaChart3.png",
   },
   {
+    id: "pie_charts",
+    title: "",
+    description: "",
+    image: "/assets/components/pieChart2.png",
+  },
+  {
     id: "NFT Cards",
     title: "",
     description: "",
@@ -18,21 +24,15 @@ export const showcase = [
     image: "/assets/nft5.webp",
   },
   {
-    id: "pie_charts",
-    title: "",
-    description: "",
-    image: "/assets/components/pieChart2.png",
-  },
-  {
     id: "credit_card1",
     title: "Credit Card",
     description: "",
-    image: "/assets/components/creditCard.png",
+    image: "/assets/ccWhite.svg",
   },
   {
     id: "credit_card2",
     title: "",
     description: "",
-    image: "/assets/components/creditCard2.png",
+    image: "/assets/ccBlack.svg",
   },
 ];
