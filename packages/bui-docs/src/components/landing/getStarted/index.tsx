@@ -1,9 +1,10 @@
 import React from "react";
-import { GetStarted, GetStartedButton, IphoneMock } from "../styled";
+import {  GetStartedButton, IphoneMock } from "../styled";
+import "./GetStarted.scss";
 
 const GetStartedSection = () => {
   return (
-    <GetStarted>
+    <div className={"getStarted"}>
       <div className="leftSection">
         <div className="header">Create beautiful apps quickly.</div>
         <div className="description">
@@ -17,7 +18,7 @@ const GetStartedSection = () => {
       <div className="rightSection">
         <IphoneMock src="/img/iphone_mockup.jpg" alt="iphone_mockup" />
       </div>
-    </GetStarted>
+    </div>
   );
 };
 
