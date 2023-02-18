@@ -46,6 +46,12 @@ const plugins = [
   typescript({
     tsconfig: "./tsconfig.json",
     useTsconfigDeclarationDir: true,
+    tsconfigOverride: {
+      exclude: [
+        "src/_mock/*",
+        "src/components/_mock/*",
+      ]
+    }
   }),
   // ...bundleCss(),
   // css(),
