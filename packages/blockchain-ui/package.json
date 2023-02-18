@@ -1,12 +1,12 @@
 {
   "name": "blockchain-ui",
-  "version": "1.0.121-alpha",
+  "version": "1.0.0-alpha.31",
   "license": "MIT",
   "private": false,
   "description": "A component library for blockchain apps.",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "homepage": "https://www.blockchain-ui.com",
   "repository": {
     "type": "git",
@@ -22,10 +22,6 @@
   "bugs": {
     "url": "https://github.com/Blockchain-UI-Org/Library/issues"
   },
-  "files": [
-    "./dist",
-    "./Readme.md"
-  ],
   "dependencies": {
     "@mui/material": "^5.11.0",
     "@storybook/theming": "^6.5.14",
@@ -67,7 +63,10 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --project-token=486802020566"
+    "chromatic": "npx chromatic --project-token=486802020566",
+    "rollup": "rm -rf dist && rollup -c",
+    "post:rollup:build": "node ./scripts/frankBuild.js",
+    "rollup:build": "npm run rollup && npm run post:rollup:build"
   },
   "eslintConfig": {
     "extends": [
@@ -111,6 +110,10 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@iconify/react": "^4.0.1",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-image": "^3.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-replace": "^5.0.2",
     "@skypack/package-check": "^0.2.2",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-backgrounds": "^6.5.13",
@@ -135,6 +138,7 @@
     "@types/styled-components": "^5.1.26",
     "@types/tinycolor2": "^1.4.3",
     "@types/webfontloader": "^1.6.35",
+    "autoprefixer": "^10.4.13",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-plugin-named-exports-order": "^0.0.2",
@@ -146,6 +150,12 @@
     "prettier": "^2.8.0",
     "prop-types": "^15.8.1",
     "rimraf": "^4.1.2",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-generate-package-json": "^3.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
     "storybook": "^6.5.13",
     "tsc-alias": "^1.8.2",
     "tsconfig-paths-webpack-plugin": "^4.0.0",

@@ -19,4 +19,4 @@ const Flex = styled.div`
   ${FlexBasicProperties}
 `;
 
-export default Flex;
+export { Flex };

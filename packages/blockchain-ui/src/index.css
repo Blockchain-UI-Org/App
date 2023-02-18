@@ -1,5 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Public+Sans);
 @import url("https://fonts.cdnfonts.com/css/circular-std");
+@import "./components/button/style.css";
 
 @font-face {
   font-family: "CircularStd";

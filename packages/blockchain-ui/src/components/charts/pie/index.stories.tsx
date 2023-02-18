@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentMeta, Story } from "@storybook/react";
-import PieChart, { PieChartProps } from ".";
+import { PieChart, PieChartProps } from ".";
 import { DefaultTheme } from "blockchain-ui/theme";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export

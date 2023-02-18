@@ -1,4 +1,4 @@
-import Flex from "../flex";
+import { Flex } from "../flex/flex";
 import styled from "styled-components";
 import { withTheme } from "blockchain-ui/theme";
 

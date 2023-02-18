@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta, Story } from "@storybook/react";
-import LineChart, { ChartProps } from ".";
+import { LineChart, ChartProps } from ".";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {

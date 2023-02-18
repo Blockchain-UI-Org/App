@@ -53,4 +53,4 @@ export const RoundImage = styled(Image)`
   border-radius: 50%;
 `;
 
-export default Image;
+export { Image };

@@ -19,7 +19,7 @@ export interface AreaChartProps {
   currency?: CryptoSymbols;
 }
 
-const LineChart: FC<AreaChartProps> = ({
+const AreaChart: FC<AreaChartProps> = ({
   color = "blue",
   width = "100%",
   height = "100%",
@@ -56,7 +56,7 @@ const LineChart: FC<AreaChartProps> = ({
   );
 };
 
-export default LineChart;
+export { AreaChart };
 
 const Container = styled.div`
   color: white;
