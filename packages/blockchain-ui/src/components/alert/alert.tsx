@@ -32,5 +32,3 @@ export const Alert: FC<AlertProps> = ({ message, type = "info" }) => {
     </Container>
   );
 };
-
-export default Alert;

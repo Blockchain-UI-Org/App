@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta, Story } from "@storybook/react";
-import AreaChart, { AreaChartProps } from ".";
+import { AreaChart, AreaChartProps } from ".";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {

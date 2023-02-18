@@ -19,7 +19,7 @@ export interface ChartProps {
   downwardsColor: string;
 }
 
-const LineChart: FC<ChartProps> = ({
+const CandleStickChart: FC<ChartProps> = ({
   width = "100%",
   height = "100%",
   chartData,
@@ -27,7 +27,7 @@ const LineChart: FC<ChartProps> = ({
   upwardsColor = "#3C90EB",
   downwardsColor = "#DF7D46",
 }) => {
-  const theme = useTheme()
+  const theme = useTheme();
   const chartOptions = merge(createBasicChartOptions(theme.components.Chart.common), {
     plotOptions: {
       candlestick: {
@@ -42,18 +42,12 @@ const LineChart: FC<ChartProps> = ({
   return (
     <Container>
       <Title>{currency && <CryptoIcon cryptoSymbol={currency} />}</Title>{" "}
-      <ReactApexChart
-        type="candlestick"
-        series={chartData}
-        options={chartOptions}
-        height={height}
-        width={width}
-      />
+      <ReactApexChart type="candlestick" series={chartData} options={chartOptions} height={height} width={width} />
     </Container>
   );
 };
 
-export default LineChart;
+export { CandleStickChart };
 
 const Container = styled.div`
   color: white;

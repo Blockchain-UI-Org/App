@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import styled, { css } from "styled-components";
 import { withTheme } from "blockchain-ui/theme";
 
-import Image from "../image/image";
+import { Image } from "../image/image";
 import { regularIcons } from "../static/images/icons/regular/index";
 
 type NotificationType = "loading" | "positive" | "negative";

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import Table from ".";
+import { TableComponent as Table } from ".";
 import { _appInvoices } from "../_mock";
 import styled from "styled-components";
 

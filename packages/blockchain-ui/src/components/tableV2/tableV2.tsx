@@ -10,7 +10,7 @@ import { Box, Button, Card, CardHeader, CardProps, Divider } from "@mui/material
 import TableHeadCustom from "./tableHeadCustom";
 import { Icon as Iconify } from "@iconify/react";
 import { fCurrency } from "../../utils/number";
-import Label from "../label";
+import { Label } from "../label/label";
 // import palette from "theme/palette";
 
 export type RowProps = {
@@ -28,7 +28,7 @@ interface Props extends CardProps {
   tableLabels: any;
 }
 
-export default function TableComponent({ title, subheader, tableData, tableLabels, ...other }: Props) {
+export function TableComponent({ title, subheader, tableData, tableLabels, ...other }: Props) {
   return (
     <Card {...other} style={{ backgroundColor: "#212B36", color: "#fff", padding: "10px" }}>
       <CardHeader title={title} subheader={subheader} sx={{ mb: 3 }} />

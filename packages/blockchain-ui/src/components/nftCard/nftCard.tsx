@@ -15,7 +15,7 @@ const NftCard: FC<NftCardProps> = ({ src, size }) => {
   );
 };
 
-export default NftCard;
+export { NftCard };
 
 const Container = styled.div`
   color: white;
@@ -25,7 +25,6 @@ const Container = styled.div`
   border-radius: 15px;
   overflow: hidden;
   margin: 10px 15px;
-  
 `;
 
 interface ImageProps {

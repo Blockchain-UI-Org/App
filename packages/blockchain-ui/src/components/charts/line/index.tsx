@@ -54,7 +54,7 @@ const LineChart: FC<ChartProps> = ({
   );
 };
 
-export default LineChart;
+export { LineChart };
 
 const Container = styled.div`
   color: white;
