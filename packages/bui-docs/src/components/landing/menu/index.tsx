@@ -53,8 +53,7 @@ const Container = styled.div`
   width: inherit;
   height: 50px;
   opacity: 0.97;
-  z-index:3;
-
+  z-index: 3;
 
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
