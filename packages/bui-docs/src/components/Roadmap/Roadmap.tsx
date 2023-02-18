@@ -12,6 +12,7 @@ export type IRoadmapProps = {
 
 const StyledSection = styled.section`
   position: relative;
+  background-color: #1b1b1d;
   padding: 100px 50px;
   color: black;
   width: 100%;
@@ -87,16 +88,22 @@ const Circle = styled.div<{ title: string; count: number; index: number }>`
 const Card = styled.div`
   background-color: #fff;
   width: 200px;
-  height: 50px;
+  min-height: 50px;
   border-radius: 40px;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 0;
   transition: all 0.3s linear;
+  span {
+    font-size: 10px;
+    color: #333;
+    padding-bottom: 5px;
+  }
   &.up {
     top: -70px;
     &:hover {
@@ -124,7 +131,10 @@ const Roadmap: FC<IRoadmapProps> = (props) => {
         {props.items.map((item, index) => {
           return (
             <Circle title={item.title} count={props.items.length} index={index}>
-              <Card className={index % 2 === 0 ? "up" : "down"}>{item.title}</Card>
+              <Card style={{ color: "#333" }} className={index % 2 === 0 ? "up" : "down"}>
+                {item.title}
+                {item.description && <span>({item.description})</span>}
+              </Card>
             </Circle>
           );
         })}

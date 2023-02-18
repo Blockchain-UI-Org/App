@@ -18,6 +18,7 @@ type IFontProps = {
   fontSize?: string | number;
   lineHeight?: number | string;
   color?: string;
+  noMargin?: boolean;
   fontFamily?: string;
 };
 export type ITypographyTags = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span" | "p";
@@ -34,7 +35,8 @@ const genStyles = (props: IFontProps) =>
     lineHeight: props.lineHeight,
     color: props.color,
     fontFamily: props.fontFamily,
-  } as IFontProps);
+    ...(props.noMargin && {margin: 0})
+  });
 
 export const Typography: FC<ITypographyProps> = styled("p")`
   font-family: ${withTheme(({theme}) => theme.typography.common.fontFamily)};

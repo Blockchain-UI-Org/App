@@ -81,9 +81,14 @@ const config = {
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: "https://github.com/Blockchain-UI-Org/Library",
-            label: "GitHub",
             position: "right",
+            className: "fa-brands fa-github",
+            "aria-label": "GitHub repository",
           },
+          // {
+          //   type: 'search',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {

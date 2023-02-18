@@ -1,7 +1,6 @@
-import { FC, ImgHTMLAttributes, useEffect, useState } from "react";
+import { FC, ImgHTMLAttributes, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import * as availableImages from "../static/images";
-
 
 export interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
   name: string;
@@ -21,13 +20,15 @@ const StyledImage = styled.img<StyledImageProps>`
   background-color: ${({ bgColor }) => bgColor};
 `;
 
-const Image: FC<ImageProps> = ({
-  name,
-  src,
-  iconType = "regular",
-  ...props
-}) => {
-  const [imageSrc, setImageSrc] = useState<string>();
+const Image: FC<ImageProps> = ({ name, src, iconType = "regular", ...props }) => {
+  const [render, setRender] = useState<boolean>(false);
+  const CompRef = useRef<any>(src);
+
+  const setImageSrc = (arg: any) => {
+    CompRef.current = arg;
+    setRender(old => !old);
+  }
+  const Comp = CompRef.current;
 
   useEffect(() => {
     if (src) {
@@ -38,15 +39,12 @@ const Image: FC<ImageProps> = ({
       setImageSrc(availableImages.default[imageName]);
     }
   }, [iconType, name, src]);
+  if (typeof Comp === "undefined" || typeof Comp === "string") {
 
-  return (
-    <StyledImage
-      src={imageSrc}
-      data-testid={`${name}-image`}
-      alt={`${name}-image`}
-      {...props}
-    />
-  );
+    return <StyledImage src={Comp} data-testid={`${name}-image`} alt={`${name}-image`} {...props} />;
+  }
+
+  return <Comp />;
 };
 
 export const RoundImage = styled(Image)`

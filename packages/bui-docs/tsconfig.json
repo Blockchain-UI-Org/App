@@ -3,8 +3,9 @@
   "extends": "@tsconfig/docusaurus/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "jsx": "react-jsx",
     "paths": {
-      "@project/blockchain-ui": ["../../blockchain-ui/src"],
+      "blockchain-ui/*": ["./packages/blockchain-ui/src/*"],
       "@site/*": ["./*"]
     }
   }

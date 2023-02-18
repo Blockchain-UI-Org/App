@@ -26,9 +26,9 @@ export const Alert: FC<AlertProps> = ({ message, type = "info" }) => {
   return (
     <Container gap="1rem" inset="1rem" className={type}>
       {type === "info" ? <Icon name="alertWarningThinBlack" /> : <Icon name="alertWarningThinRed" />}
-      <Stack gap="0.5rem">
-        <Paragraph variant="body1">{message}</Paragraph>
-      </Stack>
+      <Paragraph noMargin variant="body1">
+        {message}
+      </Paragraph>
     </Container>
   );
 };
