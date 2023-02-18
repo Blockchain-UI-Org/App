@@ -4,6 +4,10 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "build": "cd packages/bui-docs && yarn build",
+    "start": "cd packages/bui-docs && yarn start"
+  },
   "devDependencies": {
     "lerna": "^6.4.1"
   }
