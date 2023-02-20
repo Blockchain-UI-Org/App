@@ -60,7 +60,7 @@
     "typecheck": "tsc -noEmit",
     "start": "react-scripts start",
     "copy": "copyfiles -u 1 './src/**/*.svg' dist && copyfiles './src/**/*.css' dist",
-    "declarations": "tsc -p ./tsconfig.build.json --build",
+    "declarations": "tsc -p ./tsconfig.build.json ",
     "watch-types": "tsc -p ./tsconfig.build.json --watch",
     "watch-js": "babel --watch src --extensions \".js,.ts,.tsx\" --out-dir dist --copy-files --no-copy-ignored",
     "build": "rimraf ./dist && yarn declarations && babel src --extensions \".js,.ts,.tsx\" --out-dir dist --copy-files --no-copy-ignored",

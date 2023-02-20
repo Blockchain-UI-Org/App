@@ -31,7 +31,7 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: ["docusaurus-plugin-sass"],
   presets: [
     [
       "classic",
@@ -60,7 +60,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: "dark",
+        defaultMode: "light",
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
       },
       docs: {},
       // Replace with your project's social card
@@ -77,6 +79,11 @@ const config = {
             docId: "intro",
             position: "left",
             label: "Docs",
+          },
+          {
+            href: "https://www.chromatic.com/library?appId=63a670b1ce0472f1c60a3f59&branch=main",
+            position: "right",
+            label: "Library",
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
