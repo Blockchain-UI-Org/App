@@ -6,10 +6,12 @@ export type Device = "xsmall" | "mobile" | "tablet" | "desktop";
 export type DeviceSizes = "xSmall" | "small" | "medium" | "large";
 
 export type BreakPointDirection = "up" | "down";
+
 export type IMediaTheme = {
   devices: Record<DeviceSizes, number>;
   breakpoints: Record<BreakPointDirection, Record<Device, string>>;
 };
+
 const DefaultDevices: IMediaTheme["devices"] = {
   xSmall: 480, // small phone
   small: 720, // large phone
