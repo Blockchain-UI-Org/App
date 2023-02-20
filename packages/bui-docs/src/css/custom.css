@@ -37,7 +37,13 @@
   justify-content: center;
 }
 
-
+.twitter-icon {
+  color: #00acee;
+  font-size: 20px;
+}
+.twitter-icon:hover {
+  color: #00acee
+}
 .fa-github {
   font-size: 20px;
 }

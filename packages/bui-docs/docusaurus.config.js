@@ -85,7 +85,13 @@ const config = {
             position: "right",
             label: "Library",
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: "https://twitter.com/ui_blockchain",
+            position: "right",
+            className: "fa-brands fa-twitter twitter-icon",
+
+            "aria-label": "Twitter Page",
+          },
           {
             href: "https://github.com/Blockchain-UI-Org/Library",
             position: "right",
