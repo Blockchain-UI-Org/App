@@ -72,6 +72,7 @@ const config = {
         logo: {
           alt: "Blockchain UI",
           src: "img/logo.png",
+          style: {display: "none"}
         },
         items: [
           {
@@ -82,9 +83,9 @@ const config = {
           },
           {
             href: "https://www.chromatic.com/library?appId=63a670b1ce0472f1c60a3f59&branch=main",
-            type: "doc",
             position: "right",
             label: "Library",
+            className: "external-link"
           },
           {
             href: "https://twitter.com/ui_blockchain",

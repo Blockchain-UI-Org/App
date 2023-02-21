@@ -37,6 +37,10 @@
   justify-content: center;
 }
 
+.external-link svg {
+  display: none;
+}
+
 .twitter-icon {
   color: #00acee;
   font-size: 20px;
