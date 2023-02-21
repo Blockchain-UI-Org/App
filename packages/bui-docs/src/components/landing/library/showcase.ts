@@ -6,6 +6,13 @@ export const showcase = [
     image: "/img/carousel/areaChart3.png",
   },
   {
+    id: "apple_card1",
+    title: "",
+    description: "",
+    image: "/img/ccWhite.svg",
+  },
+
+  {
     id: "NFT Cards",
     title: "",
     description: "",
@@ -17,22 +24,23 @@ export const showcase = [
     description: "",
     image: "/img/carousel/nft5.webp",
   },
+
+  {
+    id: "credit_card1",
+    title: "",
+    description: "",
+    image: "/img/carousel/creditCard.png",
+  },
   {
     id: "pie_charts",
     title: "",
     description: "",
     image: "/img/carousel/pieChart2.png",
   },
-  {
-    id: "credit_card1",
-    title: "Credit Card",
-    description: "",
-    image: "/img/carousel/creditCard.png",
-  },
-  {
-    id: "credit_card2",
-    title: "",
-    description: "",
-    image: "/img/carousel/creditCard2.png",
-  },
+  // {
+  //   id: "credit_card2",
+  //   title: "",
+  //   description: "",
+  //   image: "/img/carousel/creditCard2.png",
+  // },
 ];
