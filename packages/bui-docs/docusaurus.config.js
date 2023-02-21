@@ -72,7 +72,7 @@ const config = {
         logo: {
           alt: "Blockchain UI",
           src: "img/logo.png",
-          style: {display: "none"}
+          style: { display: "none" },
         },
         items: [
           {
@@ -85,7 +85,7 @@ const config = {
             href: "https://www.chromatic.com/library?appId=63a670b1ce0472f1c60a3f59&branch=main",
             position: "right",
             label: "Library",
-            className: "external-link"
+            className: "external-link",
           },
           {
             href: "https://twitter.com/ui_blockchain",
@@ -149,7 +149,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Blockchain UI, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Blockchain UI, Inc.`,
       },
       prism: {
         theme: lightCodeTheme,
