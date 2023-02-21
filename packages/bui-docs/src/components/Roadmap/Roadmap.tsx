@@ -16,6 +16,7 @@ const StyledSection = styled.section`
   padding: 100px 50px;
   color: black;
   width: 100%;
+
   .titleHeader {
     font-style: normal;
     font-weight: 700;
@@ -25,6 +26,12 @@ const StyledSection = styled.section`
     letter-spacing: -1px;
     color: #2d3766;
     margin-bottom: 30px;
+
+    background: -webkit-linear-gradient(45deg, #6fbbc9, #b1a0f5, #ed434c);
+    background-color: red;
+    // background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     @media (max-width: 1200px) {
       font-size: 40px;
