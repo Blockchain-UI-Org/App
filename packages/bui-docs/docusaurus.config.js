@@ -31,7 +31,7 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-
+  plugins: ["docusaurus-plugin-sass"],
   presets: [
     [
       "classic",
@@ -60,7 +60,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: "dark",
+        defaultMode: "light",
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
       },
       docs: {},
       // Replace with your project's social card
@@ -70,6 +72,7 @@ const config = {
         logo: {
           alt: "Blockchain UI",
           src: "img/logo.png",
+          style: {display: "none"}
         },
         items: [
           {
@@ -78,12 +81,29 @@ const config = {
             position: "left",
             label: "Docs",
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: "https://www.chromatic.com/library?appId=63a670b1ce0472f1c60a3f59&branch=main",
+            position: "right",
+            label: "Library",
+            className: "external-link"
+          },
+          {
+            href: "https://twitter.com/ui_blockchain",
+            position: "right",
+            className: "fa-brands fa-twitter twitter-icon",
+
+            "aria-label": "Twitter Page",
+          },
           {
             href: "https://github.com/Blockchain-UI-Org/Library",
-            label: "GitHub",
             position: "right",
+            className: "fa-brands fa-github",
+            "aria-label": "GitHub repository",
           },
+          // {
+          //   type: 'search',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {

@@ -12,9 +12,11 @@ export type IRoadmapProps = {
 
 const StyledSection = styled.section`
   position: relative;
+  background-color: #1b1b1d;
   padding: 100px 50px;
   color: black;
   width: 100%;
+
   .titleHeader {
     font-style: normal;
     font-weight: 700;
@@ -24,6 +26,12 @@ const StyledSection = styled.section`
     letter-spacing: -1px;
     color: #2d3766;
     margin-bottom: 30px;
+
+    background: -webkit-linear-gradient(45deg, #6fbbc9, #b1a0f5, #ed434c);
+    background-color: red;
+    // background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     @media (max-width: 1200px) {
       font-size: 40px;
@@ -87,16 +95,22 @@ const Circle = styled.div<{ title: string; count: number; index: number }>`
 const Card = styled.div`
   background-color: #fff;
   width: 200px;
-  height: 50px;
+  min-height: 50px;
   border-radius: 40px;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 0;
   transition: all 0.3s linear;
+  span {
+    font-size: 10px;
+    color: #333;
+    padding-bottom: 5px;
+  }
   &.up {
     top: -70px;
     &:hover {
@@ -124,7 +138,10 @@ const Roadmap: FC<IRoadmapProps> = (props) => {
         {props.items.map((item, index) => {
           return (
             <Circle title={item.title} count={props.items.length} index={index}>
-              <Card className={index % 2 === 0 ? "up" : "down"}>{item.title}</Card>
+              <Card style={{ color: "#333" }} className={index % 2 === 0 ? "up" : "down"}>
+                {item.title}
+                {item.description && <span>({item.description})</span>}
+              </Card>
             </Circle>
           );
         })}

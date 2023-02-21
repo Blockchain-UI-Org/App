@@ -1,13 +1,23 @@
 import { FC, ReactNode } from "react";
 import styled from "styled-components";
 import { Icon } from "../icon/icon";
-import { Inline, Stack } from "blockchain-ui/components/layout";
+import { Inline } from "blockchain-ui/components/layout";
 import { withTheme } from "blockchain-ui/theme";
 import { Paragraph } from "blockchain-ui/components/typography";
 
+export const AlertVariants = ["standard", "outlined", "filled"] as const;
+export type IAlertVariants = (typeof AlertVariants)[number];
+export const AlertTypes = ["info", "success", "warning", "error"] as const;
+export type IAlertTypes = (typeof AlertTypes)[number];
+
 export interface AlertProps {
   message: ReactNode;
-  type?: "info" | "error";
+  type?: IAlertTypes;
+  variant?: IAlertVariants;
+  actionLabel?: ReactNode;
+  onAction?: (e: React.MouseEvent) => void;
+  dismissLabel?: ReactNode;
+  onDismiss?: (e: React.MouseEvent) => void;
 }
 
 const Container = styled(Inline)`
@@ -22,13 +32,21 @@ const Container = styled(Inline)`
   }
 `;
 
-export const Alert: FC<AlertProps> = ({ message, type = "info" }) => {
+export const Alert: FC<AlertProps> = ({
+  message,
+  type = "info",
+  variant = "standard",
+  actionLabel ,
+  dismissLabel,
+  onAction,
+  onDismiss,
+}) => {
   return (
     <Container gap="1rem" inset="1rem" className={type}>
       {type === "info" ? <Icon name="alertWarningThinBlack" /> : <Icon name="alertWarningThinRed" />}
-      <Stack gap="0.5rem">
-        <Paragraph variant="body1">{message}</Paragraph>
-      </Stack>
+      <Paragraph noMargin variant="body1">
+        {message}
+      </Paragraph>
     </Container>
   );
 };
