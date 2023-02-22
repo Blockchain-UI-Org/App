@@ -3,7 +3,9 @@ import styled, { css } from "styled-components";
 import { withTheme } from "blockchain-ui/theme";
 import { Paragraph } from "blockchain-ui/components/typography";
 import { InfoIcon, SuccessIcon, WarningIcon } from "./icons";
-import Flex from "../flex";
+import {Flex} from "../flex";
+import { Button } from "../button";
+import { alpha } from "blockchain-ui/utils";
 
 export const AlertVariants = ["standard", "outlined", "filled"] as const;
 export type IAlertVariants = (typeof AlertVariants)[number];
@@ -14,25 +16,12 @@ export interface AlertProps {
   message: ReactNode;
   status?: IAlertStatus;
   variant?: IAlertVariants;
-  actionLabel?: ReactNode;
+  actionLabel?: string;
   onAction?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  dismissLabel?: ReactNode;
+  dismissLabel?: string;
   onDismiss?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-const ActionButton = styled.button`
-  border-radius: 8px;
-  padding: 4px 10px;
-  font-size: 13px;
-  font-weight: 700;
-  &:not(:last-of-type){
-    margin-right: 10px;
-  }
-  outline: 0;
-  border-width: 0;
-  cursor: pointer;
-  line-height: 22px;
-`;
 
 const Container = styled(Flex)<{ variant: IAlertVariants; status: IAlertStatus }>`
   border-radius: 8px;
@@ -42,16 +31,6 @@ const Container = styled(Flex)<{ variant: IAlertVariants; status: IAlertStatus }
   ${withTheme(({ theme, variant, status }) => {
     const variantCss = theme.components.BuiAlert.variants[variant].styles({ status });
 
-    const dissmissBtnCss = css({
-      border: variantCss.dismissBorder,
-      backgroundColor: variantCss.dismissBg,
-      color: variantCss.dissmissForeground,
-    });
-
-    const actionButtonCss = css({
-      backgroundColor: variantCss.actionButtonBg,
-      color: variantCss.actionForeground,
-    });
     const componentCss = css({
       backgroundColor: variantCss.bg,
       color: variantCss.foreground,
@@ -59,19 +38,12 @@ const Container = styled(Flex)<{ variant: IAlertVariants; status: IAlertStatus }
     });
 
     const svgCss = css({
-      marginRight: 12,
-      marginLeft: 10,
       color: variantCss.iconbg,
     });
 
     return css`
       ${componentCss}
-      .bui-dismiss {
-        ${dissmissBtnCss}
-      }
-      .bui-action {
-        ${actionButtonCss}
-      }
+     
       svg {
         ${svgCss}
       }
@@ -80,10 +52,12 @@ const Container = styled(Flex)<{ variant: IAlertVariants; status: IAlertStatus }
 `;
 
 const IconWrapper = styled(Flex)`
-  padding: 4px 0;
+  padding: 5px 10px;
+  padding-right: 15px;
 `;
 const ParagraphWrapper = styled(Paragraph)`
-  padding: 3px 0;
+  padding: 4px 0;
+  padding-right: 12px;
 `;
 
 const StatusIconMap: { [x in IAlertStatus]: React.FC<SVGProps<SVGSVGElement>> } = {
@@ -110,21 +84,37 @@ export const Alert: FC<AlertProps> = ({
         <Icon />
       </IconWrapper>
       <Flex flex={1}>
-        <ParagraphWrapper noMargin variant="body2">
+        <ParagraphWrapper noMargin  variant="body2">
           {message}
         </ParagraphWrapper>
       </Flex>
       {(actionLabel || dismissLabel) && (
-        <Flex>
+        <Flex flexWrap="wrap" alignItems={"flex-start"}>
           {actionLabel && (
-            <ActionButton className="bui-action" onClick={onAction}>
-              {actionLabel}
-            </ActionButton>
+            <Button
+            size="medium"
+              variant={variant === "outlined" ? "soft" : "contained"}
+              backgroundColor={variant === "filled" ? "#fff" : undefined}
+              hoverBackgroundColor={variant === "filled" ? "#fff" : undefined}
+              textColor={variant === "filled" ? "#333" : undefined}
+              color={status}
+              marginRight={10}
+              label={actionLabel}
+              onClick={onAction}
+            />
           )}
           {dismissLabel && (
-            <ActionButton className="bui-dismiss" onClick={onDismiss}>
-              {dismissLabel}
-            </ActionButton>
+            <Button
+            size="medium"
+              color={status}
+              borderColor={variant === "filled" ? "currentColor" : undefined}
+              textColor={variant === "filled" ? "currentColor" : undefined}
+              hoverBorderColor={variant === "filled" ? "currentColor" : undefined}
+              hoverBackgroundColor={variant === "filled" ? alpha("#fff", 0.3): undefined}
+              variant="outlined"
+              label={dismissLabel}
+              onClick={onDismiss}
+            />
           )}
         </Flex>
       )}

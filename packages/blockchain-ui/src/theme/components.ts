@@ -4,7 +4,10 @@ import { IColorVariants } from "./variants";
 import merge from "lodash/merge";
 import { createColorPalette, IColorPalette } from "./pallette";
 import { IAlertStatus } from "blockchain-ui/components/alert/alert";
-import tinycolor from "tinycolor2";
+
+import { IButtonColors, IButtonVariants } from "../components/button";
+import { alpha } from "blockchain-ui/utils";
+
 
 const regular = {
   small: "16px",
@@ -51,6 +54,23 @@ export type IComponentTheme = {
       filled: { styles: (args: { status: IAlertStatus }) => IAlertStyles };
       outlined: { styles: (args: { status: IAlertStatus }) => IAlertStyles };
     };
+  };
+  BuiButton: {
+    variants: Record<
+      IButtonVariants,
+      {
+        styles: (args: { color: IButtonColors }) => Partial<{
+          border: string;
+          borderHoverColor: string;
+          bg: string;
+          foreground: string;
+          hoverBg: string;
+          disabledBg: string;
+          disabledForeground: string;
+          disabledBorder: string;
+        }>;
+      }
+    >;
   };
   Chart: {
     variants: IColorVariants;
@@ -101,11 +121,7 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
               bg: pallette.getColor("lighter")(status),
               foreground: pallette.getColor("darker")(status),
               iconbg: pallette.getColor("main")(status),
-              actionButtonBg: pallette.getColor("main")(status),
-              actionForeground: pallette.getColor("contrastText")(status),
-              dismissBg: pallette.getColor("transparent")(status),
-              dissmissForeground: pallette.getColor("main")(status),
-              dismissBorder: `1px solid ${pallette.getColor("main", 0.5)(status)}`,
+           
             };
           },
         },
@@ -116,11 +132,7 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
               bg: pallette.getColor("main")(status),
               foreground: pallette.getColor("contrastText")(status),
               iconbg: pallette.getColor("contrastText")(status),
-              actionButtonBg: pallette.common.white,
-              actionForeground: pallette.getColor("dark")(status),
-              dismissBg: pallette.getColor("transparent")(status),
-              dissmissForeground: pallette.getColor("contrastText")(status),
-              dismissBorder: `1px solid ${pallette.getColor("contrastText")(status)}`,
+
             };
           },
         },
@@ -131,11 +143,64 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
               bg: pallette.getColor("transparent")(status),
               foreground: pallette.getColor("dark")(status),
               iconbg: pallette.getColor("main")(status),
-              actionButtonBg: pallette.getColor("main", 0.16)(status),
-              actionForeground: pallette.getColor("dark")(status),
-              dismissBg: pallette.getColor("transparent")(status),
-              dissmissForeground: pallette.getColor("main")(status),
-              dismissBorder: `1px solid ${pallette.getColor("main", 0.5)(status)}`,
+            };
+          },
+        },
+      },
+    },
+    BuiButton: {
+      variants: {
+        contained: {
+          styles: ({ color }) => {
+            return {
+              bg: pallette.getColor("main")(color),
+              foreground: pallette.getColor("contrastText")(color),
+              hoverBg: pallette.getColor("darker")(color),
+              disabledBg: alpha(pallette.grey[500], 0.24),
+              disabledForeground: alpha(pallette.grey[500], 0.08),
+            };
+          },
+        },
+        outlined: {
+          styles: ({ color }) => {
+            const mainColor =  color === "default" ? pallette.grey[500] : pallette.getColor("main")(color);
+            return {
+              border: `1px solid ${alpha(
+                mainColor,
+                0.32
+              )}`,
+              borderHoverColor: mainColor,
+              bg: pallette.getColor("transparent")(color),
+              foreground: mainColor,
+              hoverBg: alpha(mainColor, 0.08),
+              disabledBg: pallette.getColor("transparent")(color),
+              disabledForeground: alpha(pallette.grey[500], 0.08),
+              disabledBorder: `1px solid ${alpha(pallette.grey[500], 0.08)}`,
+            };
+          },
+        },
+        soft: {
+          styles: ({ color }) => {
+            const mainColor =  color === "default" ? pallette.grey[500] : pallette.getColor("main")(color);
+            return {
+              bg: color === "default" ? alpha(pallette.grey[500], 0.08) : alpha(pallette.getColor("main")(color), 0.16),
+              foreground: mainColor,
+              hoverBg:
+                color === "default" ? alpha(pallette.grey[500], 0.16) : alpha(pallette.getColor("main")(color), 0.32),
+              disabledBg: pallette.getColor("transparent")(color),
+              disabledForeground: alpha(pallette.grey[500], 0.8),
+            };
+          },
+        },
+        text: {
+          styles: ({ color }) => {
+            const mainColor =  color === "default" ? pallette.grey[500] : pallette.getColor("main")(color);
+            return {
+              bg: pallette.getColor("transparent")(color),
+              foreground: mainColor,
+              hoverBg: alpha(color === "default" ? pallette.grey[500] : pallette.getColor("main")(color), 0.08),
+              disabledBg: pallette.getColor("transparent")(color),
+              disabledForeground: alpha(pallette.grey[500], 0.8),
             };
           },
         },

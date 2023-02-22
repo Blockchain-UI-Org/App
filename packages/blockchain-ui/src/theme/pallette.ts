@@ -3,6 +3,7 @@ import { colors } from "./colors";
 import { colorVariants, IColorVariants } from "./variants";
 import merge from "lodash/merge";
 import tinycolor from "tinycolor2";
+import { color } from "@storybook/theming";
 type IPalette = {
   // TODO:  Remove Bg Color (old Version kept for not breaking Application, after changing call components to use new theme)
   bg: string;
@@ -31,7 +32,7 @@ export type IColorPalette = {
   getColor: <T extends keyof IPalette>(
     name: T | "transparent",
     transparency?: number
-  ) => (val: "primary" | "secondary" | "success" | "error" | "warning" | "info" | "success") => string;
+  ) => (val: "primary" | "secondary" | "success" | "error" | "warning" | "info" | "success" | "default") => string;
   grey: {
     100: string;
     200: string;
@@ -53,12 +54,12 @@ const DefaultPalette: IColorPalette = {
   default: {
     bg: colors.grey50,
     color: colors.black,
-    main: "#00AB55",
-    lighter: "#C8FACD",
-    contrastText: "#ffffff",
-    light: "#5BE584",
-    dark: "#007B55",
-    darker: "#005249",
+    main: colors.grey300,
+    lighter: colors.grey100,
+    contrastText: colors.grey800,
+    light: colors.grey200,
+    dark: colors.grey400,
+    darker:colors.grey500,
   },
   getColor: function (name, transparency) {
     return (type) => {
@@ -71,7 +72,7 @@ const DefaultPalette: IColorPalette = {
         : (result as string);
     };
   },
-
+  
   primary: {
     bg: "#00AB55",
     color: colors.black,

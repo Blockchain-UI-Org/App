@@ -1,5 +1,5 @@
 import { Story } from "@storybook/react";
-import Flex from "blockchain-ui/components/flex";
+import { Flex } from "blockchain-ui/components";
 import {
   Heading as HeadingComp,
   ISubtitleProps,
