@@ -4,7 +4,8 @@ import Alert from './alert';
 
 describe('Alert', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Alert message="Mock message" type="info" />);
+    const { baseElement } = render(<Alert message="Mock message" status="info" />);
     expect(baseElement).toBeTruthy();
   });
+  
 });

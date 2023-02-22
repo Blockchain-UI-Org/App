@@ -1,52 +1,133 @@
-import { FC, ReactNode } from "react";
-import styled from "styled-components";
-import { Icon } from "../icon/icon";
-import { Inline } from "blockchain-ui/components/layout";
+import React, { FC, ReactNode, SVGProps } from "react";
+import styled, { css } from "styled-components";
 import { withTheme } from "blockchain-ui/theme";
 import { Paragraph } from "blockchain-ui/components/typography";
+import { InfoIcon, SuccessIcon, WarningIcon } from "./icons";
+import Flex from "../flex";
 
 export const AlertVariants = ["standard", "outlined", "filled"] as const;
 export type IAlertVariants = (typeof AlertVariants)[number];
-export const AlertTypes = ["info", "success", "warning", "error"] as const;
-export type IAlertTypes = (typeof AlertTypes)[number];
+export const AlertStatuses = ["info", "success", "warning", "error"] as const;
+export type IAlertStatus = (typeof AlertStatuses)[number];
 
 export interface AlertProps {
   message: ReactNode;
-  type?: IAlertTypes;
+  status?: IAlertStatus;
   variant?: IAlertVariants;
   actionLabel?: ReactNode;
-  onAction?: (e: React.MouseEvent) => void;
+  onAction?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   dismissLabel?: ReactNode;
-  onDismiss?: (e: React.MouseEvent) => void;
+  onDismiss?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-const Container = styled(Inline)`
+const ActionButton = styled.button`
   border-radius: 8px;
-  &.info {
-    background-color: ${withTheme(({ theme }) => theme.palette.info.bg)};
-    color: ${withTheme(({ theme }) => theme.palette.info.color)};
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 700;
+  &:not(:last-of-type){
+    margin-right: 10px;
   }
-  &.error {
-    background-color: ${withTheme(({ theme }) => theme.palette.error.bg)};
-    color: ${withTheme(({ theme }) => theme.palette.error.color)};
-  }
+  outline: 0;
+  border-width: 0;
+  cursor: pointer;
+  line-height: 22px;
 `;
+
+const Container = styled(Flex)<{ variant: IAlertVariants; status: IAlertStatus }>`
+  border-radius: 8px;
+  padding: 10px 8px;
+  min-height: 50px;
+
+  ${withTheme(({ theme, variant, status }) => {
+    const variantCss = theme.components.BuiAlert.variants[variant].styles({ status });
+
+    const dissmissBtnCss = css({
+      border: variantCss.dismissBorder,
+      backgroundColor: variantCss.dismissBg,
+      color: variantCss.dissmissForeground,
+    });
+
+    const actionButtonCss = css({
+      backgroundColor: variantCss.actionButtonBg,
+      color: variantCss.actionForeground,
+    });
+    const componentCss = css({
+      backgroundColor: variantCss.bg,
+      color: variantCss.foreground,
+      border: variantCss.border,
+    });
+
+    const svgCss = css({
+      marginRight: 12,
+      marginLeft: 10,
+      color: variantCss.iconbg,
+    });
+
+    return css`
+      ${componentCss}
+      .bui-dismiss {
+        ${dissmissBtnCss}
+      }
+      .bui-action {
+        ${actionButtonCss}
+      }
+      svg {
+        ${svgCss}
+      }
+    `;
+  })}
+`;
+
+const IconWrapper = styled(Flex)`
+  padding: 4px 0;
+`;
+const ParagraphWrapper = styled(Paragraph)`
+  padding: 3px 0;
+`;
+
+const StatusIconMap: { [x in IAlertStatus]: React.FC<SVGProps<SVGSVGElement>> } = {
+  error: InfoIcon,
+  info: InfoIcon,
+  success: SuccessIcon,
+  warning: WarningIcon,
+};
 
 export const Alert: FC<AlertProps> = ({
   message,
-  type = "info",
+  status = "info",
   variant = "standard",
-  actionLabel ,
+  actionLabel,
   dismissLabel,
-  onAction,
-  onDismiss,
+  onAction = () => {},
+  onDismiss = () => {},
 }) => {
+  const Icon = StatusIconMap[status];
+
   return (
-    <Container gap="1rem" inset="1rem" className={type}>
-      {type === "info" ? <Icon name="alertWarningThinBlack" /> : <Icon name="alertWarningThinRed" />}
-      <Paragraph noMargin variant="body1">
-        {message}
-      </Paragraph>
+    <Container variant={variant} status={status}>
+      <IconWrapper alignItems={"flex-start"} justifyContent="center">
+        <Icon />
+      </IconWrapper>
+      <Flex flex={1}>
+        <ParagraphWrapper noMargin variant="body2">
+          {message}
+        </ParagraphWrapper>
+      </Flex>
+      {(actionLabel || dismissLabel) && (
+        <Flex>
+          {actionLabel && (
+            <ActionButton className="bui-action" onClick={onAction}>
+              {actionLabel}
+            </ActionButton>
+          )}
+          {dismissLabel && (
+            <ActionButton className="bui-dismiss" onClick={onDismiss}>
+              {dismissLabel}
+            </ActionButton>
+          )}
+        </Flex>
+      )}
     </Container>
   );
 };

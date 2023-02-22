@@ -3,6 +3,8 @@ import { colors } from "./colors";
 import { IColorVariants } from "./variants";
 import merge from "lodash/merge";
 import { createColorPalette, IColorPalette } from "./pallette";
+import { IAlertStatus } from "blockchain-ui/components/alert/alert";
+import tinycolor from "tinycolor2";
 
 const regular = {
   small: "16px",
@@ -29,8 +31,27 @@ export type IIconTheme = {
   };
 };
 
+type IAlertStyles = Partial<{
+  border: string;
+  bg: string;
+  foreground: string;
+  iconbg: string;
+  actionButtonBg: string;
+  actionForeground: string;
+  dismissBg: string;
+  dissmissForeground: string;
+  dismissBorder: string;
+}>;
+
 export type IComponentTheme = {
   CreditCard: { variants: IColorVariants };
+  BuiAlert: {
+    variants: {
+      standard: { styles: (args: { status: IAlertStatus }) => IAlertStyles };
+      filled: { styles: (args: { status: IAlertStatus }) => IAlertStyles };
+      outlined: { styles: (args: { status: IAlertStatus }) => IAlertStyles };
+    };
+  };
   Chart: {
     variants: IColorVariants;
     common: {
@@ -68,8 +89,58 @@ export type IComponentTheme = {
 };
 
 const buildComponentTheme = (colorPalette?: IColorPalette) => {
-  const { colorVariants } = colorPalette || createColorPalette();
-  return {
+  const pallette = colorPalette || createColorPalette();
+  const { colorVariants } = pallette;
+  const compTheme: IComponentTheme = {
+    BuiAlert: {
+      variants: {
+        standard: {
+          styles: ({ status }: { status: IAlertStatus }) => {
+            return {
+              border: undefined,
+              bg: pallette.getColor("lighter")(status),
+              foreground: pallette.getColor("darker")(status),
+              iconbg: pallette.getColor("main")(status),
+              actionButtonBg: pallette.getColor("main")(status),
+              actionForeground: pallette.getColor("contrastText")(status),
+              dismissBg: pallette.getColor("transparent")(status),
+              dissmissForeground: pallette.getColor("main")(status),
+              dismissBorder: `1px solid ${pallette.getColor("main", 0.5)(status)}`,
+            };
+          },
+        },
+        filled: {
+          styles: ({ status }: { status: IAlertStatus }) => {
+            return {
+              border: "1px solid " + pallette.getColor("main")(status),
+              bg: pallette.getColor("main")(status),
+              foreground: pallette.getColor("contrastText")(status),
+              iconbg: pallette.getColor("contrastText")(status),
+              actionButtonBg: pallette.common.white,
+              actionForeground: pallette.getColor("dark")(status),
+              dismissBg: pallette.getColor("transparent")(status),
+              dissmissForeground: pallette.getColor("contrastText")(status),
+              dismissBorder: `1px solid ${pallette.getColor("contrastText")(status)}`,
+            };
+          },
+        },
+        outlined: {
+          styles: ({ status }: { status: IAlertStatus }) => {
+            return {
+              border: "1px solid " + pallette.getColor("main")(status),
+              bg: pallette.getColor("transparent")(status),
+              foreground: pallette.getColor("dark")(status),
+              iconbg: pallette.getColor("main")(status),
+              actionButtonBg: pallette.getColor("main", 0.16)(status),
+              actionForeground: pallette.getColor("dark")(status),
+              dismissBg: pallette.getColor("transparent")(status),
+              dissmissForeground: pallette.getColor("main")(status),
+              dismissBorder: `1px solid ${pallette.getColor("main", 0.5)(status)}`,
+            };
+          },
+        },
+      },
+    },
     CreditCard: {
       variants: colorVariants,
     },
@@ -128,9 +199,8 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
       },
     },
   };
+  return compTheme;
 };
-
-const DefaultComponentTheme: IComponentTheme = buildComponentTheme();
 
 export const createComponents = (palette?: IColorPalette, args: Subset<IComponentTheme> = {}) => {
   const newTheme = buildComponentTheme(palette);
