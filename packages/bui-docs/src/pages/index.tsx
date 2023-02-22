@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`Hello from ${siteConfig.title}`} description="Description will go into a meta tag in <head />">
+    <Layout description="A component library for decentralized applications <head />">
       <Wrapper>
         <Landing />
       </Wrapper>
