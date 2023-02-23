@@ -12,6 +12,12 @@ import { Alert } from "blockchain-ui";
 Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
 
 <div style={{marginBottom: 20}}>
-<Alert message="A Simple Error Alert" type="error" />
+<Alert message="A Simple Error Alert" status="error" />
 </div>
-<Alert message="A Simple Info Alert" type="info" />
+<div style={{marginBottom: 20}}>
+<Alert message="A Simple Error Alert" status="warning" />
+</div>
+<div style={{marginBottom: 20}}>
+<Alert message="A Simple Error Alert" status="success" />
+</div>
+<Alert message="A Simple Info Alert" status="info" />

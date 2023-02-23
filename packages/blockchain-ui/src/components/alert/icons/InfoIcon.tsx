@@ -4,6 +4,7 @@ export const InfoIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     fill="none"
     width={20}
+    data-testid="InfoIcon"
     height={20}
     viewBox="0 0 21 20"
     style={{ display: "inline-block" }}
@@ -18,3 +19,5 @@ export const InfoIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
+
+InfoIcon.displayName = "InfoIcon"

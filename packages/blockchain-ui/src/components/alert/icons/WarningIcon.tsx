@@ -1,7 +1,15 @@
 import { SVGProps } from "react";
 
 export const WarningIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg fill="none" width={20} height={20} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 20" {...props}>
+  <svg
+    fill="none"
+    data-testid="WarningIcon"
+    width={20}
+    height={20}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 23 20"
+    {...props}
+  >
     <path
       fillRule="evenodd"
       clipRule="evenodd"

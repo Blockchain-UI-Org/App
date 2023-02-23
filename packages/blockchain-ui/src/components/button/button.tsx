@@ -84,7 +84,7 @@ const SizeMap: Record<IButtonSize, { padding: string }> = {
   small: { padding: "4px 10px" },
 };
 
-const StyledButton = styled.button<IButtonProps>`
+const StyledButton = styled.button<Omit<IButtonProps, "label">>`
   ${withTheme(
     ({
       theme,
@@ -149,6 +149,6 @@ const StyledButton = styled.button<IButtonProps>`
 /**
  * Primary UI component for user interaction
  */
-export const Button = (props: IButtonProps) => {
-  return <StyledButton {...props}>{props.label}</StyledButton>;
+export const Button = ({onClick,label, ...rest}: IButtonProps) => {
+  return <StyledButton {...rest} onClick={onClick} >{label}</StyledButton>;
 };

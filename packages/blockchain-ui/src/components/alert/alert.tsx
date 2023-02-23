@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import { withTheme } from "blockchain-ui/theme";
 import { Paragraph } from "blockchain-ui/components/typography";
 import { InfoIcon, SuccessIcon, WarningIcon } from "./icons";
-import {Flex} from "../flex";
+import { Flex } from "../flex";
 import { Button } from "../button";
 import { alpha } from "blockchain-ui/utils";
 
@@ -21,7 +21,6 @@ export interface AlertProps {
   dismissLabel?: string;
   onDismiss?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
-
 
 const Container = styled(Flex)<{ variant: IAlertVariants; status: IAlertStatus }>`
   border-radius: 8px;
@@ -43,7 +42,7 @@ const Container = styled(Flex)<{ variant: IAlertVariants; status: IAlertStatus }
 
     return css`
       ${componentCss}
-     
+
       svg {
         ${svgCss}
       }
@@ -84,7 +83,7 @@ export const Alert: FC<AlertProps> = ({
         <Icon />
       </IconWrapper>
       <Flex flex={1}>
-        <ParagraphWrapper noMargin  variant="body2">
+        <ParagraphWrapper role={"message"} noMargin variant="body2">
           {message}
         </ParagraphWrapper>
       </Flex>
@@ -92,7 +91,8 @@ export const Alert: FC<AlertProps> = ({
         <Flex flexWrap="wrap" alignItems={"flex-start"}>
           {actionLabel && (
             <Button
-            size="medium"
+              size="medium"
+              data-testid="action-button"
               variant={variant === "outlined" ? "soft" : "contained"}
               backgroundColor={variant === "filled" ? "#fff" : undefined}
               hoverBackgroundColor={variant === "filled" ? "#fff" : undefined}
@@ -105,12 +105,13 @@ export const Alert: FC<AlertProps> = ({
           )}
           {dismissLabel && (
             <Button
-            size="medium"
+              size="medium"
+              data-testid="dismiss-button"
               color={status}
               borderColor={variant === "filled" ? "currentColor" : undefined}
               textColor={variant === "filled" ? "currentColor" : undefined}
               hoverBorderColor={variant === "filled" ? "currentColor" : undefined}
-              hoverBackgroundColor={variant === "filled" ? alpha("#fff", 0.3): undefined}
+              hoverBackgroundColor={variant === "filled" ? alpha("#fff", 0.3) : undefined}
               variant="outlined"
               label={dismissLabel}
               onClick={onDismiss}
@@ -122,4 +123,4 @@ export const Alert: FC<AlertProps> = ({
   );
 };
 
-export default Alert;
+
