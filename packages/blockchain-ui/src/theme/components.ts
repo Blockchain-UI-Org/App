@@ -7,6 +7,7 @@ import { IAlertStatus } from "blockchain-ui/components/alert/alert";
 
 import { IButtonColors, IButtonVariants } from "../components/button";
 import { alpha } from "blockchain-ui/utils";
+import { createShadow, createShadowString } from "./shadow";
 
 
 const regular = {
@@ -56,6 +57,12 @@ export type IComponentTheme = {
     };
   };
   BuiButton: {
+    common: {
+      fontSize: string | number;
+      fontWeight: number;
+      lineHeight: string | number;
+      borderRadius: number
+    }
     variants: Record<
       IButtonVariants,
       {
@@ -66,6 +73,7 @@ export type IComponentTheme = {
           foreground: string;
           hoverBg: string;
           disabledBg: string;
+          boxShadowHover: string;
           disabledForeground: string;
           disabledBorder: string;
         }>;
@@ -149,15 +157,23 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
       },
     },
     BuiButton: {
+      common: {
+          fontSize: "0.8rem",
+          fontWeight: 700,
+          borderRadius: 8,
+          lineHeight: 1.7
+      },
       variants: {
+     
         contained: {
           styles: ({ color }) => {
             return {
               bg: pallette.getColor("main")(color),
               foreground: pallette.getColor("contrastText")(color),
               hoverBg: pallette.getColor("darker")(color),
+              boxShadowHover: createShadowString(0,8,16, alpha(pallette.getColor("main")(color),0.24)),
               disabledBg: alpha(pallette.grey[500], 0.24),
-              disabledForeground: alpha(pallette.grey[500], 0.08),
+              disabledForeground: alpha(pallette.grey[500], 0.8),
             };
           },
         },
@@ -170,12 +186,13 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
                 0.32
               )}`,
               borderHoverColor: mainColor,
+            
               bg: pallette.getColor("transparent")(color),
               foreground: mainColor,
               hoverBg: alpha(mainColor, 0.08),
               disabledBg: pallette.getColor("transparent")(color),
-              disabledForeground: alpha(pallette.grey[500], 0.08),
-              disabledBorder: `1px solid ${alpha(pallette.grey[500], 0.08)}`,
+              disabledForeground: alpha(pallette.grey[500], 0.8),
+              disabledBorder: `1px solid ${alpha(pallette.grey[500], 0.24)}`,
             };
           },
         },
@@ -187,7 +204,7 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
               foreground: mainColor,
               hoverBg:
                 color === "default" ? alpha(pallette.grey[500], 0.16) : alpha(pallette.getColor("main")(color), 0.32),
-              disabledBg: pallette.getColor("transparent")(color),
+              disabledBg: alpha(pallette.grey[500], 0.24),
               disabledForeground: alpha(pallette.grey[500], 0.8),
             };
           },

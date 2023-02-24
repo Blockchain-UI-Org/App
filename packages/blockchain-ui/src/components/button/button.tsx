@@ -1,7 +1,6 @@
-import { spacing } from "@mui/system";
 import { withTheme } from "blockchain-ui/theme";
 import { alpha } from "blockchain-ui/utils";
-import React, { CSSProperties, DetailedHTMLProps } from "react";
+import React, { CSSProperties, DetailedHTMLProps, forwardRef } from "react";
 import styled, { css } from "styled-components";
 
 export const ButtonVariants = ["contained", "outlined", "text", "soft"] as const;
@@ -15,21 +14,44 @@ export type IButtonSize = (typeof ButtonSizes)[number];
 type HTMLButtonProps = DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
 
 export type ISpacingProps = Partial<{
-    margin: CSSProperties["margin"];
-    marginRight: CSSProperties["marginRight"];
-    marginLeft: CSSProperties["marginLeft"];
-    marginBottom: CSSProperties["marginBottom"];
-    marginTop: CSSProperties["marginTop"];
-    padding: CSSProperties["padding"];
-    paddingRight: CSSProperties["paddingRight"];
-    paddingLeft: CSSProperties["paddingLeft"];
-    paddingBottom: CSSProperties["paddingBottom"];
-    paddingTop: CSSProperties["paddingTop"];
-}>
+  margin: CSSProperties["margin"];
+  marginRight: CSSProperties["marginRight"];
+  marginLeft: CSSProperties["marginLeft"];
+  marginBottom: CSSProperties["marginBottom"];
+  marginTop: CSSProperties["marginTop"];
+  padding: CSSProperties["padding"];
+  paddingRight: CSSProperties["paddingRight"];
+  paddingLeft: CSSProperties["paddingLeft"];
+  paddingBottom: CSSProperties["paddingBottom"];
+  paddingTop: CSSProperties["paddingTop"];
+}>;
 
-const genSpacingCss =  (props: ISpacingProps) => {
-    return css(props)
-}
+const genSpacingCss = ({
+  margin,
+  marginBottom,
+  padding,
+  marginRight,
+  marginLeft,
+  marginTop,
+  paddingBottom,
+  paddingLeft,
+  paddingRight,
+  paddingTop,
+}: ISpacingProps) => {
+  return css({
+    margin,
+    marginBottom,
+    padding,
+    marginRight,
+    marginLeft,
+    marginTop,
+    paddingBottom,
+    paddingLeft,
+    paddingRight,
+    paddingTop,
+  });
+};
+
 
 export interface IButtonProps extends ISpacingProps {
   /**
@@ -42,7 +64,6 @@ export interface IButtonProps extends ISpacingProps {
    * What background color to use
    */
   textColor?: string;
-
 
   hoverTextColor?: string;
 
@@ -72,10 +93,13 @@ export interface IButtonProps extends ISpacingProps {
    * Button contents
    */
   label: string;
+
+  href?: string;
+
   /**
    * Optional click handler
    */
-  onClick?: HTMLButtonProps["onClick"];
+  onClick?: React.MouseEventHandler<HTMLElement>;
 }
 
 const SizeMap: Record<IButtonSize, { padding: string }> = {
@@ -84,13 +108,14 @@ const SizeMap: Record<IButtonSize, { padding: string }> = {
   small: { padding: "4px 10px" },
 };
 
-const StyledButton = styled.button<Omit<IButtonProps, "label">>`
+const cssStylingCommon = css<Omit<IButtonProps, "label">>`
+
   ${withTheme(
     ({
       theme,
       variant = "contained",
       color = "primary",
-      size = "small",
+      size = "medium",
       backgroundColor,
       textColor,
       hoverTextColor,
@@ -99,35 +124,45 @@ const StyledButton = styled.button<Omit<IButtonProps, "label">>`
       borderColor,
       activeBorderColor,
       hoverBorderColor,
-      ...rest
     }) => {
-      const buttonStyles = theme.components.BuiButton.variants[variant as "soft"].styles({ color: color  });
+      const commonStyles = theme.components.BuiButton.common;
+      const buttonStyles = theme.components.BuiButton.variants[variant as "soft"].styles({ color: color });
 
       const buttonCss = css({
         backgroundColor: backgroundColor ? backgroundColor : buttonStyles.bg,
-        borderRadius: 8,
+        borderRadius: commonStyles.borderRadius,
         cursor: "pointer",
-        fontWeight: 700,
-        fontSize: "0.8rem",
+        fontWeight: commonStyles.fontWeight,
+        fontSize: commonStyles.fontSize,
         border: buttonStyles.border ? buttonStyles.border : "none",
         borderColor: borderColor,
-        color: textColor ? textColor: buttonStyles.foreground,
+        lineHeight: commonStyles.lineHeight,
+        color: textColor ? textColor : buttonStyles.foreground,
         padding: SizeMap[size].padding,
         transition: `all 0.3s linear`,
       });
 
       const hoverCss = css({
-        backgroundColor: hoverBackgroundColor ? hoverBackgroundColor: buttonStyles.hoverBg,
-        borderColor: hoverBorderColor ? hoverBorderColor: buttonStyles.borderHoverColor,
-        color: hoverTextColor
+        backgroundColor: hoverBackgroundColor ? hoverBackgroundColor : buttonStyles.hoverBg,
+        borderColor: hoverBorderColor ? hoverBorderColor : buttonStyles.borderHoverColor,
+        color: hoverTextColor || (textColor ? textColor : buttonStyles.foreground),
+        boxShadow: buttonStyles.boxShadowHover,
       });
+
+      const disabledCss = css({
+        cursor: "default",
+        backgroundColor: buttonStyles.disabledBg,
+        color: buttonStyles.disabledForeground,
+        border: buttonStyles.disabledBorder,
+      });
+
       const activeCss = css({
         backgroundColor: activeBackgroundColor
           ? activeBackgroundColor
           : buttonStyles.hoverBg
           ? alpha(buttonStyles.hoverBg, 0.4)
           : undefined,
-        borderColor: activeBorderColor
+        borderColor: activeBorderColor,
       });
 
       return css`
@@ -139,6 +174,9 @@ const StyledButton = styled.button<Omit<IButtonProps, "label">>`
         &:active {
           ${activeCss}
         }
+        &:disabled {
+          ${disabledCss}
+        }
       `;
     }
   )}
@@ -146,9 +184,38 @@ const StyledButton = styled.button<Omit<IButtonProps, "label">>`
   ${genSpacingCss}
 `;
 
+const StyledButton = styled.button<Omit<IButtonProps, "label">>`
+  ${cssStylingCommon}
+`;
+
+const StyledHyperLink = styled.a<Omit<IButtonProps, "label">>`
+
+  &:hover {
+    text-decoration: none;
+  }
+  ${cssStylingCommon}
+`;
+
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({onClick,label, ...rest}: IButtonProps) => {
-  return <StyledButton {...rest} onClick={onClick} >{label}</StyledButton>;
-};
+export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, IButtonProps>(
+  ({ onClick, label, href, ...rest }, ref) => {
+    if (href) {
+      return (
+        <StyledHyperLink
+          {...rest}
+          href={href}
+          onClick={onClick}
+          children={label}
+          ref={ref as React.ForwardedRef<HTMLAnchorElement>}
+        />
+      );
+    }
+    return (
+      <StyledButton {...rest} onClick={onClick} ref={ref as React.ForwardedRef<HTMLButtonElement>}>
+        {label}
+      </StyledButton>
+    );
+  }
+);

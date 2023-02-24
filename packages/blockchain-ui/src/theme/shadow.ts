@@ -12,7 +12,7 @@ export type IShadowTheme = {
 
 const DefaultShadowColor = "rgba(145, 158, 171, 0.16)";
 
-const createShadowString = (x = 0, y = 0, z = 0, color = DefaultShadowColor) => {
+export const createShadowString = (x = 0, y = 0, z = 0, color = DefaultShadowColor) => {
   return `${x}px ${y}px ${z}px ${color}`;
 };
 
