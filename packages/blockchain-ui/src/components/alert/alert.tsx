@@ -91,7 +91,7 @@ export const Alert: FC<AlertProps> = ({
         <Flex flexWrap="wrap" alignItems={"flex-start"}>
           {actionLabel && (
             <Button
-              size="medium"
+              size="small"
               data-testid="action-button"
               variant={variant === "outlined" ? "soft" : "contained"}
               backgroundColor={variant === "filled" ? "#fff" : undefined}
@@ -105,7 +105,7 @@ export const Alert: FC<AlertProps> = ({
           )}
           {dismissLabel && (
             <Button
-              size="medium"
+              size="small"
               data-testid="dismiss-button"
               color={status}
               borderColor={variant === "filled" ? "currentColor" : undefined}
@@ -122,5 +122,3 @@ export const Alert: FC<AlertProps> = ({
     </Container>
   );
 };
-
-
