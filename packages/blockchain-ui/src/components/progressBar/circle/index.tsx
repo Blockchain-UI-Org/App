@@ -43,9 +43,9 @@ interface CircleBarBaseProps {
 }
 
 const Percent = styled.div`
-  position: absolute;
-  top: 55%;
-  left: 25%;
+  position: fixed;
+  top: 15%;
+  left: 5%;
   color: ${withTheme(({theme}) => theme.palette.common.white)};
   font-size: 20px;
   z-index: 1;

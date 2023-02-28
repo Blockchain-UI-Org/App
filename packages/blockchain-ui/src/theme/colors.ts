@@ -23,16 +23,12 @@ export const colors = {
   pink900: "#AC0678",
 
   grey50: "#e7edff",
-  grey100: "#F9FAFB",
-  grey200: "#F4F6F8",
-  grey300: "#DFE3E8",
-  grey400: "#C4CDD5",
-  grey500: "#919EAB",
-  grey600: "#637381",
-  grey700: "#454F5B",
-  grey800: "#212B36",
-  grey900: "#161C24",
-
+  grey100: "#F8F8F8",
+  grey200: "#EEEEEE",
+  grey300: "#D7D9E1",
+  grey500: "#9BA4AE",
+  grey700: "#5E6D7C",
+  // grey900: "#2F2F2F",
 
   yellow100: "#FFF6DC",
   yellow500: "#FAD972",

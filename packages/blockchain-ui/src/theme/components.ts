@@ -3,12 +3,6 @@ import { colors } from "./colors";
 import { IColorVariants } from "./variants";
 import merge from "lodash/merge";
 import { createColorPalette, IColorPalette } from "./pallette";
-import { IAlertStatus } from "blockchain-ui/components/alert/alert";
-
-import { IButtonColors, IButtonVariants } from "../components/button";
-import { alpha } from "blockchain-ui/utils";
-import { createShadow, createShadowString } from "./shadow";
-
 
 const regular = {
   small: "16px",
@@ -35,51 +29,8 @@ export type IIconTheme = {
   };
 };
 
-type IAlertStyles = Partial<{
-  border: string;
-  bg: string;
-  foreground: string;
-  iconbg: string;
-  actionButtonBg: string;
-  actionForeground: string;
-  dismissBg: string;
-  dissmissForeground: string;
-  dismissBorder: string;
-}>;
-
 export type IComponentTheme = {
   CreditCard: { variants: IColorVariants };
-  BuiAlert: {
-    variants: {
-      standard: { styles: (args: { status: IAlertStatus }) => IAlertStyles };
-      filled: { styles: (args: { status: IAlertStatus }) => IAlertStyles };
-      outlined: { styles: (args: { status: IAlertStatus }) => IAlertStyles };
-    };
-  };
-  BuiButton: {
-    common: {
-      fontSize: string | number;
-      fontWeight: number;
-      lineHeight: string | number;
-      borderRadius: number
-    }
-    variants: Record<
-      IButtonVariants,
-      {
-        styles: (args: { color: IButtonColors }) => Partial<{
-          border: string;
-          borderHoverColor: string;
-          bg: string;
-          foreground: string;
-          hoverBg: string;
-          disabledBg: string;
-          boxShadowHover: string;
-          disabledForeground: string;
-          disabledBorder: string;
-        }>;
-      }
-    >;
-  };
   Chart: {
     variants: IColorVariants;
     common: {
@@ -117,112 +68,8 @@ export type IComponentTheme = {
 };
 
 const buildComponentTheme = (colorPalette?: IColorPalette) => {
-  const pallette = colorPalette || createColorPalette();
-  const { colorVariants } = pallette;
-  const compTheme: IComponentTheme = {
-    BuiAlert: {
-      variants: {
-        standard: {
-          styles: ({ status }: { status: IAlertStatus }) => {
-            return {
-              border: undefined,
-              bg: pallette.getColor("lighter")(status),
-              foreground: pallette.getColor("darker")(status),
-              iconbg: pallette.getColor("main")(status),
-           
-            };
-          },
-        },
-        filled: {
-          styles: ({ status }: { status: IAlertStatus }) => {
-            return {
-              border: "1px solid " + pallette.getColor("main")(status),
-              bg: pallette.getColor("main")(status),
-              foreground: pallette.getColor("contrastText")(status),
-              iconbg: pallette.getColor("contrastText")(status),
-
-            };
-          },
-        },
-        outlined: {
-          styles: ({ status }: { status: IAlertStatus }) => {
-            return {
-              border: "1px solid " + pallette.getColor("main")(status),
-              bg: pallette.getColor("transparent")(status),
-              foreground: pallette.getColor("dark")(status),
-              iconbg: pallette.getColor("main")(status),
-            };
-          },
-        },
-      },
-    },
-    BuiButton: {
-      common: {
-          fontSize: "0.8rem",
-          fontWeight: 700,
-          borderRadius: 8,
-          lineHeight: 1.7
-      },
-      variants: {
-     
-        contained: {
-          styles: ({ color }) => {
-            return {
-              bg: pallette.getColor("main")(color),
-              foreground: pallette.getColor("contrastText")(color),
-              hoverBg: pallette.getColor("darker")(color),
-              boxShadowHover: createShadowString(0,8,16, alpha(pallette.getColor("main")(color),0.24)),
-              disabledBg: alpha(pallette.grey[500], 0.24),
-              disabledForeground: alpha(pallette.grey[500], 0.8),
-            };
-          },
-        },
-        outlined: {
-          styles: ({ color }) => {
-            const mainColor =  color === "default" ? pallette.grey[500] : pallette.getColor("main")(color);
-            return {
-              border: `1px solid ${alpha(
-                mainColor,
-                0.32
-              )}`,
-              borderHoverColor: mainColor,
-            
-              bg: pallette.getColor("transparent")(color),
-              foreground: mainColor,
-              hoverBg: alpha(mainColor, 0.08),
-              disabledBg: pallette.getColor("transparent")(color),
-              disabledForeground: alpha(pallette.grey[500], 0.8),
-              disabledBorder: `1px solid ${alpha(pallette.grey[500], 0.24)}`,
-            };
-          },
-        },
-        soft: {
-          styles: ({ color }) => {
-            const mainColor =  color === "default" ? pallette.grey[500] : pallette.getColor("main")(color);
-            return {
-              bg: color === "default" ? alpha(pallette.grey[500], 0.08) : alpha(pallette.getColor("main")(color), 0.16),
-              foreground: mainColor,
-              hoverBg:
-                color === "default" ? alpha(pallette.grey[500], 0.16) : alpha(pallette.getColor("main")(color), 0.32),
-              disabledBg: alpha(pallette.grey[500], 0.24),
-              disabledForeground: alpha(pallette.grey[500], 0.8),
-            };
-          },
-        },
-        text: {
-          styles: ({ color }) => {
-            const mainColor =  color === "default" ? pallette.grey[500] : pallette.getColor("main")(color);
-            return {
-              bg: pallette.getColor("transparent")(color),
-              foreground: mainColor,
-              hoverBg: alpha(color === "default" ? pallette.grey[500] : pallette.getColor("main")(color), 0.08),
-              disabledBg: pallette.getColor("transparent")(color),
-              disabledForeground: alpha(pallette.grey[500], 0.8),
-            };
-          },
-        },
-      },
-    },
+  const { colorVariants } = colorPalette || createColorPalette();
+  return {
     CreditCard: {
       variants: colorVariants,
     },
@@ -281,8 +128,9 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
       },
     },
   };
-  return compTheme;
 };
+
+const DefaultComponentTheme: IComponentTheme = buildComponentTheme();
 
 export const createComponents = (palette?: IColorPalette, args: Subset<IComponentTheme> = {}) => {
   const newTheme = buildComponentTheme(palette);

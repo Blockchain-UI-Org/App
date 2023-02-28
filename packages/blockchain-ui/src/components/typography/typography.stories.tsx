@@ -1,12 +1,12 @@
 import { Story } from "@storybook/react";
-import { Flex } from "blockchain-ui/components";
+import Flex from "blockchain-ui/components/flex";
 import {
   Heading as HeadingComp,
-  ISubtitleProps,
+  IDisplayProps,
   IHeadingProps,
   ITypographyProps,
   Typography as TypographyComp,
-  Subtitle as DisplayComp,
+  Display as DisplayComp,
   Paragraph as ParagraphComp,
   IParagraphProps,
 } from "./typography";
@@ -69,7 +69,7 @@ Heading.argTypes = {
 };
 
 const DisplayTemplate: Story = (args) => {
-  const displays: ISubtitleProps["variant"][] = ["subtitle1", "subtitle2"];
+  const displays: IDisplayProps["variant"][] = ["display1", "display2"];
 
   return (
     <Flex direction="column">
