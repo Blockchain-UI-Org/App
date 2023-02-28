@@ -72,11 +72,6 @@
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --project-token=486802020566"
   },
-  "jest": {
-    "moduleNameMapper": {
-      "^blockchain-ui(.*)$": "<rootDir>/src$1"
-    } 
-  },
   "eslintConfig": {
     "extends": [
       "react-app",

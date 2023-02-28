@@ -40,7 +40,7 @@ export const Table = styled.table<{ minWidth?: number; variant?: "light" | "dark
         color: rgb(143, 145, 160);
       }
     `;
- 
+
     return css`
       ${variant === "dark" ? DarkVariant : LightVariant}
       ${css({ minWidth })}

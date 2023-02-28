@@ -1,0 +1,34 @@
+@import url(//fonts.googleapis.com/css?family=Public+Sans);
+
+.web3-ui-button {
+  font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.web3-ui-button--primary {
+  color: white;
+  background-color: #3366ff;
+}
+.web3-ui-button--secondary {
+  color: #3366ff;
+  background-color: transparent;
+  box-shadow: #3366ff 0px 0px 0px 1px inset;
+}
+.web3-ui-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.web3-ui-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.web3-ui-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}

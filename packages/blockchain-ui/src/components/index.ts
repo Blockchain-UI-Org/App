@@ -1,5 +1,4 @@
-export { Button } from "./button";
-export * from "./flex";
+export * from "./button";
 // export * from "./charts";
 export * from "./input/input";
-export { Alert } from "./alert/alert";
+export { default as Alert } from "./alert/alert";

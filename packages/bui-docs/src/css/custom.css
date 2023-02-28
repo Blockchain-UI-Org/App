@@ -7,18 +7,6 @@
 /* You can override the default Infima variables here. */
 
 @import url('//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
-@import url(//fonts.googleapis.com/css?family=Public+Sans);
-
-
-
-body {
-  margin: 0;
-  background-color: #fbfbfd;
-  font-family: "Public Sans", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 
 :root {
   --ifm-color-primary: #2e8555;

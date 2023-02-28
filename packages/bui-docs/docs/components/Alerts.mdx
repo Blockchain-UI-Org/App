@@ -3,94 +3,15 @@ description: Alert Component
 ---
 
 import { Alert } from "blockchain-ui";
-import { DisplayExample, Spacer } from "@site/src/components/DisplayExample";
+
+
+
 
 # Alerts
 
 Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
 
-## Examples
-
-Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the four
-
-### Simple Alert
-
-This is a minimal Alert with 4 Statuses i.e. error, warning, success and info.
-
-<DisplayExample>
-
-<Alert message="A Simple Error Alert" status="error" />
-
-<Spacer />
-
-<Alert message="A Simple Waring Alert" status="warning" />
-
-<Spacer />
-<Alert message="A Simple Success Alert" status="success" />
-
-<Spacer />
-<Alert message="A Simple Info Alert" status="info" />
-
-</DisplayExample>
-
-```jsx
-<Alert message="A Simple Error Alert" status="error" />
-
-<Alert message="A Simple Warning Alert" status="warning" />
-
-<Alert message="A Simple Success Alert" status="success" />
-
-<Alert message="A Simple Info Alert" status="info" />
-```
-
-### Alert with Buttons
-
-<DisplayExample>
-
-<Alert message="A Simple Error Alert" actionLabel="Ok" dismissLabel="Cancel" status="error" />
-
-</DisplayExample>
-
-```jsx
-<Alert message="A Simple Alert With Buttons" actionLabel="Ok" dismissLabel="Cancel" status="error" />
-```
-
-### Alert Variants
-
-An Alert comes with three variants standard, filled, outlined and 4 statuses.
-
-<DisplayExample>
-
-<Alert message="An Standard Alert" variant="standard" actionLabel="Ok" dismissLabel="Cancel" status="success" />
-<Spacer />
-<Alert message="A Filled Alert" variant="filled" actionLabel="Ok" dismissLabel="Cancel" status="success" />
-<Spacer />
-<Alert message="An Outlined Alert" variant="outlined" actionLabel="Ok" dismissLabel="Cancel" status="success" />
-
-</DisplayExample>
-
-```jsx
-<Alert
-    message="A Standard Alert"
-    variant="standard"
-    actionLabel="Ok"
-    dismissLabel="Cancel"
-    status="success"
-/>
-
-<Alert
-    message="A Filled Alert"
-    variant="filled"
-    actionLabel="Ok"
-    dismissLabel="Cancel"
-    status="success"
-/>
-
-<Alert
-    message="An Outlined Alert"
-    variant="outlined"
-    actionLabel="Ok"
-    dismissLabel="Cancel"
-    status="success"
-/>
-```
+<div style={{marginBottom: 20}}>
+<Alert message="A Simple Error Alert" type="error" />
+</div>
+<Alert message="A Simple Info Alert" type="info" />
