@@ -16,53 +16,63 @@ export type ITypographyTheme = {
   h4: IFontInterface;
   h5: IFontInterface;
   h6: IFontInterface;
-  display1: IFontInterface;
-  display2: IFontInterface;
+  subtitle1: IFontInterface;
+  subtitle2: IFontInterface;
   body1: IFontInterface;
   body2: IFontInterface;
 };
 
 const DefaultTypography: ITypographyTheme = {
-  common: { fontFamily: "CircularStd, Public Sans" },
+  common: { fontFamily: "Public Sans" },
   h1: {
-    fontSize: 32,
-    lineHeight: "48px",
+    fontSize: 64,
+    fontWeight: 800,
+    lineHeight: "80px",
   },
   h2: {
-    fontSize: 24,
-    lineHeight: "36px",
+    fontSize: 48,
+    fontWeight: 800,
+    lineHeight: "64px",
   },
   h3: {
-    fontSize: 20,
-    lineHeight: "30px",
+    fontSize: 32,
+    fontWeight: 800,
+    lineHeight: "48px",
   },
   h4: {
-    fontSize: 18,
-    lineHeight: "28px",
+    fontSize: 24,
+    fontWeight: 700,
+    lineHeight: "36px",
   },
   h5: {
-    fontSize: 16,
-    lineHeight: "24px",
+    fontSize: 20,
+    fontWeight: 700,
+    lineHeight: "30px",
   },
   h6: {
-    fontSize: 14,
-    lineHeight: "20px",
+    fontSize: 18,
+    fontWeight: 700,
+    lineHeight: "28px",
   },
   body1: {
     fontSize: 16,
+    fontWeight: 400,
     lineHeight: "24px",
   },
   body2: {
     fontSize: 14,
-    lineHeight: "20px",
+    fontWeight: 400,
+    lineHeight: "22px",
   },
-  display1: {
-    fontSize: 48,
-    lineHeight: "62px",
+  subtitle1: {
+    fontSize: 16,
+    fontWeight: 600,
+    lineHeight: "24px",
   },
-  display2: {
-    fontSize: 36,
-    lineHeight: "48px",
+  subtitle2: {
+    fontSize: 14,
+    fontWeight: 600,
+    lineHeight: "22px",
   },
 };
 

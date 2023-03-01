@@ -1,7 +1,7 @@
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Button } from ".";
-
+import { ComponentStory, Meta } from "@storybook/react";
+import { Button, ButtonColors, ButtonSizes, ButtonVariants, IButtonProps } from "./button";
+import { capitalize } from "lodash";
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: "General/Button",
@@ -10,31 +10,34 @@ export default {
   argTypes: {
     backgroundColor: { control: "color" },
   },
-} as ComponentMeta<typeof Button>;
+} as Meta<IButtonProps>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template = () => {
+  return (
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      {ButtonColors.map((color) => {
+        return (
+          <div style={{ display: "flex", marginBottom: "1em" }}>
+            {ButtonVariants.map((variant) => {
+              return (
+                <div style={{ display: "flex", marginRight: "3em", alignItems: "center" }}>
+                  {[...ButtonSizes].reverse().map((size) => {
+                    return (
+                      <div style={{ margin: "0.3em" }}>
+                        {<Button label={capitalize(size)} variant={variant} size={size} color={color} />}
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
-export const Primary = Template.bind({});
+export const Buttons = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: "Buy",
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: "Sell",
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: "large",
-  label: "Trade",
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: "small",
-  label: "Deposit",
-};

@@ -2,7 +2,7 @@ import { CryptoIcon } from "blockchain-ui/components/icon/icon";
 import { Table, TableContainer, Tbody, Td, Th, THead, Tr } from "./Table";
 
 export default {
-  title: "Table/Table New",
+  title: "Table/Table",
   component: Table,
   parameters: {
     backgrounds: {
