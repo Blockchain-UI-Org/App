@@ -21,7 +21,9 @@ type IFontProps = {
   noMargin?: boolean;
   fontFamily?: string;
 };
+
 export type ITypographyTags = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span" | "p";
+
 
 export type ITypographyProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLElement>,
@@ -40,9 +42,6 @@ const genStyles = (props: IFontProps) =>
 
 export const Typography: FC<ITypographyProps> = styled("p")`
   font-family: ${withTheme(({theme}) => theme.typography.common.fontFamily)};
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: ${FONT_WEIGHTS.regular};
   ${genStyles}
 `;
 
@@ -58,13 +57,14 @@ export const Heading: FC<IHeadingProps> = (props) => {
   return <Typography as={as} {...styles} {...props} />;
 } 
 
-export type IDisplayVariant = "display1" | "display2";
-export type IDisplayProps = ITypographyProps & {variant?: IDisplayVariant};
+export type ISubtitleVariant = "subtitle1" | "subtitle2";
+
+export type ISubtitleProps = ITypographyProps & {variant?: ISubtitleVariant};
 
 
 
-export const Display: FC<IDisplayProps> = (props) => {
-  const variant = props.variant || "display1";
+export const Subtitle: FC<ISubtitleProps> = (props) => {
+  const variant = props.variant || "subtitle1";
 
   const theme = useTheme()
   const variantStyles = theme.typography[variant];
