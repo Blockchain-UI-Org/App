@@ -90,6 +90,11 @@ const Circle = styled.div<{ title: string; count: number; index: number }>`
 
     return css(data as any);
   }}
+
+  @media (max-width: 1200px) {
+    width: 10px;
+    height: 10px;
+  }
 `;
 
 const Card = styled.div`
@@ -99,6 +104,7 @@ const Card = styled.div`
   border-radius: 40px;
   display: flex;
   align-items: center;
+  align-text: center;
   flex-direction: column;
   justify-content: center;
   position: absolute;
@@ -123,6 +129,16 @@ const Card = styled.div`
       top: 60px;
     }
   }
+
+  @media (max-width: 1000px) {
+    font-size: 12px;
+    min-height: 30px;
+    width: 130px;
+
+    .itemDescription {
+      display: none;
+    }
+  }
 `;
 
 const Roadmap: FC<IRoadmapProps> = (props) => {
@@ -140,7 +156,7 @@ const Roadmap: FC<IRoadmapProps> = (props) => {
             <Circle title={item.title} count={props.items.length} index={index}>
               <Card style={{ color: "#333" }} className={index % 2 === 0 ? "up" : "down"}>
                 {item.title}
-                {item.description && <span>({item.description})</span>}
+                {item.description && <span className="itemDescription">({item.description})</span>}
               </Card>
             </Circle>
           );
