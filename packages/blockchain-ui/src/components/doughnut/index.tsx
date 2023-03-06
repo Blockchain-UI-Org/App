@@ -1,1 +1,1 @@
-export {DoughnutChart} from "./dougnutchart";
+export { DoughnutChart } from "./dougnutchart";
