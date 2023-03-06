@@ -1,8 +1,3 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Icon } from "blockchain-ui/components/icon/icon";
-import { Typography } from "blockchain-ui/components/typography";
-import { formatNumber } from "blockchain-ui/utils";
 import { listOfCryptos } from "./CryptoList";
 
 export default {
@@ -42,9 +37,9 @@ const Template = () => {
 
   return (
     <div style={{ display: "flex", flexWrap: "wrap" }}>
-      <div style={{ backgroundColor: "#fff", height: 50, width: 100, marginRight: 10 }}>
+      {/* <div style={{ backgroundColor: "#fff", height: 50, width: 100, marginRight: 10 }}>
         {Object.keys(listOfCryptos).length}
-      </div>
+      </div> */}
       {renderIcons()}
     </div>
   );
