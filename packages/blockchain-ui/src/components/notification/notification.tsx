@@ -150,6 +150,7 @@ const CloseWrapper = styled(Flex)`
   justify-content: center;
   color: ${withTheme(({ theme }) => theme.palette.grey[600])};
 `;
+
 const IconWrapper = styled.div<Pick<INotificationProps, "type">>`
   border-radius: 12px;
   display: flex;

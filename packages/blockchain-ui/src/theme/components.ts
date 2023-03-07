@@ -8,7 +8,7 @@ import { IAlertStatus } from "blockchain-ui/components/alert/alert";
 import { IButtonColors, IButtonVariants } from "../components/button";
 import { alpha } from "blockchain-ui/utils";
 import { createShadow, createShadowString } from "./shadow";
-
+import { ITagColors, ITagVariants } from "blockchain-ui/components/tag/tag";
 
 const regular = {
   small: "16px",
@@ -61,8 +61,8 @@ export type IComponentTheme = {
       fontSize: string | number;
       fontWeight: number;
       lineHeight: string | number;
-      borderRadius: number
-    }
+      borderRadius: number;
+    };
     variants: Record<
       IButtonVariants,
       {
@@ -76,6 +76,18 @@ export type IComponentTheme = {
           boxShadowHover: string;
           disabledForeground: string;
           disabledBorder: string;
+        }>;
+      }
+    >;
+  };
+  BuiTag: {
+    variants: Record<
+      ITagVariants,
+      {
+        styles: (args: { color: ITagColors }) => Partial<{
+          bg: string;
+          foreground: string;
+          border: string;
         }>;
       }
     >;
@@ -129,7 +141,6 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
               bg: pallette.getColor("lighter")(status),
               foreground: pallette.getColor("darker")(status),
               iconbg: pallette.getColor("main")(status),
-           
             };
           },
         },
@@ -140,7 +151,6 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
               bg: pallette.getColor("main")(status),
               foreground: pallette.getColor("contrastText")(status),
               iconbg: pallette.getColor("contrastText")(status),
-
             };
           },
         },
@@ -158,20 +168,19 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
     },
     BuiButton: {
       common: {
-          fontSize: "0.8rem",
-          fontWeight: 700,
-          borderRadius: 8,
-          lineHeight: 1.7
+        fontSize: "0.8rem",
+        fontWeight: 700,
+        borderRadius: 8,
+        lineHeight: 1.7,
       },
       variants: {
-     
         contained: {
           styles: ({ color }) => {
             return {
               bg: pallette.getColor("main")(color),
               foreground: pallette.getColor("contrastText")(color),
               hoverBg: pallette.getColor("darker")(color),
-              boxShadowHover: createShadowString(0,8,16, alpha(pallette.getColor("main")(color),0.24)),
+              boxShadowHover: createShadowString(0, 8, 16, alpha(pallette.getColor("main")(color), 0.24)),
               disabledBg: alpha(pallette.grey[500], 0.24),
               disabledForeground: alpha(pallette.grey[500], 0.8),
             };
@@ -179,14 +188,11 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
         },
         outlined: {
           styles: ({ color }) => {
-            const mainColor =  color === "default" ? pallette.grey[800] : pallette.getColor("main")(color);
+            const mainColor = color === "default" ? pallette.grey[800] : pallette.getColor("main")(color);
             return {
-              border: `1px solid ${alpha(
-                mainColor,
-                0.32
-              )}`,
+              border: `1px solid ${alpha(mainColor, 0.32)}`,
               borderHoverColor: mainColor,
-            
+
               bg: pallette.getColor("transparent")(color),
               foreground: mainColor,
               hoverBg: alpha(mainColor, 0.08),
@@ -198,7 +204,7 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
         },
         soft: {
           styles: ({ color }) => {
-            const mainColor =  color === "default" ? pallette.grey[800] : pallette.getColor("main")(color);
+            const mainColor = color === "default" ? pallette.grey[800] : pallette.getColor("main")(color);
             return {
               bg: color === "default" ? alpha(pallette.grey[500], 0.08) : alpha(pallette.getColor("main")(color), 0.16),
               foreground: mainColor,
@@ -211,13 +217,47 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
         },
         text: {
           styles: ({ color }) => {
-            const mainColor =  color === "default" ? pallette.grey[800] : pallette.getColor("main")(color);
+            const mainColor = color === "default" ? pallette.grey[800] : pallette.getColor("main")(color);
             return {
               bg: pallette.getColor("transparent")(color),
               foreground: mainColor,
               hoverBg: alpha(color === "default" ? pallette.grey[500] : pallette.getColor("main")(color), 0.08),
               disabledBg: pallette.getColor("transparent")(color),
               disabledForeground: alpha(pallette.grey[500], 0.8),
+            };
+          },
+        },
+      },
+    },
+    BuiTag: {
+      variants: {
+        filled: {
+          styles: ({ color }) => {
+            const bgColor = pallette.getColor("main")(color);
+            return {
+              bg: bgColor,
+              foreground: pallette.getColor("contrastText")(color),
+            };
+          },
+        },
+        outline: {
+          styles: ({ color }) => {
+            const main = pallette.getColor("main")(color);
+            return {
+              bg: pallette.getColor("transparent")(color),
+              foreground: color === "default" ? pallette.getColor("contrastText")(color): main,
+              border: `1px solid ${main}`,
+            };
+          },
+        },
+        soft: {
+          
+          styles: ({ color }) => {
+            const foreground = pallette.getColor("dark")(color);
+            const bgColor = pallette.getColor("main")(color);
+            return {
+              bg: alpha(bgColor, 0.16),
+              foreground: color === "default" ? pallette.getColor("contrastText")(color):  foreground,
             };
           },
         },
