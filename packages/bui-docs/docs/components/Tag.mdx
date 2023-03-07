@@ -170,9 +170,13 @@ An Tag comes with a soft variant
 
 A Tag can also have an Icon
 
+Icon With Tag Supports following Direction values:
+- start
+- end
+
 <DisplayExample row justifyContent="center">
 
-<Tag  icon={<Wallet />} >Wallet</Tag>
+<Tag  icon={<Wallet />} iconDirection="start" >Wallet</Tag>
 
 <HorizontalSpacer />
 
@@ -180,7 +184,7 @@ A Tag can also have an Icon
 </DisplayExample>
 
 ```jsx
-<Tag  icon={<Wallet />} >Wallet</Tag>
+<Tag icon={<Wallet />} iconDirection="start" >Wallet</Tag>
 
-<Tag  icon={<Wallet />} iconDirection="end" >Wallet</Tag>
+<Tag icon={<Wallet />} iconDirection="end" >Wallet</Tag>
 ```

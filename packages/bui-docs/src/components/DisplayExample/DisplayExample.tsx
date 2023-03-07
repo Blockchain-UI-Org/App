@@ -30,6 +30,7 @@ export const DisplayExample: FC<{
     <div
       style={{
         borderRadius: 8,
+        position: 'relative',
         display: "flex",
         flexDirection: row ? "row" : "column",
         alignItems:  alignItems || "center" ,

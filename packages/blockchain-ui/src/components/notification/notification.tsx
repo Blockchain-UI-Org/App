@@ -1,4 +1,4 @@
-import { FC, FunctionComponent, SVGProps } from "react";
+import { CSSProperties, FC, FunctionComponent, SVGProps } from "react";
 import styled, { css } from "styled-components";
 import { useTheme, withTheme } from "blockchain-ui/theme";
 import { Close, InfoIcon, SuccessIcon, WarningIcon } from "../static/images/icons/regular";
@@ -6,6 +6,7 @@ import { alpha } from "blockchain-ui/utils";
 import { Flex } from "../flex";
 import { Button } from "../button";
 import { Subtitle } from "../typography";
+import { createPortal } from "react-dom";
 
 export const NotificationTypes = ["info", "warning", "success", "error"] as const;
 export type INotificationType = (typeof NotificationTypes)[number];
@@ -15,7 +16,9 @@ export interface INotificationProps {
   opacity?: number;
   invert?: boolean;
   default?: boolean;
-  position?: "top";
+
+  rootStyle?: CSSProperties;
+  usePortal?: boolean;
   // Optional Override
   icon?: React.ReactElement;
   type: INotificationType;
@@ -41,6 +44,9 @@ export const Notification: FunctionComponent<INotificationProps> = ({
   message,
   actionLabel,
   cancelLabel,
+  rootStyle,
+
+  usePortal = false,
   onAction,
   onClose,
   onCancel,
@@ -103,42 +109,55 @@ export const Notification: FunctionComponent<INotificationProps> = ({
       );
     }
   };
-  return (
-    <NotificationWrapper invert={invert} opacity={opacity}>
+  const comp = (
+    <NotificationWrapper rootStyle={rootStyle} invert={invert} opacity={opacity}>
       {!hideIcon && (
         <IconWrapper type={type}>
           <Icon />
         </IconWrapper>
       )}
-      <Subtitle as="p" role={"message"} variant="subtitle2" style={{ padding: "9px 12px", flex: 1 }}>
+      <Subtitle as="p" role={"message"} variant="subtitle2" style={{ padding: "9px 12px", flex: 1, margin: 0 }}>
         {message}
       </Subtitle>
       {renderAction()}
     </NotificationWrapper>
   );
+
+  if(usePortal){
+    return createPortal(comp, document.body);
+  }else {
+    return comp;
+  }
 };
 
-const NotificationWrapper = styled.div<Pick<INotificationProps, "invert" | "opacity">>`
+const NotificationWrapper = styled.div<Pick<INotificationProps,"rootStyle" |  "invert" | "opacity">>`
   display: flex;
   /* align-items: flex-start; */
-  position: absolute;
+  top: 10%;
+  left: 50%;
+  position: fixed;
+  transform: translateX(-50%);
   border-radius: 8px;
   width: 420px;
 
-  ${withTheme(({ theme, invert, opacity }) => {
+  ${withTheme(({ theme, invert, opacity, rootStyle }) => {
     const bgCss = css({
       backgroundColor: invert ? theme.palette.grey[900] : theme.palette.common.white,
       color: invert ? theme.palette.common.white : theme.palette.grey[800],
     });
 
+    const overrides =  rootStyle ? css({...rootStyle}): ``;
+
     return css`
       padding: 12px;
+     
 
       opacity: ${opacity};
-
+      z-index: 10000;
       ${bgCss}
 
       box-shadow: ${theme.shadows.depth3};
+      ${overrides}
     `;
   })}
 `;

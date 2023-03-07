@@ -84,7 +84,7 @@ export const Alert: FC<AlertProps> = ({
         <Icon />
       </IconWrapper>
       <Flex flex={1}>
-        <ParagraphWrapper role={"message"} noMargin variant="body2">
+        <ParagraphWrapper role={"message"}  variant="body2">
           {message}
         </ParagraphWrapper>
       </Flex>
