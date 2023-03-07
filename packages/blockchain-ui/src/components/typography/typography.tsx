@@ -67,6 +67,7 @@ export const Subtitle: FC<ISubtitleProps> = (props) => {
   const variant = props.variant || "subtitle1";
 
   const theme = useTheme()
+
   const variantStyles = theme.typography[variant];
 
   return <Typography  as="h1" {...variantStyles} {...props} />;

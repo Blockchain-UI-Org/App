@@ -179,7 +179,7 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
         },
         outlined: {
           styles: ({ color }) => {
-            const mainColor =  color === "default" ? pallette.grey[500] : pallette.getColor("main")(color);
+            const mainColor =  color === "default" ? pallette.grey[800] : pallette.getColor("main")(color);
             return {
               border: `1px solid ${alpha(
                 mainColor,
@@ -198,7 +198,7 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
         },
         soft: {
           styles: ({ color }) => {
-            const mainColor =  color === "default" ? pallette.grey[500] : pallette.getColor("main")(color);
+            const mainColor =  color === "default" ? pallette.grey[800] : pallette.getColor("main")(color);
             return {
               bg: color === "default" ? alpha(pallette.grey[500], 0.08) : alpha(pallette.getColor("main")(color), 0.16),
               foreground: mainColor,
@@ -211,7 +211,7 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
         },
         text: {
           styles: ({ color }) => {
-            const mainColor =  color === "default" ? pallette.grey[500] : pallette.getColor("main")(color);
+            const mainColor =  color === "default" ? pallette.grey[800] : pallette.getColor("main")(color);
             return {
               bg: pallette.getColor("transparent")(color),
               foreground: mainColor,

@@ -6,7 +6,6 @@ import { AugurLogo } from "./crypto-icons/AugurLogo";
 import { AVAXLogo } from "./crypto-icons/AvaxLogo";
 import { AxieLogo } from "./crypto-icons/AxieLogo";
 import { BalancerLogo } from "./crypto-icons/BalancerLogo";
-import { BasicAttentionLogo } from "./crypto-icons/BasicAttentionLogo";
 import { BATLogo } from "./crypto-icons/BATLogo";
 import { BNBLogo } from "./crypto-icons/BNBLogo";
 import { BTCLogo } from "./crypto-icons/BTCLogo";
@@ -15,7 +14,6 @@ import { CardanoLogo } from "./crypto-icons/CardanoLogo";
 import { CartesiLogo } from "./crypto-icons/CartesiLogo";
 import { CelsiusNetworkLogo } from "./crypto-icons/CelsiusNetworkLogo";
 import { ChainLinkLogo } from "./crypto-icons/ChainLinkLogo";
-import { CivicLogo } from "./crypto-icons/CivicLogo";
 import { CompLogo } from "./crypto-icons/CompLogo";
 import { CompoundLogo } from "./crypto-icons/CompoundLogo";
 import { CosmosLogo } from "./crypto-icons/CosmosLogo";
@@ -25,7 +23,6 @@ import { DAILogo } from "./crypto-icons/DAILogo";
 import { DecentralandLogo } from "./crypto-icons/DecentralandLogo";
 import { FlowLogo } from "./crypto-icons/FlowLogo";
 import FraxLogo from "./crypto-icons/FraxLogo";
-import { FraxShareLogo } from "./crypto-icons/FraxShareLogo";
 import { FTMLogo } from "./crypto-icons/FTMLogo";
 import { GalaLogo } from "./crypto-icons/GalaLogo";
 import { HederaLogo } from "./crypto-icons/HederaLogo";
@@ -442,16 +439,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
       avalanche: "0x8505b9d2254a7ae468c0e9dd10ccea3a837aef5c",
     },
   },
-  // woonetwork : {
-  //   name: " WOO Network ",
-  //   symbol: "WOO",
-  //   website: "https://woo.org/",
-  //   icon: ,
-  //   contract: {
-  //     polygon: "0x1b815d120b3ef02039ee11dc2d33de7aa4a8c603",
-  //     avalanche:"0xabc9547b534519ff73921b1fba6e672b5f58d083",
-  //   },
-  // },
+
   gala: {
     name: " GALA  ",
     symbol: "GALA ",

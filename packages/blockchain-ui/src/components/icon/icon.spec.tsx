@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Icon } from './icon';
-import { regularIcons } from '../static/images/icons/regular';
+import * as regularIcons from '../static/images/icons/regular';
 import { DefaultTheme } from "blockchain-ui/theme";
 
 

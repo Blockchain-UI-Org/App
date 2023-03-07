@@ -1,7 +1,7 @@
 import { listOfCryptos } from "./CryptoList";
 
 export default {
-  title: "General/Crypto Icons List",
+  title: "General/Crypto Icons",
 
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 };
@@ -45,4 +45,4 @@ const Template = () => {
   );
 };
 
-export const CryptoIconsList = Template.bind({});
+export const AllIcon = Template.bind({});
