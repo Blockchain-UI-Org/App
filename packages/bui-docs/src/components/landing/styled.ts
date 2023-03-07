@@ -115,7 +115,7 @@ export const Features = styled.div`
 
     @media (max-width: 1200px) {
       margin-top: 20px;
-      font-size: 40px;
+      font-size: 32px;
     }
   }
 
@@ -270,7 +270,7 @@ export const Library = styled.div`
     -webkit-text-fill-color: transparent;
 
     @media (max-width: 1200px) {
-      font-size: 40px;
+      font-size: 32px;
     }
   }
 
