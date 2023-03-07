@@ -1,8 +1,8 @@
-import * as React from "react"
-import { SVGProps } from "react"
+import * as React from "react";
+import { SVGProps } from "react";
 
 export const TelcoinLogo = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" height={32} width={32} {...props}>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" {...props}>
     <g fill="none" fillRule="evenodd">
       <circle cx={16} cy={16} fill="#14c8ff" r={16} />
       <path
@@ -12,5 +12,4 @@ export const TelcoinLogo = (props: SVGProps<SVGSVGElement>) => (
       />
     </g>
   </svg>
-)
-
+);

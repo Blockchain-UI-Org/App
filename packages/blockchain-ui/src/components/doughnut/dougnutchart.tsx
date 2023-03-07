@@ -35,15 +35,19 @@ const SubtitleWrapper = styled.div`
   align-items: center;
 `;
 
+export type IDoughnutProps = {
+  data: { label: string; bgColor: string; value: number }[];
+  maxWidth?: number;
+
+  info?: { title?: string; subtitle?: React.ReactElement };
+}
+
+
 export const DoughnutChart = ({
   data: chartData,
   info,
   maxWidth,
-}: {
-  data: { label: string; bgColor: string; value: number }[];
-  maxWidth?: number;
-  info?: { title?: string; subtitle?: React.ReactElement };
-}) => {
+}: IDoughnutProps) => {
   const theme = useTheme();
 
   const [ChartLib, setChartLib] = useState<typeof import("chart.js") | null>(null);

@@ -2,27 +2,27 @@ import * as React from "react"
 import { SVGProps } from "react"
 
 export const DecentralandLogo = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={400} height={400} {...props}>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" {...props}>
     <defs>
       <linearGradient
         x1="85.355%"
         y1="14.645%"
         x2="14.645%"
         y2="85.355%"
-        id="a"
+        id="dece-a"
       >
         <stop stopColor="#FF2D55" offset="0%" />
         <stop stopColor="#FFBC5B" offset="100%" />
       </linearGradient>
-      <linearGradient x1="49.966%" y1="0%" x2="49.966%" y2="100%" id="b">
+      <linearGradient x1="49.966%" y1="0%" x2="49.966%" y2="100%" id="dece-b">
         <stop stopColor="#A524B3" offset="0%" />
         <stop stopColor="#FF2D55" offset="100%" />
       </linearGradient>
     </defs>
     <g fill="none" fillRule="evenodd">
-      <circle fill="url(#a)" cx={200} cy={200} r={200} />
+      <circle fill="url(#dece-a)" cx={200} cy={200} r={200} />
       <path
-        fill="url(#b)"
+        fill="url(#dece-b)"
         d="M125.7 0v150h125z"
         transform="translate(16 130)"
       />

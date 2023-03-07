@@ -9,7 +9,7 @@ export const TheSandboxLogo = (props: SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <linearGradient
-      id="a"
+      id="sandbox"
       gradientUnits="userSpaceOnUse"
       x1={25.214}
       y1={1024.822}
@@ -35,7 +35,7 @@ export const TheSandboxLogo = (props: SVGProps<SVGSVGElement>) => (
       cy={25}
       r={25}
       style={{
-        fill: "url(#a)",
+        fill: "url(#sandbox)",
       }}
     />
     <path

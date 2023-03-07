@@ -1,13 +1,17 @@
 import { AaveLogo } from "./crypto-icons/AaveLogo";
+import { AlgoLogo } from "./crypto-icons/AlgoLogo";
 import { AnkrNetworkLogo } from "./crypto-icons/AnkrNetworkLogo";
 import { ApeCoinLogo } from "./crypto-icons/ApeCoinLogo";
 import { AugurLogo } from "./crypto-icons/AugurLogo";
+import { AVAXLogo } from "./crypto-icons/AvaxLogo";
+import { AxieLogo } from "./crypto-icons/AxieLogo";
 import { BalancerLogo } from "./crypto-icons/BalancerLogo";
 import { BasicAttentionLogo } from "./crypto-icons/BasicAttentionLogo";
 import { BATLogo } from "./crypto-icons/BATLogo";
 import { BNBLogo } from "./crypto-icons/BNBLogo";
 import { BTCLogo } from "./crypto-icons/BTCLogo";
 import { BUSDLogo } from "./crypto-icons/BUSDLogo";
+import { CardanoLogo } from "./crypto-icons/CardanoLogo";
 import { CartesiLogo } from "./crypto-icons/CartesiLogo";
 import { CelsiusNetworkLogo } from "./crypto-icons/CelsiusNetworkLogo";
 import { ChainLinkLogo } from "./crypto-icons/ChainLinkLogo";
@@ -15,22 +19,32 @@ import { CivicLogo } from "./crypto-icons/CivicLogo";
 import { CompLogo } from "./crypto-icons/CompLogo";
 import { CompoundLogo } from "./crypto-icons/CompoundLogo";
 import { CosmosLogo } from "./crypto-icons/CosmosLogo";
+import { CronosLogo } from "./crypto-icons/CronosLogo";
 import { CurveDaoLogo } from "./crypto-icons/CurveDaoLogo";
 import { DAILogo } from "./crypto-icons/DAILogo";
 import { DecentralandLogo } from "./crypto-icons/DecentralandLogo";
+import { FlowLogo } from "./crypto-icons/FlowLogo";
 import FraxLogo from "./crypto-icons/FraxLogo";
 import { FraxShareLogo } from "./crypto-icons/FraxShareLogo";
+import { FTMLogo } from "./crypto-icons/FTMLogo";
 import { GalaLogo } from "./crypto-icons/GalaLogo";
+import { HederaLogo } from "./crypto-icons/HederaLogo";
+import { HuobiToken } from "./crypto-icons/HuobiToken";
 import { INJLogo } from "./crypto-icons/INJLogo";
 import { IoTeXLogo } from "./crypto-icons/IoTeXLogo";
 import { KyberNetworkProtocol } from "./crypto-icons/KyberNetworkProtocolLogo";
 import { MakerLogo } from "./crypto-icons/MakerLogo";
 import { MaskNetworkLogo } from "./crypto-icons/MaskNetworkLogo";
 import { MaticLogo } from "./crypto-icons/MaticLogo";
+import { NeoLogo } from "./crypto-icons/NeoLogo";
 import { NestProtocolLogo } from "./crypto-icons/NestProtocolLogo";
 import { OneInchLogo } from "./crypto-icons/OneInchLogo";
+import { PolkdotLogo } from "./crypto-icons/PolkaDotLogo";
 import { RENLogo } from "./crypto-icons/RENLogo";
 import { RequestLogo } from "./crypto-icons/RequestLogo";
+import { SolanaLogo } from "./crypto-icons/SolanaLogo";
+import { StacksLogo } from "./crypto-icons/StacksLogo";
+import { StellarLogo } from "./crypto-icons/StellarLogo";
 import { SynthetixNetworkLogo } from "./crypto-icons/SynthetixNetworkLogo";
 import { TelcoinLogo } from "./crypto-icons/TelcoinLogo";
 import { TetherLogo } from "./crypto-icons/TetherLogo";
@@ -40,7 +54,9 @@ import { TUSDLogo } from "./crypto-icons/TUSDLogo";
 import { UMALogo } from "./crypto-icons/UMALogo";
 import { UniswapLogo } from "./crypto-icons/UniswapLogo";
 import { USDCLogo } from "./crypto-icons/USDCLogo";
+import { VeChainLogo } from "./crypto-icons/VeChainLogo";
 import { WrappedBitcoinLogo } from "./crypto-icons/WrappedBitcoinLogo";
+import { XRPLogo } from "./crypto-icons/XRPLogo";
 import { YearnFiLogo } from "./crypto-icons/YearnFiLogo";
 
 type INativeToken = {
@@ -285,7 +301,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
     website: "https://frax.finance/",
     icon: FraxLogo,
     contract: {
-      avalanche:'0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64',
+      avalanche: "0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64",
       polygon: "0x45c32fa6df82ead1e2ef74d17b76547eddfaff89",
     },
   },
@@ -295,7 +311,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
     website: "https://trustwallet.com/",
     icon: FraxLogo,
     contract: {
-      avalanche:'',
+      avalanche: "",
       polygon: "",
     },
   },
@@ -325,7 +341,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
     icon: SynthetixNetworkLogo,
     contract: {
       polygon: "0x50b728d8d964fd00c2d0aad81718b71311fef68a",
-      avalanche:"0xbec243c995409e6520d7c41e404da5deba4b209b",
+      avalanche: "0xbec243c995409e6520d7c41e404da5deba4b209b",
     },
   },
   maker: {
@@ -335,14 +351,14 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
     icon: MakerLogo,
     contract: {
       polygon: "0x6f7c932e7684666c9fd1d44527765433e01ff61d",
-      avalanche:"0x88128fd4b259552a9a1d457f435a6527aab72d42",
+      avalanche: "0x88128fd4b259552a9a1d457f435a6527aab72d42",
     },
   },
   decentraland: {
     name: "Decentraland",
     symbol: "MANA",
     website: "https://decentraland.org/",
-    icon: SynthetixNetworkLogo,
+    icon: DecentralandLogo,
     contract: {
       polygon: "0xa1c57f48f0deb89f569dfbe6e2b7f46d33606fd4",
     },
@@ -416,14 +432,14 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   //     avalanche:"0x9eaac1b23d935365bd7b542fe22ceee2922f52dc",
   //   },
   // },
-  compound : {
+  compound: {
     name: " Compound ",
     symbol: "COMP",
     website: "https://compound.finance/governance/comp",
     icon: CompoundLogo,
     contract: {
       polygon: "0x8505b9d2254a7ae468c0e9dd10ccea3a837aef5c",
-      avalanche:"0x8505b9d2254a7ae468c0e9dd10ccea3a837aef5c",
+      avalanche: "0x8505b9d2254a7ae468c0e9dd10ccea3a837aef5c",
     },
   },
   // woonetwork : {
@@ -436,7 +452,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   //     avalanche:"0xabc9547b534519ff73921b1fba6e672b5f58d083",
   //   },
   // },
-  gala : {
+  gala: {
     name: " GALA  ",
     symbol: "GALA ",
     website: "https://gala.games/",
@@ -445,14 +461,14 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
       ethereum: "0x15d4c048f83bd7e37d49ea4c83a07267ec4203da",
     },
   },
-  ankrnetwork  : {
+  ankrnetwork: {
     name: "Ankr Network  ",
     symbol: "ANKR",
     website: "https://ankr.com/",
     icon: AnkrNetworkLogo,
     contract: {
       polygon: "0x101a023270368c0d50bffb62780f4afd4ea79c35",
-      avalanche:"0x20cf1b6e9d856321ed4686877cf4538f2c84b4de",
+      avalanche: "0x20cf1b6e9d856321ed4686877cf4538f2c84b4de",
     },
   },
   //   astrafer  : {
@@ -474,7 +490,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   //     avalanche:"0x20cf1b6e9d856321ed4686877cf4538f2c84b4de",
   //   },
   // },
-  balancer  : {
+  balancer: {
     name: "Balancer ",
     symbol: "BAL",
     website: "https://balancer.finance/",
@@ -483,7 +499,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
       polygon: "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
     },
   },
-  iotex : {
+  iotex: {
     name: "IoTeX ",
     symbol: "IOTX",
     website: "https://iotex.io/",
@@ -492,7 +508,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
       ethereum: "0x6fb3e0a217407efff7ca062d46c26e5d60a14d69",
     },
   },
-  masknetwork : {
+  masknetwork: {
     name: "Mask Network",
     symbol: "MASK",
     website: "https://mask.io/",
@@ -510,17 +526,17 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   //     avalanche: "0x596fa47043f99a4e0f122243b841e55375cde0d2",
   //   },
   // },
-  multichain : {
+  multichain: {
     name: "Multichain",
     symbol: "MULTI",
     website: "https://multichain.org/",
     icon: MaskNetworkLogo,
     contract: {
       polygon: "0x9fb9a33956351cf4fa040f65a13b835a3c8764e3",
-      avalanche :"0x9fb9a33956351cf4fa040f65a13b835a3c8764e3"
+      avalanche: "0x9fb9a33956351cf4fa040f65a13b835a3c8764e3",
     },
   },
-  telcoin : {
+  telcoin: {
     name: "Telcoin",
     symbol: "TEL",
     website: "http://www.telco.in/",
@@ -529,7 +545,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
       polygon: "0xdf7837de1f2fa4631d716cf2502f8b230f1dcc32",
     },
   },
-  celsiusnetwork : {
+  celsiusnetwork: {
     name: "Celsius Network",
     symbol: "CEL",
     website: "https://celsius.network/",
@@ -538,16 +554,16 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
       polygon: "0xd85d1e945766fea5eda9103f918bd915fbca63e6",
     },
   },
-  uma : {
+  uma: {
     name: "UMA",
     symbol: "UMA",
     website: "https://uma.xyz/",
     icon: UMALogo,
     contract: {
-    avalanche: "0x3bd2b1c7ed8d396dbb98ded3aebb41350a5b2339",
+      avalanche: "0x3bd2b1c7ed8d396dbb98ded3aebb41350a5b2339",
     },
   },
-  nestprotocol  : {
+  nestprotocol: {
     name: "Nest Protocol ",
     symbol: "NEST",
     website: "https://nestprotocol.org/",
@@ -556,33 +572,33 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
       polygon: "0x98f8669f6481ebb341b522fcd3663f79a3d1a6a7",
     },
   },
-  kybernetworkcrystal : {
+  kybernetworkcrystal: {
     name: "Kyber Network Crystal ",
     symbol: "KNC",
     website: "https://kyber.network/",
     icon: KyberNetworkProtocol,
     contract: {
       polygon: "0x1c954e8fe737f99f68fa1ccda3e51ebdb291948c",
-      avalanche:"0x39fc9e94caeacb435842fadedecb783589f50f5f"
+      avalanche: "0x39fc9e94caeacb435842fadedecb783589f50f5f",
     },
   },
-  ren : {
+  ren: {
     name: "REN",
     symbol: "REN",
     website: "http://renproject.io/",
     icon: RENLogo,
     contract: {
-      ethereum:"0x408e41876cccdc0f92210600ef50372656052a38",
+      ethereum: "0x408e41876cccdc0f92210600ef50372656052a38",
     },
   },
-  cartesi : {
+  cartesi: {
     name: "Cartesi",
     symbol: "CTSI",
     website: "https://cartesi.io/",
     icon: CartesiLogo,
     contract: {
-      polygon:"0x2727ab1c2d22170abc9b595177b2d5c6e1ab7b7b",
-      avalanche:"0x6b289cceaa8639e3831095d75a3e43520fabf552"
+      polygon: "0x2727ab1c2d22170abc9b595177b2d5c6e1ab7b7b",
+      avalanche: "0x6b289cceaa8639e3831095d75a3e43520fabf552",
     },
   },
   // civic : {
@@ -594,22 +610,182 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   //     polygon:"https://www.civic.com/",
   //   },
   // },
-  request : {
+  request: {
     name: "Request",
     symbol: "REQ",
     website: "https://request.network/",
     icon: RequestLogo,
     contract: {
-      polygon:"0xb25e20de2f2ebb4cffd4d16a55c7b395e8a94762",
+      polygon: "0xb25e20de2f2ebb4cffd4d16a55c7b395e8a94762",
     },
   },
-  augur : {
+  augur: {
     name: "Augur",
     symbol: "REP",
     website: "http://www.augur.net/",
     icon: AugurLogo,
     contract: {
-      ethereum:"00x221657776846890989a759ba2973e427dff5c9bb",
+      ethereum: "00x221657776846890989a759ba2973e427dff5c9bb",
+    },
+  },
+  solana: {
+    name: "Solana",
+    nativeToken: true,
+    icon: SolanaLogo,
+    network: "solana",
+    website: "https://solana.com/",
+    symbol: "SOL",
+  },
+  xrp: {
+    name: "XRP",
+    nativeToken: true,
+    icon: XRPLogo,
+    website: "https://xrpl.org/",
+    symbol: "XRP",
+    contract: {
+      bsc: "0x1d2f0da169ceb9fc7b3144628db156f3f6c60dbe",
+    },
+  },
+  cardano: {
+    name: "Cardano",
+    nativeToken: true,
+    icon: CardanoLogo,
+    network: "cardano",
+    website: "https://www.cardano.org/",
+    symbol: "ADA",
+    contract: {
+      bsc: "0x3ee2200efb3400fabb9aacf31297cbdd1d435d47",
+    },
+  },
+  polkadot: {
+    name: "Polkadot",
+    nativeToken: true,
+    icon: PolkdotLogo,
+    website: "https://polkadot.network/",
+    symbol: "DOT",
+    contract: {
+      bsc: "0x7083609fce4d1d8dc0c979aab8c869ea2c873402",
+    },
+  },
+  avalanche: {
+    name: "Avalanche",
+    nativeToken: true,
+    icon: AVAXLogo,
+    network: "avalanche",
+    nativeWrapper: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+    website: "https://www.avalabs.org/",
+    symbol: "AVAX",
+    contract: {
+      bsc: "0x1ce0c2827e2ef14d5c4f29a091d735a204794041",
+    },
+  },
+  stellar: {
+    name: "Stellar",
+    nativeToken: true,
+    network: "stellar",
+    icon: StellarLogo,
+    website: "https://www.stellar.org/",
+    symbol: "XLM",
+    contract: {},
+  },
+  hedera: {
+    name: "Hedera",
+    nativeToken: true,
+    network: "hedera",
+    icon: HederaLogo,
+    website: "https://www.hedera.com/",
+    symbol: "HBAR",
+    contract: {},
+  },
+  vechain: {
+    name: "Vechain",
+    icon: VeChainLogo,
+    nativeToken: true,
+    symbol: "VET",
+    network: "vechain",
+    website: "https://www.vechain.com/",
+    contract: {},
+  },
+  algorand: {
+    name: "Algorand",
+    icon: AlgoLogo,
+    nativeToken: true,
+    symbol: "ALGO",
+    network: "algorand",
+    website: "https://www.algorand.com/",
+    contract: {},
+  },
+  fantom: {
+    name: "Fantom",
+    icon: FTMLogo,
+    nativeToken: true,
+    symbol: "FTM",
+    network: "fantom",
+    website: "https://fantom.foundation/",
+    contract: {
+      ethereum: "0x4e15361fd6b4bb609fa63c81a2be19d873717870",
+      bsc: "0xad29abb318791d579433d831ed122afeaf29dcfe",
+    },
+  },
+  flow: {
+    name: "Flow",
+    icon: FlowLogo,
+    symbol: "FLOW",
+    website: "https://flow.com/",
+    contract: {
+      ethereum: "0x5c147e74D63B1D31AA3Fd78Eb229B65161983B2b",
+    },
+  },
+  cronos: {
+    name: "Cronos",
+
+    icon: CronosLogo,
+    website: "https://www.crypto.com/en/chain",
+    symbol: "CRO",
+    contract: {
+      ethereum: "0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b",
+    },
+  },
+  stacks: {
+    name: "Stacks",
+    icon: StacksLogo,
+    nativeToken: true,
+    symbol: "STX",
+    network: "stacks",
+    website: "https://stacks.co/",
+    contract: {},
+  },
+  axie: {
+    name: "Axie Infinity",
+
+    icon: AxieLogo,
+    website: "https://axieinfinity.com/",
+    symbol: "AXS",
+    contract: {
+      ethereum: "0xbb0e17ef65f82ab018d8edd776e8dd940327b28b",
+      bsc: "0x715d400f88c167884bbcc41c5fea407ed4d2f8a0",
+    },
+  },
+  neo: {
+    name: "Neo",
+    icon: NeoLogo,
+    nativeToken: true,
+    symbol: "NEO",
+    network: "neo",
+    website: "https://neo.org/",
+    contract: {},
+  },
+  huobi: {
+    name: "Huobi Token",
+
+    icon: HuobiToken,
+    nativeToken: true,
+    symbol: "HT",
+    network: "heco",
+    website: "https://www.hbg.com/",
+
+    contract: {
+      ethereum: "0x6f259637dcd74c767781e37bc6133cd6a68aa161",
     },
   },
 };

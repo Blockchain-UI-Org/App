@@ -18,7 +18,7 @@ type IFontProps = {
   fontSize?: string | number;
   lineHeight?: number | string;
   color?: string;
-  noMargin?: boolean;
+  noMargin?: boolean; // Remove No Margin Prop
   fontFamily?: string;
 };
 
