@@ -1,3 +1,15 @@
+import { TColorSchemes } from "blockchain-ui/typeutils/theme";
+
+export type TSchemeColors = {
+  text: {
+    primary: string;
+    disabled: string;
+  };
+  background: {
+    main: string;
+  };
+};
+
 export const colors = {
   white: "#FFFFFF",
   black: "#2F2F2F",
@@ -65,4 +77,26 @@ export const colors = {
   error900: "#782424",
 };
 
-
+/**
+ * All the theme colors declarations here..
+ */
+export const themeColors: Record<TColorSchemes, TSchemeColors> = {
+  dark: {
+    text: {
+      primary: "#FFFFFF",
+      disabled: "#637381",
+    },
+    background: {
+      main: "#212B36",
+    },
+  },
+  light: {
+    text: {
+      primary: "#212B36",
+      disabled: "#919EAB",
+    },
+    background: {
+      main: "#919EAB",
+    },
+  },
+};

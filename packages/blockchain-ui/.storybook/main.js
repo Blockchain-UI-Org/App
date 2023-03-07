@@ -7,6 +7,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/preset-create-react-app",
+    "storybook-dark-mode",
     // Not Installed but used
     // "@storybook/addon-knobs",
     // Preinstalled with Addon - Essentials

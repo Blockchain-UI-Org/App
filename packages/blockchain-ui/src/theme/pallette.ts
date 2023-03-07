@@ -1,9 +1,9 @@
 import { Subset } from "blockchain-ui/typeutils";
-import { colors } from "./colors";
+import { colors, TSchemeColors, themeColors } from "./colors";
 import { colorVariants, IColorVariants } from "./variants";
 import merge from "lodash/merge";
 import tinycolor from "tinycolor2";
-import { color } from "@storybook/theming";
+import { TColorSchemes } from "blockchain-ui/typeutils/theme";
 type IPalette = {
   // TODO:  Remove Bg Color (old Version kept for not breaking Application, after changing call components to use new theme)
   bg: string;
@@ -45,8 +45,11 @@ export type IColorPalette = {
     900: string;
   };
   colorVariants: IColorVariants;
-};
-const DefaultPalette: IColorPalette = {
+} & TSchemeColors;
+
+const DefaultPalette = (theme: TColorSchemes): IColorPalette => ({
+  // Theme colors will be defined in themeColors..
+  ...themeColors[theme],
   common: {
     black: colors.black,
     white: colors.white,
@@ -146,9 +149,15 @@ const DefaultPalette: IColorPalette = {
     900: colors.green900,
   },
   colorVariants: colorVariants,
-};
-export const createColorPalette = (args: Subset<IColorPalette> = {}): IColorPalette => {
-  const resultingPalette = merge({ ...DefaultPalette }, args);
+});
+/**
+ * 
+ * @param args
+ * @param theme Initializing with default theme light..
+ * @returns 
+ */
+export const createColorPalette = (args: Subset<IColorPalette> = {}, theme: TColorSchemes = "light"): IColorPalette => {
+  const resultingPalette = merge({ ...DefaultPalette(theme) }, args);
   resultingPalette.getColor = resultingPalette.getColor.bind(resultingPalette);
   return resultingPalette;
 };
