@@ -5,9 +5,9 @@ import { Close, InfoIcon, SuccessIcon, WarningIcon } from "../static/images/icon
 import { alpha } from "blockchain-ui/utils";
 import { Flex } from "../flex";
 import { Button } from "../button";
-import { ISubtitleProps, Subtitle } from "../typography";
+import { Subtitle } from "../typography";
 
-const NotificationTypes = ["info", "warning", "success", "error"] as const;
+export const NotificationTypes = ["info", "warning", "success", "error"] as const;
 export type INotificationType = (typeof NotificationTypes)[number];
 
 export interface INotificationProps {
@@ -104,7 +104,7 @@ export const Notification: FunctionComponent<INotificationProps> = ({
     }
   };
   return (
-    <NotificationWrapper type={type} default={hideIcon} invert={invert} opacity={opacity}>
+    <NotificationWrapper invert={invert} opacity={opacity}>
       {!hideIcon && (
         <IconWrapper type={type}>
           <Icon />
@@ -118,14 +118,14 @@ export const Notification: FunctionComponent<INotificationProps> = ({
   );
 };
 
-const NotificationWrapper = styled.div<Pick<INotificationProps, "type" | "default" | "invert" | "opacity">>`
+const NotificationWrapper = styled.div<Pick<INotificationProps, "invert" | "opacity">>`
   display: flex;
   /* align-items: flex-start; */
   position: absolute;
   border-radius: 8px;
   width: 420px;
 
-  ${withTheme(({ theme, type, default: defaultProp, invert, opacity }) => {
+  ${withTheme(({ theme, invert, opacity }) => {
     const bgCss = css({
       backgroundColor: invert ? theme.palette.grey[900] : theme.palette.common.white,
       color: invert ? theme.palette.common.white : theme.palette.grey[800],

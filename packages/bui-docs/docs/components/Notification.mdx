@@ -1,11 +1,11 @@
 ---
-description: Alert Component
+description: Notification Component
 ---
 
 import { Alert } from "blockchain-ui";
 import { DisplayExample, Spacer } from "@site/src/components/DisplayExample";
 
-# Alerts
+# Notifications
 
 Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
 
@@ -13,11 +13,11 @@ Provide contextual feedback messages for typical user actions with the handful o
 
 Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the four
 
-### Simple Alert
+### Simple Notification
 
 This is a minimal Alert with 4 Statuses i.e. error, warning, success and info.
 
-<DisplayExample alignItems="stretch" >
+<DisplayExample>
 
 <Alert message="A Simple Error Alert" status="error" />
 
@@ -45,7 +45,7 @@ This is a minimal Alert with 4 Statuses i.e. error, warning, success and info.
 
 ### Alert with Buttons
 
-<DisplayExample alignItems="stretch">
+<DisplayExample>
 
 <Alert message="A Simple Error Alert" actionLabel="Ok" dismissLabel="Cancel" status="error" />
 
@@ -59,7 +59,7 @@ This is a minimal Alert with 4 Statuses i.e. error, warning, success and info.
 
 An Alert comes with three variants standard, filled, outlined and 4 statuses.
 
-<DisplayExample alignItems="stretch">
+<DisplayExample>
 
 <Alert message="An Standard Alert" variant="standard" actionLabel="Ok" dismissLabel="Cancel" status="success" />
 <Spacer />

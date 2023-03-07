@@ -32,7 +32,7 @@ export const DisplayExample: FC<{
         borderRadius: 8,
         display: "flex",
         flexDirection: row ? "row" : "column",
-        alignItems: "center" || alignItems,
+        alignItems:  alignItems || "center" ,
         justifyContent,
         flexWrap: "wrap",
         marginBottom: 20,
