@@ -162,7 +162,7 @@ const DefaultPalette: IColorPalette = {
  * @param theme Initializing with default theme light..
  * @returns
  */
-export const createColorPalette = (args: Subset<IColorPalette> = {}, theme: TColorSchemes = "light"): IColorPalette => {
+export const createColorPalette = (args: Subset<IColorPalette> = {}): IColorPalette => {
   const resultingPalette = merge(DefaultPalette, args);
   resultingPalette.getColor = resultingPalette.getColor.bind(resultingPalette);
   return resultingPalette;
