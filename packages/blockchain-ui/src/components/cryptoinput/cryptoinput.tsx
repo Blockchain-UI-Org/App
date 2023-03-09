@@ -99,6 +99,7 @@ export const CryptoInput = ({ value = "", price, onChange, symbol, align = "left
         <CryptoIcon cryptoSymbol={symbol} /> <BiChevronDown color="#8F91A0" size={24} />
       </IconWrapper>
       <InputWrapper>
+
         <Input
           ref={ref}
           value={value}

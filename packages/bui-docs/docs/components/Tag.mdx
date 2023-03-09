@@ -1,0 +1,190 @@
+---
+description: Tag Component
+---
+
+import { Tag, Wallet } from "blockchain-ui";
+import { DisplayExample, HorizontalSpacer } from "@site/src/components/DisplayExample";
+
+# Tags
+
+Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+
+## Examples
+
+Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the four
+
+### Simple Tag
+
+This is a minimal tag with 6 Statuses i.e. default, primary, secondary, error, warning, success and info.
+
+<DisplayExample row justifyContent="center">
+
+<Tag variant="filled" color="default" >Default</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="filled" color="primary" >Primary</Tag>
+
+
+<HorizontalSpacer />
+
+<Tag variant="filled" color="secondary" >Secondary</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="filled" color="info" >Info</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="filled" color="success" >Success</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="filled" color="warning" >Warning</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="filled" color="error" >Error</Tag>
+
+
+
+</DisplayExample>
+
+```jsx
+<Tag variant="filled" color="default" >Default</Tag>
+
+<Tag variant="filled" color="primary" >Primary</Tag>
+
+<Tag variant="filled" color="secondary" >Secondary</Tag>
+
+<Tag variant="filled" color="info" >Info</Tag>
+
+<Tag variant="filled" color="success" >Success</Tag>
+
+<Tag variant="filled" color="warning" >Warning</Tag>
+
+<Tag variant="filled" color="error" >Error</Tag>
+
+```
+
+### Tag with Outline
+<DisplayExample row justifyContent="center">
+
+<Tag variant="outline" color="default" >Default</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="outline" color="primary" >Primary</Tag>
+
+
+<HorizontalSpacer />
+
+<Tag variant="outline" color="secondary" >Secondary</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="outline" color="info" >Info</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="outline" color="success" >Success</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="outline" color="warning" >Warning</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="outline" color="error" >Error</Tag>
+
+</DisplayExample>
+
+```jsx
+<Tag variant="outline" color="default" >Default</Tag>
+
+<Tag variant="outline" color="primary" >Primary</Tag>
+
+<Tag variant="outline" color="secondary" >Secondary</Tag>
+
+<Tag variant="outline" color="info" >Info</Tag>
+
+<Tag variant="outline" color="success" >Success</Tag>
+
+<Tag variant="outline" color="warning" >Warning</Tag>
+
+<Tag variant="outline" color="error" >Error</Tag>
+```
+
+### Soft Tag
+
+An Tag comes with a soft variant
+
+<DisplayExample row justifyContent="center">
+
+<Tag variant="soft" color="default" >Default</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="soft" color="primary" >Primary</Tag>
+
+
+<HorizontalSpacer />
+
+<Tag variant="soft" color="secondary" >Secondary</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="soft" color="info" >Info</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="soft" color="success" >Success</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="soft" color="warning" >Warning</Tag>
+
+<HorizontalSpacer />
+
+<Tag variant="soft" color="error" >Error</Tag>
+
+</DisplayExample>
+
+```jsx
+<Tag variant="soft" color="default" >Default</Tag>
+
+<Tag variant="soft" color="primary" >Primary</Tag>
+
+<Tag variant="soft" color="secondary" >Secondary</Tag>
+
+<Tag variant="soft" color="info" >Info</Tag>
+
+<Tag variant="soft" color="success" >Success</Tag>
+
+<Tag variant="soft" color="warning" >Warning</Tag>
+
+<Tag variant="soft" color="error" >Error</Tag>
+```
+
+###  Tag with an Icon
+
+A Tag can also have an Icon
+
+Icon With Tag Supports following Direction values:
+- start
+- end
+
+<DisplayExample row justifyContent="center">
+
+<Tag  icon={<Wallet />} iconDirection="start" >Wallet</Tag>
+
+<HorizontalSpacer />
+
+<Tag  icon={<Wallet />} iconDirection="end" >Wallet</Tag>
+</DisplayExample>
+
+```jsx
+<Tag icon={<Wallet />} iconDirection="start" >Wallet</Tag>
+
+<Tag icon={<Wallet />} iconDirection="end" >Wallet</Tag>
+```

@@ -146,7 +146,7 @@ const DefaultPalette = (theme: TColorSchemes): IColorPalette => ({
     600: colors.grey600,
     700: colors.grey700,
     800: colors.grey800,
-    900: colors.green900,
+    900: colors.grey900,
   },
   colorVariants: colorVariants,
 });

@@ -30,9 +30,10 @@ export const DisplayExample: FC<{
     <div
       style={{
         borderRadius: 8,
+        position: 'relative',
         display: "flex",
         flexDirection: row ? "row" : "column",
-        alignItems: "center" || alignItems,
+        alignItems:  alignItems || "center" ,
         justifyContent,
         flexWrap: "wrap",
         marginBottom: 20,
