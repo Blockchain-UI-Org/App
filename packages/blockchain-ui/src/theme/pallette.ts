@@ -1,5 +1,5 @@
 import { Subset } from "blockchain-ui/typeutils";
-import { colors, TSchemeColors, themeColors } from "./colors";
+import { colors, TSchemeColors } from "./colors";
 import { colorVariants, IColorVariants } from "./variants";
 import merge from "lodash/merge";
 import tinycolor from "tinycolor2";
@@ -47,9 +47,15 @@ export type IColorPalette = {
   colorVariants: IColorVariants;
 } & TSchemeColors;
 
-const DefaultPalette = (theme: TColorSchemes): IColorPalette => ({
+const DefaultPalette: IColorPalette = {
   // Theme colors will be defined in themeColors..
-  ...themeColors[theme],
+  text: {
+    primary: "#FFFFFF",
+    disabled: "#637381",
+  },
+  background: {
+    main: "#212B36",
+  },
   common: {
     black: colors.black,
     white: colors.white,
@@ -62,7 +68,7 @@ const DefaultPalette = (theme: TColorSchemes): IColorPalette => ({
     contrastText: colors.grey800,
     light: colors.grey200,
     dark: colors.grey400,
-    darker:colors.grey500,
+    darker: colors.grey500,
   },
   getColor: function (name, transparency) {
     return (type) => {
@@ -75,7 +81,7 @@ const DefaultPalette = (theme: TColorSchemes): IColorPalette => ({
         : (result as string);
     };
   },
-  
+
   primary: {
     bg: "#00AB55",
     color: colors.black,
@@ -149,15 +155,15 @@ const DefaultPalette = (theme: TColorSchemes): IColorPalette => ({
     900: colors.grey900,
   },
   colorVariants: colorVariants,
-});
+} as IColorPalette;
 /**
- * 
+ *
  * @param args
  * @param theme Initializing with default theme light..
- * @returns 
+ * @returns
  */
 export const createColorPalette = (args: Subset<IColorPalette> = {}, theme: TColorSchemes = "light"): IColorPalette => {
-  const resultingPalette = merge({ ...DefaultPalette(theme) }, args);
+  const resultingPalette = merge(DefaultPalette, args);
   resultingPalette.getColor = resultingPalette.getColor.bind(resultingPalette);
   return resultingPalette;
 };

@@ -5,6 +5,7 @@ import { createColorPalette, IColorPalette } from "./pallette";
 import { createComponents, IComponentTheme } from "./components";
 import { createMedia, IMediaTheme } from "./media";
 import { TColorSchemes } from "blockchain-ui/typeutils/theme";
+import { themeColors } from "./colors";
 
 export interface ThemeInterface {
   palette: IColorPalette;
@@ -12,7 +13,6 @@ export interface ThemeInterface {
   components: IComponentTheme;
   typography: ITypographyTheme;
   shadows: IShadowTheme;
-  colorScheme: TColorSchemes;
 }
 
 export const createTheme = ({
@@ -21,9 +21,8 @@ export const createTheme = ({
   media = {},
   shadows = {},
   typography = {},
-  colorScheme = "light",
 }: Subset<ThemeInterface> = {}): ThemeInterface => {
-  const mergedPallette = createColorPalette(palette, colorScheme);
+  const mergedPallette = createColorPalette(palette);
 
   const mergedTypography = createTypography(typography);
 
@@ -38,13 +37,12 @@ export const createTheme = ({
     components: mergedcomponents,
     shadows: mergedShadow,
     media: mergedMedia,
-    colorScheme,
   };
 };
 
-const DefaultTheme = createTheme();
+const DefaultTheme = createTheme({ palette: themeColors["light"] });
 
-const DarkTheme = createTheme({ colorScheme: "dark" });
+const DarkTheme = createTheme({ palette: themeColors["dark"] });
 
 /**
  * All the themes are exposing here..
