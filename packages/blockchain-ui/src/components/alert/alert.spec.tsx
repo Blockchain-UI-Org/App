@@ -59,7 +59,7 @@ describe("Alert", () => {
 
     userEvent.click(action);
 
-    expect(mockFn).toHaveBeenCalledTimes(2);
+    expect(mockFn).toHaveBeenCalledTimes(1);
   });
 
   it("should call Dismiss callback when Dismiss Button is Clicked", () => {
@@ -71,7 +71,7 @@ describe("Alert", () => {
 
     userEvent.click(dismiss);
 
-    expect(mockFn).toHaveBeenCalledTimes(2);
+    expect(mockFn).toHaveBeenCalledTimes(1);
   });
 
   it("should show Info Icon", () => {

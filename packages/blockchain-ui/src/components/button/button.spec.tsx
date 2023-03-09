@@ -41,6 +41,6 @@ describe("Button", () => {
 
     userEvent.click(button);
 
-    expect(mockFn).toHaveBeenCalledTimes(2);
+    expect(mockFn).toHaveBeenCalledTimes(1);
   });
 });

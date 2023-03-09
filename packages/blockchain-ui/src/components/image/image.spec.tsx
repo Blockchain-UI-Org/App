@@ -3,7 +3,6 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Image from "./image";
 import availableImages from "../static/images/index";
-import { regularIcons } from "../static/images/icons/regular";
 
 describe("Regular Icon Components Tests...", () => {
   test(`Image accurately renders width and height`, () => {

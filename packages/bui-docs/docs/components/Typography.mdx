@@ -1,0 +1,118 @@
+---
+description: Typography Component
+---
+
+import { Typography, Heading, Subtitle, Paragraph } from "blockchain-ui";
+import { DisplayExample, Spacer } from "@site/src/components/DisplayExample";
+
+# Typography
+
+The Typography component makes it easy to apply a default set of font weights and sizes in your application.
+
+Use typography to present your design and content as clearly and efficiently as possible.
+
+
+## Heading Component
+
+Heading Component is for various headings in your application.
+
+<DisplayExample alignItems="flex-start" >
+
+<Heading as="h1">This is a H1 Heading</Heading>
+<Heading as="h2">This is a H2 Heading</Heading>
+<Heading as="h3">This is a H3 Heading</Heading>
+<Heading as="h4">This is a H4 Heading</Heading>
+<Heading as="h5">This is a H5 Heading</Heading>
+<Heading as="h6">This is a H6 Heading</Heading>
+
+
+</DisplayExample>
+
+```jsx
+<Heading as="h1">This is a H1 Heading</Heading>
+
+<Heading as="h2">This is a H2 Heading</Heading>
+
+<Heading as="h3">This is a H3 Heading</Heading>
+
+<Heading as="h4">This is a H4 Heading</Heading>
+
+<Heading as="h5">This is a H5 Heading</Heading>
+
+<Heading as="h6">This is a H6 Heading</Heading>
+```
+
+## Subtitle Component
+
+Subtitle is for headings with less emphasis.
+
+<DisplayExample alignItems="flex-start">
+
+<Subtitle variant="subtitle1" >This is a Subtitle1 Variant</Subtitle>
+<Subtitle variant="subtitle2" >This is a Subtitle2 Variant</Subtitle>
+
+
+</DisplayExample>
+
+```jsx
+<Subtitle variant="subtitle1" >This is a Subtitle1 Variant</Subtitle>
+
+<Subtitle variant="subtitle2" >This is a Subtitle2 Variant</Subtitle>
+```
+
+## Paragraph Component
+
+Paragraph Component is used for p tags.
+
+<DisplayExample alignItems="flex-start">
+
+<Paragraph variant="body1">
+  Body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+</Paragraph>
+
+<Paragraph variant="body2">
+  Body2.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+</Paragraph>
+</DisplayExample>
+
+```jsx
+<Paragraph variant="body1">
+  Body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+</Paragraph>
+
+<Paragraph variant="body2">
+  Body2.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+</Paragraph>
+```
+
+## Typography Component
+
+This is the base component from which Paragraph, Heading, Subtitle Components are created.
+
+All Typography Component have the following Props:
+
+- fontWeight
+- fontSize
+- lineHeight
+- color
+- marginTop
+- marginBottom
+- fontFamily
+
+<DisplayExample alignItems="flex-start">
+<Typography>
+    This is Default Typography Component
+</Typography>
+<Typography fontSize={30} fontWeight={400} color="#99e" marginTop="1rem" marginBottom={"1rem"} >
+    This is Customised Typography Component
+</Typography>
+</DisplayExample>
+
+```jsx
+<Typography>
+    This is Default Typography Component
+</Typography>
+<Typography fontSize={30} marginTop="1rem" fontWeight={400} color="#99e" marginBottom="1rem" >
+    This is Customised Typography Component
+</Typography>
+```
