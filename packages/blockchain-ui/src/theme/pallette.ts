@@ -1,5 +1,5 @@
 import { Subset } from "blockchain-ui/typeutils";
-import { colors, TSchemeColors } from "./colors";
+import { colors } from "./colors";
 import { colorVariants, IColorVariants } from "./variants";
 import merge from "lodash/merge";
 import tinycolor from "tinycolor2";
@@ -18,6 +18,16 @@ type IPalette = {
 };
 
 export type IColorPalette = {
+  text: {
+    primary: string;
+    secondary: string;
+    disabled: string;
+  };
+  background: {
+    main: string;
+    paper: string;
+    neutral: string;
+  };
   common: {
     black: string;
     white: string;
@@ -45,10 +55,19 @@ export type IColorPalette = {
     900: string;
   };
   colorVariants: IColorVariants;
-} & TSchemeColors;
+};
 
 const DefaultPalette: IColorPalette = {
-  // Theme colors will be defined in themeColors..
+  text: {
+    primary: colors.grey800,
+    secondary: colors.grey600,
+    disabled: colors.grey500,
+  },
+  background: {
+    main: colors.grey500,
+    paper: colors.white,
+    neutral: colors.grey200,
+  },
   common: {
     black: colors.black,
     white: colors.white,
@@ -156,7 +175,7 @@ const DefaultPalette: IColorPalette = {
  * @returns
  */
 export const createColorPalette = (args: Subset<IColorPalette> = {}): IColorPalette => {
-  const resultingPalette = merge({...DefaultPalette}, args);
+  const resultingPalette = merge({ ...DefaultPalette }, args);
   resultingPalette.getColor = resultingPalette.getColor.bind(resultingPalette);
   return resultingPalette;
 };

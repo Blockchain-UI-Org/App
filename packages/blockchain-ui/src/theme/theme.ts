@@ -5,7 +5,7 @@ import { createColorPalette, IColorPalette } from "./pallette";
 import { createComponents, IComponentTheme } from "./components";
 import { createMedia, IMediaTheme } from "./media";
 import { TColorSchemes } from "blockchain-ui/typeutils/theme";
-import { themeColors } from "./colors";
+import { colors } from "./colors";
 
 export interface ThemeInterface {
   palette: IColorPalette;
@@ -40,9 +40,22 @@ export const createTheme = ({
   };
 };
 
-const DefaultTheme = createTheme({ palette: themeColors["light"] });
+const DefaultTheme = createTheme();
 
-const DarkTheme = createTheme({ palette: themeColors["dark"] });
+const DarkTheme = createTheme({
+  palette: {
+    text: {
+      primary: colors.white,
+      secondary: colors.grey500,
+      disabled: colors.grey600,
+    },
+    background: {
+      main: colors.grey800,
+      paper: colors.grey800,
+      neutral: colors.grey500Opacity16,
+    },
+  },
+});
 
 /**
  * All the themes are exposing here..
