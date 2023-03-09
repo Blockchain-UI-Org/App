@@ -15,6 +15,8 @@ export type IColorVariants = {
   default: IVariant;
 };
 
+// TODO Remove Color Variants
+// Its being used in Credit Card
 export const colorVariants: IColorVariants = {
   green: {
     color: colors.darkgreen800,
@@ -38,10 +40,10 @@ export const colorVariants: IColorVariants = {
   yellow: {
     color: colors.brown700,
     background: colors.brown100,
-    midtone: colors.yellow800,
+    midtone: colors.warning700,
   },
   default: {
-    background: colors.black800,
+    background: colors.grey800,
     color: colors.white,
     midtone: colors.white,
   },

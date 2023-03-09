@@ -1,5 +1,5 @@
 import { Subset } from "blockchain-ui/typeutils";
-import { colors } from "./colors";
+import { colors, IBuiColor } from "./colors";
 import { colorVariants, IColorVariants } from "./variants";
 import merge from "lodash/merge";
 import tinycolor from "tinycolor2";
@@ -32,6 +32,7 @@ export type IColorPalette = {
     black: string;
     white: string;
   };
+  buiColors: IBuiColor;
   default: IPalette;
   secondary: IPalette;
   primary: IPalette;
@@ -82,6 +83,7 @@ const DefaultPalette: IColorPalette = {
     dark: colors.grey400,
     darker: colors.grey500,
   },
+  buiColors: colors,
   getColor: function (name, transparency) {
     return (type) => {
       if (name === "transparent") {
@@ -95,65 +97,77 @@ const DefaultPalette: IColorPalette = {
   },
 
   primary: {
+    // TODO Remove bg Property They are old theme variables need to be removed after upgrades
     bg: "#00AB55",
+    // TODO Remove color Property They are old theme variables need to be removed after upgrades
     color: colors.black,
-    main: "#00AB55",
-    lighter: "#C8FACD",
-    contrastText: "#ffffff",
-    light: "#5BE584",
-    dark: "#007B55",
-    darker: "#005249",
+    main: colors.primary500,
+    lighter: colors.primary100,
+    contrastText: colors.white,
+    light: colors.primary300,
+    dark: colors.primary700,
+    darker: colors.primary900,
   },
   secondary: {
+    // TODO Remove Bg Property
     bg: colors.pink100,
+    // TODO Remove color Property They are old theme variables need to be removed after upgrades
+
     color: colors.pink500,
-    main: "#3366FF",
-    lighter: "#D6E4FF",
-    light: "#84A9FF",
-    contrastText: "#ffffff",
-    dark: "#1939B7",
-    darker: "#091A7A",
+    main: colors.secondary100,
+    lighter: colors.secondary100,
+    light: colors.secondary300,
+    contrastText: colors.white,
+    dark: colors.secondary700,
+    darker: colors.secondary900,
   },
   error: {
+    // TODO Remove Bg Property
     bg: colors.error100,
+    // TODO Remove color Property They are old theme variables need to be removed after upgrades
     color: colors.error500,
-    main: "#FF5630",
-    lighter: "#FFE9D5",
-    light: "#FFAC82",
+    main: colors.error500,
+    lighter: colors.error100,
+    light: colors.error300,
     contrastText: "#ffffff",
-    dark: "#B71D18",
-    darker: "#7A0916",
+    dark: colors.error700,
+    darker: colors.error900,
   },
   warning: {
-    bg: colors.yellow100,
-    color: colors.yellow500,
-    main: "#FFAB00",
-    lighter: "#FFF5CC",
-    light: "#FFD666",
-    dark: "#B76E00",
-    contrastText: "#212B36",
-    darker: "#7A4100",
+    bg: colors.warning100,
+    color: colors.warning500,
+    main: colors.warning500,
+    lighter: colors.warning100,
+    light: colors.warning300,
+    dark: colors.warning700,
+    contrastText: colors.grey800,
+    darker: colors.warning900,
   },
   info: {
+    // TODO Remove color Property They are old theme variables need to be removed after upgrades
     bg: colors.blue100,
+    // TODO Remove color Property They are old theme variables need to be removed after upgrades
     color: colors.black,
+    // TODO Remove color Property They are old theme variables need to be removed after upgrades (Used in Credit Card)
     midtone: colors.blue500,
-    main: "#00B8D9",
-    lighter: "#CAFDF5",
-    light: "#61F3F3",
-    dark: "#006C9C",
-    contrastText: "#ffffff",
-    darker: "#003768",
+    main: colors.info500,
+    lighter: colors.info100,
+    light: colors.info300,
+    dark: colors.info700,
+    contrastText: colors.white,
+    darker: colors.info900,
   },
   success: {
+    // TODO Remove color Property They are old theme variables need to be removed after upgrades (Used in Credit Card)
     bg: colors.success100,
+    // TODO Remove color Property They are old theme variables need to be removed after upgrades (Used in Credit Card)
     color: colors.success500,
-    main: "#36B37E",
-    lighter: "#D8FBDE",
-    light: "#86E8AB",
-    dark: "#1B806A",
-    contrastText: "#ffffff",
-    darker: "#0A5554",
+    main: colors.success500,
+    lighter: colors.success100,
+    light: colors.success300,
+    dark: colors.success700,
+    contrastText: colors.white,
+    darker: colors.success900,
   },
   grey: {
     100: colors.grey100,

@@ -1,6 +1,8 @@
 import React from "react";
 import { ComponentStory, ComponentMeta, Story } from "@storybook/react";
 import AreaChart, { AreaChartProps } from ".";
+import { AreaData } from "./AreaData";
+import moment from "moment";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -23,12 +25,20 @@ export default {
 const Template: Story<AreaChartProps> = (args) => <AreaChart {...args} />;
 
 export const Area = Template.bind({});
-
+const labels = AreaData.map((item) => item.timestamp);
 Area.args = {
-  width: "700px",
-  height: "500px",
-  chartData: [10, 101, 35, 51, 49, 62, 69, 91, 14],
-  name: "Mock Name",
-  chartLabels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
-  currency: "BTC",
+  width: "100%",
+  height: "300px",
+
+  labels,
+  formatXAxis: (val, t, opts) => {
+    return moment(val).format("DD MMMM YYYY") as string;
+  },
+  formatYAxis: (val) => {
+    return (val as number).toFixed(2);
+  },
+  hideYAxisLabels: true,
+  labelCount: 3,
+
+  series: [{ name: "NetSharePrice", color: "blue500", data: AreaData.map((item) => item.netShareValue) }],
 };

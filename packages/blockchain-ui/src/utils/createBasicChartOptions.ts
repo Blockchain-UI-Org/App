@@ -26,14 +26,14 @@ export function createBasicChartOptions(chartColors: ThemeInterface["components"
     //   colors.red.color,
     //   colors.green.color,
     // ],
-    colors: chartColors.colors,
+    // colors: chartColors.colors,
 
     // Chart
     chart: {
       toolbar: { show: false },
       zoom: { enabled: false },
       // animations: { enabled: false },
-      foreColor: chartColors.foreColor,
+      // foreColor: chartColors.foreColor,
     },
 
     // States
@@ -76,8 +76,9 @@ export function createBasicChartOptions(chartColors: ThemeInterface["components"
 
     // Grid
     grid: {
-      strokeDashArray: 3,
-      borderColor: chartColors.gridBorderColor,
+      show: false
+      // strokeDashArray: 3,
+      // borderColor: chartColors.gridBorderColor,
     },
 
     // Xaxis
@@ -89,7 +90,7 @@ export function createBasicChartOptions(chartColors: ThemeInterface["components"
     // Markers
     markers: {
       size: 0,
-      strokeColors: chartColors.markerColor,
+      // strokeColors: chartColors.markerColor,
     },
 
     // Tooltip
