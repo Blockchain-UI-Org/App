@@ -3,7 +3,7 @@ import { colors, TSchemeColors } from "./colors";
 import { colorVariants, IColorVariants } from "./variants";
 import merge from "lodash/merge";
 import tinycolor from "tinycolor2";
-import { TColorSchemes } from "blockchain-ui/typeutils/theme";
+
 type IPalette = {
   // TODO:  Remove Bg Color (old Version kept for not breaking Application, after changing call components to use new theme)
   bg: string;
@@ -49,13 +49,6 @@ export type IColorPalette = {
 
 const DefaultPalette: IColorPalette = {
   // Theme colors will be defined in themeColors..
-  text: {
-    primary: "#FFFFFF",
-    disabled: "#637381",
-  },
-  background: {
-    main: "#212B36",
-  },
   common: {
     black: colors.black,
     white: colors.white,
@@ -163,7 +156,7 @@ const DefaultPalette: IColorPalette = {
  * @returns
  */
 export const createColorPalette = (args: Subset<IColorPalette> = {}): IColorPalette => {
-  const resultingPalette = merge(DefaultPalette, args);
+  const resultingPalette = merge({...DefaultPalette}, args);
   resultingPalette.getColor = resultingPalette.getColor.bind(resultingPalette);
   return resultingPalette;
 };
