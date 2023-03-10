@@ -175,7 +175,7 @@ const DefaultPalette: IColorPalette = {
  * @returns
  */
 export const createColorPalette = (args: Subset<IColorPalette> = {}): IColorPalette => {
-  const resultingPalette = merge({ ...DefaultPalette }, args);
+  const resultingPalette = merge({}, DefaultPalette, args);
   resultingPalette.getColor = resultingPalette.getColor.bind(resultingPalette);
   return resultingPalette;
 };
