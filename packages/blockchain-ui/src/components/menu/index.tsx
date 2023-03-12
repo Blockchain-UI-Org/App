@@ -6,7 +6,7 @@ const Menu = () => {
     <Wrapper>
       {" "}
       Blockchain-UI. A Component Library Built For Blockchain Applications.
-      <div style={{ fontWeight: "bold" }}> March 2023</div>
+      <div style={{ fontWeight: "bold" }}> March 31st 2023</div>
     </Wrapper>
   );
 };
