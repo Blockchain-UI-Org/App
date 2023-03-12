@@ -303,7 +303,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
     },
   },
   trustwallet: {
-    name: "Trust Wallet ",
+    name: "Trust Wallet",
     symbol: "TWT",
     website: "https://trustwallet.com/",
     icon: FraxLogo,
@@ -541,7 +541,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
     contract: {
       polygon: "0xd85d1e945766fea5eda9103f918bd915fbca63e6",
     },
-  },
+  }, 
   uma: {
     name: "UMA",
     symbol: "UMA",

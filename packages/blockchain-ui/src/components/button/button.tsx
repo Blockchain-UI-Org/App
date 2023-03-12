@@ -92,7 +92,7 @@ export interface IButtonProps extends ISpacingProps {
   /**
    * Button contents
    */
-  label: string;
+  label: string | React.ReactElement;
 
   href?: string;
 

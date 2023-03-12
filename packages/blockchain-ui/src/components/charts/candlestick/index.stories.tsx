@@ -54,5 +54,6 @@ CandleStick.args = {
       ],
     },
   ],
-  currency: "BTC",
+  upwardsColor: "blue500",
+  downwardsColor: "red500"
 };

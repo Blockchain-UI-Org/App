@@ -7,6 +7,9 @@ import { createBasicChartOptions } from "blockchain-ui/utils";
 
 import { CryptoIcon } from "../../icon/icon";
 import { CryptoSymbols } from "../../static/types";
+import LoadingSpinner from "blockchain-ui/components/loadingSpinner/loadingSpinner";
+import { Flex } from "blockchain-ui/components/flex";
+import { IBuiColor } from "blockchain-ui/theme/colors";
 
 export interface ChartProps {
   title?: string;
@@ -14,26 +17,35 @@ export interface ChartProps {
   chartData: any[];
   width?: string;
   height?: string;
-  currency?: CryptoSymbols;
-  upwardsColor: string;
-  downwardsColor: string;
+  header?: React.ReactElement;
+  loading?: boolean;
+  headerRight?: React.ReactElement;
+  upwardsColor: keyof IBuiColor;
+  downwardsColor: keyof IBuiColor;
 }
 
 const LineChart: FC<ChartProps> = ({
   width = "100%",
   height = "100%",
   chartData,
-  currency,
-  upwardsColor = "#3C90EB",
-  downwardsColor = "#DF7D46",
+  header,
+  loading,
+  headerRight,
+  upwardsColor,
+  downwardsColor,
 }) => {
-  const theme = useTheme()
+  const theme = useTheme();
+
+
+  const upColor = theme.palette.buiColors[upwardsColor];
+  const downColor = theme.palette.buiColors[downwardsColor];
+
   const chartOptions = merge(createBasicChartOptions(theme.components.Chart.common), {
     plotOptions: {
       candlestick: {
         colors: {
-          upward: upwardsColor,
-          downward: downwardsColor,
+          upward: upColor,
+          downward: downColor,
         },
       },
     },
@@ -41,14 +53,21 @@ const LineChart: FC<ChartProps> = ({
 
   return (
     <Container>
-      <Title>{currency && <CryptoIcon cryptoSymbol={currency} />}</Title>{" "}
-      <ReactApexChart
-        type="candlestick"
-        series={chartData}
-        options={chartOptions}
-        height={height}
-        width={width}
-      />
+      {(header || headerRight) && (
+        <Flex style={{ paddingRight: 20 }} row justifyContent={!header && headerRight ? "flex-end" : "space-between"}>
+          {header && <Flex>{header}</Flex>}
+          {headerRight && <Flex>{headerRight}</Flex>}
+        </Flex>
+      )}
+      {loading ? (
+        <>
+          <Flex style={{ width, height, display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <LoadingSpinner color="primary500" />
+          </Flex>
+        </>
+      ) : (
+        <ReactApexChart type="candlestick" series={chartData} options={chartOptions} height={height} width={width} />
+      )}
     </Container>
   );
 };
@@ -59,7 +78,3 @@ const Container = styled.div`
   color: white;
 `;
 
-const Title = styled.div`
-  display: flex;
-  margin: 0 0 20px 20px;
-`;

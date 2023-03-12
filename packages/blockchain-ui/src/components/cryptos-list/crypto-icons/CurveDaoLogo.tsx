@@ -4,7 +4,7 @@ import { SVGProps } from "react"
 export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 414.8 417.8" {...props}>
     <defs>
-      <clipPath id="a">
+      <clipPath id="curve-dao">
         <path
           style={{
             fill: "none",
@@ -18,7 +18,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
       <g data-name="Layer 1">
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -30,7 +30,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -42,7 +42,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -54,7 +54,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -66,7 +66,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -78,7 +78,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -90,7 +90,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -102,7 +102,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -114,7 +114,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -126,7 +126,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -138,7 +138,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -150,7 +150,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -162,7 +162,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -174,7 +174,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -186,7 +186,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -198,7 +198,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -210,7 +210,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -222,7 +222,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -234,7 +234,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -246,7 +246,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -258,7 +258,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -270,7 +270,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -282,7 +282,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -294,7 +294,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -306,7 +306,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -318,7 +318,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -330,7 +330,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -342,7 +342,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -354,7 +354,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -366,7 +366,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -378,7 +378,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -390,7 +390,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -402,7 +402,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -414,7 +414,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -426,7 +426,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -438,7 +438,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -450,7 +450,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -462,7 +462,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -474,7 +474,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -486,7 +486,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -498,7 +498,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -510,7 +510,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -522,7 +522,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -534,7 +534,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -546,7 +546,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -558,7 +558,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -570,7 +570,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -582,7 +582,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -594,7 +594,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -606,7 +606,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -618,7 +618,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -630,7 +630,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -642,7 +642,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -654,7 +654,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -666,7 +666,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -678,7 +678,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -690,7 +690,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -702,7 +702,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -714,7 +714,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -726,7 +726,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -738,7 +738,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -750,7 +750,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -762,7 +762,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -774,7 +774,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -786,7 +786,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -798,7 +798,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -810,7 +810,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -822,7 +822,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -834,7 +834,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -846,7 +846,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -858,7 +858,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -870,7 +870,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -882,7 +882,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -894,7 +894,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -906,7 +906,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -918,7 +918,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -930,7 +930,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -942,7 +942,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -954,7 +954,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -966,7 +966,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -978,7 +978,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -990,7 +990,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1002,7 +1002,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1014,7 +1014,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1026,7 +1026,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1038,7 +1038,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1050,7 +1050,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1062,7 +1062,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1074,7 +1074,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1086,7 +1086,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1098,7 +1098,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1110,7 +1110,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1122,7 +1122,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1134,7 +1134,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1146,7 +1146,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1158,7 +1158,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1170,7 +1170,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1182,7 +1182,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1194,7 +1194,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1206,7 +1206,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1218,7 +1218,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1230,7 +1230,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1242,7 +1242,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1254,7 +1254,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1266,7 +1266,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1278,7 +1278,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1290,7 +1290,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1302,7 +1302,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1314,7 +1314,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1326,7 +1326,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1338,7 +1338,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1350,7 +1350,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1362,7 +1362,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1374,7 +1374,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1386,7 +1386,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1398,7 +1398,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1410,7 +1410,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1422,7 +1422,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1434,7 +1434,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1446,7 +1446,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1458,7 +1458,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1470,7 +1470,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1482,7 +1482,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1494,7 +1494,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1506,7 +1506,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1518,7 +1518,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1530,7 +1530,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1542,7 +1542,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1554,7 +1554,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1566,7 +1566,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1578,7 +1578,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1590,7 +1590,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1602,7 +1602,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1614,7 +1614,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1626,7 +1626,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1638,7 +1638,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1650,7 +1650,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1662,7 +1662,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1674,7 +1674,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1686,7 +1686,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1698,7 +1698,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1710,7 +1710,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1722,7 +1722,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1734,7 +1734,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1746,7 +1746,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1758,7 +1758,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1770,7 +1770,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1782,7 +1782,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1794,7 +1794,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1806,7 +1806,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1818,7 +1818,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1830,7 +1830,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1842,7 +1842,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1854,7 +1854,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1866,7 +1866,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1878,7 +1878,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1890,7 +1890,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1902,7 +1902,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1914,7 +1914,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1926,7 +1926,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1938,7 +1938,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1950,7 +1950,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1962,7 +1962,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1974,7 +1974,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1986,7 +1986,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -1998,7 +1998,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2010,7 +2010,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2022,7 +2022,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2034,7 +2034,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2046,7 +2046,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2058,7 +2058,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2070,7 +2070,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2082,7 +2082,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2094,7 +2094,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2106,7 +2106,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2118,7 +2118,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2130,7 +2130,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2142,7 +2142,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2154,7 +2154,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2166,7 +2166,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2178,7 +2178,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2190,7 +2190,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2202,7 +2202,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2214,7 +2214,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2226,7 +2226,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2238,7 +2238,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2250,7 +2250,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2262,7 +2262,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2274,7 +2274,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2286,7 +2286,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2298,7 +2298,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2310,7 +2310,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2322,7 +2322,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2334,7 +2334,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2346,7 +2346,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2358,7 +2358,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2370,7 +2370,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2382,7 +2382,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2394,7 +2394,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2406,7 +2406,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2418,7 +2418,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2430,7 +2430,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2442,7 +2442,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2454,7 +2454,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2466,7 +2466,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2478,7 +2478,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2490,7 +2490,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2502,7 +2502,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2514,7 +2514,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2526,7 +2526,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2538,7 +2538,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2550,7 +2550,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2562,7 +2562,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2574,7 +2574,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2586,7 +2586,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2598,7 +2598,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2610,7 +2610,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2622,7 +2622,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2634,7 +2634,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2646,7 +2646,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2658,7 +2658,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2670,7 +2670,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2682,7 +2682,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2694,7 +2694,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2706,7 +2706,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2718,7 +2718,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2730,7 +2730,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2742,7 +2742,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2754,7 +2754,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2766,7 +2766,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2778,7 +2778,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2790,7 +2790,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2802,7 +2802,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2814,7 +2814,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2826,7 +2826,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2838,7 +2838,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2850,7 +2850,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2862,7 +2862,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2874,7 +2874,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2886,7 +2886,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2898,7 +2898,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2910,7 +2910,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2922,7 +2922,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2934,7 +2934,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2946,7 +2946,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2958,7 +2958,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2970,7 +2970,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2982,7 +2982,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -2994,7 +2994,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3006,7 +3006,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3018,7 +3018,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3030,7 +3030,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3042,7 +3042,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3054,7 +3054,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3066,7 +3066,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3078,7 +3078,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3090,7 +3090,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3102,7 +3102,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3114,7 +3114,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3126,7 +3126,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3138,7 +3138,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3150,7 +3150,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3162,7 +3162,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3174,7 +3174,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3186,7 +3186,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3198,7 +3198,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3210,7 +3210,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3222,7 +3222,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3234,7 +3234,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3246,7 +3246,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3258,7 +3258,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3270,7 +3270,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3282,7 +3282,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3294,7 +3294,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3306,7 +3306,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3318,7 +3318,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3330,7 +3330,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3342,7 +3342,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3354,7 +3354,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3366,7 +3366,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3378,7 +3378,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3390,7 +3390,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3402,7 +3402,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3414,7 +3414,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3426,7 +3426,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3438,7 +3438,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3450,7 +3450,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3462,7 +3462,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3474,7 +3474,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3486,7 +3486,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3498,7 +3498,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3510,7 +3510,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3522,7 +3522,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3534,7 +3534,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3546,7 +3546,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3558,7 +3558,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3570,7 +3570,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3582,7 +3582,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3594,7 +3594,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3606,7 +3606,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3618,7 +3618,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3630,7 +3630,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3642,7 +3642,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3654,7 +3654,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3666,7 +3666,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3678,7 +3678,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3690,7 +3690,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3702,7 +3702,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3714,7 +3714,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3726,7 +3726,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3738,7 +3738,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3750,7 +3750,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3762,7 +3762,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3774,7 +3774,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3786,7 +3786,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3798,7 +3798,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3810,7 +3810,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3822,7 +3822,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3834,7 +3834,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3846,7 +3846,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3858,7 +3858,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3870,7 +3870,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3882,7 +3882,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3894,7 +3894,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3906,7 +3906,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3918,7 +3918,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3930,7 +3930,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3942,7 +3942,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3954,7 +3954,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3966,7 +3966,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3978,7 +3978,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -3990,7 +3990,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4002,7 +4002,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4014,7 +4014,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4026,7 +4026,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4038,7 +4038,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4050,7 +4050,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4062,7 +4062,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4074,7 +4074,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4086,7 +4086,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4098,19 +4098,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#adff49",
+              fill: "#curve-daodff49",
             }}
             d="m391.1 161.9-25.1-14-.9-14.1 25 15 1 13.1z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4122,7 +4122,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4134,7 +4134,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4146,7 +4146,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4158,7 +4158,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4170,7 +4170,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4182,7 +4182,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4194,7 +4194,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4206,7 +4206,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4218,19 +4218,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#adff49",
+              fill: "#curve-daodff49",
             }}
             d="m256.2 146.2-22.3-4.3-.4 19.4 22 2.8.7-17.9z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4242,7 +4242,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4254,7 +4254,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4266,7 +4266,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4278,7 +4278,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4290,7 +4290,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4302,7 +4302,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4314,7 +4314,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4326,7 +4326,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4338,7 +4338,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4350,7 +4350,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4362,19 +4362,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#aaff4d",
+              fill: "#curve-daoaff4d",
             }}
             d="m278.9 152.1-22.7-5.9-.7 17.9 22.4 4.5 1-16.5z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4386,7 +4386,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4398,7 +4398,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4410,7 +4410,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4422,7 +4422,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4434,7 +4434,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4446,7 +4446,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4458,7 +4458,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4470,7 +4470,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4482,7 +4482,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4494,7 +4494,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4506,7 +4506,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4518,7 +4518,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4530,7 +4530,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4542,7 +4542,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4554,7 +4554,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4566,7 +4566,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4578,7 +4578,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4590,7 +4590,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4602,7 +4602,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4614,7 +4614,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4626,7 +4626,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4638,7 +4638,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4650,7 +4650,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4662,7 +4662,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4674,7 +4674,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4686,19 +4686,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a7ff50",
+              fill: "#curve-dao7ff50",
             }}
             d="m299.9 159.4-21.1-7.3-.9 16.5 20.9 5.9 1.1-15.1z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4710,7 +4710,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4722,7 +4722,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4734,7 +4734,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4746,7 +4746,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4758,7 +4758,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4770,7 +4770,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4782,7 +4782,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4794,7 +4794,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4806,7 +4806,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4818,7 +4818,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4830,7 +4830,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4842,7 +4842,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4854,7 +4854,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4866,7 +4866,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4878,7 +4878,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4890,7 +4890,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4902,7 +4902,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4914,7 +4914,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4926,7 +4926,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4938,7 +4938,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4950,7 +4950,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4962,7 +4962,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4974,7 +4974,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4986,7 +4986,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -4998,7 +4998,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5010,7 +5010,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5022,7 +5022,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5034,7 +5034,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5046,7 +5046,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5058,7 +5058,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5070,7 +5070,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5082,7 +5082,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5094,19 +5094,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#aaff4d",
+              fill: "#curve-daoaff4d",
             }}
             d="m407.6 176-16.5-14.1-1-13.1 16.4 15.1 1.1 12.1z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5118,7 +5118,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5130,7 +5130,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5142,7 +5142,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5154,7 +5154,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5166,7 +5166,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5178,7 +5178,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5190,7 +5190,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5202,7 +5202,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5214,7 +5214,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5226,7 +5226,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5238,7 +5238,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5250,7 +5250,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5262,7 +5262,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5274,19 +5274,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a4ff53",
+              fill: "#curve-dao4ff53",
             }}
             d="m317.6 167.7-17.7-8.3-1.1 15.1 17.5 7 1.3-13.8z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5298,7 +5298,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5310,7 +5310,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5322,7 +5322,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5334,7 +5334,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5346,7 +5346,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5358,7 +5358,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5370,7 +5370,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5382,7 +5382,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5394,7 +5394,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5406,7 +5406,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5418,7 +5418,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5430,7 +5430,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5442,7 +5442,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5454,7 +5454,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5466,7 +5466,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5478,7 +5478,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5490,7 +5490,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5502,7 +5502,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5514,7 +5514,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5526,7 +5526,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5538,7 +5538,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5550,7 +5550,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5562,7 +5562,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5574,7 +5574,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5586,7 +5586,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5598,7 +5598,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5610,7 +5610,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5622,7 +5622,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5634,7 +5634,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5646,7 +5646,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5658,7 +5658,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5670,7 +5670,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5682,7 +5682,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5694,7 +5694,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5706,7 +5706,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5718,7 +5718,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5730,7 +5730,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5742,7 +5742,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5754,7 +5754,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5766,7 +5766,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5778,7 +5778,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5790,7 +5790,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5802,7 +5802,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5814,7 +5814,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5826,7 +5826,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5838,7 +5838,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5850,7 +5850,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5862,7 +5862,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5874,7 +5874,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5886,7 +5886,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5898,7 +5898,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5910,7 +5910,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5922,7 +5922,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5934,7 +5934,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5946,7 +5946,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5958,7 +5958,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5970,7 +5970,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5982,7 +5982,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -5994,19 +5994,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a0ff56",
+              fill: "#curve-dao0ff56",
             }}
             d="m330.1 176.7-12.5-9-1.3 13.8 12.4 7.6 1.4-12.4z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6018,7 +6018,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6030,7 +6030,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6042,7 +6042,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6054,7 +6054,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6066,7 +6066,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6078,7 +6078,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6090,7 +6090,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6102,7 +6102,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6114,7 +6114,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6126,7 +6126,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6138,7 +6138,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6150,7 +6150,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6162,7 +6162,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6174,7 +6174,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6186,7 +6186,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6198,7 +6198,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6210,7 +6210,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6222,7 +6222,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6234,7 +6234,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6246,7 +6246,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6258,7 +6258,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6270,7 +6270,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6282,7 +6282,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6294,7 +6294,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6306,7 +6306,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6318,7 +6318,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6330,7 +6330,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6342,7 +6342,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6354,7 +6354,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6366,7 +6366,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6378,7 +6378,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6390,7 +6390,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6402,7 +6402,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6414,7 +6414,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6426,7 +6426,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6438,7 +6438,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6450,7 +6450,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6462,7 +6462,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6474,7 +6474,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6486,7 +6486,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6498,7 +6498,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6510,7 +6510,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6522,19 +6522,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a7ff50",
+              fill: "#curve-dao7ff50",
             }}
             d="m414.7 189.6-7.1-13.6-1.1-12.1 7 14.6 1.2 11.1z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6546,7 +6546,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6558,7 +6558,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6570,7 +6570,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6582,7 +6582,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6594,7 +6594,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6606,7 +6606,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6618,19 +6618,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a40000",
+              fill: "#curve-dao40000",
             }}
             d="M128.2 0 109 1.2l9.5 3.4 16.8-1.2-7.1-3.4z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6642,7 +6642,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6654,7 +6654,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6666,7 +6666,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6678,7 +6678,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6690,7 +6690,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6702,7 +6702,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6714,7 +6714,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6726,7 +6726,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6738,7 +6738,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6750,7 +6750,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6762,7 +6762,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6774,7 +6774,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6786,7 +6786,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6798,7 +6798,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6810,7 +6810,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6822,7 +6822,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6834,7 +6834,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6846,7 +6846,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6858,7 +6858,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6870,7 +6870,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6882,7 +6882,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6894,7 +6894,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6906,7 +6906,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6918,7 +6918,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6930,7 +6930,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6942,7 +6942,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6954,7 +6954,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6966,7 +6966,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6978,7 +6978,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -6990,7 +6990,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7002,7 +7002,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7014,7 +7014,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7026,7 +7026,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7038,7 +7038,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7050,19 +7050,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a80000",
+              fill: "#curve-dao80000",
             }}
             d="m135.3 3.4-16.8 1.2 9.5 7.5 14.4-1.3-7.1-7.4z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7074,7 +7074,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7086,7 +7086,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7098,7 +7098,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7110,7 +7110,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7122,7 +7122,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7134,7 +7134,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7146,7 +7146,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7158,7 +7158,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7170,7 +7170,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7182,7 +7182,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7194,7 +7194,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7206,7 +7206,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7218,7 +7218,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7230,7 +7230,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7242,7 +7242,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7254,7 +7254,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7266,7 +7266,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7278,7 +7278,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7290,7 +7290,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7302,7 +7302,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7314,7 +7314,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7326,7 +7326,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7338,7 +7338,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7350,7 +7350,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7362,7 +7362,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7374,7 +7374,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7386,7 +7386,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7398,7 +7398,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7410,7 +7410,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7422,7 +7422,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7434,7 +7434,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7446,7 +7446,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7458,7 +7458,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7470,7 +7470,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7482,7 +7482,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7494,7 +7494,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7506,7 +7506,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7518,7 +7518,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7530,7 +7530,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7542,7 +7542,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7554,7 +7554,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7566,7 +7566,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7578,7 +7578,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7590,7 +7590,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7602,7 +7602,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7614,19 +7614,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a0ff56",
+              fill: "#curve-dao0ff56",
             }}
             d="m412.2 202.6 2.5-13-1.2-11.1-2.5 13.8 1.2 10.3z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7638,7 +7638,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7650,7 +7650,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7662,7 +7662,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7674,7 +7674,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7686,7 +7686,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7698,7 +7698,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7710,7 +7710,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7722,7 +7722,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7734,7 +7734,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7746,7 +7746,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7758,7 +7758,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7770,7 +7770,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7782,7 +7782,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7794,7 +7794,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7806,7 +7806,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7818,7 +7818,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7830,7 +7830,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7842,7 +7842,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7854,7 +7854,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7866,7 +7866,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7878,7 +7878,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7890,7 +7890,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7902,7 +7902,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7914,7 +7914,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7926,7 +7926,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7938,7 +7938,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7950,7 +7950,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7962,7 +7962,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7974,7 +7974,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7986,7 +7986,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -7998,7 +7998,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8010,7 +8010,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8022,7 +8022,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8034,7 +8034,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8046,7 +8046,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8058,7 +8058,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8070,7 +8070,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8082,7 +8082,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8094,7 +8094,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8106,7 +8106,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8118,7 +8118,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8130,7 +8130,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8142,7 +8142,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8154,7 +8154,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8166,7 +8166,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8178,7 +8178,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8190,7 +8190,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8202,7 +8202,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8214,7 +8214,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8226,7 +8226,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8238,7 +8238,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8250,19 +8250,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a80000",
+              fill: "#curve-dao80000",
             }}
             d="m128 12.1-9.5 4.6 11.3 11.6 7.4-4.7-9.2-11.5z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8274,7 +8274,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8286,7 +8286,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8298,7 +8298,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8310,7 +8310,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8322,7 +8322,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8334,7 +8334,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8346,7 +8346,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8358,7 +8358,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8370,7 +8370,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8382,7 +8382,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8394,7 +8394,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8406,7 +8406,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8418,7 +8418,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8430,7 +8430,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8442,7 +8442,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8454,7 +8454,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8466,7 +8466,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8478,7 +8478,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8490,7 +8490,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8502,7 +8502,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8514,7 +8514,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8526,7 +8526,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8538,7 +8538,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8550,7 +8550,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8562,7 +8562,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8574,7 +8574,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8586,7 +8586,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8598,7 +8598,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8610,7 +8610,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8622,7 +8622,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8634,7 +8634,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8646,7 +8646,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8658,7 +8658,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8670,7 +8670,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8682,7 +8682,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8694,7 +8694,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8706,7 +8706,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8718,7 +8718,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8730,19 +8730,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a0ff56",
+              fill: "#curve-dao0ff56",
             }}
             d="m400.6 214.6 11.6-12-1.2-10.3-11.6 12.6 1.2 9.7z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8754,7 +8754,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8766,7 +8766,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8778,7 +8778,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8790,7 +8790,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8802,19 +8802,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a80000",
+              fill: "#curve-dao80000",
             }}
             d="m60.5 21.3-7.4 12.1L67 27.2l6-11.7-12.5 5.8z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8826,7 +8826,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8838,7 +8838,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8850,7 +8850,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8862,7 +8862,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8874,7 +8874,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8886,7 +8886,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8898,7 +8898,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8910,7 +8910,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8922,7 +8922,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8934,7 +8934,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8946,7 +8946,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8958,7 +8958,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8970,7 +8970,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8982,7 +8982,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -8994,7 +8994,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9006,7 +9006,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9018,7 +9018,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9030,7 +9030,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9042,7 +9042,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9054,7 +9054,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9066,7 +9066,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9078,7 +9078,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9090,7 +9090,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9102,19 +9102,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#adff49",
+              fill: "#curve-daodff49",
             }}
             d="m310.7 203 16.6-8.6-2.1 9.2-16.6 8 2.1-8.6z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9126,7 +9126,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9138,7 +9138,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9150,7 +9150,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9162,7 +9162,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9174,7 +9174,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9186,7 +9186,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9198,7 +9198,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9210,7 +9210,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9222,7 +9222,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9234,7 +9234,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9246,7 +9246,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9258,7 +9258,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9270,7 +9270,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9282,7 +9282,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9294,7 +9294,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9306,7 +9306,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9318,7 +9318,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9330,7 +9330,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9342,7 +9342,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9354,7 +9354,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9366,7 +9366,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9378,7 +9378,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9390,7 +9390,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9402,7 +9402,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9414,7 +9414,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9426,7 +9426,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9438,7 +9438,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9450,7 +9450,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9462,7 +9462,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9474,7 +9474,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9486,7 +9486,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9498,7 +9498,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9510,7 +9510,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9522,7 +9522,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9534,7 +9534,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9546,7 +9546,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9558,7 +9558,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9570,7 +9570,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9582,7 +9582,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9594,7 +9594,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9606,7 +9606,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9618,7 +9618,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9630,7 +9630,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9642,7 +9642,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9654,7 +9654,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9666,7 +9666,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9678,7 +9678,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9690,7 +9690,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9702,7 +9702,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9714,7 +9714,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9726,7 +9726,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9738,7 +9738,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9750,7 +9750,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9762,7 +9762,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9774,7 +9774,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9786,7 +9786,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9798,7 +9798,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9810,19 +9810,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#aaff4d",
+              fill: "#curve-daoaff4d",
             }}
             d="m287.7 210.5 23-7.5-2.1 8.6-22.8 7.1 1.9-8.2z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9834,7 +9834,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9846,7 +9846,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9858,7 +9858,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9870,7 +9870,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9882,7 +9882,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9894,7 +9894,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9906,7 +9906,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9918,7 +9918,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9930,7 +9930,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9942,7 +9942,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9954,7 +9954,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9966,7 +9966,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9978,7 +9978,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -9990,7 +9990,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10002,7 +10002,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10014,7 +10014,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10026,7 +10026,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10038,7 +10038,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10050,7 +10050,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10062,7 +10062,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10074,7 +10074,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10086,7 +10086,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10098,7 +10098,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10110,7 +10110,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10122,7 +10122,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10134,7 +10134,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10146,7 +10146,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10158,7 +10158,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10170,7 +10170,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10182,7 +10182,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10194,7 +10194,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10206,7 +10206,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10218,7 +10218,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10230,7 +10230,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10242,7 +10242,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10254,7 +10254,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10266,7 +10266,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10278,7 +10278,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10290,7 +10290,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10302,7 +10302,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10314,7 +10314,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10326,7 +10326,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10338,7 +10338,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10350,19 +10350,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a40000",
+              fill: "#curve-dao40000",
             }}
             d="m53.1 33.4-1.9 14.1 14.5-6.6L67 27.2l-13.9 6.2z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10374,7 +10374,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10386,7 +10386,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10398,7 +10398,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10410,7 +10410,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10422,7 +10422,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10434,7 +10434,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10446,7 +10446,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10458,7 +10458,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10470,7 +10470,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10482,7 +10482,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10494,7 +10494,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10506,7 +10506,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10518,7 +10518,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10530,19 +10530,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#aaff4d",
+              fill: "#curve-daoaff4d",
             }}
             d="m260.1 217 27.6-6.5-1.9 8.2-27.5 6.3 1.8-8z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10554,7 +10554,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10566,7 +10566,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10578,7 +10578,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10590,7 +10590,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10602,7 +10602,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10614,7 +10614,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10626,7 +10626,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10638,7 +10638,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10650,7 +10650,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10662,7 +10662,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10674,7 +10674,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10686,7 +10686,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10698,7 +10698,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10710,7 +10710,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10722,7 +10722,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10734,7 +10734,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10746,7 +10746,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10758,7 +10758,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10770,7 +10770,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10782,7 +10782,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10794,7 +10794,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10806,7 +10806,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10818,7 +10818,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10830,7 +10830,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10842,7 +10842,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10854,7 +10854,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10866,7 +10866,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10878,7 +10878,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10890,7 +10890,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10902,7 +10902,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10914,7 +10914,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10926,7 +10926,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10938,7 +10938,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10950,7 +10950,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10962,7 +10962,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10974,7 +10974,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10986,7 +10986,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -10998,7 +10998,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11010,7 +11010,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11022,7 +11022,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11034,7 +11034,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11046,7 +11046,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11058,7 +11058,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11070,7 +11070,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11082,7 +11082,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11094,7 +11094,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11106,7 +11106,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11118,7 +11118,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11130,7 +11130,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11142,7 +11142,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11154,7 +11154,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11166,7 +11166,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11178,7 +11178,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11190,7 +11190,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11202,7 +11202,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11214,7 +11214,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11226,7 +11226,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11238,7 +11238,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11250,7 +11250,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11262,7 +11262,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11274,7 +11274,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11286,7 +11286,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11298,7 +11298,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11310,7 +11310,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11322,7 +11322,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11334,7 +11334,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11346,7 +11346,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11358,7 +11358,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11370,7 +11370,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11382,7 +11382,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11394,7 +11394,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11406,7 +11406,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11418,7 +11418,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11430,7 +11430,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11442,7 +11442,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11454,7 +11454,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11466,7 +11466,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11478,7 +11478,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11490,7 +11490,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11502,7 +11502,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11514,7 +11514,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11526,7 +11526,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11538,7 +11538,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11550,7 +11550,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11562,7 +11562,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11574,7 +11574,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11586,7 +11586,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11598,7 +11598,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11610,7 +11610,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11622,7 +11622,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11634,7 +11634,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11646,7 +11646,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11658,7 +11658,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11670,7 +11670,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11682,7 +11682,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11694,7 +11694,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11706,7 +11706,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11718,7 +11718,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11730,7 +11730,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11742,7 +11742,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11754,7 +11754,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11766,7 +11766,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11778,7 +11778,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11790,7 +11790,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11802,7 +11802,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11814,7 +11814,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11826,7 +11826,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11838,7 +11838,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11850,7 +11850,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11862,7 +11862,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11874,7 +11874,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11886,7 +11886,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11898,7 +11898,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11910,7 +11910,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11922,7 +11922,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11934,7 +11934,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11946,7 +11946,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11958,7 +11958,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11970,7 +11970,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11982,7 +11982,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -11994,7 +11994,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12006,7 +12006,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12018,7 +12018,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12030,7 +12030,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12042,7 +12042,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12054,7 +12054,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12066,7 +12066,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12078,7 +12078,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12090,7 +12090,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12102,7 +12102,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12114,7 +12114,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12126,7 +12126,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12138,7 +12138,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12150,7 +12150,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12162,7 +12162,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12174,7 +12174,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12186,7 +12186,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12198,7 +12198,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12210,7 +12210,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12222,7 +12222,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12234,7 +12234,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12246,7 +12246,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12258,7 +12258,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12270,7 +12270,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12282,7 +12282,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12294,7 +12294,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12306,7 +12306,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12318,7 +12318,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12330,7 +12330,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12342,7 +12342,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12354,7 +12354,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12366,7 +12366,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12378,7 +12378,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12390,7 +12390,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12402,7 +12402,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12414,7 +12414,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12426,7 +12426,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12438,7 +12438,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12450,7 +12450,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12462,7 +12462,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12474,19 +12474,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a80000",
+              fill: "#curve-dao80000",
             }}
             d="M51.2 47.5 53 62.6l14.5-6.5L65.7 41l-14.5 6.5z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12498,7 +12498,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12510,7 +12510,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12522,7 +12522,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12534,7 +12534,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12546,7 +12546,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12558,7 +12558,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12570,7 +12570,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12582,7 +12582,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12594,7 +12594,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12606,7 +12606,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12618,7 +12618,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12630,7 +12630,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12642,7 +12642,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12654,7 +12654,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12666,7 +12666,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12678,7 +12678,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12690,7 +12690,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12702,7 +12702,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12714,7 +12714,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12726,7 +12726,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12738,7 +12738,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12750,7 +12750,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12762,7 +12762,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12774,7 +12774,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12786,7 +12786,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12798,7 +12798,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12810,7 +12810,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12822,7 +12822,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12834,7 +12834,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12846,7 +12846,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12858,7 +12858,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12870,7 +12870,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12882,7 +12882,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12894,7 +12894,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12906,7 +12906,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12918,7 +12918,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12930,7 +12930,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12942,7 +12942,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12954,7 +12954,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12966,7 +12966,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12978,7 +12978,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -12990,7 +12990,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13002,7 +13002,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13014,7 +13014,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13026,7 +13026,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13038,7 +13038,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13050,7 +13050,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13062,7 +13062,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13074,7 +13074,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13086,7 +13086,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13098,7 +13098,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13110,7 +13110,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13122,7 +13122,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13134,7 +13134,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13146,7 +13146,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13158,7 +13158,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13170,7 +13170,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13182,7 +13182,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13194,7 +13194,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13206,7 +13206,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13218,7 +13218,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13230,7 +13230,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13242,7 +13242,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13254,7 +13254,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13266,7 +13266,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13278,7 +13278,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13290,7 +13290,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13302,7 +13302,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13314,7 +13314,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13326,7 +13326,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13338,7 +13338,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13350,7 +13350,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13362,7 +13362,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13374,7 +13374,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13386,7 +13386,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13398,7 +13398,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13410,7 +13410,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13422,7 +13422,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13434,19 +13434,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#aaff4d",
+              fill: "#curve-daoaff4d",
             }}
             d="m289.7 237.9 31.8-6.7 1.5 8.8-31.7 6.9-1.6-9z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13458,7 +13458,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13470,7 +13470,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13482,7 +13482,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13494,19 +13494,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a0ff56",
+              fill: "#curve-dao0ff56",
             }}
             d="m126 250.9 31.5-4.2 1.4-9.3-31.4 3.5-1.5 10z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13518,7 +13518,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13530,7 +13530,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13542,7 +13542,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13554,7 +13554,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13566,7 +13566,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13578,7 +13578,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13590,7 +13590,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13602,7 +13602,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13614,7 +13614,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13626,7 +13626,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13638,7 +13638,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13650,7 +13650,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13662,7 +13662,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13674,7 +13674,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13686,7 +13686,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13698,7 +13698,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13710,7 +13710,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13722,7 +13722,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13734,7 +13734,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13746,7 +13746,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13758,7 +13758,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13770,7 +13770,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13782,7 +13782,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13794,7 +13794,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13806,7 +13806,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13818,7 +13818,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13830,7 +13830,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13842,7 +13842,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13854,7 +13854,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13866,7 +13866,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13878,7 +13878,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13890,7 +13890,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13902,7 +13902,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13914,7 +13914,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13926,7 +13926,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13938,7 +13938,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13950,7 +13950,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13962,7 +13962,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13974,7 +13974,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13986,7 +13986,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -13998,7 +13998,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14010,7 +14010,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14022,7 +14022,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14034,19 +14034,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a4ff53",
+              fill: "#curve-dao4ff53",
             }}
             d="m98.1 254.5 27.9-3.6 1.5-10-27.8 2.6-1.6 11z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14058,7 +14058,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14070,7 +14070,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14082,7 +14082,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14094,19 +14094,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#ad0000",
+              fill: "#curve-daod0000",
             }}
             d="m53 62.6 3 16.3 14.4-6.3-2.9-16.5L53 62.6z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14118,7 +14118,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14130,19 +14130,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#aaff4d",
+              fill: "#curve-daoaff4d",
             }}
             d="m258 243.8 31.7-5.9 1.6 9-31.6 6.3-1.7-9.4z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14154,7 +14154,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14166,7 +14166,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14178,7 +14178,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14190,7 +14190,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14202,7 +14202,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14214,7 +14214,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14226,7 +14226,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14238,7 +14238,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14250,7 +14250,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14262,7 +14262,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14274,7 +14274,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14286,7 +14286,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14298,7 +14298,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14310,7 +14310,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14322,7 +14322,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14334,7 +14334,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14346,7 +14346,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14358,7 +14358,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14370,7 +14370,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14382,7 +14382,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14394,7 +14394,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14406,7 +14406,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14418,7 +14418,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14430,7 +14430,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14442,7 +14442,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14454,7 +14454,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14466,7 +14466,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14478,19 +14478,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a7ff50",
+              fill: "#curve-dao7ff50",
             }}
             d="m74.7 257.3 23.4-2.8 1.6-11-23.3 1.7-1.7 12.1z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14502,7 +14502,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14514,7 +14514,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14526,7 +14526,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14538,7 +14538,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14550,7 +14550,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14562,7 +14562,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14574,7 +14574,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14586,7 +14586,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14598,7 +14598,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14610,7 +14610,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14622,7 +14622,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14634,7 +14634,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14646,7 +14646,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14658,7 +14658,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14670,7 +14670,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14682,7 +14682,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14694,7 +14694,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14706,7 +14706,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14718,7 +14718,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14730,7 +14730,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14742,7 +14742,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14754,7 +14754,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14766,7 +14766,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14778,7 +14778,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14790,19 +14790,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#adff49",
+              fill: "#curve-daodff49",
             }}
             d="m228.3 249 29.7-5.2 1.7 9.4-29.6 5.8-1.8-10z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14814,7 +14814,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14826,7 +14826,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14838,19 +14838,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#aaff4d",
+              fill: "#curve-daoaff4d",
             }}
             d="m56.2 259.1 18.5-1.8 1.7-12.1-18.4.7-1.8 13.2z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14862,7 +14862,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14874,7 +14874,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14886,7 +14886,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14898,7 +14898,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14910,7 +14910,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14922,7 +14922,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14934,7 +14934,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14946,7 +14946,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14958,7 +14958,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14970,7 +14970,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14982,7 +14982,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -14994,7 +14994,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15006,7 +15006,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15018,7 +15018,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15030,7 +15030,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15042,7 +15042,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15054,7 +15054,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15066,19 +15066,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#adff49",
+              fill: "#curve-daodff49",
             }}
             d="m42.5 259.8 13.7-.7 1.8-13.2-13.6-.6-1.9 14.5z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15090,7 +15090,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15102,7 +15102,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15114,7 +15114,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15126,7 +15126,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15138,7 +15138,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15150,7 +15150,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15162,7 +15162,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15174,7 +15174,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15186,7 +15186,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15198,7 +15198,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15210,7 +15210,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15222,7 +15222,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15234,7 +15234,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15246,7 +15246,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15258,7 +15258,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15270,7 +15270,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15282,7 +15282,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15294,7 +15294,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15306,7 +15306,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15318,7 +15318,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15330,7 +15330,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15342,7 +15342,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15354,7 +15354,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15366,7 +15366,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15378,7 +15378,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15390,7 +15390,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15402,7 +15402,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15414,7 +15414,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15426,7 +15426,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15438,7 +15438,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15450,7 +15450,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15462,7 +15462,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15474,7 +15474,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15486,7 +15486,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15498,7 +15498,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15510,7 +15510,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15522,7 +15522,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15534,7 +15534,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15546,7 +15546,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15558,7 +15558,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15570,7 +15570,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15582,7 +15582,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15594,7 +15594,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15606,7 +15606,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15618,7 +15618,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15630,7 +15630,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15642,7 +15642,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15654,7 +15654,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15666,7 +15666,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15678,7 +15678,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15690,7 +15690,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15702,7 +15702,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15714,7 +15714,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15726,7 +15726,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15738,7 +15738,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15750,7 +15750,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15762,7 +15762,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15774,7 +15774,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15786,7 +15786,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15798,7 +15798,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15810,7 +15810,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15822,7 +15822,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15834,7 +15834,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15846,7 +15846,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15858,7 +15858,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15870,7 +15870,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15882,7 +15882,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15894,7 +15894,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15906,7 +15906,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15918,7 +15918,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15930,7 +15930,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15942,7 +15942,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15954,7 +15954,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15966,7 +15966,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15978,7 +15978,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -15990,7 +15990,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16002,7 +16002,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16014,7 +16014,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16026,7 +16026,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16038,7 +16038,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16050,7 +16050,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16062,7 +16062,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16074,7 +16074,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16086,7 +16086,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16098,7 +16098,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16110,7 +16110,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16122,7 +16122,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16134,7 +16134,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16146,7 +16146,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16158,7 +16158,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16170,7 +16170,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16182,7 +16182,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16194,7 +16194,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16206,7 +16206,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16218,7 +16218,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16230,7 +16230,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16242,7 +16242,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16254,7 +16254,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16266,7 +16266,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16278,7 +16278,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16290,7 +16290,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16302,7 +16302,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16314,7 +16314,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16326,7 +16326,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16338,7 +16338,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16350,7 +16350,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16362,7 +16362,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16374,7 +16374,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16386,7 +16386,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16398,7 +16398,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16410,7 +16410,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16422,7 +16422,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16434,7 +16434,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16446,31 +16446,31 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a40000",
+              fill: "#curve-dao40000",
             }}
             d="m116.7 79.5 1.9 17.1 14.9 10.6-1.6-16.8-15.2-10.9z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a0ff56",
+              fill: "#curve-dao0ff56",
             }}
             d="m158.6 276.8 9.4-3.5 1.3 13-9.3 4.8-1.4-14.3z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16482,7 +16482,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16494,7 +16494,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16506,7 +16506,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16518,7 +16518,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16530,7 +16530,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16542,19 +16542,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#ad0000",
+              fill: "#curve-daod0000",
             }}
             d="m73.2 89.7 2 17 14.4-1.8L88 87.7l-14.8 2z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16566,7 +16566,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16578,7 +16578,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16590,7 +16590,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16602,7 +16602,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16614,7 +16614,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16626,7 +16626,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16638,7 +16638,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16650,7 +16650,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16662,7 +16662,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16674,7 +16674,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16686,7 +16686,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16698,7 +16698,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16710,7 +16710,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16722,7 +16722,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16734,19 +16734,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a4ff53",
+              fill: "#curve-dao4ff53",
             }}
             d="m154.8 279.2 3.8-2.4 1.4 14.3-3.7 3.9-1.5-15.8z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16758,7 +16758,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16770,7 +16770,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16782,7 +16782,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16794,19 +16794,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a40000",
+              fill: "#curve-dao40000",
             }}
             d="m88 87.7 1.6 17.1 14.9 2.3-1.2-17.1L88 87.7z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16818,7 +16818,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16830,7 +16830,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16842,7 +16842,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16854,7 +16854,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16866,7 +16866,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16878,7 +16878,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16890,7 +16890,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16902,7 +16902,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16914,7 +16914,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16926,7 +16926,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16938,7 +16938,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16950,7 +16950,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16962,7 +16962,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16974,7 +16974,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16986,7 +16986,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -16998,31 +16998,31 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a40000",
+              fill: "#curve-dao40000",
             }}
             d="m103.3 90 1.2 17.1 14.8 6.4-.7-16.9-15.3-6.6z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#a7ff50",
+              fill: "#curve-dao7ff50",
             }}
             d="m155.7 280.4-.9-1.2 1.5 15.8 1.1 2.6-1.7-17.2z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17034,7 +17034,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17046,7 +17046,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17058,7 +17058,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17070,7 +17070,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17082,7 +17082,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17094,7 +17094,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17106,7 +17106,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17118,7 +17118,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17130,7 +17130,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17142,7 +17142,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17154,7 +17154,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17166,19 +17166,19 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
             style={{
-              fill: "#adff49",
+              fill: "#curve-daodff49",
             }}
             d="m160.3 279.9-4.6.5 1.7 17.2 4.7 1-1.8-18.7z"
           />
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17190,7 +17190,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17202,7 +17202,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17214,7 +17214,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17226,7 +17226,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17238,7 +17238,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17250,7 +17250,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17262,7 +17262,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17274,7 +17274,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17286,7 +17286,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17298,7 +17298,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17310,7 +17310,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17322,7 +17322,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17334,7 +17334,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17346,7 +17346,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17358,7 +17358,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17370,7 +17370,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17382,7 +17382,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17394,7 +17394,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17406,7 +17406,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17418,7 +17418,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17430,7 +17430,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17442,7 +17442,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17454,7 +17454,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17466,7 +17466,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17478,7 +17478,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17490,7 +17490,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17502,7 +17502,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17514,7 +17514,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17526,7 +17526,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17538,7 +17538,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17550,7 +17550,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17562,7 +17562,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17574,7 +17574,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17586,7 +17586,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17598,7 +17598,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17610,7 +17610,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17622,7 +17622,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17634,7 +17634,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17646,7 +17646,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17658,7 +17658,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17670,7 +17670,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17682,7 +17682,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17694,7 +17694,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17706,7 +17706,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17718,7 +17718,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17730,7 +17730,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17742,7 +17742,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17754,7 +17754,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17766,7 +17766,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17778,7 +17778,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17790,7 +17790,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17802,7 +17802,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17814,7 +17814,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17826,7 +17826,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17838,7 +17838,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17850,7 +17850,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17862,7 +17862,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17874,7 +17874,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17886,7 +17886,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17898,7 +17898,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17910,7 +17910,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17922,7 +17922,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17934,7 +17934,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17946,7 +17946,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17958,7 +17958,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17970,7 +17970,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17982,7 +17982,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -17994,7 +17994,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18006,7 +18006,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18018,7 +18018,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18030,7 +18030,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18042,7 +18042,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18054,7 +18054,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18066,7 +18066,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18078,7 +18078,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18090,7 +18090,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18102,7 +18102,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18114,7 +18114,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18126,7 +18126,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18138,7 +18138,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18150,7 +18150,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18162,7 +18162,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18174,7 +18174,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18186,7 +18186,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18198,7 +18198,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18210,7 +18210,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18222,7 +18222,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18234,7 +18234,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18246,7 +18246,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path
@@ -18258,7 +18258,7 @@ export const CurveDaoLogo = (props: SVGProps<SVGSVGElement>) => (
         </g>
         <g
           style={{
-            clipPath: "url(#a)",
+            clipPath: "url(#curve-dao)",
           }}
         >
           <path

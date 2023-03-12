@@ -1,8 +1,6 @@
-import merge from "lodash/merge";
-import React, { FC } from "react";
+import { FC } from "react";
 import ReactApexChart from "react-apexcharts";
 import styled from "styled-components";
-import { ThemeInterface } from "blockchain-ui/theme";
 
 import { fNumber } from "../../../utils/number";
 
