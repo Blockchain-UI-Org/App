@@ -1,6 +1,7 @@
 import React from "react";
 import "../src/index.css";
-
+import { useDarkMode } from "storybook-dark-mode";
+import ThemeProvider from "blockchain-ui/src/theme/themeProvider";
 export const parameters = {
   backgrounds: {
     default: "darkPurple",
@@ -8,10 +9,6 @@ export const parameters = {
       {
         name: "dark",
         value: "#161C24",
-      },
-      {
-        name: "darkPurple",
-        value: "#020028",
       },
       {
         name: "light",
@@ -29,17 +26,24 @@ export const parameters = {
   },
 };
 
-
-
 export const decorators = [
-  (Story) => (
-    <div
-      style={{
-        fontFamily: '"Public Sans", "Roboto", "Helvetica", "Arial", sans-serif',
-        fontWeight: "400",
-      }}
-    >
-      <Story />
-    </div>
-  ),
+  (Story, context) => {
+    const isDark = useDarkMode();
+
+    /**
+     * Configuring mode for components story.
+     */
+    return (
+      <ThemeProvider theme={isDark ? "dark" : "light"}>
+        <div
+          style={{
+            fontFamily: '"Public Sans", "Roboto", "Helvetica", "Arial", sans-serif',
+            fontWeight: "400",
+          }}
+        >
+          <Story {...context} />
+        </div>
+      </ThemeProvider>
+    );
+  },
 ];
