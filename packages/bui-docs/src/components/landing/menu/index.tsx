@@ -13,7 +13,7 @@ const Menu = () => {
         </MenuItem>
         <MenuItem>
           <Link
-            href="https://www.chromatic.com/library?appId=63a670b1ce0472f1c60a3f59&branch=main"
+            href="https://63a670b1ce0472f1c60a3f59-kryzqpsvlc.chromatic.com/"
             target="_blank"
             rel="noreferrer noopener"
             style={{ textDecoration: "none", color: "inherit" }}
