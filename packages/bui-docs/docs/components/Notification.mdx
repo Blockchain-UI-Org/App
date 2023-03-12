@@ -1,0 +1,125 @@
+---
+description: Notification Component
+---
+
+import { Notification } from "blockchain-ui";
+import { DisplayExample, Spacer } from "@site/src/components/DisplayExample";
+
+# Notifications
+
+Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+
+## Examples
+
+Notification are available for small messages of text. For proper styling, use one of the five available Notification
+
+### Simple Notification
+
+This is a minimal Alert with 4 Statuses i.e. error, warning, success and info.
+
+<DisplayExample>
+
+<Notification rootStyle={{position: "relative", top: "initial", left: "initial", transform: "initial"}}  message="A Simple Info Notification"  />
+<Spacer/>
+<Notification rootStyle={{position: "relative", top: "initial", left: "initial", transform: "initial"}} type="error"  message="A Simple Error Notification"  />
+<Spacer/>
+<Notification rootStyle={{position: "relative", top: "initial", left: "initial", transform: "initial"}} type="warning"  message="A Simple Warning Notification"  />
+<Spacer/>
+<Notification rootStyle={{position: "relative", top: "initial", left: "initial", transform: "initial"}} type="success"  message="A Simple Success Notification"  />
+
+
+</DisplayExample>
+
+```jsx
+<Notification  message="A Simple Info Alert"  />
+
+<Notification  type="error"  message="A Simple Error Notification"  />
+
+<Notification  type="warning"  message="A Simple Warning Notification"  />
+
+<Notification  type="success"  message="A Simple Success Notification"  />
+```
+
+
+### Inverted Notification
+<DisplayExample>
+
+<Notification rootStyle={{position: "relative", top: "initial", left: "initial", transform: "initial"}} invert type="success"  message="A Simple Success Notification"  />
+
+</DisplayExample>
+
+```jsx
+
+<Notification  type="success" invert  message="A Simple Success Notification"  />
+```
+### Notification with Buttons
+
+<DisplayExample>
+
+<Notification rootStyle={{position: "relative", top: "initial", left: "initial", transform: "initial"}}  type="success"  message="A Simple Notification" actionLabel="Action" cancelLabel="Cancel"  />
+<Spacer/>
+<Notification rootStyle={{position: "relative", top: "initial", left: "initial", transform: "initial"}}  type="success"  message="A Simple Notification" invert actionLabel="Action" cancelLabel="Cancel"  />
+
+</DisplayExample>
+
+```jsx
+<Notification  
+    type="success" 
+    actionLabel="Action"
+    cancelLabel="Cancel"
+    message="A Simple Notification"  
+/>
+
+<Notification
+    invert
+    type="success" 
+    actionLabel="Action"
+    cancelLabel="Cancel"
+    message="A Simple Notification"  
+/>
+```
+
+### Notification without Icon
+
+<DisplayExample>
+
+<Notification rootStyle={{position: "relative", top: "initial", left: "initial", transform: "initial"}}    message="A Notification without Icon" default    />
+
+<Spacer />
+<Notification rootStyle={{position: "relative", top: "initial", left: "initial", transform: "initial"}}    message="An Inverted Notification without Icon" default  invert  />
+<Spacer />
+<Notification rootStyle={{position: "relative", top: "initial", left: "initial", transform: "initial"}}    message="A Notification with buttons without Icon" default actionLabel="Action" cancelLabel="Cancel"  />
+<Spacer/>
+<Notification rootStyle={{position: "relative", top: "initial", left: "initial", transform: "initial"}}    message="An Inverted Notification with buttons without Icon" default invert actionLabel="Action" cancelLabel="Cancel"  />
+
+
+</DisplayExample>
+
+
+```jsx
+<Notification
+    default
+    message="A Notification without Icon"  
+/>
+
+<Notification
+    default
+    invert
+    message="An Inverted Notification without Icon"  
+/>
+
+<Notification  
+    default
+    actionLabel="Action"
+    cancelLabel="Cancel"
+    message="A Notification with buttons without Icon"  
+/>
+
+<Notification
+    default
+    invert
+    actionLabel="Action"
+    cancelLabel="Cancel"
+    message="An Inverted Notification with buttons without Icon"  
+/>
+```

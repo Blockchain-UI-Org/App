@@ -2,10 +2,11 @@ import React, { FC, ReactNode, SVGProps } from "react";
 import styled, { css } from "styled-components";
 import { withTheme } from "blockchain-ui/theme";
 import { Paragraph } from "blockchain-ui/components/typography";
-import { InfoIcon, SuccessIcon, WarningIcon } from "./icons";
+
 import { Flex } from "../flex";
 import { Button } from "../button";
 import { alpha } from "blockchain-ui/utils";
+import { InfoIcon, SuccessIcon, WarningIcon } from "../static/images/icons/regular";
 
 export const AlertVariants = ["standard", "outlined", "filled"] as const;
 export type IAlertVariants = (typeof AlertVariants)[number];
@@ -83,7 +84,7 @@ export const Alert: FC<AlertProps> = ({
         <Icon />
       </IconWrapper>
       <Flex flex={1}>
-        <ParagraphWrapper role={"message"} noMargin variant="body2">
+        <ParagraphWrapper role={"message"}  variant="body2">
           {message}
         </ParagraphWrapper>
       </Flex>

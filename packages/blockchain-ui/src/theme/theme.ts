@@ -4,6 +4,8 @@ import { ITypographyTheme, createTypography } from "./typography";
 import { createColorPalette, IColorPalette } from "./pallette";
 import { createComponents, IComponentTheme } from "./components";
 import { createMedia, IMediaTheme } from "./media";
+import { TColorSchemes } from "blockchain-ui/typeutils/theme";
+import { colors } from "./colors";
 
 export interface ThemeInterface {
   palette: IColorPalette;
@@ -40,6 +42,27 @@ export const createTheme = ({
 
 const DefaultTheme = createTheme();
 
-const DarkTheme = createTheme();
+const DarkTheme = createTheme({
+  palette: {
+    text: {
+      primary: colors.white,
+      secondary: colors.grey500,
+      disabled: colors.grey600,
+    },
+    background: {
+      main: colors.grey800,
+      paper: colors.grey800,
+      neutral: colors.grey500Opacity16,
+    },
+  },
+});
 
-export { DefaultTheme, DarkTheme };
+/**
+ * All the themes are exposing here..
+ */
+const appThemes: Record<TColorSchemes, ThemeInterface> = {
+  light: DefaultTheme,
+  dark: DarkTheme,
+};
+
+export { DefaultTheme, DarkTheme, appThemes };

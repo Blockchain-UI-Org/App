@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import { Story, Meta } from '@storybook/react';
 import styled from 'styled-components';
 import Image, { ImageProps } from './image';
-import * as crowdloanBanner from '../static/images/icons/regular/apps.svg';
+// import * as crowdloanBanner from '../static/images/icons/regular/apps.svg';
 
 export default {
   component: Image,
@@ -23,7 +23,7 @@ Basic.args = {
   width: '500px',
   height: '500px',
   //@ts-ignore
-  src: crowdloanBanner.default,
+  // src: crowdloanBanner.default,
 };
 
 const FallBackTemplate: Story<ImageProps> = args => <Image {...args} />;

@@ -127,19 +127,22 @@ const cssStylingCommon = css<Omit<IButtonProps, "label">>`
     }) => {
       const commonStyles = theme.components.BuiButton.common;
       const buttonStyles = theme.components.BuiButton.variants[variant as "soft"].styles({ color: color });
-
+      const border = buttonStyles.border ? buttonStyles.border : "none";
+      const padding = SizeMap[size].padding;
       const buttonCss = css({
         backgroundColor: backgroundColor ? backgroundColor : buttonStyles.bg,
         borderRadius: commonStyles.borderRadius,
         cursor: "pointer",
         fontWeight: commonStyles.fontWeight,
         fontSize: commonStyles.fontSize,
-        border: buttonStyles.border ? buttonStyles.border : "none",
+        border,
         borderColor: borderColor,
         lineHeight: commonStyles.lineHeight,
         color: textColor ? textColor : buttonStyles.foreground,
-        padding: SizeMap[size].padding,
+        // Added extra 1px padding for buttons in case of no outline
+        padding: border === "none" ? padding.split(" ").map(item => (parseInt(item) + 1) + "px").join(" "):padding ,
         transition: `all 0.3s linear`,
+        transitionProperty: "box-shadow, background-color, border-color, color",
       });
 
       const hoverCss = css({

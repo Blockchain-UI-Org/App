@@ -3,7 +3,7 @@ import { colors } from "./colors";
 import { colorVariants, IColorVariants } from "./variants";
 import merge from "lodash/merge";
 import tinycolor from "tinycolor2";
-import { color } from "@storybook/theming";
+
 type IPalette = {
   // TODO:  Remove Bg Color (old Version kept for not breaking Application, after changing call components to use new theme)
   bg: string;
@@ -18,6 +18,16 @@ type IPalette = {
 };
 
 export type IColorPalette = {
+  text: {
+    primary: string;
+    secondary: string;
+    disabled: string;
+  };
+  background: {
+    main: string;
+    paper: string;
+    neutral: string;
+  };
   common: {
     black: string;
     white: string;
@@ -46,7 +56,18 @@ export type IColorPalette = {
   };
   colorVariants: IColorVariants;
 };
+
 const DefaultPalette: IColorPalette = {
+  text: {
+    primary: colors.grey800,
+    secondary: colors.grey600,
+    disabled: colors.grey500,
+  },
+  background: {
+    main: colors.grey500,
+    paper: colors.white,
+    neutral: colors.grey200,
+  },
   common: {
     black: colors.black,
     white: colors.white,
@@ -59,7 +80,7 @@ const DefaultPalette: IColorPalette = {
     contrastText: colors.grey800,
     light: colors.grey200,
     dark: colors.grey400,
-    darker:colors.grey500,
+    darker: colors.grey500,
   },
   getColor: function (name, transparency) {
     return (type) => {
@@ -72,7 +93,7 @@ const DefaultPalette: IColorPalette = {
         : (result as string);
     };
   },
-  
+
   primary: {
     bg: "#00AB55",
     color: colors.black,
@@ -143,12 +164,18 @@ const DefaultPalette: IColorPalette = {
     600: colors.grey600,
     700: colors.grey700,
     800: colors.grey800,
-    900: colors.green900,
+    900: colors.grey900,
   },
   colorVariants: colorVariants,
-};
+} as IColorPalette;
+/**
+ *
+ * @param args
+ * @param theme Initializing with default theme light..
+ * @returns
+ */
 export const createColorPalette = (args: Subset<IColorPalette> = {}): IColorPalette => {
-  const resultingPalette = merge({ ...DefaultPalette }, args);
+  const resultingPalette = merge({}, DefaultPalette, args);
   resultingPalette.getColor = resultingPalette.getColor.bind(resultingPalette);
   return resultingPalette;
 };

@@ -1,9 +1,14 @@
-import React, { ReactElement } from 'react';
-import { ThemeProvider } from 'styled-components';
-import { DefaultTheme } from "blockchain-ui/theme";
+import React, { ReactElement } from "react";
+import { ThemeProvider as StyledThemeProvider } from "styled-components";
+import { appThemes, DefaultTheme } from "blockchain-ui/theme";
+import { TColorSchemes } from "blockchain-ui/typeutils/theme";
 
-const Theme = ({ children }: { children: ReactElement | any }) => {
-  return <ThemeProvider theme={DefaultTheme}>{children}</ThemeProvider>;
+const ThemeProvider = ({ theme, children }: { children: ReactElement | any; theme: TColorSchemes }) => {
+  /**
+   * Theme can be explicitly provided using theme provider..
+   * Use this as wrapper..
+   */
+  return <StyledThemeProvider theme={theme ? appThemes[theme] : DefaultTheme}>{children}</StyledThemeProvider>;
 };
 
-export default Theme;
+export default ThemeProvider;

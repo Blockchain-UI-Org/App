@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 import { Story, Meta } from "@storybook/react";
 import styled from "styled-components";
 import { Icon, IconProps } from "./icon";
-import { regularIcons } from "../static/images/icons/regular";
+import * as regularIcons  from "../static/images/icons/regular";
 
 export default {
   component: Icon,
