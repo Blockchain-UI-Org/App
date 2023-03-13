@@ -5,12 +5,10 @@ import styled from "styled-components";
 import { useTheme } from "blockchain-ui/theme";
 import { createBasicChartOptions } from "blockchain-ui/utils";
 
-import { CryptoIcon } from "../../icon/icon";
-import { CryptoSymbols } from "../../static/types";
 import LoadingSpinner from "blockchain-ui/components/loadingSpinner/loadingSpinner";
 import { Flex } from "blockchain-ui/components/flex";
 import { IBuiColor } from "blockchain-ui/theme/colors";
-import { ApexOptions } from "apexcharts";
+import type { ApexOptions } from "apexcharts";
 
 export interface ChartProps {
   title?: string;

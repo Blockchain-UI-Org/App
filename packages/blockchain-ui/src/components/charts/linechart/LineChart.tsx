@@ -1,7 +1,5 @@
 import merge from "lodash/merge";
-import { FC, useMemo } from "react";
-import ReactApexChart from "react-apexcharts";
-import styled, { CSSProperties } from "styled-components";
+import { FC, Suspense, useMemo } from "react";
 import { createBasicChartOptions, IChartLabelStyle } from "blockchain-ui/utils";
 import { useTheme } from "blockchain-ui/theme";
 import { IBuiColor } from "blockchain-ui/theme/colors";
@@ -10,6 +8,7 @@ import "./LineChart.css";
 import { GraphIcon, LineChartIcon } from "blockchain-ui/components/static/images";
 import { Flex } from "blockchain-ui/components/flex";
 import LoadingSpinner from "blockchain-ui/components/loadingSpinner/loadingSpinner";
+import { LoadableChart } from "blockchain-ui/components/LoadableChart";
 
 export interface LineChartProps {
 
@@ -117,8 +116,8 @@ const LineChart: FC<LineChartProps> = ({
         <LineChartIcon data-testid="disabled" height={height} width={width} />
       ) : (
         chartOptions && (
-          <>
-            <ReactApexChart
+          <Suspense>
+            <LoadableChart
               data-testid="apex-chart"
               type="line"
               series={series.map((item) => {
@@ -132,7 +131,7 @@ const LineChart: FC<LineChartProps> = ({
               height={height}
               width={width}
             />
-          </>
+          </Suspense>
         )
       )}
     </Flex>

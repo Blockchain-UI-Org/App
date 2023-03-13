@@ -1,7 +1,6 @@
 import merge from "lodash/merge";
-import { FC, useMemo } from "react";
-import ReactApexChart from "react-apexcharts";
-import styled, { CSSProperties } from "styled-components";
+import { FC, Suspense, useMemo } from "react";
+import styled from "styled-components";
 import { createBasicChartOptions, IChartLabelStyle } from "blockchain-ui/utils";
 import { useTheme } from "blockchain-ui/theme";
 import { IBuiColor } from "blockchain-ui/theme/colors";
@@ -10,6 +9,7 @@ import "./AreaChart.css";
 import { GraphIcon } from "blockchain-ui/components/static/images";
 import { Flex } from "blockchain-ui/components/flex";
 import LoadingSpinner from "blockchain-ui/components/loadingSpinner/loadingSpinner";
+import { LoadableChart } from "blockchain-ui/components/LoadableChart";
 
 export interface AreaChartProps {
   series: { color: keyof IBuiColor; name: string; data: number[] }[];
@@ -114,7 +114,10 @@ const AreaChart: FC<AreaChartProps> = ({
       )}
       {loading ? (
         <>
-          <Flex data-testid={"loader"} style={{ width, height, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <Flex
+            data-testid={"loader"}
+            style={{ width, height, display: "flex", alignItems: "center", justifyContent: "center" }}
+          >
             <LoadingSpinner color="primary500" />
           </Flex>
         </>
@@ -123,19 +126,21 @@ const AreaChart: FC<AreaChartProps> = ({
       ) : (
         chartOptions && (
           <>
-            <ReactApexChart
-              type="area"
-              series={series.map((item) => {
-                return {
-                  data: item.data,
-                  color: theme.palette.buiColors[item.color],
-                  name: item.name,
-                };
-              })}
-              options={chartOptions}
-              height={height}
-              width={width}
-            />
+            <Suspense fallback={<div> Fallback </div>}>
+              <LoadableChart
+                type="area"
+                series={series.map((item) => {
+                  return {
+                    data: item.data,
+                    color: theme.palette.buiColors[item.color],
+                    name: item.name,
+                  };
+                })}
+                options={chartOptions}
+                height={height}
+                width={width}
+              />
+            </Suspense>
           </>
         )
       )}

@@ -1,10 +1,11 @@
 import { ApexOptions } from "apexcharts";
 import { Flex } from "blockchain-ui/components/flex";
+import { LoadableChart } from "blockchain-ui/components/LoadableChart";
 import { TrendingDown, TrendingUp } from "blockchain-ui/components/static/images";
 import { Typography } from "blockchain-ui/components/typography";
 import { useTheme } from "blockchain-ui/theme";
 import { IBuiColor } from "blockchain-ui/theme/colors";
-import { FC } from "react";
+import { FC, Suspense } from "react";
 import ReactApexChart from "react-apexcharts";
 import styled from "styled-components";
 
@@ -92,7 +93,9 @@ const PieChart: FC<PieChartProps> = ({
           {centerElement}
         </Flex>
       )}
-      <ReactApexChart type={type} series={chartSeries} options={options} height={diameter} />
+      <Suspense>
+      <LoadableChart type={type} series={chartSeries} options={options} height={diameter} />
+      </Suspense>
     </Container>
   );
 };

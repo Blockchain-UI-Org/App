@@ -1,9 +1,9 @@
-import React, { FC } from "react";
+import { FC, Suspense } from "react";
 import styled from "styled-components";
-import ReactApexChart from "react-apexcharts";
-import { ThemeInterface, useTheme } from "blockchain-ui/theme";
+import { useTheme } from "blockchain-ui/theme";
 import { IBuiColor } from "blockchain-ui/theme/colors";
 import { ApexOptions } from "apexcharts";
+import { LoadableChart } from "blockchain-ui/components/LoadableChart";
 
 export interface SparkLineProps {
   chartData: number[];
@@ -45,13 +45,15 @@ export const SparkLine: FC<SparkLineProps> = ({
   return (
     <Container>
       {" "}
-      <ReactApexChart
-        type={chartType}
-        series={[{ data: chartData }]}
-        options={chartOptions}
-        width={width}
-        height={height}
-      />
+      <Suspense fallback={<div />}>
+        <LoadableChart
+          type={chartType}
+          series={[{ data: chartData }]}
+          options={chartOptions}
+          width={width}
+          height={height}
+        />
+      </Suspense>
     </Container>
   );
 };
