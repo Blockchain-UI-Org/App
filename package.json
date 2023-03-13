@@ -7,7 +7,7 @@
   "scripts": {
     "build-ui": "lerna run build --scope=blockchain-ui",
     "build": "yarn run build-ui && lerna run build --scope=bui-docs",
-    "develop": "lerna run watch --scope=blockchain-ui  && lerna run start --scope=bui-docs"
+    "develop": "concurrently \"lerna run watch --scope=blockchain-ui\"  \"lerna run start --scope=bui-docs\""
   },
   "devDependencies": {
     "concurrently": "^7.6.0",
