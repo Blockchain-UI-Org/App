@@ -10,6 +10,7 @@ import { CryptoSymbols } from "../../static/types";
 import LoadingSpinner from "blockchain-ui/components/loadingSpinner/loadingSpinner";
 import { Flex } from "blockchain-ui/components/flex";
 import { IBuiColor } from "blockchain-ui/theme/colors";
+import { ApexOptions } from "apexcharts";
 
 export interface ChartProps {
   title?: string;
@@ -24,7 +25,7 @@ export interface ChartProps {
   downwardsColor: keyof IBuiColor;
 }
 
-const LineChart: FC<ChartProps> = ({
+const CandleChart: FC<ChartProps> = ({
   width = "100%",
   height = "100%",
   chartData,
@@ -41,6 +42,10 @@ const LineChart: FC<ChartProps> = ({
   const downColor = theme.palette.buiColors[downwardsColor];
 
   const chartOptions = merge(createBasicChartOptions(theme.components.Chart.common), {
+  
+    tooltip: {
+      enabled: false,
+    },
     plotOptions: {
       candlestick: {
         colors: {
@@ -49,7 +54,7 @@ const LineChart: FC<ChartProps> = ({
         },
       },
     },
-  });
+  } as ApexOptions);
 
   return (
     <Container>
@@ -72,7 +77,7 @@ const LineChart: FC<ChartProps> = ({
   );
 };
 
-export default LineChart;
+export default CandleChart;
 
 const Container = styled.div`
   color: white;

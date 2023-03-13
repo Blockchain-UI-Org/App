@@ -115,7 +115,7 @@ const DefaultPalette: IColorPalette = {
     // TODO Remove color Property They are old theme variables need to be removed after upgrades
 
     color: colors.pink500,
-    main: colors.secondary100,
+    main: colors.secondary500,
     lighter: colors.secondary100,
     light: colors.secondary300,
     contrastText: colors.white,

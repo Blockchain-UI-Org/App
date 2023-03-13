@@ -12,8 +12,6 @@ import { Flex } from "blockchain-ui/components/flex";
 import LoadingSpinner from "blockchain-ui/components/loadingSpinner/loadingSpinner";
 
 export interface AreaChartProps {
-  title?: string;
-  subtitle?: string;
   series: { color: keyof IBuiColor; name: string; data: number[] }[];
   labels: string[];
   showVerticalGridLine?: boolean;
@@ -22,7 +20,7 @@ export interface AreaChartProps {
   gridColor?: string;
   hideYAxis?: boolean;
   hideXAxis?: boolean;
-  marker: { size?: number; borderWidth?: number };
+  marker?: { size?: number; borderWidth?: number };
   hideXAxisBorder?: boolean;
   hideYAxisBorder?: boolean;
   labelCount?: number;
@@ -67,7 +65,6 @@ const AreaChart: FC<AreaChartProps> = ({
   opacityTo = 0.16,
   loading = false,
   disabled = false,
-
   width = "100%",
   height = "400px",
 }) => {
@@ -111,18 +108,18 @@ const AreaChart: FC<AreaChartProps> = ({
     <Container style={{ height, width: width }}>
       {(header || headerRight) && (
         <Flex style={{ paddingRight: 20 }} row justifyContent={!header && headerRight ? "flex-end" : "space-between"}>
-          {header && <Flex>{header}</Flex>}
-          {headerRight && <Flex>{headerRight}</Flex>}
+          {header && <Flex data-testid="header">{header}</Flex>}
+          {headerRight && <Flex data-testid="headerright">{headerRight}</Flex>}
         </Flex>
       )}
       {loading ? (
         <>
-          <Flex style={{ width, height, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <Flex data-testid={"loader"} style={{ width, height, display: "flex", alignItems: "center", justifyContent: "center" }}>
             <LoadingSpinner color="primary500" />
           </Flex>
         </>
       ) : disabled ? (
-        <GraphIcon height={height} width={width} />
+        <GraphIcon data-testid={"disabled"} height={height} width={width} />
       ) : (
         chartOptions && (
           <>
