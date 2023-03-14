@@ -4,6 +4,7 @@ export * from "./flex";
 export * from "./input/input";
 export { Alert } from "./alert/alert";
 export * from "./typography/typography";
+export { Table } from './table';
 export {
   Notification,
   type INotificationProps,

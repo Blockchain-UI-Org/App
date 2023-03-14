@@ -4,7 +4,7 @@ import { Paragraph } from "blockchain-ui/components/typography";
 import { Input } from "blockchain-ui/components/input";
 import { BiSearch } from "react-icons/bi";
 import { defaultPaginationValue, IPagination, Pagination } from "./TablePagination";
-import { useEffect, useState } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 import merge from "lodash/merge";
 
 const TableContainer = styled.div`
@@ -96,7 +96,7 @@ const defaultOptionValues = {
   },
 };
 
-export function Table({ options, columns = [], data = [] }: ITableProps) {
+export const Table: FunctionComponent<ITableProps> = ({ options, columns = [], data = [] }) => {
   /**
    * Merge it with default values..
    */
@@ -209,4 +209,4 @@ export function Table({ options, columns = [], data = [] }: ITableProps) {
       )}
     </TableContainer>
   );
-}
+};
