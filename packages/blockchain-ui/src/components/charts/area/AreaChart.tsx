@@ -10,6 +10,8 @@ import { GraphIcon } from "blockchain-ui/components/static/images";
 import { Flex } from "blockchain-ui/components/flex";
 import LoadingSpinner from "blockchain-ui/components/loadingSpinner/loadingSpinner";
 import { LoadableChart } from "blockchain-ui/components/LoadableChart";
+import { Heading, Paragraph } from "blockchain-ui/components/typography";
+import { SmallSelect } from "blockchain-ui/components/select";
 
 export interface AreaChartProps {
   series: { color: keyof IBuiColor; name: string; data: number[] }[];
@@ -33,8 +35,13 @@ export interface AreaChartProps {
   formatYAxis?: (val: string | number) => string | number;
   loading?: boolean;
   disabled?: boolean;
-  header?: React.ReactElement;
-  headerRight?: React.ReactElement;
+ 
+  title?: string;
+  subtitle?: string;
+
+  options?: string[];
+  onSelect?: (val: string) => void;
+  
   width?: string;
   height?: string;
 }
@@ -47,26 +54,31 @@ const AreaChart: FC<AreaChartProps> = ({
   showHorizontalGridLine = false,
   showVerticalGridLine = false,
   gridLine = "solid",
-  header,
-  headerRight,
+  title,
+  subtitle,
+  onSelect,
+  options,
   gridColor = "#919EAB3D",
   hideXAxis = false,
   hideYAxis = false,
   marker = {},
   hideXAxisBorder = false,
   hideYAxisBorder = false,
-  hideCurveStroke = false,
   labelFontStyle = DefaultLabelStyles,
   formatTooltip,
   labelCount,
   formatXAxis,
   formatYAxis,
-  opacityFrom = 0.6,
-  opacityTo = 0.16,
   loading = false,
   disabled = false,
+
   width = "100%",
   height = "400px",
+
+  hideCurveStroke = false,
+  opacityFrom = 0.6,
+  opacityTo = 0.16,
+  
 }) => {
   const theme = useTheme();
   const { size = 6, borderWidth = 0 } = marker;
@@ -106,10 +118,25 @@ const AreaChart: FC<AreaChartProps> = ({
 
   return (
     <Container style={{ height, width: width }}>
-      {(header || headerRight) && (
-        <Flex style={{ paddingRight: 20 }} row justifyContent={!header && headerRight ? "flex-end" : "space-between"}>
-          {header && <Flex data-testid="header">{header}</Flex>}
-          {headerRight && <Flex data-testid="headerright">{headerRight}</Flex>}
+       {(title || subtitle) && (
+        <Flex
+          style={{ paddingRight: 20 }}
+          row
+          justifyContent={!(title || subtitle) && options ? "flex-end" : "space-between"}
+        >
+          <Flex data-testid="header">
+            <Flex direction="column" style={{ paddingLeft: 20 }}>
+              {title && <Heading as="h6">{title}</Heading>}
+              {subtitle && <Paragraph variant="body2">{subtitle}</Paragraph>}
+            </Flex>
+          </Flex>
+          {options && options.length > 0 && (
+            <Flex data-testid="headerright">
+              <Flex direction="column" style={{ paddingLeft: 20 }}>
+                <SmallSelect onChange={onSelect} options={options} />
+              </Flex>
+            </Flex>
+          )}
         </Flex>
       )}
       {loading ? (
