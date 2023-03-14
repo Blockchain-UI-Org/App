@@ -1,31 +1,43 @@
-import React, { FC } from "react";
+import { FC, Suspense } from "react";
 import styled from "styled-components";
-import ReactApexChart from "react-apexcharts";
-import { ThemeInterface, useTheme } from "blockchain-ui/theme";
+import { useTheme } from "blockchain-ui/theme";
+import { IBuiColor } from "blockchain-ui/theme/colors";
+import { ApexOptions } from "apexcharts";
+import { LoadableChart } from "blockchain-ui/components/LoadableChart";
 
-interface SparkLineProps {
+export interface SparkLineProps {
   chartData: number[];
-  width?: string;
-  height?: string;
-  color?: keyof ThemeInterface["components"]["Chart"]["variants"];
+  width?: number | string;
+  height?: number | string;
+  color: keyof IBuiColor;
+  disabledAnimation?: boolean;
   chartType?: "bar" | "line";
+  disableHover?: boolean;
 }
 
 export const SparkLine: FC<SparkLineProps> = ({
   chartData,
+  disabledAnimation = false,
   width = 120,
   height = 80,
-  color = "blue",
+  disableHover,
+  color,
   chartType = "line",
 }) => {
   const theme = useTheme();
-  const chartOptions = {
-    colors: [theme.components.Chart.variants[color].midtone, theme.palette.info.midtone],
-    chart: { animations: { enabled: true }, sparkline: { enabled: true } },
+  const col = theme.palette.buiColors[color];
+  const chartOptions: ApexOptions = {
+    colors: [col, col],
+    chart: { animations: { enabled: !disabledAnimation }, sparkline: { enabled: true } },
+    ...(disableHover && {
+      states: {
+        hover: { filter: { type: chartType, value: 1 } },
+      },
+    }),
     stroke: { width: 2 },
     tooltip: {
+      enabled: false,
       x: { show: false },
-
       marker: { show: false },
     },
   };
@@ -33,13 +45,15 @@ export const SparkLine: FC<SparkLineProps> = ({
   return (
     <Container>
       {" "}
-      <ReactApexChart
-        type={chartType}
-        series={[{ data: chartData }]}
-        options={chartOptions}
-        width={width}
-        height={height}
-      />
+      <Suspense fallback={<div />}>
+        <LoadableChart
+          type={chartType}
+          series={[{ data: chartData }]}
+          options={chartOptions}
+          width={width}
+          height={height}
+        />
+      </Suspense>
     </Container>
   );
 };

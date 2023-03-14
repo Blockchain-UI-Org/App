@@ -1,10 +1,64 @@
 import { ApexOptions } from "apexcharts";
 import { ThemeInterface } from "blockchain-ui/theme";
 
+const wrapErrorCatching = <T extends (...args: any[]) => any>(func?: T) => {
+  if (!func) {
+    return func;
+  }
+  return (...args: any[]) => {
+    try {
+      return func(...args);
+    } catch (e) {
+      return args[0];
+    }
+  };
+};
 
+export type IChartLabelStyle = { fontFamily?: string; fontSize?: number; color?: string };
 
-export function createBasicChartOptions(chartColors: ThemeInterface["components"]["Chart"]["common"]): ApexOptions {
+export function createBasicChartOptions(
+  chartColors: ThemeInterface["components"]["Chart"]["common"],
+  {
+    gridColor = "#919EAB3D",
+    hideXAxis = false,
+    hideYAxis = false,
+    marker = {},
+    fontFamily,
+    hideXAxisBorder = false,
+    hideYAxisBorder = false,
+    hideCurveStroke = false,
+    labelFontStyle = {},
+    opacityFrom = 0.6,
+    opacityTo = 0.16,
+    formatTooltip,
+    labelCount,
+    formatXAxis,
+    gridLine = "solid",
+    formatYAxis,
+    showHorizontalGridLine,
+    showVerticalGridLine,
+  }: {
+    fontFamily?: string;
+    showVerticalGridLine?: boolean;
+    showHorizontalGridLine?: boolean;
+    gridLine?: "solid" | "dashed";
+    gridColor?: string;
+    hideYAxis?: boolean;
+    hideXAxis?: boolean;
+    marker?: { size?: number; borderWidth?: number };
+    hideXAxisBorder?: boolean;
+    hideYAxisBorder?: boolean;
+    labelCount?: number;
+    hideCurveStroke?: boolean;
+    labelFontStyle?: IChartLabelStyle;
+    opacityFrom?: number;
+    opacityTo?: number;
 
+    formatTooltip?: (val: string | number) => string | number;
+    formatXAxis?: (val: string | number, timestamp?: string, opts?: { i: number }) => string | number;
+    formatYAxis?: (val: string | number) => string | number;
+  } = {}
+): ApexOptions {
   const LABEL_TOTAL = {
     show: true,
     label: "Total",
@@ -26,14 +80,90 @@ export function createBasicChartOptions(chartColors: ThemeInterface["components"
     //   colors.red.color,
     //   colors.green.color,
     // ],
-    colors: chartColors.colors,
+    // colors: chartColors.colors,
 
     // Chart
     chart: {
       toolbar: { show: false },
       zoom: { enabled: false },
+      fontFamily,
+      foreColor: labelFontStyle.color,
       // animations: { enabled: false },
-      foreColor: chartColors.foreColor,
+      // foreColor: chartColors.foreColor,
+    },
+    stroke: {
+      curve: "smooth",
+      width: hideCurveStroke ? 0 : 3,
+      lineCap: "butt",
+    },
+    fill: {
+      opacity: 1,
+      gradient: {
+        type: "vertical",
+        shadeIntensity: 0,
+        opacityFrom,
+        opacityTo,
+        stops: [0, 100],
+      },
+    },
+    xaxis: {
+      tickPlacement: "on",
+      axisTicks: {show: false},
+      axisBorder: { show: hideXAxis ? false : !hideXAxisBorder },
+      tickAmount: labelCount ? --labelCount : 0,
+      labels: {
+        formatter: wrapErrorCatching(formatXAxis),
+        show: !hideXAxis,
+        // offsetX: labelCount ? 15 : 0,
+        rotate: 0,
+        hideOverlappingLabels: true,
+      },
+      tooltip: {
+        enabled: true,
+      },
+    },
+    markers: {
+      strokeWidth: marker.borderWidth,
+      hover: {
+        size: marker.size,
+      },
+    },
+    yaxis: {
+      show: !hideYAxis,
+      axisBorder: { show: !hideYAxisBorder },
+
+      labels: {
+        formatter: wrapErrorCatching(formatYAxis),
+      },
+    },
+    tooltip: {
+      
+      x: {
+        show: false,
+      },
+      y: {
+        formatter: wrapErrorCatching(formatTooltip),
+      },
+      followCursor: true,
+      style: {
+        fontFamily,
+      },
+    },
+
+    grid: {
+      show: true,
+      strokeDashArray: gridLine === "solid" ? 0 : 5,
+      borderColor: gridColor,
+      xaxis: {
+        lines: {
+          show: showVerticalGridLine,
+        },
+      },
+      yaxis: {
+        lines: {
+          show: showHorizontalGridLine,
+        },
+      },
     },
 
     // States
@@ -53,51 +183,9 @@ export function createBasicChartOptions(chartColors: ThemeInterface["components"
     },
 
     // Fill
-    fill: {
-      opacity: 1,
-      gradient: {
-        type: "vertical",
-        shadeIntensity: 0,
-        opacityFrom: 0.6,
-        opacityTo: 0,
-        stops: [0, 100],
-      },
-    },
 
     // Datalabels
     dataLabels: { enabled: false },
-
-    // Stroke
-    stroke: {
-      width: 3,
-      curve: "smooth",
-      lineCap: "round",
-    },
-
-    // Grid
-    grid: {
-      strokeDashArray: 3,
-      borderColor: chartColors.gridBorderColor,
-    },
-
-    // Xaxis
-    xaxis: {
-      axisBorder: { show: false },
-      axisTicks: { show: false },
-    },
-
-    // Markers
-    markers: {
-      size: 0,
-      strokeColors: chartColors.markerColor,
-    },
-
-    // Tooltip
-    tooltip: {
-      x: {
-        show: false,
-      },
-    },
 
     // Legend
     legend: {

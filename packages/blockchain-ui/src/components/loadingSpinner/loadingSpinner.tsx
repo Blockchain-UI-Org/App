@@ -1,28 +1,31 @@
-import { FC } from 'react';
-import styled, { keyframes } from 'styled-components';
-
-import Image from '../image/image';
-
-export interface LoadingSpinnerProps {
-  width?: string;
-}
+import { withTheme } from "blockchain-ui/theme";
+import { IBuiColor } from "blockchain-ui/theme/colors";
+import { alpha } from "blockchain-ui/utils";
+import styled, { css, keyframes } from "styled-components";
 
 const SpinnerAnimation = keyframes`
-  0% {
-    transform: rotateZ(0deg);
+ 
+ from {
+    transform: rotate(0deg);
   }
-  100% {
-    transform: rotateZ(360deg)
+  to {
+    transform: rotate(359deg);
   }
+  
 `;
-
-const Circle = styled(Image)`
-  animation: 1s linear infinite ${SpinnerAnimation};
-  width: ${({ width }) => width || '1.5rem'};
+export type ILoadingSpinnerProps = { color?: keyof IBuiColor, size?: number; strokeWidth?: number; };
+export const LoadingSpinner = styled.div<ILoadingSpinnerProps>`
+  ${withTheme(({ theme, color = "grey600",strokeWidth =4, size = 32 }) => {
+    const colorVal = theme.palette.buiColors[color];
+    return css`
+      width: ${size}px;
+      height: ${size}px;
+      border: ${strokeWidth}px transparent solid;
+      border-top: ${strokeWidth}px ${colorVal} solid;
+      border-right: ${strokeWidth}px ${colorVal} solid;
+    `;
+  })}
+  border-radius: 50%;
+  animation: ${SpinnerAnimation} 0.6s infinite linear;
 `;
-
-export const LoadingSpinner: FC<LoadingSpinnerProps> = ({ width }) => {
-  return <Circle width={width} name="spinner" />;
-};
-
 export default LoadingSpinner;
