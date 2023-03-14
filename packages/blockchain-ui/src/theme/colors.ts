@@ -32,8 +32,9 @@ export const colors = {
   grey700: "#454F5B",
   grey800: "#212B36",
   grey900: "#161C24",
-  
-  grey500Opacity16: "919EAB29", 
+
+  grey500Opacity16: "#919EAB29",
+  grey500Opacity32: "#919EAB52",
 
   yellow100: "#FFF6DC",
   yellow500: "#FAD972",
@@ -65,4 +66,3 @@ export const colors = {
   error500: "#EB5757",
   error900: "#782424",
 };
-

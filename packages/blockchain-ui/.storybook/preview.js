@@ -1,9 +1,16 @@
 import React from "react";
+import "./style.css";
 import "../src/index.css";
 import { useDarkMode } from "storybook-dark-mode";
 import ThemeProvider from "blockchain-ui/src/theme/themeProvider";
 export const parameters = {
+  darkMode: {
+    darkClass: 'darkClass',
+    lightClass: 'lightClass',
+    stylePreview: true,
+  },
   backgrounds: {
+    disable: true,
     default: "darkPurple",
     values: [
       {
