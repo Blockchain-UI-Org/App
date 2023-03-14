@@ -18,6 +18,7 @@ export interface PieChartProps {
     value: number;
   }[];
   type?: "donut" | "pie";
+  
   donutwidth?: string;
   expandOnClick?: boolean;
   legendPosition?: "top" | "bottom";

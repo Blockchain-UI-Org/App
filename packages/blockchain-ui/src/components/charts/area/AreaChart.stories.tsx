@@ -1,6 +1,6 @@
 import { ComponentMeta, Story } from "@storybook/react";
 import AreaChart, { AreaChartProps } from "./AreaChart";
-import {  MonthlyData } from "./AreaData";
+import { MonthlyData } from "./AreaData";
 import { Flex } from "blockchain-ui/components/flex";
 import { Heading, Paragraph } from "blockchain-ui/components/typography";
 import { SmallSelect } from "blockchain-ui/components/select";
@@ -12,7 +12,6 @@ export default {
   parameters: {
     backgrounds: {
       default: "white",
-     
     },
   },
 } as ComponentMeta<typeof AreaChart>;
@@ -206,16 +205,8 @@ AreaChartLoading.args = {
 export const AreaChartWithHeader = Template.bind({});
 
 AreaChartWithHeader.args = {
-  header: (
-    <Flex direction="column" style={{ paddingLeft: 20 }}>
-      <Heading color="#fff" as="h6">
-        Yearly Sales
-      </Heading>
-      <Paragraph color="#637381" variant="body2">
-        (+43%) than last year
-      </Paragraph>
-    </Flex>
-  ),
+  title: "Yearly Sales",
+  subtitle: "(+43%) than last year",
   width: "800px",
   height: "400px",
   labels,
@@ -229,23 +220,10 @@ AreaChartWithHeader.args = {
 export const AreaChartWithFilter = Template.bind({});
 
 AreaChartWithFilter.args = {
-  header: (
-    <Flex direction="column" style={{ paddingLeft: 20 }}>
-      <Heading  as="h6">
-        Yearly Sales
-      </Heading>
-      <Paragraph variant="body2">
-        (+43%) than last year
-      </Paragraph>
-    </Flex>
-  ),
-  headerRight: (
-    <Flex direction="column" style={{ paddingLeft: 20 }}>
-      <SmallSelect 
-        options={["2023", "2022","2021", "2020", "2019", "2018"]}
-      />
-    </Flex>
-  ),
+  title: "Yearly Sales",
+  subtitle: "(+43%) than last year",
+  options: ["2023", "2022", "2021", "2020", "2019", "2018"],
+
   width: "800px",
   height: "400px",
   labels,
