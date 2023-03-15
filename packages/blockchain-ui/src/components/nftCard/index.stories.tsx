@@ -1,6 +1,6 @@
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import NftCard from ".";
+import { ComponentStory, Meta } from "@storybook/react";
+import NftCard, { NftCardProps } from ".";
 import styled from "styled-components";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -8,10 +8,10 @@ export default {
   title: "NFT/NftCard",
   component: NftCard,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-} as ComponentMeta<typeof NftCard>;
+} as Meta<NftCardProps>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof NftCard> = (args) => <NftCard {...args} src={`url("/assets/nft9.jpeg")`} />;
+const Template: ComponentStory<typeof NftCard> = (args) => <NftCard  {...args}  src={`url("/assets/nft9.jpeg")`} />;
 
 const GroupTemplate: ComponentStory<typeof NftCard> = (args) => (
   <Container>
@@ -39,7 +39,19 @@ const GroupTemplate: ComponentStory<typeof NftCard> = (args) => (
 
 export const Default = Template.bind({});
 
+Default.args ={
+  title: "Clone X 12420",
+  price: "4.120 ETH",
+  lastPrice: "4.180 ETH"
+}
+
 export const Group = GroupTemplate.bind({});
+
+Group.args = {
+  title: "Clone X 12420",
+  price: "4.120 ETH",
+  lastPrice: "4.180 ETH"
+}
 
 const Container = styled.div`
   display: flex;

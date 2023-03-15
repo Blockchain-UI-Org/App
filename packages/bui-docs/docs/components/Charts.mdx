@@ -230,3 +230,39 @@ Charts Allow to display and view data for analysis
   />
 ```
 
+## Disabled Line Chart 
+
+<DisplayExample>
+  <LineChart
+    labels={MonthlyData.map((item) => item.month)}
+    disabled
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    series={[
+      { name: "Total Income", color: "primary500", data: MonthlyData.map((item) => item.totalIncome) },
+      { name: "Total Expenses", color: "warning500", data: MonthlyData.map((item) => item.totalExpenses) },
+    ]}
+  />
+</DisplayExample>
+
+```jsx
+<LineChart
+    labels={["January", "February", ... /* Rest of months  */]}
+    disabled
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    series={[
+      { name: "Total Income", color: "primary500", data: [19, 19.5, 23, 39, ... /* More Data */] },
+      { name: "Total Expenses", color: "warning500", data: [36, 55, 70, 60, ... /* More Data*/] },
+    ]}
+  />
+```
+
