@@ -1,0 +1,100 @@
+---
+description: Pie Chart
+---
+
+import { PieChart, Typography, TrendingDown, Flex } from "blockchain-ui";
+import { Fragment } from "react";
+import { DisplayExample, HorizontalSpacer } from "@site/src/components/DisplayExample";
+
+
+# Pie Chart
+
+Pie Chart Allow to display and view data for analysis
+
+## Basic Pie Chart
+
+<DisplayExample>
+  <PieChart
+    chartData={[
+      { label: "BTC", value: 12244, color: "primary500" },
+      { label: "ETH", value: 53345, color: "secondary500" },
+      { label: "USDC", value: 44313, color: "error500" },
+    ]}
+  />
+</DisplayExample>
+
+```jsx
+<PieChart
+    chartData={[
+        { label: "BTC", value: 12244, color: "primary500" },
+        { label: "ETH", value: 53345, color: "secondary500" },
+        { label: "USDC", value: 44313, color: "error500" },
+    ]}
+/>
+```
+
+## Donut Chart
+
+<DisplayExample>
+  <PieChart
+    type="donut"
+    chartData={[
+      { label: "BTC", value: 12244, color: "primary500" },
+      { label: "ETH", value: 53345, color: "secondary500" },
+      { label: "USDC", value: 44313, color: "error500" },
+    ]}
+  />
+</DisplayExample>
+
+```jsx
+<PieChart
+    type="donut"
+    chartData={[
+        { label: "BTC", value: 12244, color: "primary500" },
+        { label: "ETH", value: 53345, color: "secondary500" },
+        { label: "USDC", value: 44313, color: "error500" },
+    ]}
+/>
+```
+## Donut Chart
+
+<DisplayExample>
+  <PieChart
+     centerElement={
+        <Fragment>
+            <Typography fontSize={18}>Percent Change</Typography>
+            <Flex flex={1} flexWrap="nowrap" row alignItems="center">
+                <TrendingDown style={{ color: "red", width: 14 }} />
+                <Typography color="red" fontSize={14}>-0.2% / Month</Typography>
+            </Flex>
+        </Fragment>
+    }
+    type="donut"
+    chartData={[
+      { label: "BTC", value: 12244, color: "primary500" },
+      { label: "ETH", value: 53345, color: "secondary500" },
+      { label: "USDC", value: 44313, color: "error500" },
+    ]}
+  />
+</DisplayExample>
+
+
+```jsx
+<PieChart
+    type="donut"
+    centerElement={
+        <Fragment>
+            <Typography fontSize={18}>Percent Change</Typography>
+            <Flex flex={1} flexWrap="nowrap" row alignItems="center">
+                <TrendingDown style={{ color: "red", width: 14 }} />
+                <Typography color="red" fontSize={14}>-0.2% / Month</Typography>
+            </Flex>
+        </Fragment>
+    }
+    chartData={[
+        { label: "BTC", value: 12244, color: "primary500" },
+        { label: "ETH", value: 53345, color: "secondary500" },
+        { label: "USDC", value: 44313, color: "error500" },
+    ]}
+/>
+```

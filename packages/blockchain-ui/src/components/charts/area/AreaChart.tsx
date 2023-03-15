@@ -1,6 +1,6 @@
 import merge from "lodash/merge";
 import { FC, Suspense, useMemo } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { createBasicChartOptions, IChartLabelStyle } from "blockchain-ui/utils";
 import { useTheme } from "blockchain-ui/theme";
 import { IBuiColor } from "blockchain-ui/theme/colors";
@@ -10,6 +10,8 @@ import { GraphIcon } from "blockchain-ui/components/static/images";
 import { Flex } from "blockchain-ui/components/flex";
 import LoadingSpinner from "blockchain-ui/components/loadingSpinner/loadingSpinner";
 import { LoadableChart } from "blockchain-ui/components/LoadableChart";
+import { Heading, Paragraph } from "blockchain-ui/components/typography";
+import { SmallSelect } from "blockchain-ui/components/select";
 
 export interface AreaChartProps {
   series: { color: keyof IBuiColor; name: string; data: number[] }[];
@@ -17,24 +19,37 @@ export interface AreaChartProps {
   showVerticalGridLine?: boolean;
   showHorizontalGridLine?: boolean;
   gridLine?: "solid" | "dashed";
-  gridColor?: string;
-  hideYAxis?: boolean;
-  hideXAxis?: boolean;
-  marker?: { size?: number; borderWidth?: number };
   hideXAxisBorder?: boolean;
   hideYAxisBorder?: boolean;
+  hideYAxis?: boolean;
+  hideXAxis?: boolean;
+  gridColor?: string;
+  formatXAxis?: (val: string | number, timestamp?: string, opts?: { i: number }) => string | number;
+  formatYAxis?: (val: string | number) => string | number;
+  disabled?: boolean;
+  loading?: boolean;
   labelCount?: number;
-  hideCurveStroke?: boolean;
   labelFontStyle?: IChartLabelStyle;
+  
+  marker?: { size?: number; borderWidth?: number };
+
+
+
+  hideCurveStroke?: boolean;
+  
   opacityFrom?: number;
   opacityTo?: number;
   formatTooltip?: (val: string | number) => string | number;
-  formatXAxis?: (val: string | number, timestamp?: string, opts?: { i: number }) => string | number;
-  formatYAxis?: (val: string | number) => string | number;
-  loading?: boolean;
-  disabled?: boolean;
-  header?: React.ReactElement;
-  headerRight?: React.ReactElement;
+  
+
+
+
+  title?: string;
+  subtitle?: string;
+
+  filterOptions?: string[];
+  onSelect?: (val: string) => void;
+
   width?: string;
   height?: string;
 }
@@ -47,26 +62,30 @@ const AreaChart: FC<AreaChartProps> = ({
   showHorizontalGridLine = false,
   showVerticalGridLine = false,
   gridLine = "solid",
-  header,
-  headerRight,
+  title,
+  subtitle,
+  onSelect,
+  filterOptions,
   gridColor = "#919EAB3D",
   hideXAxis = false,
   hideYAxis = false,
   marker = {},
   hideXAxisBorder = false,
   hideYAxisBorder = false,
-  hideCurveStroke = false,
   labelFontStyle = DefaultLabelStyles,
   formatTooltip,
   labelCount,
   formatXAxis,
   formatYAxis,
-  opacityFrom = 0.6,
-  opacityTo = 0.16,
   loading = false,
   disabled = false,
+
   width = "100%",
   height = "400px",
+
+  hideCurveStroke = false,
+  opacityFrom = 0.6,
+  opacityTo = 0.16,
 }) => {
   const theme = useTheme();
   const { size = 6, borderWidth = 0 } = marker;
@@ -105,11 +124,34 @@ const AreaChart: FC<AreaChartProps> = ({
   }, [disabled, theme.components.Chart, theme.palette.info.midtone, showHorizontalGridLine, showVerticalGridLine]);
 
   return (
-    <Container style={{ height, width: width }}>
-      {(header || headerRight) && (
-        <Flex style={{ paddingRight: 20 }} row justifyContent={!header && headerRight ? "flex-end" : "space-between"}>
-          {header && <Flex data-testid="header">{header}</Flex>}
-          {headerRight && <Flex data-testid="headerright">{headerRight}</Flex>}
+    <Container width={width} height={height}>
+      {(title || subtitle) && (
+        <Flex
+          style={{ paddingRight: 20 }}
+          row
+          justifyContent={!(title || subtitle) && filterOptions ? "flex-end" : "space-between"}
+        >
+          <Flex>
+            <Flex direction="column" style={{ paddingLeft: 20 }}>
+              {title && (
+                <Heading data-testid="title" as="h6">
+                  {title}
+                </Heading>
+              )}
+              {subtitle && (
+                <Paragraph data-testid="subtitle" variant="body2">
+                  {subtitle}
+                </Paragraph>
+              )}
+            </Flex>
+          </Flex>
+          {filterOptions && filterOptions.length > 0 && (
+            <Flex>
+              <Flex direction="column" style={{ paddingLeft: 20 }}>
+                <SmallSelect data-testid="filter" onChange={onSelect} options={filterOptions} />
+              </Flex>
+            </Flex>
+          )}
         </Flex>
       )}
       {loading ? (
@@ -126,7 +168,7 @@ const AreaChart: FC<AreaChartProps> = ({
       ) : (
         chartOptions && (
           <>
-            <Suspense fallback={<div> Fallback </div>}>
+            <Suspense >
               <LoadableChart
                 type="area"
                 series={series.map((item) => {
@@ -151,10 +193,7 @@ const AreaChart: FC<AreaChartProps> = ({
 export default AreaChart;
 
 const Container = styled.div`
-  color: #333;
-`;
-
-const Title = styled.div`
-  display: flex;
-  margin: 0 0 20px 20px;
+  ${({ width, height }: { width: number | string; height: number | string }) => {
+    return css({ width, height });
+  }}
 `;

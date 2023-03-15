@@ -1,0 +1,73 @@
+---
+description: SparkLine Chart
+---
+
+import { SparkLine } from "blockchain-ui";
+import { Fragment } from "react";
+import { DisplayExample, HorizontalSpacer } from "@site/src/components/DisplayExample";
+
+# SparkLine Chart
+
+SparkLine Chart Allow to build data for ui purpose only
+
+## Basic SparkLine Chart
+
+<DisplayExample>
+  <SparkLine
+    chartData={[40, 70, 75, 70, 50, 28, 7, 64, 38, 27]}
+    width={300}
+    height={200}
+  />
+</DisplayExample>
+
+```jsx
+<SparkLine
+    chartData={[40, 70, 75, 70, 50, 28, 7, 64, 38, 27]}
+    width={300}
+    height={200}
+  />
+```
+
+## SparkLine Bar Chart
+
+<DisplayExample>
+  <SparkLine
+    chartData={[40, 70, 75, 70, 50, 28, 7, 64, 38, 27]}
+    width={300}
+    chartType="bar"
+    height={200}
+  />
+</DisplayExample>
+
+```jsx
+<SparkLine
+    chartData={[40, 70, 75, 70, 50, 28, 7, 64, 38, 27]}
+    chartType="bar"
+    width={300}
+    height={200}
+/>
+```
+
+## SparkLine Bar Chart with Hover disabled and Different Color
+
+<DisplayExample>
+  <SparkLine
+    chartData={[40, 70, 75, 70, 50, 28, 7, 64, 38, 27]}
+    width={300}
+    chartType="bar"
+    color="error500"
+    disableHover
+    height={200}
+  />
+</DisplayExample>
+
+```jsx
+<SparkLine
+    chartData={[40, 70, 75, 70, 50, 28, 7, 64, 38, 27]}
+    width={300}
+    chartType="bar"
+    color="error500"
+    disableHover
+    height={200}
+/>
+```

@@ -1,12 +1,9 @@
 import { ApexOptions } from "apexcharts";
 import { Flex } from "blockchain-ui/components/flex";
 import { LoadableChart } from "blockchain-ui/components/LoadableChart";
-import { TrendingDown, TrendingUp } from "blockchain-ui/components/static/images";
-import { Typography } from "blockchain-ui/components/typography";
 import { useTheme } from "blockchain-ui/theme";
 import { IBuiColor } from "blockchain-ui/theme/colors";
 import { FC, Suspense } from "react";
-import ReactApexChart from "react-apexcharts";
 import styled from "styled-components";
 
 import { fNumber } from "../../../utils/number";
@@ -18,6 +15,7 @@ export interface PieChartProps {
     value: number;
   }[];
   type?: "donut" | "pie";
+
   donutwidth?: string;
   expandOnClick?: boolean;
   legendPosition?: "top" | "bottom";
@@ -89,12 +87,16 @@ const PieChart: FC<PieChartProps> = ({
   return (
     <Container style={{ width: diameter }}>
       {type === "donut" && centerElement && (
-        <Flex direction="column" alignItems={"center"} style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
+        <Flex
+          direction="column"
+          alignItems={"center"}
+          style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}
+        >
           {centerElement}
         </Flex>
       )}
       <Suspense>
-      <LoadableChart type={type} series={chartSeries} options={options} height={diameter} />
+        <LoadableChart type={type} series={chartSeries} options={options} height={diameter} />
       </Suspense>
     </Container>
   );

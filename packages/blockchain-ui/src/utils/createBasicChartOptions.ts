@@ -137,7 +137,6 @@ export function createBasicChartOptions(
       },
     },
     tooltip: {
-      
       x: {
         show: false,
       },
