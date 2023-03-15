@@ -1,6 +1,6 @@
-import React from "react";
+
 import { ComponentStory, Meta } from "@storybook/react";
-import NftCard, { NftCardProps } from ".";
+import NftCard, { NftCardProps } from "./NftCard";
 import styled from "styled-components";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
