@@ -188,7 +188,7 @@ export const LineChartWithFilter = Template.bind({});
 LineChartWithFilter.args = {
   title: "Yearly Sales",
   subtitle: "(+43%) than last year",
-  options: ["2023", "2022", "2021", "2020", "2019", "2018"],
+  filterOptions: ["2023", "2022", "2021", "2020", "2019", "2018"],
   // onSelect: jest.fn(),
   width: "800px",
   height: "400px",

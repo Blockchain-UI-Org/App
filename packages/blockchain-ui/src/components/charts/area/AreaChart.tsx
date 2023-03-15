@@ -1,6 +1,6 @@
 import merge from "lodash/merge";
 import { FC, Suspense, useMemo } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { createBasicChartOptions, IChartLabelStyle } from "blockchain-ui/utils";
 import { useTheme } from "blockchain-ui/theme";
 import { IBuiColor } from "blockchain-ui/theme/colors";
@@ -19,29 +19,37 @@ export interface AreaChartProps {
   showVerticalGridLine?: boolean;
   showHorizontalGridLine?: boolean;
   gridLine?: "solid" | "dashed";
-  gridColor?: string;
-  hideYAxis?: boolean;
-  hideXAxis?: boolean;
-  marker?: { size?: number; borderWidth?: number };
   hideXAxisBorder?: boolean;
   hideYAxisBorder?: boolean;
+  hideYAxis?: boolean;
+  hideXAxis?: boolean;
+  gridColor?: string;
+  formatXAxis?: (val: string | number, timestamp?: string, opts?: { i: number }) => string | number;
+  formatYAxis?: (val: string | number) => string | number;
+  disabled?: boolean;
+  loading?: boolean;
   labelCount?: number;
-  hideCurveStroke?: boolean;
   labelFontStyle?: IChartLabelStyle;
+  
+  marker?: { size?: number; borderWidth?: number };
+
+
+
+  hideCurveStroke?: boolean;
+  
   opacityFrom?: number;
   opacityTo?: number;
   formatTooltip?: (val: string | number) => string | number;
-  formatXAxis?: (val: string | number, timestamp?: string, opts?: { i: number }) => string | number;
-  formatYAxis?: (val: string | number) => string | number;
-  loading?: boolean;
-  disabled?: boolean;
- 
+  
+
+
+
   title?: string;
   subtitle?: string;
 
-  options?: string[];
+  filterOptions?: string[];
   onSelect?: (val: string) => void;
-  
+
   width?: string;
   height?: string;
 }
@@ -57,7 +65,7 @@ const AreaChart: FC<AreaChartProps> = ({
   title,
   subtitle,
   onSelect,
-  options,
+  filterOptions,
   gridColor = "#919EAB3D",
   hideXAxis = false,
   hideYAxis = false,
@@ -78,7 +86,6 @@ const AreaChart: FC<AreaChartProps> = ({
   hideCurveStroke = false,
   opacityFrom = 0.6,
   opacityTo = 0.16,
-  
 }) => {
   const theme = useTheme();
   const { size = 6, borderWidth = 0 } = marker;
@@ -117,23 +124,31 @@ const AreaChart: FC<AreaChartProps> = ({
   }, [disabled, theme.components.Chart, theme.palette.info.midtone, showHorizontalGridLine, showVerticalGridLine]);
 
   return (
-    <Container style={{ height, width: width }}>
-       {(title || subtitle) && (
+    <Container width={width} height={height}>
+      {(title || subtitle) && (
         <Flex
           style={{ paddingRight: 20 }}
           row
-          justifyContent={!(title || subtitle) && options ? "flex-end" : "space-between"}
+          justifyContent={!(title || subtitle) && filterOptions ? "flex-end" : "space-between"}
         >
-          <Flex data-testid="header">
+          <Flex>
             <Flex direction="column" style={{ paddingLeft: 20 }}>
-              {title && <Heading as="h6">{title}</Heading>}
-              {subtitle && <Paragraph variant="body2">{subtitle}</Paragraph>}
+              {title && (
+                <Heading data-testid="title" as="h6">
+                  {title}
+                </Heading>
+              )}
+              {subtitle && (
+                <Paragraph data-testid="subtitle" variant="body2">
+                  {subtitle}
+                </Paragraph>
+              )}
             </Flex>
           </Flex>
-          {options && options.length > 0 && (
-            <Flex data-testid="headerright">
+          {filterOptions && filterOptions.length > 0 && (
+            <Flex>
               <Flex direction="column" style={{ paddingLeft: 20 }}>
-                <SmallSelect onChange={onSelect} options={options} />
+                <SmallSelect data-testid="filter" onChange={onSelect} options={filterOptions} />
               </Flex>
             </Flex>
           )}
@@ -178,10 +193,7 @@ const AreaChart: FC<AreaChartProps> = ({
 export default AreaChart;
 
 const Container = styled.div`
-  color: #333;
-`;
-
-const Title = styled.div`
-  display: flex;
-  margin: 0 0 20px 20px;
+  ${({ width, height }: { width: number | string; height: number | string }) => {
+    return css({ width, height });
+  }}
 `;

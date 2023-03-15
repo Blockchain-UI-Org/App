@@ -92,7 +92,7 @@ const Option = styled.div`
 `;
 
 export const SmallSelect = (props: ISmallSelectProps) => {
-  const { selectedValue: selectedValuep, options, onChange } = props;
+  const { selectedValue: selectedValuep, options, onChange, ...rest } = props;
   const [isOpen, setIsOpen] = useState(false);
   const [selectedValue, setSelectedValue] = useState(selectedValuep || options[0] || "Select");
 
@@ -142,11 +142,13 @@ export const SmallSelect = (props: ISmallSelectProps) => {
     <>
       <SelectWrapper
         ref={selectRef}
+        
         onClick={() => {
           // Prevent ClickAway when clicking this element
           isInsideClickRef.current = true;
           setIsOpen((old) => !old);
         }}
+        {...rest}
       >
         <Subtitle data-testid="select-value" style={{ marginRight: 10 }} variant="subtitle2">
           {selectedValuep || selectedValue}

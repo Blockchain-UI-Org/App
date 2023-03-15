@@ -11,6 +11,7 @@ import LoadingSpinner from "blockchain-ui/components/loadingSpinner/loadingSpinn
 import { LoadableChart } from "blockchain-ui/components/LoadableChart";
 import { Heading, Paragraph } from "blockchain-ui/components/typography";
 import { SmallSelect } from "blockchain-ui/components/select";
+import styled, { css } from "styled-components";
 
 export interface LineChartProps {
   // Y Axis Data
@@ -46,7 +47,7 @@ export interface LineChartProps {
   title?: string;
   subtitle?: string;
 
-  options?: string[];
+  filterOptions?: string[];
   onSelect?: (val: string) => void;
 
   width?: string;
@@ -64,7 +65,7 @@ const LineChart: FC<LineChartProps> = ({
   title,
   subtitle,
   onSelect,
-  options,
+  filterOptions,
   gridColor = "#919EAB3D",
   hideXAxis = false,
   hideYAxis = false,
@@ -117,12 +118,12 @@ const LineChart: FC<LineChartProps> = ({
   }, [disabled, theme.components.Chart, theme.palette.info.midtone, showHorizontalGridLine, showVerticalGridLine]);
 
   return (
-    <Flex direction="column" style={{ height, width: width }}>
+    <Container width={width} height={height}>
       {(title || subtitle) && (
         <Flex
           style={{ paddingRight: 20 }}
           row
-          justifyContent={!(title || subtitle) && options ? "flex-end" : "space-between"}
+          justifyContent={!(title || subtitle) && filterOptions ? "flex-end" : "space-between"}
         >
           <Flex data-testid="header">
             <Flex direction="column" style={{ paddingLeft: 20 }}>
@@ -130,10 +131,10 @@ const LineChart: FC<LineChartProps> = ({
               {subtitle && <Paragraph variant="body2">{subtitle}</Paragraph>}
             </Flex>
           </Flex>
-          {options && options.length > 0 && (
+          {filterOptions && filterOptions.length > 0 && (
             <Flex data-testid="headerright">
               <Flex direction="column" style={{ paddingLeft: 20 }}>
-                <SmallSelect onChange={onSelect} options={options} />
+                <SmallSelect onChange={onSelect} options={filterOptions} />
               </Flex>
             </Flex>
           )}
@@ -170,8 +171,15 @@ const LineChart: FC<LineChartProps> = ({
           </Suspense>
         )
       )}
-    </Flex>
+    </Container>
   );
 };
 
+
 export default LineChart;
+
+const Container = styled.div`
+  ${({ width, height }: { width: number | string; height: number | string }) => {
+    return css({ width, height });
+  }}
+`;
