@@ -45,7 +45,7 @@ const ImageWrapper = styled.div`
 `;
 
 const Image = styled.div<ImageProps>`
-  background-image: ${({ $src }) => $src};
+  background-image: ${({ $src }) => `url("${$src}")`};
   background-size: cover;
   background-position: center;
   width: 100%;

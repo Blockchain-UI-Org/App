@@ -6,14 +6,14 @@ import NftCard from "./NftCard";
 describe("Nft Card", () => {
   it("should render successfully", () => {
     const { baseElement } = render(
-      <NftCard src='url("/assets/nft9.jpeg")' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+      <NftCard src='/assets/nft9.jpeg' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
     );
     expect(baseElement).toBeTruthy();
   });
 
   it("should render title", () => {
     const { getByTestId } = render(
-      <NftCard src='url("/assets/nft9.jpeg")' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+      <NftCard src='/assets/nft9.jpeg' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
     );
 
     expect(getByTestId("title").textContent).toEqual("Clone X 12420");
@@ -21,7 +21,7 @@ describe("Nft Card", () => {
 
   it("should render price", () => {
     const { getByTestId } = render(
-      <NftCard src='url("/assets/nft9.jpeg")' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+      <NftCard src='/assets/nft9.jpeg' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
     );
 
     expect(getByTestId("price").textContent).toEqual("4.120 ETH");
@@ -29,7 +29,7 @@ describe("Nft Card", () => {
 
   it("should render lastPrice", () => {
     const { getByTestId } = render(
-      <NftCard src='url("/assets/nft9.jpeg")' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+      <NftCard src='/assets/nft9.jpeg' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
     );
 
     expect(getByTestId("lastprice").textContent).toEqual("Last Sale: 4.180 ETH");
@@ -37,7 +37,7 @@ describe("Nft Card", () => {
 
   it("should render bg image", () => {
     const { getByTestId } = render(
-      <NftCard src='url("/assets/nft9.jpeg")' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+      <NftCard src='/assets/nft9.jpeg' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
     );
 
     expect(window.getComputedStyle(getByTestId("nft-img")).backgroundImage).toBe("url(/assets/nft9.jpeg)");
