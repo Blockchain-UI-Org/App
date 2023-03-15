@@ -149,8 +149,8 @@ AreaChartWithHiddenBorders.args = {
   ],
 };
 
-export const AreaChartWithWithNoBorder = Template.bind({});
-AreaChartWithWithNoBorder.args = {
+export const AreaChartWithWithNoStroke = Template.bind({});
+AreaChartWithWithNoStroke.args = {
   width: "800px",
   height: "400px",
   labels,
@@ -222,7 +222,7 @@ export const AreaChartWithFilter = Template.bind({});
 AreaChartWithFilter.args = {
   title: "Yearly Sales",
   subtitle: "(+43%) than last year",
-  options: ["2023", "2022", "2021", "2020", "2019", "2018"],
+  filterOptions: ["2023", "2022", "2021", "2020", "2019", "2018"],
 
   width: "800px",
   height: "400px",
