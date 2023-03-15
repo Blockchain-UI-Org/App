@@ -2,6 +2,7 @@ import React from "react";
 import { ComponentMeta, Story } from "@storybook/react";
 import CandleStickChart, { ChartProps } from "./CandlerChart";
 import { CandleData } from "./CandleData";
+import moment from "moment";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -20,8 +21,6 @@ CandleStick.args = {
   width: "700px",
   height: "400px",
   series: CandleData,
-  upwardsColor: "blue500",
-  downwardsColor: "red500",
 };
 
 export const CandleStickWithHorizontalGrid = Template.bind({});
@@ -85,7 +84,6 @@ CandleStickWithHiddenBorders.args = {
   gridLine: "dashed",
   hideXAxisBorder: true,
   hideYAxisBorder: true,
-
   series: CandleData,
   upwardsColor: "blue500",
   downwardsColor: "red500",

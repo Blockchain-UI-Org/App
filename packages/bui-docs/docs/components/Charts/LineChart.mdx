@@ -1,0 +1,91 @@
+---
+description: Line Component
+---
+
+import { LineChart } from "blockchain-ui";
+import { DisplayExample, HorizontalSpacer } from "@site/src/components/DisplayExample";
+
+export const MonthlyData = [
+  { month: "Jan", totalIncome: 19, totalExpenses: 36 },
+  { month: "Feb", totalIncome: 19.5, totalExpenses: 55 },
+  { month: "Mar", totalIncome: 23, totalExpenses: 70 },
+  { month: "Apr", totalIncome: 39, totalExpenses: 60 },
+  { month: "May", totalIncome: 45, totalExpenses: 42 },
+  { month: "Jun", totalIncome: 60, totalExpenses: 41 },
+  { month: "Jul", totalIncome: 58, totalExpenses: 42 },
+  { month: "Aug", totalIncome: 60, totalExpenses: 39 },
+  { month: "Sep", totalIncome: 80, totalExpenses: 30 },
+  { month: "Oct", totalIncome: 90, totalExpenses: 19 },
+  { month: "Nov", totalIncome: 80, totalExpenses: 16 },
+  { month: "Dec", totalIncome: 50, totalExpenses: 16 },
+];
+
+
+## Basic Line Chart 
+
+<DisplayExample>
+  <LineChart
+    labels={MonthlyData.map((item) => item.month)}
+    series={[
+      { name: "Total Income", color: "primary500", data: MonthlyData.map((item) => item.totalIncome) },
+    ]}
+  />
+</DisplayExample>
+
+```jsx
+<LineChart
+    labels={["Jan", "Feb", ... /* Rest of months  */]}
+    series={[
+      { name: "Total Income", color: "primary500", data: [19, 19.5, 23, 39, ... /* More Data */] },
+    ]}
+  />
+```
+
+
+
+## Line Chart With Multiple Series
+
+<DisplayExample>
+  <LineChart
+    labels={MonthlyData.map((item) => item.month)}
+    series={[
+      { name: "Total Income", color: "primary500", data: MonthlyData.map((item) => item.totalIncome) },
+      { name: "Total Expenses", color: "warning500", data: MonthlyData.map((item) => item.totalExpenses) },
+    ]}
+  />
+</DisplayExample>
+
+```jsx
+<LineChart
+    labels={["Jan", "Feb", ... /* Rest of months  */]}
+    series={[
+      { name: "Total Income", color: "primary500", data: [19, 19.5, 23, 39, ... /* More Data */] },
+      { name: "Total Expenses", color: "warning500", data: [36, 55, 70, 60, ... /* More Data*/] },
+    ]}
+  />
+```
+
+## Disabled Line Chart 
+
+<DisplayExample>
+  <LineChart
+    labels={MonthlyData.map((item) => item.month)}
+    disabled
+    series={[
+      { name: "Total Income", color: "primary500", data: MonthlyData.map((item) => item.totalIncome) },
+      { name: "Total Expenses", color: "warning500", data: MonthlyData.map((item) => item.totalExpenses) },
+    ]}
+  />
+</DisplayExample>
+
+```jsx
+<LineChart
+    labels={["Jan", "Feb", ... /* Rest of months  */]}
+    disabled
+    series={[
+      { name: "Total Income", color: "primary500", data: [19, 19.5, 23, 39, ... /* More Data */] },
+      { name: "Total Expenses", color: "warning500", data: [36, 55, 70, 60, ... /* More Data*/] },
+    ]}
+  />
+```
+

@@ -1,6 +1,6 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react";
-import { SparkLine, SparkLineProps } from ".";
+import { SparkLine, SparkLineProps } from "./SparkLine";
 
 export default {
   component: SparkLine,
