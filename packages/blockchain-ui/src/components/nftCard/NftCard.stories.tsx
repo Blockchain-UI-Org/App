@@ -11,29 +11,29 @@ export default {
 } as Meta<NftCardProps>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof NftCard> = (args) => <NftCard  {...args}  src={`url("/assets/nft9.jpeg")`} />;
+const Template: ComponentStory<typeof NftCard> = (args) => <NftCard  {...args}  src={`/assets/nft9.jpeg`} />;
 
 const GroupTemplate: ComponentStory<typeof NftCard> = (args) => (
   <Container>
-    <NftCard {...args} src={`url("/assets/nft1.jpeg")`} />
+    <NftCard {...args} src={`/assets/nft1.jpeg`} />
     <br />
-    <NftCard {...args} src={`url("/assets/nft2.jpeg")`} />
+    <NftCard {...args} src={`/assets/nft2.jpeg`} />
     <br />
-    <NftCard {...args} src={`url("/assets/nft3.jpeg")`} />
+    <NftCard {...args} src={`/assets/nft3.jpeg`} />
     <br />
-    <NftCard {...args} src={`url("/assets/nft4.png")`} />
+    <NftCard {...args} src={`/assets/nft4.png`} />
     <br />
-    <NftCard {...args} src={`url("/assets/nft5.webp")`} />
+    <NftCard {...args} src={`/assets/nft5.webp`} />
     <br />
-    <NftCard {...args} src={`url("/assets/nft6.jpeg")`} />
+    <NftCard {...args} src={`/assets/nft6.jpeg`} />
     <br />
-    <NftCard {...args} src={`url("/assets/nft7.jpeg")`} />
+    <NftCard {...args} src={`/assets/nft7.jpeg`} />
     <br />
-    <NftCard {...args} src={`url("/assets/nft8.jpeg")`} />
+    <NftCard {...args} src={`/assets/nft8.jpeg`} />
     <br />
-    <NftCard {...args} src={`url("/assets/nft9.jpeg")`} />
+    <NftCard {...args} src={`/assets/nft9.jpeg`} />
     <br />
-    <NftCard {...args} src={`url("/assets/nft10.png")`} />
+    <NftCard {...args} src={`/assets/nft10.png`} />
   </Container>
 );
 

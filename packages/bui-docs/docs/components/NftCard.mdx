@@ -1,0 +1,48 @@
+---
+description: Nft Card Component
+---
+
+import { NftCard } from "blockchain-ui";
+import { DisplayExample, HorizontalSpacer } from "@site/src/components/DisplayExample";
+
+# NftCard
+
+Nft Card Component
+
+## Examples
+
+### Simple Nft Card
+
+This is a minimal Nft Card
+
+<DisplayExample>
+  <NftCard src='/img/nft-img.avif' title="Clone X 12420" price="4.120 ETH" />
+</DisplayExample>
+
+```jsx
+<NftCard src='/img/nft-img.avif' title="Clone X 12420" price="4.120 ETH" />
+```
+
+<DisplayExample>
+  <NftCard src='/img/nft-img.avif' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+</DisplayExample>
+
+```jsx
+<NftCard src='/img/nft-img.avif' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+```
+
+## Nft Group
+
+<DisplayExample row justifyContent="center">
+  <NftCard src='/img/nft2.png' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+  <NftCard src='/img/nft3.jpeg' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+  <NftCard src='/img/nft4.png' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+  <NftCard src='/img/nft7.png' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+</DisplayExample>
+
+```jsx
+<NftCard src='/img/nft2.png' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+<NftCard src='/img/nft8.png' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+<NftCard src='/img/nft4.png' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+<NftCard src='/img/nft7.png' title="Clone X 12420" price="4.120 ETH" lastPrice="4.180 ETH" />
+```
