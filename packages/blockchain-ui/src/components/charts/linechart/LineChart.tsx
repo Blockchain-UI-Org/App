@@ -112,7 +112,9 @@ const LineChart: FC<LineChartProps> = ({
       {
         xaxis: {
           categories: labels,
+
         },
+        
       } as ApexOptions
     );
   }, [disabled, theme.components.Chart, theme.palette.info.midtone, showHorizontalGridLine, showVerticalGridLine]);

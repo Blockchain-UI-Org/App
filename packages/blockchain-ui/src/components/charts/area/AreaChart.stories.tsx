@@ -1,9 +1,6 @@
 import { ComponentMeta, Story } from "@storybook/react";
 import AreaChart, { AreaChartProps } from "./AreaChart";
 import { MonthlyData } from "./AreaData";
-import { Flex } from "blockchain-ui/components/flex";
-import { Heading, Paragraph } from "blockchain-ui/components/typography";
-import { SmallSelect } from "blockchain-ui/components/select";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -26,9 +23,6 @@ BasicAreaChart.args = {
   height: "400px",
   labels,
   formatXAxis: (val, t, opts) => {
-    if (!val) {
-      return val;
-    }
     return (val as string).slice(0, 3);
   },
   formatYAxis: (val) => {
@@ -47,9 +41,6 @@ AreaChartWithHorizontalGrid.args = {
   height: "400px",
   labels,
   formatXAxis: (val, t, opts) => {
-    if (!val) {
-      return val;
-    }
     return (val as string).slice(0, 3);
   },
   formatYAxis: (val) => {
@@ -69,9 +60,6 @@ AreaChartWithDashedHorizontalGrid.args = {
   height: "400px",
   labels,
   formatXAxis: (val, t, opts) => {
-    if (!val) {
-      return val;
-    }
     return (val as string).slice(0, 3);
   },
   formatYAxis: (val) => {
@@ -91,9 +79,6 @@ AreaChartWithHiddenXAxis.args = {
   height: "400px",
   labels,
   formatXAxis: (val, t, opts) => {
-    if (!val) {
-      return val;
-    }
     return (val as string).slice(0, 3);
   },
   formatYAxis: (val) => {
@@ -112,9 +97,6 @@ AreaChartWithHiddenYAxis.args = {
   height: "400px",
   labels,
   formatXAxis: (val, t, opts) => {
-    if (!val) {
-      return val;
-    }
     return (val as string).slice(0, 3);
   },
   formatYAxis: (val) => {
@@ -133,9 +115,6 @@ AreaChartWithHiddenBorders.args = {
   height: "400px",
   labels,
   formatXAxis: (val, t, opts) => {
-    if (!val) {
-      return val;
-    }
     return (val as string).slice(0, 3);
   },
   formatYAxis: (val) => {
@@ -155,9 +134,6 @@ AreaChartWithWithNoStroke.args = {
   height: "400px",
   labels,
   formatXAxis: (val, t, opts) => {
-    if (!val) {
-      return val;
-    }
     return (val as string).slice(0, 3);
   },
   formatYAxis: (val) => {

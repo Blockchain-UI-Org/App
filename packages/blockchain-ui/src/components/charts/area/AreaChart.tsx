@@ -168,7 +168,7 @@ const AreaChart: FC<AreaChartProps> = ({
       ) : (
         chartOptions && (
           <>
-            <Suspense fallback={<div> Fallback </div>}>
+            <Suspense >
               <LoadableChart
                 type="area"
                 series={series.map((item) => {

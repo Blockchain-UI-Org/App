@@ -1,6 +1,5 @@
 import merge from "lodash/merge";
-import React, { FC } from "react";
-import ReactApexChart from "react-apexcharts";
+import { FC, Suspense } from "react";
 import styled, { css } from "styled-components";
 import { useTheme } from "blockchain-ui/theme";
 import { createBasicChartOptions, IChartLabelStyle } from "blockchain-ui/utils";
@@ -9,10 +8,10 @@ import LoadingSpinner from "blockchain-ui/components/loadingSpinner/loadingSpinn
 import { Flex } from "blockchain-ui/components/flex";
 import { IBuiColor } from "blockchain-ui/theme/colors";
 import type { ApexOptions } from "apexcharts";
-import moment from "moment";
 import { Heading, Paragraph } from "blockchain-ui/components/typography";
 import { SmallSelect } from "blockchain-ui/components/select";
 import { DisabledCandleChart } from "./DisabledCandleChart";
+import { LoadableChart } from "blockchain-ui/components/LoadableChart";
 
 export interface ChartProps {
   title?: string;
@@ -20,7 +19,7 @@ export interface ChartProps {
 
   filterOptions?: string[];
   onSelect?: (val: string) => void;
-  series: {x: Date, y: number[]}[];
+  series: { x: Date; y: number[] }[];
   width?: string;
   height?: string;
   loading?: boolean;
@@ -38,17 +37,14 @@ export interface ChartProps {
   formatXAxis?: (val: string | number, timestamp?: string, opts?: { i: number }) => string | number;
   formatYAxis?: (val: string | number) => string | number;
   disabled?: boolean;
-  
+
   labelCount?: number;
   labelFontStyle?: IChartLabelStyle;
-  
-
-
 }
 
 const CandleChart: FC<ChartProps> = ({
   width = "100%",
-  height = "100%",
+  height = "400px",
   series,
   title,
   subtitle,
@@ -58,20 +54,29 @@ const CandleChart: FC<ChartProps> = ({
   upwardsColor,
   downwardsColor,
 
-
   showHorizontalGridLine,
   showVerticalGridLine,
   gridLine,
   hideXAxis,
   disabled,
-  formatXAxis,
+  formatXAxis = (val) => {
+    const dateObj = new Date(val);
+    if ("Invalid Date" === dateObj.toString()) {
+      return val;
+    }
+    return (
+      dateObj.toLocaleString("en-US", { dateStyle: "short" }) +
+      " " +
+      dateObj.toLocaleString("en-US", { timeStyle: "short" })
+    );
+  },
   formatYAxis,
   gridColor,
   hideXAxisBorder,
   hideYAxis,
   hideYAxisBorder,
   labelCount,
-  labelFontStyle
+  labelFontStyle,
 }) => {
   const theme = useTheme();
 
@@ -92,17 +97,9 @@ const CandleChart: FC<ChartProps> = ({
       hideYAxis,
       hideYAxisBorder,
       labelCount,
-      labelFontStyle
+      labelFontStyle,
     }),
     {
-      xaxis: {
-        type: "category",
-        labels: {
-          formatter: function (val) {
-            return moment(val).format("MMM DD HH:mm");
-          },
-        },
-      },
       yaxis: {
         tooltip: {
           enabled: true,
@@ -122,20 +119,28 @@ const CandleChart: FC<ChartProps> = ({
 
   return (
     <Container width={width} height={height}>
-       {(title || subtitle) && (
+      {(title || subtitle) && (
         <Flex
           style={{ paddingRight: 20 }}
           row
           justifyContent={!(title || subtitle) && filterOptions ? "flex-end" : "space-between"}
         >
-          <Flex >
+          <Flex>
             <Flex direction="column" style={{ paddingLeft: 20 }}>
-              {title && <Heading data-testid="title" as="h6">{title}</Heading>}
-              {subtitle && <Paragraph data-testid="subtitle" variant="body2">{subtitle}</Paragraph>}
+              {title && (
+                <Heading data-testid="title" as="h6">
+                  {title}
+                </Heading>
+              )}
+              {subtitle && (
+                <Paragraph data-testid="subtitle" variant="body2">
+                  {subtitle}
+                </Paragraph>
+              )}
             </Flex>
           </Flex>
           {filterOptions && filterOptions.length > 0 && (
-            <Flex >
+            <Flex>
               <Flex direction="column" style={{ paddingLeft: 20 }}>
                 <SmallSelect data-testid="filter" onChange={onSelect} options={filterOptions} />
               </Flex>
@@ -149,8 +154,18 @@ const CandleChart: FC<ChartProps> = ({
             <LoadingSpinner data-testid="loader" color="primary500" />
           </Flex>
         </>
-      ) : disabled ? <DisabledCandleChart data-testid="disabled" /> :(
-        <ReactApexChart type="candlestick" series={[{data: series, name: "candle"}]} options={chartOptions} height={height} width={width} />
+      ) : disabled ? (
+        <DisabledCandleChart width={width} height={height} data-testid="disabled" />
+      ) : (
+        <Suspense >
+          <LoadableChart
+            type="candlestick"
+            series={[{ data: series, name: "candle" }]}
+            options={chartOptions}
+            height={height}
+            width={width}
+          />
+        </Suspense>
       )}
     </Container>
   );
