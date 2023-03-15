@@ -9,29 +9,47 @@ import { GraphIcon, LineChartIcon } from "blockchain-ui/components/static/images
 import { Flex } from "blockchain-ui/components/flex";
 import LoadingSpinner from "blockchain-ui/components/loadingSpinner/loadingSpinner";
 import { LoadableChart } from "blockchain-ui/components/LoadableChart";
+import { Heading, Paragraph } from "blockchain-ui/components/typography";
+import { SmallSelect } from "blockchain-ui/components/select";
+import styled, { css } from "styled-components";
 
 export interface LineChartProps {
-
+  // Y Axis Data
   series: { color: keyof IBuiColor; name: string; data: number[] }[];
+  // X Axis
   labels: string[];
+  //
   showVerticalGridLine?: boolean;
   showHorizontalGridLine?: boolean;
+
   gridLine?: "solid" | "dashed";
+  // Grid Lines
   gridColor?: string;
+  //
   hideYAxis?: boolean;
+  //
   hideXAxis?: boolean;
-  marker?: { size?: number; borderWidth?: number };
+  marker?: { size?: number; borderWidth?: number; color: string };
   hideXAxisBorder?: boolean;
   hideYAxisBorder?: boolean;
+
   labelCount?: number;
+
   labelFontStyle?: IChartLabelStyle;
+
   formatTooltip?: (val: string | number) => string | number;
   formatXAxis?: (val: string | number, timestamp?: string, opts?: { i: number }) => string | number;
   formatYAxis?: (val: string | number) => string | number;
+  // Loading
   loading?: boolean;
+
   disabled?: boolean;
-  header?: React.ReactElement;
-  headerRight?: React.ReactElement;
+  title?: string;
+  subtitle?: string;
+
+  filterOptions?: string[];
+  onSelect?: (val: string) => void;
+
   width?: string;
   height?: string;
 }
@@ -44,8 +62,10 @@ const LineChart: FC<LineChartProps> = ({
   showHorizontalGridLine = false,
   showVerticalGridLine = false,
   gridLine = "solid",
-  header,
-  headerRight,
+  title,
+  subtitle,
+  onSelect,
+  filterOptions,
   gridColor = "#919EAB3D",
   hideXAxis = false,
   hideYAxis = false,
@@ -59,7 +79,6 @@ const LineChart: FC<LineChartProps> = ({
   formatYAxis,
   loading = false,
   disabled = false,
-
   width = "100%",
   height = "400px",
 }) => {
@@ -75,12 +94,12 @@ const LineChart: FC<LineChartProps> = ({
         hideXAxisBorder,
         hideYAxisBorder,
 
+        
         labelFontStyle: { color },
         formatTooltip,
         labelCount,
         formatXAxis,
         formatYAxis,
-
         marker: { size, borderWidth },
         fontFamily: theme.typography.common.fontFamily,
         gridColor,
@@ -93,22 +112,42 @@ const LineChart: FC<LineChartProps> = ({
       {
         xaxis: {
           categories: labels,
+
         },
+        
       } as ApexOptions
     );
   }, [disabled, theme.components.Chart, theme.palette.info.midtone, showHorizontalGridLine, showVerticalGridLine]);
 
   return (
-    <Flex style={{ height, width: width }}>
-      {(header || headerRight) && (
-        <Flex style={{ paddingRight: 20 }} row justifyContent={!header && headerRight ? "flex-end" : "space-between"}>
-          {header && <Flex data-testid="header">{header}</Flex>}
-          {headerRight && <Flex data-testid="headerright">{headerRight}</Flex>}
+    <Container width={width} height={height}>
+      {(title || subtitle) && (
+        <Flex
+          style={{ paddingRight: 20 }}
+          row
+          justifyContent={!(title || subtitle) && filterOptions ? "flex-end" : "space-between"}
+        >
+          <Flex data-testid="header">
+            <Flex direction="column" style={{ paddingLeft: 20 }}>
+              {title && <Heading as="h6">{title}</Heading>}
+              {subtitle && <Paragraph variant="body2">{subtitle}</Paragraph>}
+            </Flex>
+          </Flex>
+          {filterOptions && filterOptions.length > 0 && (
+            <Flex data-testid="headerright">
+              <Flex direction="column" style={{ paddingLeft: 20 }}>
+                <SmallSelect onChange={onSelect} options={filterOptions} />
+              </Flex>
+            </Flex>
+          )}
         </Flex>
       )}
       {loading ? (
         <>
-          <Flex data-testid="loader" style={{ width, height, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <Flex
+            data-testid="loader"
+            style={{ width, height, display: "flex", alignItems: "center", justifyContent: "center" }}
+          >
             <LoadingSpinner color="primary500" />
           </Flex>
         </>
@@ -134,12 +173,15 @@ const LineChart: FC<LineChartProps> = ({
           </Suspense>
         )
       )}
-    </Flex>
+    </Container>
   );
 };
 
+
 export default LineChart;
 
-
-
-
+const Container = styled.div`
+  ${({ width, height }: { width: number | string; height: number | string }) => {
+    return css({ width, height });
+  }}
+`;
