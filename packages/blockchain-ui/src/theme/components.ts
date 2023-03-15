@@ -283,6 +283,7 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
     ProgressBar: {
       variants: colorVariants,
     },
+    // Remove Variants and Use Color Pallete
     Chart: {
       variants: colorVariants,
       common: {

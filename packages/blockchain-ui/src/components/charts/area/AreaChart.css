@@ -1,0 +1,17 @@
+.apexcharts-tooltip.apexcharts-theme-light {
+    background-color: #fff !important;
+    border-width: 0 !important;
+    border-radius: 8px !important;
+}
+
+.apexcharts-xaxistooltip.apexcharts-xaxistooltip-bottom.apexcharts-theme-light {
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    border-width: 0 !important;
+    box-shadow: 2px 2px 6px -4px #999 !important;
+}
+
+.apexcharts-xaxistooltip.apexcharts-xaxistooltip-bottom.apexcharts-theme-light::after,
+.apexcharts-xaxistooltip.apexcharts-xaxistooltip-bottom.apexcharts-theme-light::before {
+    border-bottom-color: #fff !important;
+}

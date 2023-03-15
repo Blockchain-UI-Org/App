@@ -60,7 +60,7 @@ const HighlightCard: FC<HighlightCardProps> = ({
       </Details>
 
       <SparkLine
-        color={color === "default" ? "blue" : color}
+        color={"blue500"}
         chartType={chartType}
         chartData={chartData}
         width="50%"
