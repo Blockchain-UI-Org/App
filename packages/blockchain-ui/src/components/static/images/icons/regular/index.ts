@@ -18,6 +18,10 @@ import { ArrowDown } from "./ArrowDown";
 import { InfoIcon } from "./InfoIcon";
 import { SuccessIcon } from "./SuccessIcon";
 import { WarningIcon } from "./WarningIcon";
+import { GraphIcon } from "./GraphIcon";
+import { ChevronDown } from "./ChevronDown";
+import { LineChartIcon } from "./LineChartIcon";
+
 export {
   Warning,
   InfoIcon,
@@ -29,8 +33,11 @@ export {
   ArrowDown,
   Deposit,
   Withdraw,
+  ChevronDown,
   Transfer,
   Swap,
+  LineChartIcon,
+  // TODO 
   // buy
   // sell
 
@@ -41,6 +48,7 @@ export {
 
   TrendingUp,
   TrendingDown,
+  GraphIcon,
 
   Clock,
 

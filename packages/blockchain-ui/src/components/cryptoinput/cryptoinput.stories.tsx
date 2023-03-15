@@ -3,6 +3,7 @@ import { useState } from "react";
 import { CryptoInput, ICryptoInputProps } from "./cryptoinput";
 
 export default {
+  
   component: CryptoInput,
 
   title: "Input/ Crypto Input",

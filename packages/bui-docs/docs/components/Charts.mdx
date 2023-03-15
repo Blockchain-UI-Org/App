@@ -1,0 +1,232 @@
+---
+description: Chart Component
+---
+
+import { AreaChart, LineChart, SparkLine } from "blockchain-ui";
+import { DisplayExample, HorizontalSpacer } from "@site/src/components/DisplayExample";
+
+export const MonthlyData = [
+  { month: "January", totalIncome: 19, totalExpenses: 36 },
+  { month: "February", totalIncome: 19.5, totalExpenses: 55 },
+  { month: "March", totalIncome: 23, totalExpenses: 70 },
+  { month: "April", totalIncome: 39, totalExpenses: 60 },
+  { month: "May", totalIncome: 45, totalExpenses: 42 },
+  { month: "June", totalIncome: 60, totalExpenses: 41 },
+  { month: "July", totalIncome: 58, totalExpenses: 42 },
+  { month: "August", totalIncome: 60, totalExpenses: 39 },
+  { month: "September", totalIncome: 80, totalExpenses: 30 },
+  { month: "October", totalIncome: 90, totalExpenses: 19 },
+  { month: "November", totalIncome: 80, totalExpenses: 16 },
+  { month: "December", totalIncome: 50, totalExpenses: 16 },
+];
+
+# Charts
+
+Charts Allow to display and view data for analysis
+
+## Basic Area Chart
+
+<DisplayExample>
+  <AreaChart
+    labels={MonthlyData.map((item) => item.month)}
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    series={[
+      { name: "Total Income", color: "primary500", data: MonthlyData.map((item) => item.totalIncome) },
+    ]}
+  />
+</DisplayExample>
+
+```jsx
+<AreaChart
+    labels={["January", "February", ... /* Rest of months  */]}
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    series={[
+      { name: "Total Income", color: "primary500", data: [19, 19.5, 23, 39, ... /* More Data */] },
+    ]}
+  />
+```
+
+## Area Chart With Multiple Series
+
+<DisplayExample>
+  <AreaChart
+    labels={MonthlyData.map((item) => item.month)}
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    series={[
+      { name: "Total Income", color: "primary500", data: MonthlyData.map((item) => item.totalIncome) },
+      { name: "Total Expenses", color: "warning500", data: MonthlyData.map((item) => item.totalExpenses) },
+    ]}
+  />
+</DisplayExample>
+
+```jsx
+<AreaChart
+    labels={["January", "February", ... /* Rest of months  */]}
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    series={[
+      { name: "Total Income", color: "primary500", data: [19, 19.5, 23, 39, ... /* More Data */] },
+      { name: "Total Expenses", color: "warning500", data: [36, 55, 70, 60, ... /* More Data*/] },
+    ]}
+  />
+```
+
+## Area Chart With No Stroke
+
+<DisplayExample>
+  <AreaChart
+    labels={MonthlyData.map((item) => item.month)}
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    hideCurveStroke
+    series={[
+      { name: "Total Income", color: "primary500", data: MonthlyData.map((item) => item.totalIncome) },
+      { name: "Total Expenses", color: "warning500", data: MonthlyData.map((item) => item.totalExpenses) },
+    ]}
+  />
+</DisplayExample>
+
+```jsx
+<AreaChart
+    labels={["January", "February", ... /* Rest of months  */]}
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    hideCurveStroke
+    series={[
+      { name: "Total Income", color: "primary500", data: [19, 19.5, 23, 39, ... /* More Data */] },
+      { name: "Total Expenses", color: "warning500", data: [36, 55, 70, 60, ... /* More Data*/] },
+    ]}
+  />
+```
+
+## Disabled Area Chart 
+
+<DisplayExample>
+  <AreaChart
+    labels={MonthlyData.map((item) => item.month)}
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    disabled
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    series={[
+      { name: "Total Income", color: "primary500", data: MonthlyData.map((item) => item.totalIncome) },
+      { name: "Total Expenses", color: "warning500", data: MonthlyData.map((item) => item.totalExpenses) },
+    ]}
+  />
+</DisplayExample>
+
+```jsx
+<AreaChart
+    labels={["January", "February", ... /* Rest of months  */]}
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    disabled
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    series={[
+      { name: "Total Income", color: "primary500", data: [19, 19.5, 23, 39, ... /* More Data */] },
+      { name: "Total Expenses", color: "warning500", data: [36, 55, 70, 60, ... /* More Data*/] },
+    ]}
+  />
+```
+
+
+## Basic Line Chart 
+
+<DisplayExample>
+  <LineChart
+    labels={MonthlyData.map((item) => item.month)}
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    series={[
+      { name: "Total Income", color: "primary500", data: MonthlyData.map((item) => item.totalIncome) },
+    ]}
+  />
+</DisplayExample>
+
+```jsx
+<LineChart
+    labels={["January", "February", ... /* Rest of months  */]}
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    series={[
+      { name: "Total Income", color: "primary500", data: [19, 19.5, 23, 39, ... /* More Data */] },
+    ]}
+  />
+```
+
+
+## Line Chart With Multiple Series
+
+<DisplayExample>
+  <LineChart
+    labels={MonthlyData.map((item) => item.month)}
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    series={[
+      { name: "Total Income", color: "primary500", data: MonthlyData.map((item) => item.totalIncome) },
+      { name: "Total Expenses", color: "warning500", data: MonthlyData.map((item) => item.totalExpenses) },
+    ]}
+  />
+</DisplayExample>
+
+```jsx
+<LineChart
+    labels={["January", "February", ... /* Rest of months  */]}
+    formatXAxis={(val, t, opts) => {
+      return val.slice(0, 3);
+    }}
+    formatYAxis={(val) => {
+      return val.toFixed(0);
+    }}
+    series={[
+      { name: "Total Income", color: "primary500", data: [19, 19.5, 23, 39, ... /* More Data */] },
+      { name: "Total Expenses", color: "warning500", data: [36, 55, 70, 60, ... /* More Data*/] },
+    ]}
+  />
+```
+
