@@ -23,7 +23,13 @@ export type IColorPalette = {
     secondary: string;
     disabled: string;
   };
+  border: {
+    primary: string;
+    secondary: string;
+    disabled: string;
+  }
   background: {
+    default: string;
     main: string;
     paper: string;
     neutral: string;
@@ -64,7 +70,13 @@ const DefaultPalette: IColorPalette = {
     secondary: colors.grey600,
     disabled: colors.grey500,
   },
+  border: {
+    primary: colors.grey800,
+    secondary: colors.grey600,
+    disabled: colors.grey500,
+  },
   background: {
+    default: colors.grey100,
     main: colors.grey500,
     paper: colors.white,
     neutral: colors.grey200,

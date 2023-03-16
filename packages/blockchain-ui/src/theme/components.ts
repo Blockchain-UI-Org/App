@@ -114,8 +114,7 @@ export type IComponentTheme = {
     };
     box: {
       common: {
-        color: string;
-        border: string;
+        outlined: string;
       };
       focusVisible: {
         borderColor: string;
@@ -245,19 +244,18 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
             const main = pallette.getColor("main")(color);
             return {
               bg: pallette.getColor("transparent")(color),
-              foreground: color === "default" ? pallette.getColor("contrastText")(color): main,
+              foreground: color === "default" ? pallette.getColor("contrastText")(color) : main,
               border: `1px solid ${main}`,
             };
           },
         },
         soft: {
-          
           styles: ({ color }) => {
             const foreground = pallette.getColor("dark")(color);
             const bgColor = pallette.getColor("main")(color);
             return {
               bg: alpha(bgColor, 0.16),
-              foreground: color === "default" ? pallette.getColor("contrastText")(color):  foreground,
+              foreground: color === "default" ? pallette.getColor("contrastText")(color) : foreground,
             };
           },
         },
@@ -272,8 +270,7 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
       },
       box: {
         common: {
-          border: `1px solid ${colors.grey300}`,
-          color: colors.grey500,
+          outlined: alpha(colors.grey500, 0.16),
         },
         focusVisible: {
           borderColor: colors.blue500,
