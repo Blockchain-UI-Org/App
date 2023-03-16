@@ -82,7 +82,7 @@ const config = {
             label: "Docs",
           },
           {
-            href: "https://63a670b1ce0472f1c60a3f59-kryzqpsvlc.chromatic.com/",
+            href: "https://www.chromatic.com/library?appId=63a670b1ce0472f1c60a3f59",
             position: "right",
             label: "Library",
             className: "external-link",
