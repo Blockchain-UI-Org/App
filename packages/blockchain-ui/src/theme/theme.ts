@@ -6,6 +6,7 @@ import { createComponents, IComponentTheme } from "./components";
 import { createMedia, IMediaTheme } from "./media";
 import { TColorSchemes } from "blockchain-ui/typeutils/theme";
 import { colors } from "./colors";
+import { alpha } from "blockchain-ui/utils";
 
 export interface ThemeInterface {
   palette: IColorPalette;
@@ -47,7 +48,7 @@ const DarkTheme = createTheme({
     Input: {
       box: {
         common: {
-          outlined: colors.grey500Opacity32,
+          outlined: alpha(colors.grey500, 0.32),
         }
       }
     }
@@ -67,7 +68,7 @@ const DarkTheme = createTheme({
       default: colors.grey900,
       main: colors.grey800,
       paper: colors.grey800,
-      neutral: colors.grey500Opacity16,
+      neutral: alpha(colors.grey500, 0.16),
     },
   },
 });

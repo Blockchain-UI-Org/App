@@ -28,9 +28,6 @@ const colors = {
   grey800: "#212B36",
   grey900: "#161C24",
 
-  grey500Opacity16: "#919EAB29",
-  grey500Opacity32: "#919EAB52",
-
   yellow100: "#FFF6DC",
   yellow500: "#FAD972",
   yellow800: "#FFC007",

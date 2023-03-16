@@ -270,7 +270,7 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
       },
       box: {
         common: {
-          outlined: colors.grey500Opacity16,
+          outlined: alpha(colors.grey500, 0.16),
         },
         focusVisible: {
           borderColor: colors.blue500,
