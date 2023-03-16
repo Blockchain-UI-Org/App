@@ -1,5 +1,10 @@
-import { CryptoIcon } from "blockchain-ui/components/icon/icon";
-import { Table, TableContainer, Tbody, Td, Th, THead, Tr } from "./Table";
+import { ComponentStory } from "@storybook/react";
+import { productTableData } from "blockchain-ui/_mock/table";
+import styled from "styled-components";
+import { Paragraph } from "../typography";
+import { Tag } from "../tag/tag";
+import { Table } from "./Table";
+import { DotsVerticalIcon } from "../static/images/icons/regular/DotsVerticalIcon";
 
 export default {
   title: "Table/Table",
@@ -12,79 +17,154 @@ export default {
   },
 };
 
-export const TableLight = () => (
-  <TableContainer maxWidth={600}>
-    <Table>
-      <THead>
-        <Tr>
-          <Th>Token</Th>
-          <Th>Value Per Token</Th>
-          <Th>24 Hr Change</Th>
-        </Tr>
-      </THead>
-      <Tbody>
-        <Tr>
-          <Td>
-            <CryptoIcon cryptoSymbol="DAI" />
-            Dai
-          </Td>
-          <Td>$1.01</Td>
-          <Td>1.44%</Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <CryptoIcon cryptoSymbol="CDOT" /> cDOT
-          </Td>
-          <Td>$1.07</Td>
-          <Td>-11.71%</Td>
-        </Tr>
-        <Tr>
-          <Td>
-            <CryptoIcon cryptoSymbol="CKSM" /> cKSM
-          </Td>
-          <Td>$0.03</Td>
-          <Td>-6.05%</Td>
-        </Tr>
-      </Tbody>
-    </Table>
-  </TableContainer>
-);
+const Template: ComponentStory<typeof Table> = (args) => <Table {...args} />;
 
+const genericDataConfig = {
+  columns: [
+    {
+      name: "product",
+      title: "Product",
+      options: {
+        searchable: true,
+        customBodyRender: (value: any, row: any) => (
+          <ProductNameSection>
+            <img src="/assets/nft7.jpeg" alt="nftImage" />
+            <Paragraph variant="body2">{row?.product}</Paragraph>
+          </ProductNameSection>
+        ),
+      },
+    },
+    {
+      name: "createdAt",
+      title: "Create at",
+    },
+    {
+      name: "price",
+      title: "Price",
+    },
+    {
+      name: "status",
+      title: "Status",
+      options: {
+        searchable: true,
+        customBodyRender: (value: any, row: any) => (
+          <Tag variant="filled" color={statusMapper[value] as any}>
+            {value}
+          </Tag>
+        ),
+      },
+    },
+    {
+      name: "",
+      title: "",
+      options: {
+        customBodyRender: (value: any, row: any) => <DotsVerticalIcon />,
+      },
+    },
+  ],
+  data: productTableData,
+};
 
-export const TableDark = () => (
-    <TableContainer maxWidth={600}>
-      <Table variant="dark">
-        <THead>
-          <Tr>
-            <Th>Token</Th>
-            <Th>Value Per Token</Th>
-            <Th>24 Hr Change</Th>
-          </Tr>
-        </THead>
-        <Tbody>
-          <Tr>
-            <Td>
-              <CryptoIcon cryptoSymbol="DAI" />
-              Dai
-            </Td>
-            <Td>$1.01</Td>
-            <Td>1.44%</Td>
-          </Tr>
-          <Tr>
-            <Td>
-              <CryptoIcon cryptoSymbol="CDOT" /> cDOT
-            </Td>
-            <Td>$1.07</Td>
-            <Td>-11.71%</Td>
-          </Tr>
-          <Tr>
-            <Td>
-              <CryptoIcon cryptoSymbol="CKSM" /> cKSM
-            </Td>
-            <Td>$0.03</Td>
-            <Td>-6.05%</Td>
-          </Tr>
-        </Tbody>
-      </Table>
-    </TableContainer>
-  );
+export const DefaultTable = Template.bind({});
+
+DefaultTable.args = {
+  options: {
+    search: true,
+  },
+  columns: [
+    {
+      name: "token",
+      title: "Token",
+    },
+    {
+      name: "valuePerToken",
+      title: "Value Per Token",
+    },
+    {
+      name: "column1",
+      title: "Column 1",
+    },
+    {
+      name: "column2",
+      title: "Column 2",
+    },
+  ],
+  data: [
+    {
+      token: "Dai",
+      valuePerToken: "$1.01",
+      column1: 24,
+      column2: 24,
+    },
+    {
+      token: "Dai",
+      valuePerToken: "$1.01",
+      column1: "$1.01",
+      column2: 24,
+    },
+    {
+      token: "Dai",
+      valuePerToken: "$1.01",
+      column1: "$1.01",
+      column2: 24,
+    },
+    {
+      token: "Dai",
+      valuePerToken: "$1.01",
+      column1: "$1.01",
+      column2: 24,
+    },
+    {
+      token: "Dai",
+      valuePerToken: "$1.01",
+      column1: "$1.01",
+      column2: 24,
+    },
+  ],
+};
+
+export const TableWithCustomRender = Template.bind({});
+
+const ProductNameSection = styled.div`
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  & img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+`;
+
+const statusMapper: Record<string, string> = {
+  inStock: "success",
+  lowStock: "warning",
+  outOfStock: "error",
+};
+
+TableWithCustomRender.args = genericDataConfig;
+
+// Story for table without row per page..
+export const TableWithoutRowPerPage = Template.bind({});
+TableWithoutRowPerPage.args = {
+  ...genericDataConfig,
+  options: {
+    pagination: {
+      rowsPerPage: {
+        enable: false,
+      },
+    },
+  },
+};
+
+// Story for table without pagination
+export const TableWithoutRowPerPagination = Template.bind({});
+TableWithoutRowPerPagination.args = {
+  ...genericDataConfig,
+  options: {
+    pagination: {
+      enable: false,
+    },
+  },
+};

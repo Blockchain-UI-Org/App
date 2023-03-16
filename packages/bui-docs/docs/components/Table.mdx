@@ -1,0 +1,114 @@
+---
+description: Table Component
+---
+
+import { Notification, Table } from "blockchain-ui";
+import { DisplayExample, Spacer } from "@site/src/components/DisplayExample";
+
+# Table
+
+It is a responsive table component built on the top of styled-components. It comes with the feature of searching, customizing columns,
+defining custom renders and paginations.
+
+## Examples
+
+There are multiple configurations to apply on table. It takes columns and data as a primary arguments.
+
+### Simple Table
+
+This is a minimal table example with sample data.
+
+<DisplayExample>
+  <Table
+    columns={[
+      {
+        name: "product",
+        title: "Product",
+      },
+      {
+        name: "description",
+        title: "Description",
+      },
+      {
+        name: "attribute",
+        title: "Attribute",
+      },
+      {
+        name: "amount",
+        title: "Amount",
+      },
+      {
+        name: "capability",
+        title: "Capability",
+      },
+    ]}
+    data={[
+      {
+        product: "Product 1",
+        description: "This is a product 1 description with large text content",
+        attribute: "Product Attributes to display",
+        amount: "100",
+        capability: "Global",
+      },
+      {
+        product: "Product 2",
+        description: "This is a product 2 description with large text content",
+        attribute: "Product Attributes to display",
+        amount: "100",
+        capability: "Global",
+      },
+      {
+        product: "Product 3",
+        description: "This is a product 3 description with large text content",
+        attribute: "Product Attributes to display",
+        amount: "100",
+        capability: "Global",
+      },
+    ]}
+  />
+</DisplayExample>
+
+```jsx
+<Table columns={COLUMNS} data={DATA} options={OPTIONS} />
+<Table columns={COLUMNS} data={DATA} options={{
+  search: true,
+  pagination: {
+    enable: true,
+    rowsPerPage: {
+        enable: true,
+        values: [5, 10, 15, 20, 30, 50],
+        defaultValue: 5,
+    },
+  },
+}} />
+```
+
+### Table without pagination
+
+```jsx
+<Table
+  columns={COLUMNS}
+  data={DATA}
+  options={{
+    search: true,
+    pagination: {
+      enable: false,
+    },
+  }}
+/>
+```
+
+### Table without search
+
+```jsx
+<Table
+  columns={COLUMNS}
+  data={DATA}
+  options={{
+    search: false,
+    pagination: {
+      enable: true,
+    },
+  }}
+/>
+```
