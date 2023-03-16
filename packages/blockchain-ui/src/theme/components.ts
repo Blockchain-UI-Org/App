@@ -9,6 +9,7 @@ import { IButtonColors, IButtonVariants } from "../components/button";
 import { alpha } from "blockchain-ui/utils";
 import { createShadow, createShadowString } from "./shadow";
 import { ITagColors, ITagVariants } from "blockchain-ui/components/tag/tag";
+import { CreateThemeArgs, ThemeInterface } from "./theme";
 
 const regular = {
   small: "16px",
@@ -322,7 +323,7 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
   return compTheme;
 };
 
-export const createComponents = (palette?: IColorPalette, args: Subset<IComponentTheme> = {}) => {
+export const createComponents = (palette?: IColorPalette, args: Subset<CreateThemeArgs["components"]> = {}) => {
   const newTheme = buildComponentTheme(palette);
-  return merge(newTheme, args);
+  return merge(newTheme, typeof args === "function" ? args(palette) : args);
 };

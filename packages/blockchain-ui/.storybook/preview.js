@@ -41,7 +41,7 @@ export const decorators = [
      * Configuring mode for components story.
      */
     return (
-      <ThemeProvider theme={isDark ? "dark" : "light"}>
+      <ThemeProvider theme={true ? "dark" : "light"}>
         <div
           style={{
             fontFamily: '"Public Sans", "Roboto", "Helvetica", "Arial", sans-serif',

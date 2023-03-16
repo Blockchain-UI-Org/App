@@ -16,13 +16,21 @@ export interface ThemeInterface {
   shadows: IShadowTheme;
 }
 
+export interface CreateThemeArgs {
+  palette: IColorPalette;
+  media: IMediaTheme;
+  components: IComponentTheme | ((pallette: IColorPalette) => IComponentTheme);
+  typography: ITypographyTheme;
+  shadows: IShadowTheme;
+}
+
 export const createTheme = ({
   palette = {},
   components = {},
   media = {},
   shadows = {},
   typography = {},
-}: Subset<ThemeInterface> = {}): ThemeInterface => {
+}: Subset<CreateThemeArgs> = {}): ThemeInterface => {
   const mergedPallette = createColorPalette(palette);
 
   const mergedTypography = createTypography(typography);
@@ -71,7 +79,33 @@ const DarkTheme = createTheme({
       neutral: alpha(colors.grey500, 0.16),
     },
   },
-});
+  components: (pallette) => ({
+    BuiAlert: {
+      variants: {
+        standard: {
+          styles: ({ status }) => {
+            return {
+              border: undefined,
+              bg: pallette.getColor("darker")(status),
+              foreground: pallette.getColor("lighter")(status),
+              iconbg: pallette.getColor("light")(status),
+            };
+          },
+        },
+        outlined: {
+          styles: ({ status }) => {
+            return {
+              border: "1px solid " + pallette.getColor("main")(status),
+              bg: pallette.getColor("transparent")(status),
+              foreground: pallette.getColor("main")(status),
+              iconbg: pallette.getColor("main")(status),
+            };
+          },
+        },
+      },
+    },
+  }),
+} as CreateThemeArgs);
 
 /**
  * All the themes are exposing here..

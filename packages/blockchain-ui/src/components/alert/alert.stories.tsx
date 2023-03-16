@@ -4,12 +4,6 @@ import { Alert, AlertProps } from "./alert";
 export default {
   component: Alert,
   title: "General/Alert",
-  parameters: {
-    backgrounds: {
-      default: "white",
-      values: [{ name: "white", value: "#fff" }],
-    },
-  },
 } as Meta;
 
 const Template: Story<AlertProps> = (args) => <Alert {...args} />;
