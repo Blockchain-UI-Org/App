@@ -8,7 +8,7 @@ import CardContent from "@mui/material/CardContent";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import { useTheme } from "@mui/material/styles";
-import { useMediaQuery } from "@mui/material";
+
 import { showcase } from "./showcase";
 import { CarouselDots } from "../../carousel";
 import { MotionContainer, varFade } from "../../animate";
@@ -19,7 +19,7 @@ export default function ComponentsSection({ ...other }) {
 
   const carouselRef = useRef<Slider>(null);
   const [currentIndex, setCurrentIndex] = useState(showcase.length - 1);
-  const media = useMediaQuery("(max-width: 600px)");
+
   const settings = {
     adaptiveHeight: true,
     centerMode: true,
@@ -50,31 +50,18 @@ export default function ComponentsSection({ ...other }) {
       zIndex: 1,
     }),
   };
-  console.log(media, "media");
+
   return (
     <Library>
       <div className="titleHeader">Explore Our Library</div>
 
-      {media ? (
-        <div style={{ maxWidth: "80%",margin: "0 auto", display: "flex", flexDirection: "column", alignItems: "center"}}>
-          {showcase.map((item) => {
-            const { image, title, description } = item;
-            return (
-              <div style={{marginTop: 50, width: "100%", }}>
-                <ImageV2 alt={title} src={image} style={{ width: "100%", objectFit: "contain",borderRadius: 10, overflow: "hidden",  }} />
-              </div>
-            );
-          })}
-        </div>
-      ) : (
-        <Card {...other} style={{ backgroundColor: "black", marginTop: "50px" }}>
-          <Slider ref={carouselRef} {...settings}>
-            {showcase.map((app, index) => (
-              <CarouselItem key={app.id} item={app} isActive={index === currentIndex} />
-            ))}
-          </Slider>
-        </Card>
-      )}
+      <Card {...other} style={{ backgroundColor: "black", marginTop: "50px" }}>
+        <Slider ref={carouselRef} {...settings}>
+          {showcase.map((app, index) => (
+            <CarouselItem key={app.id} item={app} isActive={index === currentIndex} />
+          ))}
+        </Slider>
+      </Card>
     </Library>
   );
 }
