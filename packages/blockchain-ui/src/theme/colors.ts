@@ -86,3 +86,7 @@ const colors = {
   error700: "#B71D18",
   error900: "#7A0916",
 };
+
+type IBuiColor = typeof colors;
+
+export { colors, type IBuiColor };
