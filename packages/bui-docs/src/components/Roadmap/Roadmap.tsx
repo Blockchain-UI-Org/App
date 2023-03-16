@@ -67,6 +67,23 @@ const Wrapper = styled.div<{ progress: number; count: number }>`
     height: 4px;
     background-color: #fff;
   }
+
+  @media screen and (max-width: 400px) {
+    margin-top: 100px;
+    height: calc(140px * ${({ count }) => count});
+    &::before {
+      width: 4px;
+      top: 0;
+      left: 50%;
+      transform: translateY(0) translateX(-50%);
+      height: calc(140px * ${({ progress }) => progress});
+    }
+
+    &::after {
+      width: 4px;
+      height: calc(140px * ${({ count }) => count});
+    }
+  }
 `;
 
 const Circle = styled.div<{ title: string; count: number; index: number }>`
@@ -95,6 +112,21 @@ const Circle = styled.div<{ title: string; count: number; index: number }>`
     width: 10px;
     height: 10px;
   }
+
+  @media screen and (max-width: 400px) {
+    top: 0;
+    left: 50%;
+    ${(props) => {
+      const data: CSSProperties = {};
+      if (props.index === 0) {
+        data.top = `0%`;
+      } else {
+        data.top = `${ (props.index * 100) / (props.count - 1)}%`;
+      }
+
+      return css(data as any);
+    }}
+  }
 `;
 
 const Card = styled.div`
@@ -104,7 +136,7 @@ const Card = styled.div`
   border-radius: 40px;
   display: flex;
   align-items: center;
-  align-text: center;
+  /* align-text: center; */
   flex-direction: column;
   justify-content: center;
   position: absolute;
@@ -137,6 +169,24 @@ const Card = styled.div`
 
     .itemDescription {
       display: none;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    width: 120px;
+    font-size: 10px;
+    &.up {
+      top: -10px;
+      left: -80px;
+      &:hover {
+        top: -15px;
+      }
+    }
+    &.down {
+      top: -10px;
+      left: 90px;
+      &:hover {
+        top: -15px;
+      }
     }
   }
 `;

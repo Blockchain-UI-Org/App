@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
+
   return (
     <Layout description="A component library for decentralized applications <head />">
       <Wrapper>
