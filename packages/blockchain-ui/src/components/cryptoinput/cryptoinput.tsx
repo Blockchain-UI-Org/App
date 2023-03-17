@@ -1,16 +1,18 @@
 import { Typography } from "@mui/material";
-import { CryptoIcon } from "blockchain-ui/components/icon/icon";
 import { useEffect, useMemo, useRef, useState } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { BiChevronDown } from "react-icons/bi";
-import { CryptoSymbols } from "blockchain-ui/components/static/types";
 import { formatNumber } from "blockchain-ui/utils";
+import { useTheme } from "blockchain-ui/theme";
+import { CryptoListModal, IBasicToken } from "./CryptoListModal";
 const CryptInputWrapper = styled.div`
-  padding: 24px;
+  padding: 18px 24px;
   border-radius: 10px;
+
   background-color: #f4f5fa;
   display: inline-flex;
-  /* min-width: 300px; */
+  width: 400px;
+  max-width: 100%;
   position: relative;
 `;
 
@@ -31,7 +33,6 @@ const IconWrapper = styled.div`
 
 const InputWrapper = styled.div`
   display: flex;
-  width: 300px;
   max-width: 100%;
   flex: 1;
   align-items: center;
@@ -43,7 +44,7 @@ const Input = styled.input<{ width?: string; align: ICryptoInputProps["align"] }
   outline: none;
   line-height: 24px;
   font-size: 24px;
-  max-width: 100%;
+  width: 100%;
 
   ${({ width, align }) => {
     let styles = ``;
@@ -55,14 +56,13 @@ const Input = styled.input<{ width?: string; align: ICryptoInputProps["align"] }
       margin-right: 5px;
       `;
     }
-
     return styles;
   }}
 `;
 
 const PriceWrapper = styled.div`
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 24px;
 `;
 
@@ -70,17 +70,50 @@ const calcWidth = (val: string | number, minWidth: number = 2, maxWidth: number 
   const newWidth = Math.min(Math.max(val.toString().length, minWidth), maxWidth) + "ch";
   return newWidth;
 };
+
 export type ICryptoInputProps = {
+  selectedToken: IBasicToken;
+
   value?: number | string;
-  symbol: CryptoSymbols;
+
+  listOfCurrencies: IBasicToken[];
+
   price: number | string;
+
   align?: "left" | "right";
+
+  onSelectToken: (selectedToken: IBasicToken) => void;
+
   onChange: (val: string | number) => void;
 };
-export const CryptoInput = ({ value = "", price, onChange, symbol, align = "left" }: ICryptoInputProps) => {
+
+const formatVal = (input: string | number, limitOfDecimals: number) => {
+  const num = input.toString();
+  if (num.toString().includes(".")) {
+    const [first, second] = num.split(".");
+    if (second.length > limitOfDecimals) {
+      return first + "." + second.slice(0, limitOfDecimals);
+    }
+    return num;
+  } else {
+    return num;
+  }
+};
+
+export const CryptoInput = ({
+  value = "",
+  price,
+  onChange,
+  listOfCurrencies,
+  onSelectToken,
+  selectedToken,
+  align = "left",
+}: ICryptoInputProps) => {
   const [maxWidth, setMaxWidth] = useState<string>();
   const regex = "^[0-9]*[.,]?[0-9]*$";
   const ref = useRef<HTMLInputElement>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const theme = useTheme();
 
   const width = useMemo(() => {
     if (!maxWidth || align === "right") {
@@ -90,19 +123,28 @@ export const CryptoInput = ({ value = "", price, onChange, symbol, align = "left
     return calcWidth(value, 4);
   }, [value, maxWidth, align]);
 
+  const Icon = selectedToken?.icon;
   useEffect(() => {
     setMaxWidth(getComputedStyle(ref.current!).width);
   }, []);
+
   return (
     <CryptInputWrapper>
-      <IconWrapper>
-        <CryptoIcon cryptoSymbol={symbol} /> <BiChevronDown color="#8F91A0" size={24} />
+      <IconWrapper onClick={() => setIsModalOpen(true)}>
+        {Icon && <Icon style={{ width: 35 }} />} <BiChevronDown color={theme.palette.buiColors.grey500} size={24} />
       </IconWrapper>
+      {isModalOpen && (
+        <CryptoListModal
+          selectedToken={selectedToken}
+          tokens={listOfCurrencies}
+          onSelect={onSelectToken}
+          onClose={() => setIsModalOpen(false)}
+        />
+      )}
       <InputWrapper>
-
         <Input
           ref={ref}
-          value={value}
+          value={formatVal(value, selectedToken?.decimals || 12)}
           align={align}
           onChange={(e) => {
             const val = e.target.value;
@@ -120,12 +162,12 @@ export const CryptoInput = ({ value = "", price, onChange, symbol, align = "left
           type="text"
           placeholder="0.0"
         />
-        <Typography lineHeight={1} fontSize={22}>
-          {symbol}
+        <Typography style={{ textTransform: "uppercase" }} lineHeight={1} fontSize={22}>
+          {selectedToken.symbol}
         </Typography>
       </InputWrapper>
       <PriceWrapper>
-        <Typography fontSize={10} lineHeight="24px" color="#8F91A0">
+        <Typography fontSize={10} lineHeight="24px" color={theme.palette.buiColors.grey500}>
           $({value ? formatNumber(parseFloat(value as string) * parseFloat(price as string)) : 0})
         </Typography>
       </PriceWrapper>

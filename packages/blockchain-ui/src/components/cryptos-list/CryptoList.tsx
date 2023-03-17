@@ -113,6 +113,7 @@ type INativeToken = {
   nativeToken: boolean;
   website: string;
   network: string;
+  decimals?: number;
   nativeWrapper?: string;
   icon: React.FC<any>;
 };
@@ -122,6 +123,7 @@ type ERCToken = {
   symbol: string;
   icon: React.FC<any>;
   website: string;
+  decimals?: number
   contract: Partial<{
     ethereum: string;
     polygon: string;
@@ -137,6 +139,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
     name: "bitcoin",
     symbol: "BTC",
     nativeToken: true,
+    decimals: 8,
     website: "https://www.bitcoin.org/",
     network: "bitcoin",
     icon: BTCLogo,
@@ -144,6 +147,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   tether: {
     name: "tether",
     symbol: "USDT",
+    decimals: 6,
     website: "https://tether.to/",
     icon: TetherLogo,
     contract: {
@@ -155,6 +159,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   wbtc: {
     name: "Wrapped Bitcoin",
     symbol: "wbtc",
+    decimals: 8,
     icon: WrappedBitcoinLogo,
     website: "https://www.wbtc.network/",
     contract: {

@@ -21,6 +21,8 @@ import { WarningIcon } from "./WarningIcon";
 import { GraphIcon } from "./GraphIcon";
 import { ChevronDown } from "./ChevronDown";
 import { LineChartIcon } from "./LineChartIcon";
+import { SearchIcon} from "./SearchIcon";
+import { TickIcon } from "./TickIcon";
 
 export {
   Warning,
@@ -37,6 +39,9 @@ export {
   Transfer,
   Swap,
   LineChartIcon,
+  SearchIcon,
+  TickIcon,
+  
   // TODO 
   // buy
   // sell
