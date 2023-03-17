@@ -161,7 +161,7 @@ export const Table: FunctionComponent<ITableProps> = ({ options, columns = [], d
       {/* Render search bar if search is allowed using options.. */}
       {tableOptions.search && (
         <SearchWrapper>
-          <Input block prefix={<BiSearch size={20} />} placeholder="Search..." onChange={handleKeywordChange} />
+          <Input block role="search" prefix={<BiSearch size={20} />} placeholder="Search..." onChange={handleKeywordChange} />
         </SearchWrapper>
       )}
       <TableWrapper>
