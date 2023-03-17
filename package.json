@@ -8,7 +8,7 @@
     "build-ui": "lerna run build --scope=blockchain-ui",
     "build": "yarn run build-ui && lerna run build --scope=bui-docs",
     "develop": "concurrently \"lerna run watch --scope=blockchain-ui\"  \"lerna run start --scope=bui-docs\"",
-    "test": "lerna run test --scope=blockchain-ui",
+    "ci:test": "lerna run ci:test --scope=blockchain-ui",
     "coverage": "lerna run coverage --scope=blockchain-ui"
   },
   "devDependencies": {
