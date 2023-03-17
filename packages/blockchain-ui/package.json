@@ -67,6 +67,7 @@
     "watch": "rimraf ./dist && concurrently \"yarn:watch-js\" \"yarn:watch-types\"",
     "prettify": "prettier --write ./src",
     "test": "react-scripts test",
+    "coverage": "npm test -- --coverage --watchAll=false --collectCoverageFrom='src/components/**/*.{js,jsx,ts,tsx}' --collectCoverageFrom=!'src/components/**/*.stories.{ts,tsx}'",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
