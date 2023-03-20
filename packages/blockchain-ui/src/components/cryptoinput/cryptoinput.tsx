@@ -24,10 +24,10 @@ const IconWrapper = styled.div`
 
   cursor: pointer;
   padding: 5px;
+  border-radius: 10px;
   transition: all 0.3s linear;
   &:hover {
     background-color: #e8e8e8;
-    border-radius: 10px;
   }
 `;
 
@@ -87,17 +87,19 @@ export type ICryptoInputProps = {
   onChange: (val: string | number) => void;
 };
 
-const formatVal = (input: string | number, limitOfDecimals: number) => {
+const formatVal = (input: string | number, limitOfDecimals = 12, totalLimit = 16) => {
   const num = input.toString();
+  let result = num;
   if (num.toString().includes(".")) {
     const [first, second] = num.split(".");
     if (second.length > limitOfDecimals) {
-      return first + "." + second.slice(0, limitOfDecimals);
+      result = first + "." + second.slice(0, limitOfDecimals);
     }
-    return num;
-  } else {
-    return num;
   }
+  if (result.length > 16) {
+    return result.slice(0, totalLimit);
+  }
+  return result;
 };
 
 export const CryptoInput = ({
@@ -144,12 +146,12 @@ export const CryptoInput = ({
       <InputWrapper>
         <Input
           ref={ref}
-          value={formatVal(value, selectedToken?.decimals || 12)}
+          value={formatVal(value, selectedToken?.decimals)}
           align={align}
           onChange={(e) => {
             const val = e.target.value;
             if (new RegExp(regex, "g").test(val)) {
-              onChange(val);
+              onChange(formatVal(val, selectedToken?.decimals));
             }
           }}
           width={width}

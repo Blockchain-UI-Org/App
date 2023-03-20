@@ -147,7 +147,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   tether: {
     name: "tether",
     symbol: "USDT",
-    decimals: 6,
+    decimals: 2,
     website: "https://tether.to/",
     icon: TetherLogo,
     contract: {
@@ -203,6 +203,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   trueusd: {
     name: "True USD",
     symbol: "TUSD",
+    decimals: 2,
     icon: TUSDLogo,
     website: "https://tusd.io/",
     contract: {
@@ -235,6 +236,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
     name: "USD Coin",
     symbol: "USDC",
     icon: USDCLogo,
+    decimals: 2,
     website: "https://circle.com/",
     contract: {
       ethereum: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -245,6 +247,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   busd: {
     name: "Binance USD",
     symbol: "BUSD",
+    decimals: 2,
     icon: BUSDLogo,
     website: "https://www.paxos.com/busd/",
     contract: {
