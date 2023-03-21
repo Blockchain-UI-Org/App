@@ -95,7 +95,6 @@ import { TetherGoldLogo } from "./crypto-icons/TetherGoldLogo";
 import { TetherLogo } from "./crypto-icons/TetherLogo";
 import { TheGraphLogo } from "./crypto-icons/TheGraphLogo";
 import { TheSandboxLogo } from "./crypto-icons/TheSandboxLogo";
-import { TrustWalletLogo } from "./crypto-icons/TrustWalletLogo";
 import { TUSDLogo } from "./crypto-icons/TUSDLogo";
 import { UltraLogo } from "./crypto-icons/UltraLogo";
 import { UMALogo } from "./crypto-icons/UMALogo";
@@ -134,7 +133,7 @@ type ERCToken = {
 };
 type ICrypto = INativeToken | ERCToken;
 
-export const listOfCryptos: { [x: string]: ICrypto } = {
+ const listOfCryptos: { [x: string]: ICrypto } = {
   bitcoin: {
     name: "bitcoin",
     symbol: "BTC",
@@ -1229,4 +1228,6 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   },
 
 };
+
+export const CryptoList = Object.values(listOfCryptos);
 

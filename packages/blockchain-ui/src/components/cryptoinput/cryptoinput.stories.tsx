@@ -1,6 +1,7 @@
 import { Meta, Story } from "@storybook/react";
 import { useState } from "react";
-import { listOfCryptos } from "../cryptos-list";
+import { CryptoList } from "../cryptos-list";
+
 import { CryptoInput, ICryptoInputProps } from "./cryptoinput";
 import { IBasicToken } from "./CryptoListModal";
 
@@ -17,7 +18,6 @@ export default {
   },
 } as Meta<ICryptoInputProps>;
 
-const CryptoList = Object.values(listOfCryptos);
 
 const Template: Story<ICryptoInputProps> = (args) => {
   const [val, setValue] = useState<string | number>("");

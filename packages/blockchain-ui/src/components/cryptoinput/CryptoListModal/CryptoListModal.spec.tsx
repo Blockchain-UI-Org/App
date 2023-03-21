@@ -2,10 +2,8 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
 import { CryptoListModal } from "./CryptoListModal";
-import { listOfCryptos } from "blockchain-ui/components/cryptos-list";
 import userEvent from "@testing-library/user-event";
-
-const CryptoList = Object.values(listOfCryptos);
+import { CryptoList } from "blockchain-ui/components/cryptos-list";
 
 describe("CryptListModal", () => {
   it("should render successfully", () => {
@@ -53,4 +51,13 @@ describe("CryptListModal", () => {
     expect(closeMock).toHaveBeenCalledTimes(0);
   });
 
+  it("should call onSelect Props when a certain token is selected", () => {
+    const mock = jest.fn();
+    const closeMock = jest.fn();
+    const { getByText } = render(
+      <CryptoListModal tokens={CryptoList} onClose={closeMock} onSelect={mock} selectedToken={CryptoList[0]} />
+    );
+    userEvent.click(getByText(CryptoList[5].name));
+    expect(mock).toHaveBeenCalledWith(expect.objectContaining({ name: CryptoList[5].name }));
+  });
 });

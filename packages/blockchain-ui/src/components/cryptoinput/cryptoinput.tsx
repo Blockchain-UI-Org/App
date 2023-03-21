@@ -8,7 +8,6 @@ import { CryptoListModal, IBasicToken } from "./CryptoListModal";
 const CryptInputWrapper = styled.div`
   padding: 18px 24px;
   border-radius: 10px;
-
   background-color: #f4f5fa;
   display: inline-flex;
   width: 400px;
@@ -21,7 +20,6 @@ const IconWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
   padding: 5px;
   border-radius: 10px;
@@ -39,7 +37,6 @@ const InputWrapper = styled.div`
   align-items: center;
   line-height: 22px;
   font-size: 22px;
-
   ${withTheme(({ theme }) => {
     return css`
       font-family: ${theme.typography.common.fontFamily};
@@ -61,7 +58,6 @@ const Input = styled.input<{ align: ICryptoInputProps["align"] }>`
   transform: translateY(-51%);
   ${({ align }) => {
     let styles = ``;
-
     if (align === "right") {
       styles += `text-align: right;
       position:relative;
@@ -120,7 +116,7 @@ const formatVal = (input: string | number, prevVal: string | number, limitOfDeci
       result = first + "." + second.slice(0, limitOfDecimals);
     }
   }
-  if (result.length > 16) {
+  if (result.length > 17) {
     return prevVal;
   }
   return result;
@@ -135,30 +131,20 @@ export const CryptoInput = ({
   selectedToken,
   align = "left",
 }: ICryptoInputProps) => {
-  const [maxWidth, setMaxWidth] = useState<string>();
 
   const regex = "^[0-9]*[.,]?[0-9]*$";
-  const ref = useRef<HTMLInputElement>(null);
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const theme = useTheme();
 
-  const width = useMemo(() => {
-    if (!maxWidth || align === "right") {
-      return undefined;
-    }
-
-    return calcWidth(value, 4);
-  }, [value, maxWidth, align]);
 
   const Icon = selectedToken?.icon;
-  useEffect(() => {
-    setMaxWidth(getComputedStyle(ref.current!).width);
-  }, []);
-
+  
   return (
     <CryptInputWrapper>
       <IconWrapper onClick={() => setIsModalOpen(true)}>
-        {Icon && <Icon style={{ width: 35 }} />} <BiChevronDown color={theme.palette.buiColors.grey500} size={24} />
+        {Icon && <Icon data-testid={selectedToken.name} style={{ width: 35 }} />}{" "}
+        <BiChevronDown color={theme.palette.buiColors.grey500} size={24} />
       </IconWrapper>
       {isModalOpen && (
         <CryptoListModal
@@ -169,9 +155,10 @@ export const CryptoInput = ({
         />
       )}
       <InputWrapper>
+        {/*Purpose of span is to enable autogrowing visually */}
         {align === "left" && <HiddenSpan aria-hidden="true">{value}</HiddenSpan>}
         <Input
-          ref={ref}
+          data-testid="input"
           value={formatVal(value, value, selectedToken?.decimals)}
           align={align}
           onChange={(e) => {
