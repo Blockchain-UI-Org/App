@@ -1,9 +1,9 @@
 import { Typography } from "@mui/material";
 import { useEffect, useMemo, useRef, useState } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { BiChevronDown } from "react-icons/bi";
 import { formatNumber } from "blockchain-ui/utils";
-import { useTheme } from "blockchain-ui/theme";
+import { useTheme, withTheme } from "blockchain-ui/theme";
 import { CryptoListModal, IBasicToken } from "./CryptoListModal";
 const CryptInputWrapper = styled.div`
   padding: 18px 24px;
@@ -34,30 +34,54 @@ const IconWrapper = styled.div`
 const InputWrapper = styled.div`
   display: flex;
   max-width: 100%;
+  position: relative;
   flex: 1;
   align-items: center;
+  line-height: 22px;
+  font-size: 22px;
+
+  ${withTheme(({ theme }) => {
+    return css`
+      font-family: ${theme.typography.common.fontFamily};
+    `;
+  })}
 `;
 
-const Input = styled.input<{ width?: string; align: ICryptoInputProps["align"] }>`
+const Input = styled.input<{ align: ICryptoInputProps["align"] }>`
   border-width: 0;
   background-color: transparent;
   outline: none;
-  line-height: 24px;
-  font-size: 24px;
+  line-height: inherit;
+  font-size: inherit;
+  font-family: inherit;
   width: 100%;
-
-  ${({ width, align }) => {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-51%);
+  ${({ align }) => {
     let styles = ``;
-    if (width) {
-      styles += ` width: ${width};`;
-    }
+
     if (align === "right") {
       styles += `text-align: right;
+      position:relative;
+      left: initial;
+      top: initial;
+      transform: initial;
       margin-right: 5px;
       `;
     }
     return styles;
   }}
+`;
+
+const HiddenSpan = styled.span`
+  padding: 0 2px;
+  min-width: 40px;
+  line-height: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  visibility: hidden;
 `;
 
 const PriceWrapper = styled.div`
@@ -87,7 +111,7 @@ export type ICryptoInputProps = {
   onChange: (val: string | number) => void;
 };
 
-const formatVal = (input: string | number, limitOfDecimals = 12, totalLimit = 16) => {
+const formatVal = (input: string | number, prevVal: string | number, limitOfDecimals = 12, totalLimit = 16) => {
   const num = input.toString();
   let result = num;
   if (num.toString().includes(".")) {
@@ -97,7 +121,7 @@ const formatVal = (input: string | number, limitOfDecimals = 12, totalLimit = 16
     }
   }
   if (result.length > 16) {
-    return result.slice(0, totalLimit);
+    return prevVal;
   }
   return result;
 };
@@ -112,6 +136,7 @@ export const CryptoInput = ({
   align = "left",
 }: ICryptoInputProps) => {
   const [maxWidth, setMaxWidth] = useState<string>();
+
   const regex = "^[0-9]*[.,]?[0-9]*$";
   const ref = useRef<HTMLInputElement>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -144,17 +169,17 @@ export const CryptoInput = ({
         />
       )}
       <InputWrapper>
+        {align === "left" && <HiddenSpan aria-hidden="true">{value}</HiddenSpan>}
         <Input
           ref={ref}
-          value={formatVal(value, selectedToken?.decimals)}
+          value={formatVal(value, value, selectedToken?.decimals)}
           align={align}
           onChange={(e) => {
             const val = e.target.value;
             if (new RegExp(regex, "g").test(val)) {
-              onChange(formatVal(val, selectedToken?.decimals));
+              onChange(formatVal(val, value, selectedToken?.decimals));
             }
           }}
-          width={width}
           autoCorrect="off"
           autoComplete="off"
           inputMode="decimal"

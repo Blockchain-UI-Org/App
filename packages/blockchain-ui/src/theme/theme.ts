@@ -52,15 +52,6 @@ export const createTheme = ({
 const DefaultTheme = createTheme();
 
 const DarkTheme = createTheme({
-  components: {
-    Input: {
-      box: {
-        common: {
-          outlined: alpha(colors.grey500, 0.32),
-        }
-      }
-    }
-  },
   palette: {
     text: {
       primary: colors.white,
@@ -80,6 +71,13 @@ const DarkTheme = createTheme({
     },
   },
   components: (pallette) => ({
+    Input: {
+      box: {
+        common: {
+          outlined: alpha(colors.grey500, 0.32),
+        },
+      },
+    },
     BuiAlert: {
       variants: {
         standard: {
