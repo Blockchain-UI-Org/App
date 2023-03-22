@@ -1,0 +1,99 @@
+---
+description: CryptoInput Component
+---
+
+import { CryptoInput, CryptoList } from "blockchain-ui";
+import { useState } from "react";
+import { DisplayExample, HorizontalSpacer } from "@site/src/components/DisplayExample";
+
+# CryptoInput
+
+## Basic Example
+
+The Crypto Input component is used for simplifying token selections in a Dapp
+
+export const CryptoInputComponentExample = function () {
+  const [state, setVal] = useState("");
+  const [selectedToken, setSelectedToken] = useState(CryptoList[0]);
+  return (
+    <CryptoInput
+      selectedToken={selectedToken}
+      listOfCurrencies={CryptoList}
+      onChange={setVal}
+      value={state}
+      onSelectToken={setSelectedToken}
+      price="1"
+    />
+  );
+};
+
+<DisplayExample row justifyContent="center">
+  <CryptoInputComponentExample />
+</DisplayExample>
+
+
+```jsx
+import { CryptoInput, CryptoList } from "blockchain-ui";
+import { useState } from "react";
+
+const CryptoInputComponentExample = function () {
+  const [state, setVal] = useState("");
+  const [selectedToken, setSelectedToken] = useState(CryptoList[0]);
+  return (
+    <CryptoInput
+      selectedToken={selectedToken}
+      listOfCurrencies={CryptoList}
+      onChange={setVal}
+      value={state}
+      onSelectToken={setSelectedToken}
+      price="1"
+    />
+  );
+};
+
+```
+
+## Right Aligned
+
+
+export const CryptoInputRightAligned = function () {
+  const [state, setVal] = useState("");
+  const [selectedToken, setSelectedToken] = useState(CryptoList[0]);
+  return (
+    <CryptoInput
+      selectedToken={selectedToken}
+      listOfCurrencies={CryptoList}
+      onChange={setVal}
+      value={state}
+      align="right"
+      onSelectToken={setSelectedToken}
+      price="1"
+    />
+  );
+};
+
+<DisplayExample row justifyContent="center">
+  <CryptoInputRightAligned />
+</DisplayExample>
+
+```jsx
+import { CryptoInput, CryptoList } from "blockchain-ui";
+import { useState } from "react";
+
+const CryptoInputRightAligned = function () {
+  const [state, setVal] = useState("");
+  const [selectedToken, setSelectedToken] = useState(CryptoList[0]);
+  return (
+    <CryptoInput
+      selectedToken={selectedToken}
+      listOfCurrencies={CryptoList}
+      onChange={setVal}
+      value={state}
+      align="right"
+      onSelectToken={setSelectedToken}
+      price="1"
+    />
+  );
+};
+
+```
