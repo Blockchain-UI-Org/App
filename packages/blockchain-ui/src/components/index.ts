@@ -4,6 +4,7 @@ export * from "./charts";
 export * from "./nftCard";
 export * from "./input/input";
 export { Alert } from "./alert/alert";
+export * from './textfield/textfield';
 export * from "./typography/typography";
 export { Table } from './table';
 export {
