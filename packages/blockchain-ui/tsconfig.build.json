@@ -2,7 +2,6 @@
     "extends": "./tsconfig",
     "compilerOptions": {
         "emitDeclarationOnly": true,
-        "noEmit": false,
     },
     "exclude": ["**/**/*.stories.tsx"],
 }

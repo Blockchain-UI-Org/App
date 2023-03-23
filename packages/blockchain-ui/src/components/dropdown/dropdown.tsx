@@ -1,16 +1,16 @@
-import { useState, useRef, useEffect, memo, ReactNode, ReactElement, CSSProperties } from 'react';
-import styled, { css } from 'styled-components';
-import { useClickAway, useWindowSize } from 'react-use';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useRef, useEffect, memo, ReactNode, ReactElement, CSSProperties } from "react";
+import styled, { css } from "styled-components";
+import { useClickAway, useWindowSize } from "react-use";
+import { motion, AnimatePresence } from "framer-motion";
 import { withTheme } from "blockchain-ui/theme";
 
-import { Icon } from '../icon/icon';
-import Image from '../image/image';
+import { Icon } from "../icon/icon";
+import Image from "../image/image";
 
 interface InlineProps {
-  width?: CSSProperties['width'];
-  justifyContent?: CSSProperties['justifyContent'];
-  alignItems?: CSSProperties['alignItems'];
+  width?: CSSProperties["width"];
+  justifyContent?: CSSProperties["justifyContent"];
+  alignItems?: CSSProperties["alignItems"];
   inset?: string;
   grow?: boolean;
   gap?: string;
@@ -61,28 +61,28 @@ interface ItemProps extends HoverProps {
   minHeight: string;
 }
 
-
 const Hover = css<HoverProps>`
   background-color: ${withTheme(({ showHover, theme }) =>
-    showHover ? theme.palette.default.bg : theme.palette.common.white)};
-  border-top-right-radius: ${props => (props.first ? '10px' : '0px')};
-  border-top-left-radius: ${props => (props.first ? '10px' : '0px')};
-  border-bottom-right-radius: ${props => (props.last ? '10px' : '0px')};
-  border-bottom-left-radius: ${props => (props.last ? '10px' : '0px')};
+    showHover ? theme.palette.default.bg : theme.palette.common.white
+  )};
+  border-top-right-radius: ${(props) => (props.first ? "10px" : "0px")};
+  border-top-left-radius: ${(props) => (props.first ? "10px" : "0px")};
+  border-bottom-right-radius: ${(props) => (props.last ? "10px" : "0px")};
+  border-bottom-left-radius: ${(props) => (props.last ? "10px" : "0px")};
 `;
 
 const Inline = styled.div<InlineProps>`
-  width: ${props => props.width};
+  width: ${(props) => props.width};
   display: flex;
   flex-direction: row;
-  justify-content: ${props => props.justifyContent};
-  align-items: ${props => props.alignItems};
-  padding: ${props => props.inset || '0'};
+  justify-content: ${(props) => props.justifyContent};
+  align-items: ${(props) => props.alignItems};
+  padding: ${(props) => props.inset || "0"};
   > * {
-    flex-grow: ${props => (props.grow ? 1 : 0)};
+    flex-grow: ${(props) => (props.grow ? 1 : 0)};
   }
   > * + * {
-    margin-left: ${props => props.gap || '0px'};
+    margin-left: ${(props) => props.gap || "0px"};
   }
 `;
 
@@ -94,12 +94,12 @@ const Wrapper = styled.div`
 
 const Display = styled(Inline)<{ withBorder: boolean; showShadow: boolean }>`
   background-color: ${withTheme(({ theme }) => theme.palette.info.bg)};
-  border: ${withTheme(({ withBorder, theme }) => (withBorder ? `1px solid ${theme.palette.grey[300]}` : 'none'))};
+  border: ${withTheme(({ withBorder, theme }) => (withBorder ? `1px solid ${theme.palette.grey[300]}` : "none"))};
   border-radius: 100px;
-  box-shadow: ${withTheme(({ showShadow , theme}) => (showShadow ? theme.shadows.depth2 : 'none'))};
+  box-shadow: ${withTheme(({ showShadow, theme }) => (showShadow ? theme.shadows.depth2 : "none"))};
   cursor: pointer;
   &:hover {
-    background-color: ${withTheme(({theme}) => theme.palette.default.bg)};
+    background-color: ${withTheme(({ theme }) => theme.palette.default.bg)};
   }
 `;
 
@@ -107,7 +107,7 @@ const Card = styled.div<{ position: Position }>`
   position: relative;
   background-color: ${withTheme(({ theme }) => theme.palette.common.white)};
   border-radius: 12px;
-  box-shadow: ${withTheme(({theme}) => theme.shadows.depth1)};
+  box-shadow: ${withTheme(({ theme }) => theme.shadows.depth1)};
 `;
 
 const Options = styled(Card)<{ position: Position; minWidth: string }>`
@@ -118,7 +118,7 @@ const Options = styled(Card)<{ position: Position; minWidth: string }>`
 `;
 
 const Item = styled(Inline)<ItemProps>`
-  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+  cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
   color: ${withTheme(({ disabled, theme }) => (disabled ? theme.palette.grey[500] : theme.palette.default.color))};
   min-height: ${({ minHeight }) => minHeight};
   &:hover {
@@ -126,7 +126,7 @@ const Item = styled(Inline)<ItemProps>`
   }
 `;
 
-const Dropdown = <T extends DropdownOption>({
+const DropdownComponent = <T extends DropdownOption>({
   renderLabel,
   initValue,
   options,
@@ -138,8 +138,8 @@ const Dropdown = <T extends DropdownOption>({
   showSelectedCheckMark = true,
   inset = true,
   isSelection = false,
-  itemsMinWidth = '10rem',
-  itemsMinHeight = '60px',
+  itemsMinWidth = "10rem",
+  itemsMinHeight = "60px",
 }: DropdownProps<T>) => {
   const ref = useRef<HTMLDivElement>(null);
   const optionsRef = useRef<HTMLDivElement>(null);
@@ -147,10 +147,10 @@ const Dropdown = <T extends DropdownOption>({
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState(initValue || options[0]);
   const [position, setPosition] = useState<Position>({
-    top: '-20000',
-    left: 'auto',
-    right: 'auto',
-    bottom: 'auto',
+    top: "-20000",
+    left: "auto",
+    right: "auto",
+    bottom: "auto",
   });
 
   useEffect(() => {
@@ -170,9 +170,9 @@ const Dropdown = <T extends DropdownOption>({
 
       setPosition({
         top: toTop ? `-${4 + optionsHeight}px` : `${wrapperHight + 4}px`,
-        right: toLeft ? 'auto' : '0',
-        left: toLeft ? '0' : 'auto',
-        bottom: 'auto',
+        right: toLeft ? "auto" : "0",
+        left: toLeft ? "0" : "auto",
+        bottom: "auto",
       });
     }
   }, [width, height, isOpen]);
@@ -187,7 +187,7 @@ const Dropdown = <T extends DropdownOption>({
 
   const renderDisplayText = () => {
     const { label } = selected;
-    if (renderLabel && typeof renderLabel === 'function') {
+    if (renderLabel && typeof renderLabel === "function") {
       return renderLabel(selected);
     }
     return (
@@ -244,7 +244,7 @@ const Dropdown = <T extends DropdownOption>({
             animate="open"
             exit="collapsed"
             variants={{
-              open: { opacity: 1, height: 'auto' },
+              open: { opacity: 1, height: "auto" },
               collapsed: { opacity: 0, height: 0 },
             }}
             transition={{ duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98] }}
@@ -258,7 +258,7 @@ const Dropdown = <T extends DropdownOption>({
                   justifyContent="space-between"
                   alignItems="center"
                   gap="0.5rem"
-                  inset={inset ? '0.75rem 1.5rem' : ''}
+                  inset={inset ? "0.75rem 1.5rem" : ""}
                   disabled={option.disabled || false}
                   onClick={() => clickItem(option)}
                   first={i === 0}
@@ -277,4 +277,6 @@ const Dropdown = <T extends DropdownOption>({
 };
 
 export type { DropdownOption, DropdownProps };
-export default memo(Dropdown) as typeof Dropdown;
+const Dropdown = memo(DropdownComponent) as typeof DropdownComponent;
+
+export { Dropdown };

@@ -103,7 +103,7 @@ interface Props extends BoxProps {
   variant?: LabelVariant;
 }
 
-export default function Label({
+export function Label({
   children,
   color = "default",
   variant = "ghost",

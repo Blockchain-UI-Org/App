@@ -11,7 +11,7 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export {Menu};
 
 const Wrapper = styled.div`
   width: 100%;

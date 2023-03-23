@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Meta, Story } from "@storybook/react";
-import PaginationV2, { PaginationProps } from "./index";
+import {PaginationV2, PaginationProps } from "./pagination";
 
 export default {
   title: "Table/Pagination",
