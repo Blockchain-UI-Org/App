@@ -1,133 +1,108 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
 import styled from "styled-components";
 import { withTheme } from "blockchain-ui/theme";
-import { TextField } from "@mui/material";
+
+export const TextFieldVariants = ["outlined", "filled", "standard"] as const;
+export const TextFieldType = ["default", "value", "hovered"] as const;
+export const TextFieldSize = ["small", "medium"] as const;
+
+export type ITextFieldVariants = (typeof TextFieldVariants)[number];
+export type ITextFieldType = (typeof TextFieldType)[number];
+export type ITextFieldSize = (typeof TextFieldSize)[number];
 
 /**
  * Exclude prefix in order to accept it by customizing to ReactNode.
  */
 type InputHTMLPropsWithoutPrefix = Omit<React.InputHTMLAttributes<HTMLInputElement>, "prefix">;
 
-export interface textFieldProps extends InputHTMLPropsWithoutPrefix {
-  labelText?: string;
-  width?: string;
-  hoverBorderColor?: string;
-  marginRight?: string;
-  marginLeft?: string;
-  marginTop?: string;
-  marginBottom?: string;
-  focusedColor?: string;
+export interface ITextFieldProps extends InputHTMLPropsWithoutPrefix {
+  variant?: ITextFieldVariants;
+  // TextFieldSize: ITextFieldSize;
+  // TextFieldType: ITextFieldType;
   borderColor?: string;
+  hoverBorderColor?: string;
 }
 
-const Container = styled.div`
-  /* width: 30%; */
-`;
+const Container = styled.div``;
 
-export const TextLabel = styled.label`
+const TextInputField = styled.input`
+  width: 400px;
+  height: 56px;
   font-size: 16px;
-  font-weight: 700;
-  color: ${withTheme(({ theme }) => theme.components.Input.label.color)};
-`;
+  margin-right: 12px;
+  padding: 12px 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: ${withTheme(({ theme }) => theme.palette.text.primary)};
+  border: 1px solid #919eab51;
+  border-radius: 8px;
 
-const StyledTextField = styled(TextField)<{
-  width?: string;
-  hoverBorderColor?: string;
-  marginRight?: string;
-  focusedColor?: string;
-  borderColor?: string;
-}>`
-  background: white;
-  width: ${(props) => props.width};
-  color: white;
-
-  /* & label.Mui-focused {
-    /* color: ""; 
+  &::placeholder {
+    color: ${withTheme(({ theme }) => theme.palette.text.disabled)};
   }
-    
-    */
-
-  /* & .MuiInput-underline:after {
-    border-bottom-color: white;
-  } */
-  & .MuiOutlinedInput-root {
-    fieldset {
-      border-color: ${(props) => props.borderColor};
-    }
-    /* & fieldset {
-      border-color: white;
-    }
-    &:hover fieldset {
-      border-color: white;
-    }
-    &.Mui-focused fieldset {
-      border-color: white;
-    } */
-    margin-right: ${(props) => props.marginRight};
-    &:hover fieldset {
-      border-color: ${(props) => props.hoverBorderColor};
-    }
-    &.Mui-focused fieldset {
-      border-color: ${(props) => props.focusedColor};
-    }
+  &:focus {
+    outline: none;
+    border-color: #4c8bf5;
   }
 `;
 
-export const TextFieldInput: FunctionComponent<textFieldProps> = ({
-  labelText,
-  hoverBorderColor,
-  marginRight,
-  width,
-  borderColor,
-  focusedColor,
-  ...props
-}) => {
+const TextFieldContainer = styled.div`
+  position: relative;
+`;
+
+const TextFieldLabel = styled.label<{ hasValue?: boolean; isFocused?: boolean }>`
+  position: absolute;
+  top: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "8px" : "30%")};
+  margin-left: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "15px" : "13px")};
+  background-color: white;
+  transform: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "translateY(-100%)" : "none")};
+  font-size: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "0.75rem" : "1rem")};
+  font-weight: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "500" : "400")};
+  color: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "#919EAB" : "#919EAB")};
+  transition: all 0.2s ease-in-out;
+`;
+
+export const TextFieldInput: FunctionComponent<ITextFieldProps> = () => {
+  const [fieldValue, setFieldValue] = useState<string>("Value");
+  const [isFocused, setIsFocused] = useState<boolean>(false);
+
+  const handleFocus = () => {
+    setIsFocused(true);
+  };
+
+  const handleBlur = () => {
+    setIsFocused(true);
+  };
+
+  const handleChange = (e: any) => {
+    setFieldValue(e.target.value);
+  };
+
+  console.log(isFocused);
+
   return (
     <Container>
       <div style={{ display: "flex", marginBottom: "30px" }}>
-        <StyledTextField id="outlined-required" label={labelText} width={width} marginRight={marginRight} />
-        <StyledTextField
-          id="outlined-required"
-          label={labelText}
-          defaultValue="Value"
-          width={width}
-          marginRight={marginRight}
-        />
+        <div>
+          <TextInputField placeholder="Label" />
+        </div>
+        <div>
+          <TextFieldContainer>
+            <TextFieldLabel htmlFor="name" hasValue={!!fieldValue}>
+              {" "}
+              Label
+            </TextFieldLabel>
+            <TextInputField
+              id="name"
+              name="name"
+              value={fieldValue}
+              onChange={handleChange}
+              onFocus={handleFocus}
+              onBlur={handleBlur}
+            />
+          </TextFieldContainer>
+        </div>
       </div>
-      <div style={{ marginBottom: "30px" }}>
-        <StyledTextField
-          id="outlined-required"
-          label={labelText}
-          defaultValue="Value (Hovered)"
-          width={width}
-          hoverBorderColor={hoverBorderColor}
-          marginRight={marginRight}
-        />
-        <StyledTextField
-          id="outlined-required"
-          label={labelText}
-          defaultValue="Value (Focused) |"
-          width={width}
-          marginRight={marginRight}
-          focusedColor={focusedColor}
-        />
-      </div>
-      <StyledTextField
-        id="outlined-required"
-        label={labelText}
-        defaultValue="Value (Incorrect)"
-        width={width}
-        marginRight={marginRight}
-        borderColor={borderColor}
-      />
-      <StyledTextField
-        id="outlined-required"
-        disabled
-        label={labelText}
-        defaultValue="Value (Disabled)"
-        width={width}
-        marginRight={marginRight}
-      />
     </Container>
   );
 };
