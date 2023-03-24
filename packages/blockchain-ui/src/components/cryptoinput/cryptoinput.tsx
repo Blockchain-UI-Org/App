@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
 import { useEffect, useMemo, useRef, useState } from "react";
 import styled, { css } from "styled-components";
-import { BiChevronDown } from "react-icons/bi";
 import { formatNumber } from "blockchain-ui/utils";
 import { useTheme, withTheme } from "blockchain-ui/theme";
 import { CryptoListModal, IBasicToken } from "./CryptoListModal";
+import { ChevronDown } from "../static/images";
 const CryptInputWrapper = styled.div`
   padding: 18px 24px;
   border-radius: 10px;
@@ -144,7 +144,7 @@ export const CryptoInput = ({
     <CryptInputWrapper>
       <IconWrapper onClick={() => setIsModalOpen(true)}>
         {Icon && <Icon data-testid={selectedToken.name} style={{ width: 35 }} />}{" "}
-        <BiChevronDown color={theme.palette.buiColors.grey500} size={24} />
+        <ChevronDown color={theme.palette.buiColors.grey500} width={24} />
       </IconWrapper>
       {isModalOpen && (
         <CryptoListModal

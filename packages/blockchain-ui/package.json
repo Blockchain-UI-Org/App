@@ -26,36 +26,6 @@
     "./dist",
     "./Readme.md"
   ],
-  "dependencies": {
-    "@mui/material": "^5.11.0",
-    "@storybook/theming": "^6.5.14",
-    "@types/numeral": "^2.0.2",
-    "@types/react-lazy-load-image-component": "^1.5.2",
-    "@types/react-slick": "^0.23.10",
-    "apexcharts": "^3.35.0",
-    "chart.js": "^3.9.1",
-    "framer-motion": "^8.5.0",
-    "numbro": "^2.3.6",
-    "numeral": "^2.0.6",
-    "react": "^18.2.0",
-    "react-apexcharts": "^1.4.0",
-    "react-chartjs-2": "^4.3.1",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
-    "react-inlinesvg": "^3.0.1",
-    "react-lazy-load-image-component": "^1.5.6",
-    "react-scripts": "5.0.1",
-    "react-slick": "^0.29.0",
-    "react-use": "^17.4.0",
-    "react-window": "^1.8.8",
-    "simplebar-react": "^2.4.3",
-    "slick-carousel": "^1.8.1",
-    "styled-components": "^5.3.6",
-    "tinycolor2": "^1.6.0",
-    "typescript": "^4.9.3",
-    "web-vitals": "^2.1.4",
-    "webfontloader": "^1.6.28"
-  },
   "scripts": {
     "s": "yarn storybook",
     "typecheck": "tsc -noEmit",
@@ -108,10 +78,24 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "apexcharts": "^3.35.0",
+    "react-apexcharts": "^1.4.0",
+    "styled-components": "^5.3.6",
+    "tinycolor2": "^1.6.0",
+    "react-window": "^1.8.8",
+    "react-icons": "^4.8.0",
+    "@iconify/react": "^4.1.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
     "@babel/core": "^7.20.12",
     "@babel/node": "^7.20.7",
+    "@storybook/theming": "^6.5.14",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/plugin-proposal-private-methods": "^7.18.6",
@@ -119,9 +103,6 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
-    "@iconify/react": "^4.0.1",
     "@skypack/package-check": "^0.2.2",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-backgrounds": "^6.5.13",
@@ -134,6 +115,7 @@
     "@storybook/manager-webpack5": "^6.5.13",
     "@storybook/node-logger": "^6.5.13",
     "@storybook/preset-create-react-app": "^4.1.2",
+    "@types/react-window": "^1.8.5",
     "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "^0.0.13",
     "@testing-library/jest-dom": "^5.16.5",
@@ -143,10 +125,8 @@
     "@types/node": "^16.18.4",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
-    "@types/react-window": "^1.8.5",
     "@types/styled-components": "^5.1.26",
     "@types/tinycolor2": "^1.4.3",
-    "@types/webfontloader": "^1.6.35",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-plugin-named-exports-order": "^0.0.2",
@@ -156,7 +136,6 @@
     "concurrently": "7.6.0",
     "copyfiles": "^2.4.1",
     "date-fns": "2.29.3",
-    "moment": "^2.29.4",
     "prettier": "^2.8.0",
     "prop-types": "^15.8.1",
     "rimraf": "^4.1.2",
@@ -164,6 +143,7 @@
     "storybook-dark-mode": "^2.1.1",
     "tsc-alias": "^1.8.2",
     "tsconfig-paths-webpack-plugin": "^4.0.0",
-    "webpack": "^5.75.0"
+    "webpack": "^5.75.0",
+    "typescript": "^4.9.3"
   }
 }
