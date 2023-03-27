@@ -97,3 +97,49 @@ const CryptoInputRightAligned = function () {
 };
 
 ```
+
+
+## With Balance
+
+
+export const CryptoWithBalance = function () {
+  const [state, setVal] = useState("");
+  const [selectedToken, setSelectedToken] = useState(CryptoList[0]);
+  return (
+    <CryptoInput
+      selectedToken={selectedToken}
+      listOfCurrencies={CryptoList}
+      onChange={setVal}
+      value={state}
+      align="right"
+      onSelectToken={setSelectedToken}
+      balance="2.0445322"
+    />
+  );
+};
+
+<DisplayExample row justifyContent="center">
+  <CryptoWithBalance />
+</DisplayExample>
+
+```jsx
+import { CryptoInput, CryptoList } from "blockchain-ui";
+import { useState } from "react";
+
+const CryptoInputRightAligned = function () {
+  const [state, setVal] = useState("");
+  const [selectedToken, setSelectedToken] = useState(CryptoList[0]);
+  return (
+    <CryptoInput
+      selectedToken={selectedToken}
+      listOfCurrencies={CryptoList}
+      onChange={setVal}
+      value={state}
+      align="right"
+      onSelectToken={setSelectedToken}
+      balance="2.0445322"
+    />
+  );
+};
+
+```
