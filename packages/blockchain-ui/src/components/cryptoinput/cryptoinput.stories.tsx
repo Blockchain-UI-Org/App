@@ -49,3 +49,12 @@ RightAligned.args = {
   price: 1,
   align: "right",
 };
+
+export const WithBalance = Template.bind({});
+
+WithBalance.args = {
+  value: 10,
+  price: 1,
+  align: "right",
+  balance: "1.030442"
+};

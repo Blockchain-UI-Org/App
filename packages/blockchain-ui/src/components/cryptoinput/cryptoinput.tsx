@@ -5,6 +5,7 @@ import { formatNumber } from "blockchain-ui/utils";
 import { useTheme, withTheme } from "blockchain-ui/theme";
 import { CryptoListModal, IBasicToken } from "./CryptoListModal";
 import { ChevronDown } from "../static/images";
+import { Button } from "../button";
 const CryptInputWrapper = styled.div`
   padding: 18px 24px;
   border-radius: 10px;
@@ -84,6 +85,8 @@ const PriceWrapper = styled.div`
   position: absolute;
   top: 5px;
   right: 24px;
+  display: flex;
+  align-items: center;
 `;
 
 const calcWidth = (val: string | number, minWidth: number = 2, maxWidth: number = 50) => {
@@ -98,7 +101,9 @@ export type ICryptoInputProps = {
 
   listOfCurrencies: IBasicToken[];
 
-  price: number | string;
+  price?: number | string;
+
+  balance?: number | string;
 
   align?: "left" | "right";
 
@@ -125,26 +130,25 @@ const formatVal = (input: string | number, prevVal: string | number, limitOfDeci
 export const CryptoInput = ({
   value = "",
   price,
+  balance,
   onChange,
   listOfCurrencies,
   onSelectToken,
   selectedToken,
   align = "left",
 }: ICryptoInputProps) => {
-
   const regex = "^[0-9]*[.,]?[0-9]*$";
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const theme = useTheme();
 
-
   const Icon = selectedToken?.icon;
-  
+
   return (
     <CryptInputWrapper>
       <IconWrapper onClick={() => setIsModalOpen(true)}>
-        {Icon && <Icon data-testid={selectedToken.name} style={{ width: 35 }} />}{" "}
-        <ChevronDown color={theme.palette.buiColors.grey500} width={24} />
+        {Icon && <Icon data-testid={selectedToken.name} style={{ width: 35, marginRight: 10 }} />}{" "}
+        <ChevronDown color={theme.palette.buiColors.grey500} width={12} />
       </IconWrapper>
       {isModalOpen && (
         <CryptoListModal
@@ -182,8 +186,26 @@ export const CryptoInput = ({
       </InputWrapper>
       <PriceWrapper>
         <Typography fontSize={10} lineHeight="24px" color={theme.palette.buiColors.grey500}>
-          $({value ? formatNumber(parseFloat(value as string) * parseFloat(price as string)) : 0})
+          {balance ? (
+            formatNumber(parseFloat(balance as string))
+          ) : (
+            <> $({value ? formatNumber(parseFloat(value as string) * parseFloat(price as string)) : 0})</>
+          )}
         </Typography>
+        {balance && (
+          <Button
+            data-testid="max-btn"
+            onClick={() => onChange(balance)}
+            marginLeft={5}
+            padding={"2px 5px"}
+            fontSize="10px"
+            lineHeight={1.3}
+            variant="outlined"
+            color="info"
+            size="small"
+            label="Max"
+          ></Button>
+        )}
       </PriceWrapper>
     </CryptInputWrapper>
   );

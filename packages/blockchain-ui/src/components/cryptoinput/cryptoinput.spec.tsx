@@ -187,4 +187,28 @@ describe("Crypto Input Component", () => {
     userEvent.click(getByText(CryptoList[4].name));
     expect(selectToken).toHaveBeenCalledWith(expect.objectContaining({ name: CryptoList[4].name }));
   });
+
+  it("should render balance and max button", () => {
+    const selectToken = jest.fn();
+    const onChangeToken = jest.fn();
+    const { getByTestId, getByText } = render(
+      <CryptoInput
+        selectedToken={CryptoList[0]}
+        listOfCurrencies={CryptoList}
+        onSelectToken={selectToken}
+        onChange={onChangeToken}
+        price="1"
+        balance={"1.044"}
+      />
+    );
+
+    userEvent.click(getByTestId("max-btn"));
+
+    const balanceText = getByText("1.04");
+
+    expect(balanceText).toBeTruthy();
+
+
+    expect(onChangeToken).toHaveBeenCalledWith("1.044");
+  });
 });
