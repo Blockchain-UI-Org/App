@@ -3,10 +3,9 @@ import { Flex } from "blockchain-ui/components/flex";
 import { LoadableChart } from "blockchain-ui/components/LoadableChart";
 import { useTheme } from "blockchain-ui/theme";
 import { IBuiColor } from "blockchain-ui/theme/colors";
+import { formatNumber } from "blockchain-ui/utils";
 import { FC, Suspense } from "react";
 import styled from "styled-components";
-
-import { fNumber } from "../../../utils/number";
 
 export interface PieChartProps {
   chartData: {
@@ -69,12 +68,12 @@ const PieChart: FC<PieChartProps> = ({
             labels: {
               show: false,
               value: {
-                formatter: (val: number | string) => fNumber(val),
+                formatter: (val: number | string) => formatNumber(val as number),
               },
               total: {
                 formatter: (w: { globals: { seriesTotals: number[] } }) => {
                   const sum = w.globals.seriesTotals.reduce((a, b) => a + b, 0);
-                  return fNumber(sum);
+                  return formatNumber(sum);
                 },
               },
             },

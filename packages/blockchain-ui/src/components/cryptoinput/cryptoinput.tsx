@@ -1,11 +1,12 @@
-import { Typography } from "@mui/material";
-import { useEffect, useMemo, useRef, useState } from "react";
+
+import { useState } from "react";
 import styled, { css } from "styled-components";
 import { formatNumber } from "blockchain-ui/utils";
 import { useTheme, withTheme } from "blockchain-ui/theme";
 import { CryptoListModal, IBasicToken } from "./CryptoListModal";
 import { ChevronDown } from "../static/images";
 import { Button } from "../button";
+import { Typography } from "../typography";
 const CryptInputWrapper = styled.div`
   padding: 18px 24px;
   border-radius: 10px;
