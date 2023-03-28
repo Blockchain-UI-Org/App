@@ -1,5 +1,7 @@
 import { Story, Meta } from "@storybook/react";
 import { TextFieldInput, ITextFieldProps, TextFieldVariants } from "./textfield";
+import styled from "styled-components";
+
 // import { withTheme } from "blockchain-ui/theme";
 // import styled from "styled-components";
 
@@ -8,14 +10,70 @@ export default {
   title: "Input/TextField",
 } as Meta<ITextFieldProps>;
 
+const states = ["empty", "valued", "hover", "focus", "error", "disabled"];
+const adornment = ["empty", "value", "empty", "valued", "empty", "value"];
+const helpText = ["empty", "error"];
+const sizeValue = ["Medium", "Small"];
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
 const Template = () => (
-  <div>
-    {TextFieldVariants.map((variant) => {
-      return <TextFieldInput variant={variant} />;
+  <Wrapper>
+    {states.map((stateValue) => {
+      return (
+        <TextFieldInput
+          state={stateValue}
+          value={stateValue !== "empty" ? stateValue : undefined}
+          error={stateValue === "error"}
+          disabled={stateValue === "disabled"}
+          label={true}
+          isValidationValue={false}
+        />
+      );
     })}
-  </div>
+
+    {adornment.map((stateValue) => {
+      return (
+        <TextFieldInput
+          state={stateValue}
+          value={stateValue !== "empty" ? stateValue : undefined}
+          error={stateValue === "error"}
+          disabled={stateValue === "disabled"}
+          prefix={true}
+          label={true}
+          isValidationValue={false}
+        />
+      );
+    })}
+
+    {helpText.map((helpText) => {
+      return (
+        <TextFieldInput
+          state={helpText}
+          value={helpText !== "empty" ? helpText : undefined}
+          error={true}
+          label={true}
+          isValidationValue={true}
+        />
+      );
+    })}
+
+    {sizeValue.map((size) => {
+      return (
+        <TextFieldInput
+          state={size}
+          value={size}
+          error={false}
+          disabled={false}
+          label={false}
+          isValidationValue={false}
+        />
+      );
+    })}
+  </Wrapper>
 );
 
 export const Outlined = Template.bind({});
-
-// Outlined.args = {};
