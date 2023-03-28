@@ -1,6 +1,6 @@
 {
   "name": "blockchain-ui",
-  "version": "1.0.0-alpha-37",
+  "version": "1.0.0-alpha-38",
   "license": "MIT",
   "private": false,
   "description": "A component library for blockchain apps.",
@@ -81,6 +81,7 @@
   "dependencies": {
     "@iconify/react": "^4.1.0",
     "apexcharts": "^3.35.0",
+    "numbro": "^2.3.6",
     "react-apexcharts": "^1.4.0",
     "react-icons": "^4.8.0",
     "react-window": "^1.8.8",
@@ -138,6 +139,7 @@
     "date-fns": "2.29.3",
     "prettier": "^2.8.0",
     "prop-types": "^15.8.1",
+    "react-use": "^17.4.0",
     "rimraf": "^4.1.2",
     "storybook": "^6.5.13",
     "storybook-dark-mode": "^2.1.1",
