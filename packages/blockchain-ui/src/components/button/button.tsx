@@ -78,6 +78,10 @@ export interface IButtonProps extends ISpacingProps {
   hoverBorderColor?: string;
 
   activeBorderColor?: string;
+  
+  lineHeight?: number | string;
+  
+  fontSize?: number | string;
 
   /**
    * How large should the button be?
@@ -119,11 +123,13 @@ const cssStylingCommon = css<Omit<IButtonProps, "label">>`
       backgroundColor,
       textColor,
       hoverTextColor,
+      fontSize,
       hoverBackgroundColor,
       activeBackgroundColor,
       borderColor,
       activeBorderColor,
       hoverBorderColor,
+      lineHeight,
     }) => {
       const commonStyles = theme.components.BuiButton.common;
       const buttonStyles = theme.components.BuiButton.variants[variant as "soft"].styles({ color: color });
@@ -134,10 +140,10 @@ const cssStylingCommon = css<Omit<IButtonProps, "label">>`
         borderRadius: commonStyles.borderRadius,
         cursor: "pointer",
         fontWeight: commonStyles.fontWeight,
-        fontSize: commonStyles.fontSize,
+        fontSize: fontSize || commonStyles.fontSize,
         border,
         borderColor: borderColor,
-        lineHeight: commonStyles.lineHeight,
+        lineHeight: lineHeight || commonStyles.lineHeight,
         color: textColor ? textColor : buttonStyles.foreground,
         // Added extra 1px padding for buttons in case of no outline
         padding: border === "none" ? padding.split(" ").map(item => (parseInt(item) + 1) + "px").join(" "):padding ,

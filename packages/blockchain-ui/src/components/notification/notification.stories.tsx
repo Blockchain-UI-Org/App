@@ -25,6 +25,7 @@ export const Error = Template.bind({});
 
 Error.args = {
   type: "error",
+  rootStyle: { position: "relative" },
   message: "This is a error message!",
 };
 
@@ -32,6 +33,7 @@ export const Success = Template.bind({});
 
 Success.args = {
   type: "success",
+  rootStyle: { position: "relative" },
   message: "This is a Success message!",
 };
 
@@ -39,6 +41,7 @@ export const Warning = Template.bind({});
 
 Warning.args = {
   type: "warning",
+  rootStyle: { position: "relative" },
   message: "This is a Warning message!",
 };
 
@@ -46,6 +49,7 @@ export const Info = Template.bind({});
 
 Info.args = {
   type: "info",
+  rootStyle: { position: "relative" },
   message: "This is a Info message!",
 };
 
@@ -55,10 +59,9 @@ NotificationInverted.args = {
   type: "success",
   invert: true,
   default: true,
+  rootStyle: { position: "relative" },
   message: "This is a default message!",
-
 };
-
 
 export const ErrorAction = Template.bind({});
 
@@ -66,7 +69,8 @@ ErrorAction.args = {
   type: "error",
   message: "This is a error message!",
   actionLabel: "Action",
-  cancelLabel: "Cancel"
+  rootStyle: { position: "relative" },
+  cancelLabel: "Cancel",
 };
 
 export const SuccessAction = Template.bind({});
@@ -75,7 +79,8 @@ SuccessAction.args = {
   type: "success",
   message: "This is a Success message!",
   actionLabel: "Action",
-  cancelLabel: "Cancel"
+  rootStyle: { position: "relative" },
+  cancelLabel: "Cancel",
 };
 
 export const WarningAction = Template.bind({});
@@ -84,7 +89,8 @@ WarningAction.args = {
   type: "warning",
   message: "This is a Warning message!",
   actionLabel: "Action",
-  cancelLabel: "Cancel"
+  cancelLabel: "Cancel",
+  rootStyle: { position: "relative" },
 };
 
 export const InfoAction = Template.bind({});
@@ -92,10 +98,10 @@ export const InfoAction = Template.bind({});
 InfoAction.args = {
   type: "info",
   message: "This is a Info message!",
+  rootStyle: { position: "relative" },
   actionLabel: "Action",
-  cancelLabel: "Cancel"
+  cancelLabel: "Cancel",
 };
-
 
 export const NotificationInvertedWithActions = Template.bind({});
 
@@ -104,8 +110,9 @@ NotificationInvertedWithActions.args = {
   invert: true,
   default: true,
   message: "This is a default message!",
+  rootStyle: { position: "relative" },
   actionLabel: "Action",
-  cancelLabel: "Cancel"
+  cancelLabel: "Cancel",
 };
 
 export const Loading = Template.bind({});
@@ -113,6 +120,7 @@ export const Loading = Template.bind({});
 Loading.args = {
   type: "success",
   message: "Confirming Transaction",
+  rootStyle: { position: "relative" },
   actionLabel: "Action",
-  cancelLabel: "Cancel"
+  cancelLabel: "Cancel",
 };

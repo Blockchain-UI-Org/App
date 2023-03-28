@@ -1,4 +1,4 @@
-import { listOfCryptos } from "./CryptoList";
+import { CryptoList } from "./CryptoList";
 
 export default {
   title: "General/Crypto Icons",
@@ -9,8 +9,8 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template = () => {
   const renderIcons = () => {
-    return Object.keys(listOfCryptos).map((key) => {
-      const Icon = listOfCryptos[key].icon;
+    return CryptoList.map((item) => {
+      const {icon: Icon}  = item;
       return (
         <div
           style={{
@@ -29,7 +29,7 @@ const Template = () => {
           <div style={{ width: "50%" }}>
             <Icon />
           </div>
-          <span style={{ fontSize: 10 }}>{listOfCryptos[key].name}</span>
+          <span style={{ fontSize: 10 }}>{item.name}</span>
         </div>
       );
     });

@@ -95,7 +95,6 @@ import { TetherGoldLogo } from "./crypto-icons/TetherGoldLogo";
 import { TetherLogo } from "./crypto-icons/TetherLogo";
 import { TheGraphLogo } from "./crypto-icons/TheGraphLogo";
 import { TheSandboxLogo } from "./crypto-icons/TheSandboxLogo";
-import { TrustWalletLogo } from "./crypto-icons/TrustWalletLogo";
 import { TUSDLogo } from "./crypto-icons/TUSDLogo";
 import { UltraLogo } from "./crypto-icons/UltraLogo";
 import { UMALogo } from "./crypto-icons/UMALogo";
@@ -113,6 +112,7 @@ type INativeToken = {
   nativeToken: boolean;
   website: string;
   network: string;
+  decimals?: number;
   nativeWrapper?: string;
   icon: React.FC<any>;
 };
@@ -122,6 +122,7 @@ type ERCToken = {
   symbol: string;
   icon: React.FC<any>;
   website: string;
+  decimals?: number
   contract: Partial<{
     ethereum: string;
     polygon: string;
@@ -132,11 +133,12 @@ type ERCToken = {
 };
 type ICrypto = INativeToken | ERCToken;
 
-export const listOfCryptos: { [x: string]: ICrypto } = {
+ const listOfCryptos: { [x: string]: ICrypto } = {
   bitcoin: {
     name: "bitcoin",
     symbol: "BTC",
     nativeToken: true,
+    decimals: 8,
     website: "https://www.bitcoin.org/",
     network: "bitcoin",
     icon: BTCLogo,
@@ -144,6 +146,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   tether: {
     name: "tether",
     symbol: "USDT",
+    decimals: 2,
     website: "https://tether.to/",
     icon: TetherLogo,
     contract: {
@@ -155,6 +158,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   wbtc: {
     name: "Wrapped Bitcoin",
     symbol: "wbtc",
+    decimals: 8,
     icon: WrappedBitcoinLogo,
     website: "https://www.wbtc.network/",
     contract: {
@@ -198,6 +202,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   trueusd: {
     name: "True USD",
     symbol: "TUSD",
+    decimals: 2,
     icon: TUSDLogo,
     website: "https://tusd.io/",
     contract: {
@@ -230,6 +235,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
     name: "USD Coin",
     symbol: "USDC",
     icon: USDCLogo,
+    decimals: 2,
     website: "https://circle.com/",
     contract: {
       ethereum: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -240,6 +246,7 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   busd: {
     name: "Binance USD",
     symbol: "BUSD",
+    decimals: 2,
     icon: BUSDLogo,
     website: "https://www.paxos.com/busd/",
     contract: {
@@ -1221,4 +1228,6 @@ export const listOfCryptos: { [x: string]: ICrypto } = {
   },
 
 };
+
+export const CryptoList = Object.values(listOfCryptos);
 

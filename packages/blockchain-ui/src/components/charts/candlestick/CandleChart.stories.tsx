@@ -2,7 +2,6 @@ import React from "react";
 import { ComponentMeta, Story } from "@storybook/react";
 import CandleStickChart, { ChartProps } from "./CandlerChart";
 import { CandleData } from "./CandleData";
-import moment from "moment";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
