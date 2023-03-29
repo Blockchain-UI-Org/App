@@ -69,7 +69,7 @@ const TextFieldContainer = styled.div`
 
 const TextFieldLabel = styled.label<{ hasValue?: boolean; isFocused?: boolean; types: string; prefix?: boolean }>`
   position: absolute;
-  top: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "8px" : "30%")};
+  top: ${({ hasValue, isFocused }) => (isFocused || hasValue ? "8px" : "30%")};
   margin-left: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "15px" : "40px")};
   background-color: white;
   transform: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "translateY(-100%)" : "none")};
@@ -133,7 +133,7 @@ export const TextFieldInput: FunctionComponent<ITextFieldProps> = ({
     setFieldValue(e.target.value);
   };
 
-  console.log(!!fieldValue, "isFocused");
+  console.log(!!fieldValue, isFocused, "isFocused");
   console.log(error, "errorsds");
 
   return (
@@ -141,7 +141,7 @@ export const TextFieldInput: FunctionComponent<ITextFieldProps> = ({
       <div style={{ marginBottom: "30px", marginRight: "12px" }}>
         <TextFieldContainer>
           {label && (
-            <TextFieldLabel htmlFor="name" hasValue={!!fieldValue} types={state}>
+            <TextFieldLabel htmlFor="name" hasValue={fieldValue !== "empty"} types={state} isFocused={isFocused}>
               Label
             </TextFieldLabel>
           )}
