@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { withTheme } from "blockchain-ui/theme";
 import { InputDollarIcon } from "../static/images/icons/regular/InputDollarIcon";
 import { BackdropProps } from "@mui/material";
+import { InputHeartIcon } from "../static/images/icons/regular/InputHeartIcon";
 
 export const TextFieldVariants = ["outlined", "filled", "standard"] as const;
 export const TextFieldType = ["default", "value", "hovered"] as const;
@@ -33,6 +34,7 @@ export interface ITextFieldProps extends InputHTMLPropsWithoutPrefix {
   InputDollarIcon?: string;
   label?: boolean;
   isValidationValue?: boolean;
+  prefixIcon?: string;
 }
 
 const Container = styled.div``;
@@ -50,7 +52,7 @@ const TextInputField = styled.input<{ error?: boolean; types: string }>`
   padding: 12px 14px;
   font-weight: 400;
   line-height: 24px;
-  color: ${withTheme(({ theme }) => theme.palette.text.primary)};
+  color: ${(props) => (props.types === "disabled" ? "#919EAB" : withTheme(({ theme }) => theme.palette.text.primary))};
   border: none;
   background-color: transparent;
 
@@ -70,12 +72,13 @@ const TextFieldContainer = styled.div`
 const TextFieldLabel = styled.label<{ hasValue?: boolean; isFocused?: boolean; types: string; prefix?: boolean }>`
   position: absolute;
   top: ${({ hasValue, isFocused }) => (isFocused || hasValue ? "8px" : "30%")};
-  margin-left: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "15px" : "40px")};
+  margin-left: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "15px" : "15px")};
   background-color: white;
   transform: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "translateY(-100%)" : "none")};
   font-size: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "0.75rem" : "1rem")};
   font-weight: ${({ hasValue, isFocused }) => (hasValue || isFocused ? "400" : "400")};
-  color: ${(props) => (props.types === "focus" ? "#212B36" : "#919EAB")};
+  color: ${(props) => (props.types === "error" ? "#FF5630" : "#919EAB")};
+
   transition: all 0.2s ease-in-out;
 `;
 
@@ -84,18 +87,24 @@ const InputContainer = styled.div<{ error?: boolean; types: string }>`
   align-items: center;
   border-radius: 8px;
   border: ${(prop) => {
-    if (prop.types === "focus" || prop.types === "hover") {
-      return "1px solid #212B36";
-    }
-    if (prop.types === "error") return "1px solid red";
+    if (prop.types === "error") return "1px solid #FF5630";
     return `1px solid rgba(145, 158, 171, 0.32)`;
   }};
 
   width: fit-content;
   background-color: white;
-  &:focus-within {
+  /* &:focus-within {
     outline: none;
     border-color: black;
+  } */
+
+  &:focus-within {
+    border-color: ${(props) => (props.types === "focus" ? "#212B36" : "rgba(145, 158, 171, 0.32)")};
+  }
+
+  &:hover {
+    border-color: ${(props) =>
+      props.types === "hover" || props.types === "focus" ? "#212B36" : "rgba(145, 158, 171, 0.32)"};
   }
 `;
 
@@ -117,6 +126,7 @@ export const TextFieldInput: FunctionComponent<ITextFieldProps> = ({
   prefix,
   label,
   isValidationValue,
+  prefixIcon,
 }) => {
   const [fieldValue, setFieldValue] = useState<string>(state);
   const [isFocused, setIsFocused] = useState<boolean>(false);
@@ -148,9 +158,9 @@ export const TextFieldInput: FunctionComponent<ITextFieldProps> = ({
 
           <InputContainer types={state}>
             {prefix && (
-              <Icon>
-                <InputDollarIcon />
-              </Icon>
+              <>
+                <Icon>{prefixIcon === "heart" ? <InputHeartIcon /> : <InputDollarIcon />}</Icon>
+              </>
             )}
 
             <TextInputField

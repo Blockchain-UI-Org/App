@@ -11,7 +11,33 @@ export default {
 } as Meta<ITextFieldProps>;
 
 const states = ["empty", "valued", "hover", "focus", "error", "disabled"];
-const adornment = ["empty", "value", "empty", "valued", "empty", "value"];
+const adornment = [
+  {
+    type: "empty",
+    icon: "doller",
+  },
+  {
+    type: "valued",
+    icon: "dollar",
+  },
+  {
+    type: "hover",
+    icon: "heart",
+  },
+  {
+    type: "focus",
+    icon: "heart",
+  },
+  {
+    type: "error",
+    icon: "heart",
+  },
+  {
+    type: "disabled",
+    icon: "heart",
+  },
+];
+// const adornment = ["empty", "value", "empty", "valued", "empty", "value"];
 const helpText = ["empty", "error"];
 const sizeValue = ["Medium", "Small"];
 
@@ -38,10 +64,11 @@ const Template = () => (
     {adornment.map((stateValue) => {
       return (
         <TextFieldInput
-          state={stateValue}
-          value={stateValue !== "empty" ? stateValue : undefined}
-          error={stateValue === "error"}
-          disabled={stateValue === "disabled"}
+          state={stateValue.type}
+          value={stateValue.type !== "empty" ? stateValue.type : undefined}
+          error={stateValue.type === "error"}
+          disabled={stateValue.type === "disabled"}
+          prefixIcon={stateValue.icon}
           prefix={true}
           label={true}
           isValidationValue={false}
