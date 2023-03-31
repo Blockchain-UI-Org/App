@@ -12,7 +12,7 @@ const GetStartedSection = () => {
         </div>
         <div className="getStartedSection">
           {/* <GetStartedButton>Get Started</GetStartedButton> */}
-          <div className="contactUs">Beta Release Date March 31st 2023</div>
+          <div className="contactUs">Alpha now available.</div>
         </div>
       </div>
       <div className="rightSection">
