@@ -12,7 +12,7 @@ const GetStartedSection = () => {
         </div>
         <div className="getStartedSection">
           {/* <GetStartedButton>Get Started</GetStartedButton> */}
-          <div className="contactUs">Alpha now available.</div>
+          <div className="contactUs">Beta release now available.</div>
         </div>
       </div>
       <div className="rightSection">
