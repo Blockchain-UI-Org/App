@@ -34,7 +34,7 @@ export const Input: FunctionComponent<InputProps> = ({
   const hasError = !!error?.trim();
   return (
     <Container block={block}>
-      {label && <Label htmlFor={label}>{label}</Label>}
+      {label && <Label htmlFor={label} aria-label={label}>{label}</Label>}
 
       <InputWrapper hasError={hasError} id={label}>
         {prefix && <Prefix>{prefix}</Prefix>}

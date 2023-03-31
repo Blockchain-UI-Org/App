@@ -1,9 +1,11 @@
 import { Meta, Story } from "@storybook/react";
 import { useState } from "react";
+import { CryptoList } from "../cryptos-list";
+
 import { CryptoInput, ICryptoInputProps } from "./cryptoinput";
+import { IBasicToken } from "./CryptoListModal";
 
 export default {
-  
   component: CryptoInput,
 
   title: "Input/ Crypto Input",
@@ -14,23 +16,28 @@ export default {
       },
     },
   },
-  parameters: {
-    backgrounds: {
-      default: "white",
-      values: [{ name: "white", value: "#fff" }],
-    },
-  },
 } as Meta<ICryptoInputProps>;
+
 
 const Template: Story<ICryptoInputProps> = (args) => {
   const [val, setValue] = useState<string | number>("");
-  return <CryptoInput {...args} value={val} onChange={setValue} />;
+  const [selectedToken, setSelectedToken] = useState<IBasicToken>(CryptoList[2]);
+  return (
+    <CryptoInput
+      {...args}
+      selectedToken={selectedToken}
+      listOfCurrencies={CryptoList}
+      onSelectToken={setSelectedToken}
+      value={val}
+      onChange={setValue}
+    />
+  );
 };
 
 export const Primary = Template.bind({});
 
+
 Primary.args = {
-  symbol: "DAI",
   value: 10,
   price: 1,
   align: "left",
@@ -38,9 +45,16 @@ Primary.args = {
 export const RightAligned = Template.bind({});
 
 RightAligned.args = {
-  symbol: "BTC",
   value: 10,
   price: 1,
   align: "right",
 };
 
+export const WithBalance = Template.bind({});
+
+WithBalance.args = {
+  value: 10,
+  price: 1,
+  align: "right",
+  balance: "1.030442"
+};

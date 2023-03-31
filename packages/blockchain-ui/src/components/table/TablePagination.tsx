@@ -77,11 +77,11 @@ export function Pagination(props: IPagination) {
   return (
     <>
       <Divider />
-      <PaginationWrapper>
+      <PaginationWrapper role="pagination">
         {paginationProps.rowsPerPage.enable && (
           <RowsPerPageSection>
             <Paragraph variant="body2">Rows per page</Paragraph>
-            <select onChange={paginationProps.onRowPerPageChange}>
+            <select data-testId="row-per-page-select" onChange={paginationProps.onRowPerPageChange}>
               {paginationProps.rowsPerPage.values?.map((value, index) => (
                 <option key={index} value={value}>
                   {value}
@@ -95,10 +95,10 @@ export function Pagination(props: IPagination) {
           {startRow}-{endRow} of {totalRows}
         </Paragraph>
         <NavigationWrapper>
-          <NavigationIcon {...(!disablePrev ? { onClick: onClickPrev } : {})}>
+          <NavigationIcon {...(!disablePrev ? { onClick: onClickPrev } : {})} role="previous-icon">
             <ChevronLeft color={disablePrev ? theme.palette.text.disabled : theme.palette.text.primary} />
           </NavigationIcon>
-          <NavigationIcon {...(!disableNext ? { onClick: onClickNext } : {})}>
+          <NavigationIcon {...(!disableNext ? { onClick: onClickNext } : {})} role="next-icon">
             <ChevronRight color={disableNext ? theme.palette.text.disabled : theme.palette.text.primary} />
           </NavigationIcon>
         </NavigationWrapper>

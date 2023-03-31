@@ -7,6 +7,7 @@ import { Flex } from "../flex";
 import { Button } from "../button";
 import { Subtitle } from "../typography";
 import { createPortal } from "react-dom";
+import { INotificationStyles } from "blockchain-ui/theme/components";
 
 export const NotificationTypes = ["info", "warning", "success", "error"] as const;
 export type INotificationType = (typeof NotificationTypes)[number];
@@ -110,9 +111,9 @@ export const Notification: FunctionComponent<INotificationProps> = ({
     }
   };
   const comp = (
-    <NotificationWrapper rootStyle={rootStyle} invert={invert} opacity={opacity}>
+    <NotificationWrapper type={type} rootStyle={rootStyle} invert={invert} opacity={opacity}>
       {!hideIcon && (
-        <IconWrapper type={type}>
+        <IconWrapper invert={invert} type={type}>
           <Icon />
         </IconWrapper>
       )}
@@ -123,14 +124,14 @@ export const Notification: FunctionComponent<INotificationProps> = ({
     </NotificationWrapper>
   );
 
-  if(usePortal){
+  if (usePortal) {
     return createPortal(comp, document.body);
-  }else {
+  } else {
     return comp;
   }
 };
 
-const NotificationWrapper = styled.div<Pick<INotificationProps,"rootStyle" |  "invert" | "opacity">>`
+const NotificationWrapper = styled.div<Pick<INotificationProps, "rootStyle" | "invert" | "opacity" | "type">>`
   display: flex;
   /* align-items: flex-start; */
   top: 10%;
@@ -140,22 +141,24 @@ const NotificationWrapper = styled.div<Pick<INotificationProps,"rootStyle" |  "i
   border-radius: 8px;
   width: 420px;
 
-  ${withTheme(({ theme, invert, opacity, rootStyle }) => {
+  ${withTheme(({ theme, invert, opacity, rootStyle, type }) => {
+    const compStyles: INotificationStyles = invert
+      ? theme.components.BuiNotification.invertStyles({ type })
+      : theme.components.BuiNotification.styles({ type });
     const bgCss = css({
-      backgroundColor: invert ? theme.palette.grey[900] : theme.palette.common.white,
-      color: invert ? theme.palette.common.white : theme.palette.grey[800],
+      backgroundColor: compStyles.bg,
+      color: compStyles.foreground,
     });
 
-    const overrides =  rootStyle ? css({...rootStyle}): ``;
+    const overrides = rootStyle ? css({ ...rootStyle }) : ``;
 
     return css`
       padding: 12px;
-     
 
-      opacity: ${opacity};
       z-index: 10000;
       ${bgCss}
 
+      opacity: ${opacity};
       box-shadow: ${theme.shadows.depth3};
       ${overrides}
     `;
@@ -170,7 +173,7 @@ const CloseWrapper = styled(Flex)`
   color: ${withTheme(({ theme }) => theme.palette.grey[600])};
 `;
 
-const IconWrapper = styled.div<Pick<INotificationProps, "type">>`
+const IconWrapper = styled.div<Pick<INotificationProps, "type" | "invert">>`
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -178,13 +181,13 @@ const IconWrapper = styled.div<Pick<INotificationProps, "type">>`
   width: 40px;
   height: 40px;
 
-  ${withTheme(({ theme, type }) => {
-    const mainColor = theme.palette[type].main;
-    const bgColor = alpha(mainColor, 0.16);
-
-    return css`
-      color: ${mainColor};
-      background-color: ${bgColor};
-    `;
+  ${withTheme(({ theme, type, invert }) => {
+    const compStyles: INotificationStyles = invert
+      ? theme.components.BuiNotification.invertStyles({ type })
+      : theme.components.BuiNotification.styles({ type });
+    return css({
+      backgroundColor: compStyles.iconBg,
+      color: compStyles.iconColor,
+    });
   })}
 `;

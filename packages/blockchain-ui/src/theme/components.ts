@@ -9,6 +9,8 @@ import { IButtonColors, IButtonVariants } from "../components/button";
 import { alpha } from "blockchain-ui/utils";
 import { createShadow, createShadowString } from "./shadow";
 import { ITagColors, ITagVariants } from "blockchain-ui/components/tag/tag";
+import { CreateThemeArgs, ThemeInterface } from "./theme";
+import { INotificationType } from "..";
 
 const regular = {
   small: "16px",
@@ -47,6 +49,8 @@ type IAlertStyles = Partial<{
   dismissBorder: string;
 }>;
 
+export type INotificationStyles = { bg: string; iconColor: string; iconBg: string; foreground: string };
+
 export type IComponentTheme = {
   CreditCard: { variants: IColorVariants };
   BuiAlert: {
@@ -55,6 +59,10 @@ export type IComponentTheme = {
       filled: { styles: (args: { status: IAlertStatus }) => IAlertStyles };
       outlined: { styles: (args: { status: IAlertStatus }) => IAlertStyles };
     };
+  };
+  BuiNotification: {
+    styles: (args: { type: INotificationType }) => INotificationStyles;
+    invertStyles: (args: { type: INotificationType }) => INotificationStyles;
   };
   BuiButton: {
     common: {
@@ -261,6 +269,28 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
         },
       },
     },
+    BuiNotification: {
+      styles: ({type}) => {
+        const mainColor = pallette[type].main;
+        const bgColor = alpha(mainColor, 0.16);
+        return {
+          bg: pallette.common.white,
+          foreground: pallette.grey[800],
+          iconColor:  mainColor,
+          iconBg: bgColor,
+        };
+      },
+      invertStyles: ({type}) => {
+        const mainColor = pallette[type].main;
+        const bgColor = alpha(mainColor, 0.16);
+        return {
+          bg: pallette.grey[900],
+          foreground: pallette.common.white,
+          iconColor:  mainColor,
+          iconBg: bgColor,
+        };
+      },
+    },
     CreditCard: {
       variants: colorVariants,
     },
@@ -322,7 +352,7 @@ const buildComponentTheme = (colorPalette?: IColorPalette) => {
   return compTheme;
 };
 
-export const createComponents = (palette?: IColorPalette, args: Subset<IComponentTheme> = {}) => {
+export const createComponents = (palette?: IColorPalette, args: Subset<CreateThemeArgs["components"]> = {}) => {
   const newTheme = buildComponentTheme(palette);
-  return merge(newTheme, args);
+  return merge(newTheme, typeof args === "function" ? args(palette) : args);
 };
