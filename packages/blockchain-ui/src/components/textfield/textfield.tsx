@@ -2,7 +2,6 @@ import { FunctionComponent, useState } from "react";
 import styled from "styled-components";
 import { withTheme } from "blockchain-ui/theme";
 import { InputDollarIcon } from "../static/images/icons/regular/InputDollarIcon";
-import { BackdropProps } from "@mui/material";
 import { InputHeartIcon } from "../static/images/icons/regular/InputHeartIcon";
 
 export const TextFieldVariants = ["outlined", "filled", "standard"] as const;
@@ -143,8 +142,8 @@ export const TextFieldInput: FunctionComponent<ITextFieldProps> = ({
     setFieldValue(e.target.value);
   };
 
-  console.log(!!fieldValue, isFocused, "isFocused");
-  console.log(error, "errorsds");
+  // console.log(!!fieldValue, isFocused, "isFocused");
+  // console.log(error, "errorsds");
 
   return (
     <Container>
@@ -165,6 +164,7 @@ export const TextFieldInput: FunctionComponent<ITextFieldProps> = ({
 
             <TextInputField
               id="name"
+              data-testid="textfield-Input"
               name="name"
               value={state !== "empty" ? fieldValue : undefined}
               onChange={handleChange}

@@ -158,6 +158,7 @@ export const TextFieldFilled: FunctionComponent<ITextFieldFilledProps> = ({ stat
           )}
           <TextInputField
             id="name"
+            data-testid="textfield-filledInput"
             name="name"
             value={state !== "empty" ? fieldValue : undefined}
             onChange={handleChange}

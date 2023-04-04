@@ -110,13 +110,14 @@ export const TextAreaValue: React.FC<ITextAreaValueProps> = ({
 
   return (
     <Container>
-      <TextFieldLabel htmlFor="name" hasValue={!!fieldValue} isFocused={isFocused} isError={isError}>
+      <TextFieldLabel htmlFor="name" hasValue={!!fieldValue} isFocused={isFocused} isError={isError} aria-label={label}>
         {label}
       </TextFieldLabel>
       <InputTextAreaValue
         onChange={handleChange}
         onFocus={handleFocus}
         onBlur={handleBlur}
+        data-testid="textArea-with-value"
         // value={value}
         onHover={onHover}
         isFocus={isFocus}

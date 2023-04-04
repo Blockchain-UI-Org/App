@@ -157,6 +157,7 @@ export const TextFieldStandard: FunctionComponent<ITextFieldStandardProps> = ({ 
           )}
           <TextInputField
             id="name"
+            data-testid="text"
             name="name"
             value={state !== "empty" ? fieldValue : undefined}
             onChange={handleChange}
