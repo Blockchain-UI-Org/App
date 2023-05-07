@@ -136,14 +136,16 @@ export const Features = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    gap: 20px;
     margin: 50px 0px;
     // @media (max-width: 1200px) {
     //   display: flex;
     //   flex-wrap: wrap;
     //   margin: 50px 0px;
     // }
-
+    .feature-item {
+      flex: 1
+    }
     @media (max-width: 1200px) {
       display: flex;
       flex-wrap: wrap;

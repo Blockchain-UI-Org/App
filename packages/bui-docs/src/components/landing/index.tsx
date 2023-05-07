@@ -5,6 +5,10 @@ import GetStartedSection from "./getStarted";
 import { Container } from "./styled";
 import { Roadmap } from "../Roadmap";
 import { ThemeContext } from "@site/src/context/ThemeContextProvider";
+import { JoinCommunitySection } from "./JoinCommunitySection";
+import { PopularQuestionsSection } from "./PopularQuestionsSection";
+import { ExploreLibrarySection } from "./ExploreLibrarySection";
+import { BrowseLibrarySection } from "./BrowseLibrarySection";
 
 const Landing = () => {
   // const {theme, setTheme} = useContext(ThemeContext);
@@ -13,6 +17,7 @@ const Landing = () => {
       {/* <Menu></Menu> */}
 
       <GetStartedSection />
+      <JoinCommunitySection />
       {/* <button onClick={() => theme === "light" ? setTheme("dark"): setTheme("light")}>
         change theme
       </button> */}
@@ -34,6 +39,10 @@ const Landing = () => {
           { completed: false, title: "Drag n Drop", description: "No Code" },
         ]}
       />
+
+      <PopularQuestionsSection />
+      <ExploreLibrarySection />
+      <BrowseLibrarySection />
       <ComponentsSection />
     </Container>
   );

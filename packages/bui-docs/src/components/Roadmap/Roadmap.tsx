@@ -1,6 +1,7 @@
 import React, { CSSProperties, FC, useMemo } from "react";
 import styled, { css } from "styled-components";
 import { Library } from "../landing/styled";
+import { Heading1, Heading4, Heading5 } from "../atoms/Typography";
 
 export type IRoadmapProps = {
   items: {
@@ -42,7 +43,7 @@ const StyledSection = styled.section`
 const Wrapper = styled.div<{ progress: number; count: number }>`
   position: relative;
   min-height: 300px;
-
+  width: 100%;
   &::before {
     content: "";
     display: block;
@@ -53,7 +54,7 @@ const Wrapper = styled.div<{ progress: number; count: number }>`
     width: calc(80% * ${(props) => props.progress} / ${(props) => props.count});
     height: 4px;
     z-index: 2;
-    background-color: #25c2a0;
+    background: linear-gradient(90deg, #8BD6FF 0%, #9EFFFF 50.31%, #D3BFFF 100%);
   }
   &::after {
     content: "";
@@ -65,7 +66,7 @@ const Wrapper = styled.div<{ progress: number; count: number }>`
     position: absolute;
     width: 80%;
     height: 4px;
-    background-color: #fff;
+    background-color: ${(props) => props.theme.default.divider};
   }
 
   @media screen and (max-width: 400px) {
@@ -130,8 +131,9 @@ const Circle = styled.div<{ title: string; count: number; index: number }>`
 `;
 
 const Card = styled.div`
-  background-color: #fff;
-  width: 200px;
+  background-color: ${(props) => props.theme.secondary.background};
+  width: max-content;
+  padding: 10px 20px;
   min-height: 50px;
   border-radius: 40px;
   display: flex;
@@ -144,11 +146,6 @@ const Card = styled.div`
   transform: translateX(-50%);
   top: 0;
   transition: all 0.3s linear;
-  span {
-    font-size: 10px;
-    color: #333;
-    padding-bottom: 5px;
-  }
   &.up {
     top: -70px;
     &:hover {
@@ -198,21 +195,21 @@ const Roadmap: FC<IRoadmapProps> = (props) => {
     }, 0);
   }, [props.items]);
   return (
-    <StyledSection>
-      <div className="titleHeader">Roadmap</div>
+    <div className="container text-center">
+      <Heading1>Roadmap</Heading1>
       <Wrapper count={props.items.length - 1} progress={completedCount - 1}>
         {props.items.map((item, index) => {
           return (
             <Circle title={item.title} count={props.items.length} index={index}>
-              <Card style={{ color: "#333" }} className={index % 2 === 0 ? "up" : "down"}>
-                {item.title}
-                {item.description && <span className="itemDescription">({item.description})</span>}
+              <Card className={index % 2 === 0 ? "up" : "down"}>
+                <Heading4>{item.title}</Heading4>
+                {item.description && <Heading5 color="secondary-dark">({item.description})</Heading5>}
               </Card>
             </Circle>
           );
         })}
       </Wrapper>
-    </StyledSection>
+    </div>
   );
 };
 

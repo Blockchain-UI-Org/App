@@ -1,50 +1,35 @@
 import React from "react";
 import { FeatureCard, Features } from "../styled";
+import { Heading1, Heading3, Heading4 } from "../../atoms/Typography";
+import { Card } from "../../atoms/Card/Card";
 
 const FeaturesSection = () => {
   return (
-    <Features>
-      <div className="titleHeader" style={{color: "#333"}}>Amazing Benefits</div>
+    <Features className="container">
+      <Heading1>Amazing Benefits</Heading1>
 
       <div className="features">
-        <FeatureCard>
-          {" "}
-          {/* <div className="featureIcon">
-            <img src="/assets/feature1.svg" alt="simple_feature_icon" />
-          </div> */}
-          <div className="header">Speed</div>
-          <div className="description">Faster development</div>
-        </FeatureCard>
-        <FeatureCard>
-          {/* <div className="featureIcon">
-            <img src="/assets/feature1.svg" alt="simple_feature_icon" />
-          </div> */}
-          <div className="header">Cost</div>
-          <div className="description">Save development costs.</div>
-        </FeatureCard>
-        <FeatureCard>
-          {/* <div className="featureIcon">
-            <img src="/assets/feature1.svg" alt="simple_feature_icon" />
-          </div> */}
-          <div className="header">Simple</div>
-          <div className="description">Easy-to-install and clear documentation.</div>
-        </FeatureCard>
-        {/* <FeatureCard>
-          <div className="featureIcon">
-            <img src="/assets/feature1.svg" alt="simple_feature_icon" />
-          </div>
-          <div className="header">Customizable</div>
-          <div className="description">
-            It can be tailored to fit the specific needs of your application and across all major blockchains.
-          </div>
-        </FeatureCard> */}
-        <FeatureCard>
-          {/* <div className="featureIcon">
-            <img src="/assets/feature1.svg" alt="simple_feature_icon" />
-          </div> */}
-          <div className="header">Safe and Secure</div>
-          <div className="description">Tested for vunerabilities.</div>
-        </FeatureCard>
+        <Card className="feature-item">
+          <img src="/img/speed_icon.svg" />
+          <Heading3>Speed</Heading3>
+          <Heading4 color="secondary-dark">Faster development</Heading4>
+        </Card>
+        <Card className="feature-item">
+          <img src="/img/cost_icon.svg" />
+          <Heading3>Cost</Heading3>
+          <Heading4 color="secondary-dark">Save development costs.</Heading4>
+        </Card>
+
+        <Card className="feature-item">
+          <img src="/img/cost_icon.svg" />
+          <Heading3>Simple</Heading3>
+          <Heading4 color="secondary-dark">Easy-to-install and clear documentation.</Heading4>
+        </Card>
+        <Card className="feature-item">
+          <img src="/img/cost_icon.svg" />
+          <Heading3>Safe and Secure</Heading3>
+          <Heading4 color="secondary-dark">Tested for vulnerabilities.</Heading4>
+        </Card>
       </div>
     </Features>
   );
