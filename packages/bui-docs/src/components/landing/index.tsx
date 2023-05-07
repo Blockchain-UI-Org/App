@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import ComponentsSection from "./library";
 import FeaturesSection from "./features";
 import GetStartedSection from "./getStarted";
 import { Container } from "./styled";
 import { Roadmap } from "../Roadmap";
+import { ThemeContext } from "@site/src/context/ThemeContextProvider";
 
 const Landing = () => {
+  // const {theme, setTheme} = useContext(ThemeContext);
   return (
     <Container>
       {/* <Menu></Menu> */}
+
       <GetStartedSection />
-    
+      {/* <button onClick={() => theme === "light" ? setTheme("dark"): setTheme("light")}>
+        change theme
+      </button> */}
       {/* <PartnersSection /> */}
       <FeaturesSection />
       <Roadmap

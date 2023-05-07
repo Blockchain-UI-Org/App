@@ -25,7 +25,6 @@ export const IphoneMock = styled.img`
   }
 `;
 
-
 export const GetStartedButton = styled.div`
   display: flex;
   flex-direction: row;
@@ -102,7 +101,6 @@ export const Features = styled.div`
   justify-content: center;
   min-height: 650px;
   width: 100%;
-  background-color: #f5f5f7;
 
   .titleHeader {
     font-style: normal;
