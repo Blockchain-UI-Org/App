@@ -25,12 +25,12 @@ export default function ComponentsSection({ ...other }) {
     centerMode: true,
     speed: 800,
     autoplaySpeed: 2000,
-    dots: true,
+    dots: false,
     arrows: true,
     autoplay: true,
     infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     responsive: [
       {
         breakpoint: 1500,
@@ -53,7 +53,7 @@ export default function ComponentsSection({ ...other }) {
   console.log(media, "media");
   return (
     <Library>
-      <div className="titleHeader">Explore Our Library</div>
+      {/* <div className="titleHeader">Explore Our Library</div> */}
 
       {media ? (
         <div style={{ maxWidth: "80%",margin: "0 auto", display: "flex", flexDirection: "column", alignItems: "center"}}>
@@ -67,13 +67,13 @@ export default function ComponentsSection({ ...other }) {
           })}
         </div>
       ) : (
-        <Card {...other} style={{ backgroundColor: "black", marginTop: "50px" }}>
+        
           <Slider ref={carouselRef} {...settings}>
             {showcase.map((app, index) => (
               <CarouselItem key={app.id} item={app} isActive={index === currentIndex} />
             ))}
           </Slider>
-        </Card>
+        
       )}
     </Library>
   );

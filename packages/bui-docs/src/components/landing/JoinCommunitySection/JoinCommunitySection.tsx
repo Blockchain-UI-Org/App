@@ -8,24 +8,24 @@ export interface IJoinCommunitySectionProps {}
 export function JoinCommunitySection(props: IJoinCommunitySectionProps) {
   return (
     <SectionContainer className="container">
-      <SectionHeading>
+      <SectionHeading className="jc-heading">
         <Heading1>Join a</Heading1>
         <Heading1>community</Heading1>
       </SectionHeading>
 
-      <Card>
+      <Card className="jc-card">
         <ItemCardBody>
           <Heading2 className="fancy-text">11.5M+</Heading2>
           <Heading4>ACTIVE ACCOUNTS</Heading4>
         </ItemCardBody>
       </Card>
-      <Card>
+      <Card className="jc-card">
         <ItemCardBody>
           <Heading2 className="fancy-text">21.9M</Heading2>
           <Heading4>PROJECTS</Heading4>
         </ItemCardBody>
       </Card>
-      <Card>
+      <Card className="jc-card">
         <ItemCardBody>
           <Heading2 className="fancy-text">6.2M</Heading2>
           <Heading4>EXECUTED TRANSACTIONS</Heading4>

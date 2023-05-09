@@ -99,7 +99,7 @@ export const Features = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 650px;
+  /* min-height: 650px; */
   width: 100%;
 
   .titleHeader {
@@ -234,10 +234,9 @@ export const Library = styled.div`
   padding: 50px 0px;
 
   min-height: 600px;
-  background-color: #000000;
   // margin: 50px 100px;
 
-  .subHeader {
+  /* .subHeader {
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -251,9 +250,9 @@ export const Library = styled.div`
       font-size: 32px;
       margin: 100px 10px 20px 10px;
     }
-  }
+  } */
 
-  .titleHeader {
+  /* .titleHeader {
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
@@ -272,7 +271,7 @@ export const Library = styled.div`
     @media (max-width: 1200px) {
       font-size: 32px;
     }
-  }
+  } */
 
   .description {
     margin-top: 10px;

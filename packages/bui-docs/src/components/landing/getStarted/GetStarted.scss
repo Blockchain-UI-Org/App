@@ -16,19 +16,21 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 44px;
     // align-items: center;
     justify-content: center;
     // padding: 0 50px 0 150px;
 
-    // @media (max-width: 1200px) {
-    //   padding: 0 50px;
-    // }
+    @media (max-width: 1200px) {
+      // padding: 0 50px;
+    }
 
-    // @media (max-width: 1000px) {
-    //   width: 100%;
-    //   padding: 0 10px;
-    // }
+    @media (max-width: 1000px) {
+      width: 100%;
+      padding: 0 10px;
+      text-align: center;
+      align-items: center;
+    }
   }
 
   .rightSection {

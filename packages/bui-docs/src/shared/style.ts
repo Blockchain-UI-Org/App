@@ -7,14 +7,15 @@ export const FlexContainer = styled.div<{
   justifyContent?: FlexVariant;
   alignItems?: FlexVariant;
   flexDirection?: "row" | "column";
+  wrap?: boolean;
 }>`
   display: flex;
   flex-direction: ${({ flexDirection = "row" }) => flexDirection};
   justify-content: ${({ justifyContent = "flex-start" }) => justifyContent};
   gap: ${({ gap = 20 }) => `${gap}px`};
   align-items: ${({ alignItems = "flex-start" }) => alignItems};
-  width: 100%;
   height: 100%;
+  flex-wrap: ${({ wrap = false }) => (wrap ? "wrap" : "nowrap")};
 `;
 
 export const FieldsetHeadingWrapper = styled.div`

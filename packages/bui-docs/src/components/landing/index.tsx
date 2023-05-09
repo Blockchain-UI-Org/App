@@ -17,40 +17,55 @@ const Landing = () => {
   return (
     <Container>
       {/* <Menu></Menu> */}
-
-      <GetStartedSection />
-      <JoinCommunitySection />
+      <section className="app-section">
+        <GetStartedSection />
+      </section>
+      <section className="app-section">
+        <JoinCommunitySection />
+      </section>
       {/* <button onClick={() => theme === "light" ? setTheme("dark"): setTheme("light")}>
         change theme
       </button> */}
       {/* <PartnersSection /> */}
-      <FeaturesSection />
-      <Roadmap
-        items={[
-          { title: "Launch", description: "", completed: true },
-          {
-            completed: true,
-            title: "Component Library",
-            description: "Low Code",
-          },
-          {
-            completed: false,
-            title: "Theme Library",
-            description: "Less Code",
-          },
-          { completed: false, title: "Drag n Drop", description: "No Code" },
-        ]}
-      />
-
-      <PopularQuestionsSection />
-      <ExploreLibrarySection />
-      <BrowseLibrarySection />
-
-      <GetInTouchSection />
-
+      <section className="app-section">
+        <FeaturesSection />
+      </section>
+      <section className="app-section">
+        <Roadmap
+          items={[
+            { title: "Launch", description: "", completed: true },
+            {
+              completed: true,
+              title: "Component Library",
+              description: "Low Code",
+            },
+            {
+              completed: false,
+              title: "Theme Library",
+              description: "Less Code",
+            },
+            { completed: false, title: "Drag n Drop", description: "No Code" },
+          ]}
+        />
+      </section>
+      <section className="app-section">
+        <PopularQuestionsSection />
+      </section>
+      <section className="app-section">
+        <ExploreLibrarySection />
+      </section>
+      <section className="app-section">
+        <BrowseLibrarySection />
+      </section>
+      <section className="app-section">
+        <GetInTouchSection />
+      </section>
+      <section className="app-section">
         <OurTeamSection />
-
-      <ComponentsSection />
+      </section>
+      <section className="app-section">
+        <ComponentsSection />
+      </section>
     </Container>
   );
 };

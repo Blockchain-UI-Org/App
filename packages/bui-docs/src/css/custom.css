@@ -41,6 +41,11 @@ body {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.app-section {
+  padding: 60px 0px 60px 0px;
+  width: 100%;
+}
+
 .navbar__items {
   justify-content: center;
 }
@@ -103,6 +108,15 @@ body {
   .container-sm,
   .container {
     max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .jc-heading {
+    width: 100%;
+    text-align: center;
+  }
+  .jc-card {
+    width: 100%;
   }
 }
 @media (min-width: 992px) {

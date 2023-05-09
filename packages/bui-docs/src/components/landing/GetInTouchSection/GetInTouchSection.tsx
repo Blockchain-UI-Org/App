@@ -15,7 +15,7 @@ const CardWrapper = styled(Card)`
 
 export function GetInTouchSection(props: IGetInTouchSectionProps) {
   return (
-    <FlexContainer className="container">
+    <FlexContainer wrap className="container">
       <CardWrapper>
         <FlexContainer flexDirection="column" alignItems="flex-start" justifyContent="space-between" gap={40}>
           <FlexContainer flexDirection="column" alignItems="flex-start" justifyContent="flex-start">
