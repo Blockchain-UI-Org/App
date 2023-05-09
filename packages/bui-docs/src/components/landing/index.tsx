@@ -4,14 +4,18 @@ import FeaturesSection from "./features";
 import GetStartedSection from "./getStarted";
 import { Container } from "./styled";
 import { Roadmap } from "../Roadmap";
+import CommunitySection from "./community";
+
 
 const Landing = () => {
   return (
-    <Container>
+    <div>
       {/* <Menu></Menu> */}
-      <GetStartedSection />
+      <GetStartedSection /> 
+      <CommunitySection/>
     
       {/* <PartnersSection /> */}
+  
       <FeaturesSection />
       <Roadmap
         items={[
@@ -30,7 +34,7 @@ const Landing = () => {
         ]}
       />
       <ComponentsSection />
-    </Container>
+    </div>
   );
 };
 

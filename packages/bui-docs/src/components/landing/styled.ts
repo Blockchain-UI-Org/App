@@ -1,14 +1,29 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    max-width: 700px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 920px;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 1150px;
+  }
+
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+  /* align-items: center; */
+  /* height: 100%;
   overflow: hidden;
   min-height: 0px;
-  min-width: 0px;
+  min-width: 0px;  */
 `;
 
 export const IphoneMock = styled.img`
@@ -24,7 +39,6 @@ export const IphoneMock = styled.img`
     display: none;
   }
 `;
-
 
 export const GetStartedButton = styled.div`
   display: flex;
@@ -95,135 +109,8 @@ export const Partner = styled.img`
   }
 `;
 
-export const Features = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 650px;
-  width: 100%;
-  background-color: #f5f5f7;
 
-  .titleHeader {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 61px;
-    text-align: center;
-    letter-spacing: -1px;
-    /* color: #00000; */
 
-    @media (max-width: 1200px) {
-      margin-top: 20px;
-      font-size: 32px;
-    }
-  }
-
-  .description {
-    margin-top: 10px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: #2d3766;
-
-    @media (max-width: 1200px) {
-      display: flex;
-
-      color: grey;
-    }
-  }
-
-  .features {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
-    margin: 50px 0px;
-    // @media (max-width: 1200px) {
-    //   display: flex;
-    //   flex-wrap: wrap;
-    //   margin: 50px 0px;
-    // }
-
-    @media (max-width: 1200px) {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      margin: 50px 0px;
-    }
-  }
-`;
-
-export const FeatureCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 330px;
-  height: 304px;
-  padding: 20px 40px;
-  margin: 0 10px;
-
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background: #fff;
-  border-radius: 20px;
-
-  @media (max-width: 1200px) {
-    background: #ffff;
-    height: 150px;
-    margin: 10px 10px;
-  }
-
-  .header {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    background: -webkit-linear-gradient(45deg, #6fbbc9, #b1a0f5, #ed434c);
-
-    // background-image: linear-gradient(45deg, #f3ec78, #af4261);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
-    width: 100%;
-
-    color: #2d3766;
-
-    @media (max-width: 1200px) {
-      margin-top: 10px;
-      font-size: 16px;
-    }
-  }
-
-  .description {
-    display: flex;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    color: #475569;
-    opacity: 0.8;
-
-    @media (max-width: 1200px) {
-      font-size: 16px;
-    }
-  }
-
-  .featureIcon {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    width: 100%;
-
-    @media (max-width: 1200px) {
-      display: none;
-    }
-  }
-`;
 
 export const Library = styled.div`
   // display: flex;
@@ -262,10 +149,8 @@ export const Library = styled.div`
     letter-spacing: -1px;
     color: #2d3766;
     margin-bottom: 30px;
-
     background: -webkit-linear-gradient(45deg, #6fbbc9, #b1a0f5, #ed434c);
     background-color: red;
-    // background-image: linear-gradient(45deg, #f3ec78, #af4261);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 

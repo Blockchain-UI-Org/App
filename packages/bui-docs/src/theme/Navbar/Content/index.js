@@ -8,6 +8,8 @@ import NavbarLogo from "@theme/Navbar/Logo";
 import NavbarSearch from "@theme/Navbar/Search";
 import styles from "./styles.module.css";
 import NavbarColorModeToggle from "../ColorModeToggle";
+import useRouteContext from "@docusaurus/useRouteContext";
+import { useLocation } from "@docusaurus/router";
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
   return useThemeConfig().navbar.items;
@@ -22,8 +24,9 @@ function NavbarItems({ items }) {
   );
 }
 function NavbarContentLayout({ left, right }) {
+  const {pathname} = useLocation()
   return (
-    <div className="navbar__inner">
+    <div className={"navbar__inner " + (pathname === "/" ? "home": "")}>
       <div className="navbar__items">
         <div style={{ flex: 1 }}></div>
         <div style={{ flex: 1, display: "flex", justifyContent: "center" }}>{left}</div>
@@ -37,6 +40,7 @@ export default function NavbarContent() {
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
+
   const searchBarItem = items.find((item) => item.type === "search");
   return (
     <NavbarContentLayout
