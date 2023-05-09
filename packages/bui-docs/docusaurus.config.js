@@ -83,7 +83,7 @@ const config = {
           },
           {
             href: "https://www.chromatic.com/library?appId=63a670b1ce0472f1c60a3f59",
-            position: "right",
+            position: "left",
             label: "Library",
             className: "external-link",
           },

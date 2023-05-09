@@ -23,6 +23,7 @@ export interface ITheme {
   default: {
     divider: string;
     icon: string;
+    gradientAccent: string;
   };
 }
 

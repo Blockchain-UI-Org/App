@@ -2,6 +2,7 @@ import * as React from "react";
 import { ItemCardBody, SectionContainer, SectionHeading } from "./style";
 import { Heading1, Heading2, Heading4 } from "../../atoms/Typography";
 import { Card } from "../../atoms/Card/Card";
+import { GradientAccentText } from "@site/src/shared/style";
 
 export interface IJoinCommunitySectionProps {}
 
@@ -15,19 +16,25 @@ export function JoinCommunitySection(props: IJoinCommunitySectionProps) {
 
       <Card className="jc-card">
         <ItemCardBody>
-          <Heading2 className="fancy-text">11.5M+</Heading2>
+          <Heading2>
+            <GradientAccentText>11.5M+</GradientAccentText>
+          </Heading2>
           <Heading4>ACTIVE ACCOUNTS</Heading4>
         </ItemCardBody>
       </Card>
       <Card className="jc-card">
         <ItemCardBody>
-          <Heading2 className="fancy-text">21.9M</Heading2>
+          <Heading2>
+            <GradientAccentText>21.9M</GradientAccentText>
+          </Heading2>
           <Heading4>PROJECTS</Heading4>
         </ItemCardBody>
       </Card>
       <Card className="jc-card">
         <ItemCardBody>
-          <Heading2 className="fancy-text">6.2M</Heading2>
+          <Heading2>
+            <GradientAccentText>6.2M</GradientAccentText>
+          </Heading2>
           <Heading4>EXECUTED TRANSACTIONS</Heading4>
         </ItemCardBody>
       </Card>

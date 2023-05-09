@@ -36,6 +36,7 @@ const LightTheme: ITheme = {
   default: {
     divider: "#DBDBDB",
     icon: "#525252",
+    gradientAccent: "linear-gradient(90deg, #2587BC 0%, #27A0A0 52.4%, #8162C5 100%)",
   },
 };
 
@@ -54,6 +55,7 @@ const DarkTheme: ITheme = {
   default: {
     divider: "#454545",
     icon: "#FFFFFF",
+    gradientAccent: "linear-gradient(90deg, #8BD6FF 0%, #9EFFFF 50.31%, #D3BFFF 100%)",
   },
 };
 

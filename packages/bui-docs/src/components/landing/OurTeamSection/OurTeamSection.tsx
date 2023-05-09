@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Heading1, Heading3, Heading4 } from "../../atoms/Typography";
 import { FieldsetHeading } from "../../atoms/FieldsetHeading";
-import { FlexContainer } from "@site/src/shared/style";
+import { FlexContainer, GradientAccentText } from "@site/src/shared/style";
 import { TeamCardContainerWrapper, TeamImageImage } from "./style";
 import { TEAM_DATA } from "@site/src/config/team";
 
@@ -20,7 +20,7 @@ export function OurTeamSection(props: IOurTeamSectionProps) {
     <div className="container">
       <FieldsetHeading>
         <Heading1>
-          OUR <span className="fancy-text">TEAM</span>
+          OUR <GradientAccentText>TEAM</GradientAccentText>
         </Heading1>
       </FieldsetHeading>
       <TeamCardContainerWrapper wrap flexDirection="row" gap={20}>

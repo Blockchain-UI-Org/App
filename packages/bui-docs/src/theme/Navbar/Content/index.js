@@ -10,6 +10,9 @@ import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
 import styles from './styles.module.css';
+import NavbarColorModeToggle from '../ColorModeToggle';
+import styled from 'styled-components';
+
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
   return useThemeConfig().navbar.items;
@@ -23,10 +26,21 @@ function NavbarItems({items}) {
     </>
   );
 }
+
+const RightNavbarItems = styled.div`
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+`;
+
 function NavbarContentLayout({left, right}) {
   return (
     <div className="navbar__inner">
-      <div className="navbar__items">{left}{right}</div>
+      <div className="navbar__items relative">
+        {left}
+        <RightNavbarItems>{right}</RightNavbarItems>
+      </div>
     </div>
   );
 }
@@ -35,6 +49,7 @@ export default function NavbarContent() {
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
   const searchBarItem = items.find((item) => item.type === 'search');
+  
   return (
     <NavbarContentLayout
       left={
@@ -50,12 +65,12 @@ export default function NavbarContent() {
         // Ask the user to add the respective navbar items => more flexible
         <>
           <NavbarItems items={rightItems} />
-          {/* <NavbarColorModeToggle className={styles.colorModeToggle} /> */}
-          {!searchBarItem && (
+          <NavbarColorModeToggle className={styles.colorModeToggle} />
+          {/* {!searchBarItem && (
             <NavbarSearch>
               <SearchBar />
             </NavbarSearch>
-          )}
+          )} */}
         </>
       }
     />

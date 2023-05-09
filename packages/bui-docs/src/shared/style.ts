@@ -34,10 +34,18 @@ export const FieldsetHeadingWrapper = styled.div`
 
 export const GradientLine = styled.div<{ width?: number }>`
   /* margin-top: 40px; */
-  background: linear-gradient(90deg, #8bd6ff 0%, #9effff 50.31%, #d3bfff 100%);
+  background: ${({theme}) => theme.default.gradientAccent};
   height: 2px;
   width: ${({ width }) => (width ? width + "px" : "100%")};
   @media ${device.tablet} {
     display: none;
   }
+`;
+
+export const GradientAccentText = styled.span`
+  background: ${({ theme }) => theme.default.gradientAccent};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 `;

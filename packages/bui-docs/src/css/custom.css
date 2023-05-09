@@ -83,6 +83,10 @@ body {
   flex: 1;
 }
 
+.relative {
+  position: relative;
+}
+
 .container,
 .container-fluid,
 .container-xxl,
