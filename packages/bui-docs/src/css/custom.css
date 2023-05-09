@@ -21,7 +21,8 @@ body {
 
 
 :root {
-  --ifm-color-primary: #2e8555;
+  --ifm-color-primary: #2587BC;
+  --ifm-navbar-background-color: #fff;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -29,24 +30,27 @@ body {
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
+  --ifm-bui-gradient: linear-gradient(90deg, #2587BC 0%, #27A0A0 52.4%, #8162C5 100%);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #2587BC;
+  --ifm-navbar-background-color: #191919;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+  --ifm-bui-gradient:  linear-gradient(90deg, #8BD6FF 0%, #9EFFFF 50.31%, #D3BFFF 100%);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 
 .navbar__items {
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .external-link svg {
@@ -56,6 +60,7 @@ body {
 .twitter-icon {
   color: #00acee;
   font-size: 20px;
+  margin-right: 40px;
 }
 .twitter-icon:hover {
   color: #00acee
