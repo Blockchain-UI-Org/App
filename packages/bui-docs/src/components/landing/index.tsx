@@ -9,6 +9,8 @@ import { JoinCommunitySection } from "./JoinCommunitySection";
 import { PopularQuestionsSection } from "./PopularQuestionsSection";
 import { ExploreLibrarySection } from "./ExploreLibrarySection";
 import { BrowseLibrarySection } from "./BrowseLibrarySection";
+import { GetInTouchSection } from "./GetInTouchSection";
+import { OurTeamSection } from "./OurTeamSection";
 
 const Landing = () => {
   // const {theme, setTheme} = useContext(ThemeContext);
@@ -43,6 +45,11 @@ const Landing = () => {
       <PopularQuestionsSection />
       <ExploreLibrarySection />
       <BrowseLibrarySection />
+
+      <GetInTouchSection />
+
+        <OurTeamSection />
+
       <ComponentsSection />
     </Container>
   );

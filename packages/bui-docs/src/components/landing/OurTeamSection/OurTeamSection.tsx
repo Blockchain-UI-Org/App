@@ -1,17 +1,15 @@
 import * as React from "react";
-import styled from "styled-components";
 import { Heading1 } from "../../atoms/Typography";
-import { FieldsetHeadingWrapper } from "@site/src/shared/style";
 import { FieldsetHeading } from "../../atoms/FieldsetHeading";
 
-export interface IExploreLibrarySectionProps {}
+export interface IOurTeamSectionProps {}
 
-export function ExploreLibrarySection(props: IExploreLibrarySectionProps) {
+export function OurTeamSection(props: IOurTeamSectionProps) {
   return (
     <div className="container">
       <FieldsetHeading>
         <Heading1>
-          EXPLORE OUR <span className="fancy-text">LIBRARY</span>
+          OUR <span className="fancy-text">TEAM</span>
         </Heading1>
       </FieldsetHeading>
     </div>
