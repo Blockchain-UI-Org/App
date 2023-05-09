@@ -1,3 +1,4 @@
+import { device } from "@site/src/theme/AppThemes/Theme";
 import styled from "styled-components";
 
 export const Button = styled("button")`
@@ -10,4 +11,8 @@ export const Button = styled("button")`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media ${device.tablet} {
+    height: 36px;
+    width: 180px;
+  }
 `;

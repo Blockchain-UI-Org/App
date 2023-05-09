@@ -114,7 +114,7 @@ export const Heading5 = styled("h5")<ITypographyProps>`
   font-family: "Public Sans";
   font-style: normal;
   font-weight: ${({ weight = "normal" }) => weightMapper[weight]};
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.2;
   margin-bottom: 0px;
   color: ${(props) => mapColor({ theme: props.theme, colorName: props.color || "primary-dark" })};

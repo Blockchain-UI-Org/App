@@ -1,4 +1,25 @@
-import { IAppThemes, ITheme } from "./type";
+import { IAppThemes, ITheme, TResponsiveSizes } from "./type";
+
+export const ResponsiveSizes: TResponsiveSizes = {
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "425px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+};
+
+export const device = {
+  mobileS: `(max-width: ${ResponsiveSizes.mobileS})`,
+  mobileM: `(max-width: ${ResponsiveSizes.mobileM})`,
+  mobileL: `(max-width: ${ResponsiveSizes.mobileL})`,
+  tablet: `(max-width: ${ResponsiveSizes.tablet})`,
+  laptop: `(max-width: ${ResponsiveSizes.laptop})`,
+  laptopL: `(max-width: ${ResponsiveSizes.laptopL})`,
+  desktop: `(max-width: ${ResponsiveSizes.desktop})`,
+  desktopL: `(max-width: ${ResponsiveSizes.desktop})`,
+};
 
 const LightTheme: ITheme = {
   primary: {

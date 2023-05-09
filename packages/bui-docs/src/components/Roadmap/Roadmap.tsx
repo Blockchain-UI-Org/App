@@ -130,7 +130,7 @@ const Circle = styled.div<{ title: string; count: number; index: number }>`
   }
 `;
 
-const Card = styled.div`
+const Card = styled.div<{topHalt?: boolean}>`
   background-color: ${(props) => props.theme.secondary.background};
   width: max-content;
   padding: 10px 20px;
@@ -147,7 +147,7 @@ const Card = styled.div`
   top: 0;
   transition: all 0.3s linear;
   &.up {
-    top: -70px;
+    top: ${({topHalt}) => topHalt ? "-90px" : "-70px"};
     &:hover {
       top: -80px;
     }
@@ -201,9 +201,9 @@ const Roadmap: FC<IRoadmapProps> = (props) => {
         {props.items.map((item, index) => {
           return (
             <Circle title={item.title} count={props.items.length} index={index}>
-              <Card className={index % 2 === 0 ? "up" : "down"}>
-                <Heading4>{item.title}</Heading4>
-                {item.description && <Heading5 color="secondary-dark">({item.description})</Heading5>}
+              <Card topHalt={index === 2} className={index % 2 === 0 ? "up" : "down"}>
+                <Heading4 style={{ whiteSpace: "nowrap" }}>{item.title}</Heading4>
+                {item.description && <Heading5 color="secondary-dark" style={{ whiteSpace: "nowrap" }}>({item.description})</Heading5>}
               </Card>
             </Circle>
           );

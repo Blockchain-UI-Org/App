@@ -1,3 +1,13 @@
+export type TResponsiveSizes = {
+  mobileS: string;
+  mobileM: string;
+  mobileL: string;
+  tablet: string;
+  laptop: string;
+  laptopL: string;
+  desktop: string;
+};
+
 export interface ITheme {
   primary: {
     background: string;

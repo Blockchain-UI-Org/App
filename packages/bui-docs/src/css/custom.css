@@ -42,7 +42,7 @@ body {
 }
 
 .app-section {
-  padding: 60px 0px 60px 0px;
+  padding: 20px 0px 20px 0px;
   width: 100%;
 }
 
@@ -102,12 +102,20 @@ body {
   .container {
     max-width: 540px;
   }
+  .app-section {
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
   .container-md,
   .container-sm,
   .container {
     max-width: 720px;
+  }
+  .app-section {
+    padding: 30px 0px 30px 0px;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -126,6 +134,10 @@ body {
   .container {
     max-width: 960px;
   }
+  .app-section {
+    padding: 40px 0px 40px 0px;
+    width: 100%;
+  }
 }
 @media (min-width: 1200px) {
   .container-xl,
@@ -134,6 +146,10 @@ body {
   .container-sm,
   .container {
     max-width: 1140px;
+  }
+  .app-section {
+    padding: 60px 0px 60px 0px;
+    width: 100%;
   }
 }
 @media (min-width: 1400px) {

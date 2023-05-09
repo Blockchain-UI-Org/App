@@ -5,12 +5,16 @@ import { Heading2, Heading3, Heading4, Heading5 } from "../../atoms/Typography";
 import { DiscordIcon } from "../../atoms/Icons/DiscordIcon";
 import { Button } from "../../atoms/Button";
 import styled from "styled-components";
+import { device } from "@site/src/theme/AppThemes/Theme";
 
 export interface IGetInTouchSectionProps {}
 
 const CardWrapper = styled(Card)`
   flex: 1;
   height: 540px;
+  @media ${device.tablet} {
+    height: auto;
+  }
 `;
 
 export function GetInTouchSection(props: IGetInTouchSectionProps) {
