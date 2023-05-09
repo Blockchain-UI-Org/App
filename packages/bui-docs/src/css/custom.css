@@ -16,6 +16,7 @@
   --ifm-font-color-base: rgba(63, 63, 63, 1);
   --ifm-text-button-color: rgba(255, 255, 255, 1);
   --ifm-bui-bg-secondary: #FFFFFF;
+  --ifm-bui-text-secondary: rgba(125, 125, 125, 1);
   --ifm-navbar-shadow: none;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -35,6 +36,7 @@
   --ifm-font-color-base: rgba(245, 245, 247, 1);
   --ifm-text-button-color: rgba(25, 25, 25, 1);
   --ifm-bui-bg-secondary: #202020;
+  --ifm-bui-text-secondary: rgba(196, 196, 196, 1);
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
@@ -46,12 +48,16 @@
 }
 
 body {
-  margin: 0;
-  background-color: var(--ifm-navbar-background-color);
+  margin: 0;  
   font-family: "Public Sans", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
   color: var(--ifm-font-color-base);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+}
+
+html, body {
+  background-color: var(--ifm-navbar-background-color);
 }
 
 .navbar {
