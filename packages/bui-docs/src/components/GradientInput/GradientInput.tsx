@@ -7,6 +7,7 @@ export const GradientInput = (
 ) => {
   return (
     <div className={classes.wrapper}>
+  
       <input {...props} className={clsx(classes.input, props.className)} />
     </div>
   );

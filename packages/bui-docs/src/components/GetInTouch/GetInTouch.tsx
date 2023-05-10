@@ -3,6 +3,7 @@ import "./GetInTouch.scss";
 import { BsDiscord } from "react-icons/bs";
 import { GradientButton } from "../Button/GradientButton";
 import { GradientInput } from "../GradientInput/GradientInput";
+import { twitter_url } from "@site/src/config";
 export const GetInTouch = () => {
   return (
     <section className="getInTouch">
@@ -21,7 +22,13 @@ export const GetInTouch = () => {
                   <BsDiscord />
                   <span>Join the community</span>
                 </p>
-                <GradientButton>Contact Us</GradientButton>
+                <GradientButton
+                  onClick={() => {
+                    window.open(twitter_url, "_blank");
+                  }}
+                >
+                  Contact Us
+                </GradientButton>
               </div>
             </div>
           </div>
@@ -34,12 +41,12 @@ export const GetInTouch = () => {
               </div>
               <div className="getInTouch__body">
                 <div className="row">
-                    <div className="col-8">
-                        <GradientInput placeholder="YOUR EMAIL" />
-                    </div>
-                    <div className="col-4">
-                        <GradientButton>Subscribe</GradientButton>
-                    </div>
+                  <div className="col-md-8">
+                    <GradientInput placeholder="YOUR EMAIL" />
+                  </div>
+                  <div className="col-md-4">
+                    <GradientButton>Subscribe</GradientButton>
+                  </div>
                 </div>
               </div>
             </div>

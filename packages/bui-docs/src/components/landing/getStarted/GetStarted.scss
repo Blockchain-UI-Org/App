@@ -7,24 +7,38 @@
   width: 100%;
   padding-top: 50px;
 
+  @media screen and (max-width: 768px) {
+    padding-top: 0;
+  }
 
+  .leftSection {
+    position: relative;
+    z-index: 2;
+    .button {
+      margin-top: 60px;
+    }
+  }
   .rightSection {
     width: 100%;
-  
+    padding-top: 60%;
+    position: relative;
     // overflow: hidden;
     img {
-      width: 70%;
+      width: 100%;
       height: 100%;
       max-width: 800px;
       object-fit: contain;
       position: absolute;
+      z-index: 0;
       right: 0;
+      top: 0;
       object-position: right;
+      
     }
-   
+    @media screen and (max-width: 768px) {
+      margin-bottom: 60px;
+    }
   }
-
-
 
   .description {
     margin-top: 25px;
@@ -36,50 +50,21 @@
     @media (max-width: 1200px) {
       font-size: 24px;
     }
-
-    @media (max-width: 1000px) {
-      display: none;
-    }
   }
 
-  .getStartedSection {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-top: 60px;
-    width: 100%;
-
-    @media (max-width: 1000px) {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-    }
-  }
+ 
 
   .contactUs {
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
+    margin-top: 60px;
     line-height: 28px;
     background: var(--ifm-bui-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 
-
-    :hover {
-      cursor: pointer;
-    }
-
-    @media (max-width: 1000px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-left: 0px;
-      width: 100%;
-    }
+  
   }
 }
-

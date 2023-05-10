@@ -13,6 +13,10 @@ import { showcase } from "./showcase";
 import { CarouselDots } from "../../carousel";
 import { MotionContainer, varFade } from "../../animate";
 import ImageV2 from "../../ImageV2";
+import { Heading } from "../../Heading/Heading";
+import "./ComponentSection.scss";
+import { GradientButton } from "../../Button/GradientButton";
+import { library_url } from "@site/src/config";
 
 export default function ComponentsSection({ ...other }) {
   const theme = useTheme();
@@ -49,15 +53,40 @@ export default function ComponentsSection({ ...other }) {
   };
 
   return (
-    <Library>
-      <div style={{ marginTop: "50px", boxShadow: "initial" }}>
-        <Slider ref={carouselRef} {...settings}>
-          {showcase.map((app, index) => (
-            <CarouselItem key={app.id} item={app} isActive={index === currentIndex} />
-          ))}
-        </Slider>
+    <section className="componentSection">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="gradient-hr">
+              <Heading>EXPLORE OUR LIBRARY</Heading>
+            </div>
+          </div>
+        </div>
       </div>
-    </Library>
+      <Library>
+        <div style={{ marginTop: "50px", boxShadow: "initial" }}>
+          <Slider ref={carouselRef} {...settings}>
+            {showcase.map((app, index) => (
+              <CarouselItem key={app.id} item={app} isActive={index === currentIndex} />
+            ))}
+          </Slider>
+        </div>
+      </Library>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-sm-6 d-flex flex-column align-items-center text-center">
+            <h3>It’s time to bridge the digital and physical.</h3>
+            <GradientButton
+              onClick={() => {
+                window.open(library_url, "_blank");
+              }}
+            >
+              BROWSE LIBRARY
+            </GradientButton>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 

@@ -34,7 +34,7 @@ const FeaturesSection = () => {
         <div className="row">
           {CardsData.map((data) => {
             return (
-              <div className="col-sm-3">
+              <div className="col-md-3 mb-4 mb-md-0">
                 <div className="featureCard">
                   {" "}
                   <div className="featureIcon">

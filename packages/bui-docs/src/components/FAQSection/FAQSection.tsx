@@ -52,7 +52,7 @@ export const FAQSection = () => {
   return (
     <section className="faqSection">
       <div className="d-flex justify-content-center">
-        <Heading>Popular Questions</Heading>
+        <Heading>Popular <span className="gradient">Questions</span></Heading>
       </div>
 
       <div className="container">

@@ -26,19 +26,7 @@ export const Container = styled.div`
   min-width: 0px;  */
 `;
 
-export const IphoneMock = styled.img`
-  height: 100%;
-  max-width: auto;
 
-  @media (max-width: 1200px) {
-    height: 60%;
-    width: auto;
-  }
-
-  @media (max-width: 700px) {
-    display: none;
-  }
-`;
 
 export const GetStartedButton = styled.div`
   display: flex;
