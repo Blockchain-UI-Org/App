@@ -53,7 +53,7 @@ export const FAQSection = () => {
     <section className="faqSection">
       <div className="container">
         <div className="row jusitify-content-center">
-          <Heading>
+          <Heading style={{ display: "Flex", justifyContent: "center", marginBottom: "50px", whiteSpace: "pre" }}>
             Popular <span className="gradient">Questions</span>
           </Heading>
         </div>
