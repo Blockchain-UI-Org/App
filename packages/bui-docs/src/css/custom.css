@@ -102,7 +102,7 @@ html, body {
   background-color: var(--ifm-navbar-background-color);
 }
 
-.footer__link {
+.footer__link,.footer__copyright {
   color: var( --ifm-font-color-base);
 }
 .footer__link:hover {

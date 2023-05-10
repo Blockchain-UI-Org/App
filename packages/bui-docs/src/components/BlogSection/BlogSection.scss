@@ -1,0 +1,82 @@
+.blogBanner {
+    background-image: url('../../../static/img/Frame21.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 64px;
+    }
+}
+
+.searchWrapper {
+    margin-top: -2%;
+
+    .inputWrapper {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+
+        input {
+            padding: 17px 32px 17px 60px;
+            width: 415px;
+            box-shadow: 0px 5px 20px rgba(195, 109, 196, 0.2);
+            border-radius: 36px;
+            border: none;
+
+            &:focus{
+                outline: none;
+            }
+
+            &::placeholder {
+                color: #F5F5F7;
+                font-size: 20px;
+            }
+
+        }
+
+        img {
+            position: absolute;
+            z-index: 1;
+            padding: 17px 0px 17px 32px;
+
+        }
+    }
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    flex-wrap: wrap;
+
+    .category {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #F5F5F7;
+        padding: 10px 19px;
+        background: #202020;
+        border-radius: 15px;
+        margin-left: 15px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+}
+
+.toggleCategory {
+    font-weight: 700;
+    border: 2px solid #8BD6FF;
+}
+
+.blogsDiv {
+    padding: 80px 0;
+}
+
+.btnWrapper {
+    padding: 120px 0;
+}
