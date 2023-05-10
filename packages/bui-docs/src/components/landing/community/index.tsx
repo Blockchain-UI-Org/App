@@ -15,14 +15,14 @@ const CommunitySection = () => {
             <div className="row h-100">
               <div className="col-md-8 mb-4 mb-xl-0 col-xl-4">
                 <div className="communityCard">
-                  <h2 className="count">26</h2>
-                  <h4 className="title">Components</h4>
+                  <h2 className="count">94</h2>
+                  <h4 className="title">Weekly Downloads</h4>
                 </div>
               </div>
               <div className="col-md-4 mb-4 mb-xl-0 col-xl-3">
                 <div className="communityCard">
-                  <h2 className="count">94</h2>
-                  <h4 className="title">Weekly Downloads</h4>
+                  <h2 className="count">26</h2>
+                  <h4 className="title">Components</h4>
                 </div>
               </div>
               <div className="col-xl-5">
