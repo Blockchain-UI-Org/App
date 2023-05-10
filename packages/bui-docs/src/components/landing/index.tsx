@@ -6,20 +6,19 @@ import { Container } from "./styled";
 import { Roadmap } from "../Roadmap";
 import CommunitySection from "./community";
 import { FAQSection } from "../FAQSection/FAQSection";
-
+import { GetInTouch } from "../GetInTouch/GetInTouch";
 
 const Landing = () => {
   return (
     <div>
       {/* <Menu></Menu> */}
-      <GetStartedSection /> 
-      <CommunitySection/>
-    
+      <GetStartedSection />
+      <CommunitySection />
+
       {/* <PartnersSection /> */}
-  
+
       <FeaturesSection />
 
-      
       <Roadmap
         items={[
           { title: "Launch", description: "", completed: true },
@@ -37,6 +36,7 @@ const Landing = () => {
         ]}
       />
       <FAQSection />
+      <GetInTouch />
       <ComponentsSection />
     </div>
   );

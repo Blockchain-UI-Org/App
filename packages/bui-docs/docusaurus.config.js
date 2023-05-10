@@ -116,6 +116,7 @@ const config = {
                 label: "Docs",
                 to: "/docs/intro",
               },
+            
             ],
           },
           // {

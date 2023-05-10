@@ -121,7 +121,7 @@ export const Library = styled.div`
   padding: 50px 0px;
 
   min-height: 600px;
-  background-color: #000000;
+  /* background-color: #000000; */
   // margin: 50px 100px;
 
   .subHeader {

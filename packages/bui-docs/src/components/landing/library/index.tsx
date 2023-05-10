@@ -25,11 +25,11 @@ export default function ComponentsSection({ ...other }) {
     centerMode: true,
     speed: 800,
     autoplaySpeed: 2000,
-    dots: true,
-    arrows: true,
+    dots: false,
+    arrows: false,
     autoplay: true,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 2,
     responsive: [
       {
@@ -46,35 +46,17 @@ export default function ComponentsSection({ ...other }) {
     ],
     rtl: Boolean(theme.direction === "rtl"),
     beforeChange: (current: number, next: number) => setCurrentIndex(next),
-    ...CarouselDots({
-      zIndex: 1,
-    }),
   };
-  console.log(media, "media");
+
   return (
     <Library>
-      <div className="titleHeader">Explore Our Library</div>
-
-      {media ? (
-        <div style={{ maxWidth: "80%",margin: "0 auto", display: "flex", flexDirection: "column", alignItems: "center"}}>
-          {showcase.map((item) => {
-            const { image, title, description } = item;
-            return (
-              <div style={{marginTop: 50, width: "100%", }}>
-                <ImageV2 alt={title} src={image} style={{ width: "100%", objectFit: "contain",borderRadius: 10, overflow: "hidden",  }} />
-              </div>
-            );
-          })}
-        </div>
-      ) : (
-        <Card {...other} style={{ backgroundColor: "black", marginTop: "50px" }}>
-          <Slider ref={carouselRef} {...settings}>
-            {showcase.map((app, index) => (
-              <CarouselItem key={app.id} item={app} isActive={index === currentIndex} />
-            ))}
-          </Slider>
-        </Card>
-      )}
+      <div style={{ marginTop: "50px", boxShadow: "initial" }}>
+        <Slider ref={carouselRef} {...settings}>
+          {showcase.map((app, index) => (
+            <CarouselItem key={app.id} item={app} isActive={index === currentIndex} />
+          ))}
+        </Slider>
+      </div>
     </Library>
   );
 }

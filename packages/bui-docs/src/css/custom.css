@@ -21,7 +21,6 @@
   --ifm-bui-text-secondary: rgba(125, 125, 125, 1);
   --ifm-bui-divider-color: #DBDBDB;
 
-  --ifm-navbar-shadow: none;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -69,10 +68,11 @@ html, body {
   background-color: var(--ifm-navbar-background-color);
 }
 
-.navbar {
+.navbar.home {
   height: initial;
+  box-shadow: none;
 }
-.navbar--fixed-top {
+.navbar--fixed-top.home {
   position: relative;
 }
 .navbar__inner.home {
@@ -96,4 +96,15 @@ html, body {
 }
 .fa-github {
   font-size: 20px;
+}
+
+.footer {
+  background-color: var(--ifm-navbar-background-color);
+}
+
+.footer__link {
+  color: var( --ifm-font-color-base);
+}
+.footer__link:hover {
+  text-decoration: none;
 }
