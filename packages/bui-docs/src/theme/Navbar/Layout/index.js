@@ -23,7 +23,7 @@ export default function NavbarLayout({children}) {
     navbar: {hideOnScroll, style},
   } = useThemeConfig();
   const {pathname} = useLocation()
-  const isHome = pathname === "/";
+  const isHome = pathname === "/" || pathname === "/blog";
   const mobileSidebar = useNavbarMobileSidebar();
   const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
   return (

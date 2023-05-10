@@ -10,6 +10,7 @@ import styles from "./styles.module.css";
 import NavbarColorModeToggle from "../ColorModeToggle";
 import useRouteContext from "@docusaurus/useRouteContext";
 import { useLocation } from "@docusaurus/router";
+import clsx from "clsx";
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
   return useThemeConfig().navbar.items;
@@ -24,9 +25,10 @@ function NavbarItems({ items }) {
   );
 }
 function NavbarContentLayout({ left, right }) {
-  const {pathname} = useLocation()
+  const { pathname } = useLocation();
+  const isHome = pathname === "/" || pathname === "/blog";
   return (
-    <div className={"navbar__inner " + (pathname === "/" ? "home": "")}>
+    <div className={clsx("navbar__inner ", { home: isHome })}>
       <div className="navbar__items">
         <div style={{ flex: 1 }}></div>
         <div style={{ flex: 1, display: "flex", justifyContent: "center" }}>{left}</div>
@@ -57,7 +59,7 @@ export default function NavbarContent() {
         // Ask the user to add the respective navbar items => more flexible
         <>
           <NavbarColorModeToggle className={styles.colorModeToggle} />
-          <NavbarItems  items={rightItems} />
+          <NavbarItems items={rightItems} />
           {!searchBarItem && (
             <NavbarSearch>
               <SearchBar />

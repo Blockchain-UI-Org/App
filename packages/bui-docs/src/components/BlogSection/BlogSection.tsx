@@ -3,7 +3,7 @@ import "./BlogSection.scss";
 import BlogCard from "../BlogCard/BlogCard";
 import { GradientButton } from "../Button";
 import { blogData } from "./blogData";
-
+import { BsSearch } from "react-icons/bs";
 export const categories = ["All", "NFTs", "Finance", "Charts", "Other"];
 
 const BlogSection = () => {
@@ -17,7 +17,7 @@ const BlogSection = () => {
         </div>
         <div className="searchWrapper">
           <div className="inputWrapper">
-            <img src="/img/search.svg" alt="search" />
+            <BsSearch className="bs-search" />
             <input type="text" placeholder="Search" />
           </div>
         </div>
@@ -30,7 +30,7 @@ const BlogSection = () => {
               key={index}
               onClick={() => setActive(index)}
             >
-              {category}
+              <div>{category}</div>
             </div>
           );
         })}
@@ -59,11 +59,11 @@ const BlogSection = () => {
       </div>
 
       <div className="row blogsDiv">
-        <BlogCard blogData={blogData} col={4}/>
+        <BlogCard blogData={blogData} col={4} />
       </div>
-      <div className="btnWrapper d-flex justify-content-center">
+      {/* <div className=" d-flex justify-content-center">
         <GradientButton>load more</GradientButton>
-      </div>
+      </div> */}
     </div>
   );
 };
