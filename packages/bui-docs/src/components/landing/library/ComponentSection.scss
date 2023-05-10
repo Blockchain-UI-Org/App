@@ -1,0 +1,34 @@
+.componentSection {
+  .gradient-hr {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 65%;
+      height: 2px;
+      top: 30%;
+      left: 35%;
+
+      background: var(--ifm-bui-gradient);
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+    h1 {
+      max-width: 35%;
+    }
+    @media screen and (max-width: 768px) {
+      h1 {
+        max-width: 100%;
+      }
+    }
+  }
+  h3 {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  .sliderWrapper {
+    margin-bottom: 5rem;
+  }
+}

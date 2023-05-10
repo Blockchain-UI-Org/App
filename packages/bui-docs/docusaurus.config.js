@@ -60,7 +60,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: "light",
+        defaultMode: "dark",
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },
@@ -83,9 +83,14 @@ const config = {
           },
           {
             href: "https://www.chromatic.com/library?appId=63a670b1ce0472f1c60a3f59",
-            position: "right",
+            position: "left",
             label: "Library",
             className: "external-link",
+          },
+          {
+            href: "/blog",
+            position: "left",
+            label: "Blog",
           },
           {
             href: "https://twitter.com/ui_blockchain",
@@ -116,6 +121,7 @@ const config = {
                 label: "Docs",
                 to: "/docs/intro",
               },
+            
             ],
           },
           // {

@@ -1,0 +1,29 @@
+.wrapper {
+  width: 100%;
+  min-height: 54px;
+  border-radius: 36px;
+  background: var(--ifm-bui-gradient);
+  position: relative;
+}
+
+.input {
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-weight: 700;
+  /* letter-spacing: 2px; */
+  background-color: var(--ifm-bui-bg-secondary);
+  border-radius: 36px;
+  padding: 0 20px;
+  border: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--ifm-color-primary);
+}

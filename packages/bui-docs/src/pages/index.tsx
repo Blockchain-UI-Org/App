@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 export default function Home(): JSX.Element {
 
   return (
-    <Layout description="A component library for decentralized applications <head />">
+    <Layout description="A component library for decentralized applications">
       <Wrapper>
         <Landing />
       </Wrapper>
