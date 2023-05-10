@@ -1,5 +1,6 @@
 import React, { CSSProperties, FC, useMemo } from "react";
 import styled, { css } from "styled-components";
+import { Heading } from "../Heading/Heading";
 import { Library } from "../landing/styled";
 
 export type IRoadmapProps = {
@@ -12,31 +13,10 @@ export type IRoadmapProps = {
 
 const StyledSection = styled.section`
   position: relative;
-  background-color: #1b1b1d;
-  padding: 100px 50px;
-  color: black;
+
+  padding: 60px 0;
+
   width: 100%;
-
-  .titleHeader {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 61px;
-    text-align: center;
-    letter-spacing: -1px;
-    color: #2d3766;
-    margin-bottom: 30px;
-
-    background: -webkit-linear-gradient(45deg, #6fbbc9, #b1a0f5, #ed434c);
-    background-color: red;
-    // background-image: linear-gradient(45deg, #f3ec78, #af4261);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    @media (max-width: 1200px) {
-      font-size: 40px;
-    }
-  }
 `;
 
 const Wrapper = styled.div<{ progress: number; count: number }>`
@@ -53,7 +33,7 @@ const Wrapper = styled.div<{ progress: number; count: number }>`
     width: calc(80% * ${(props) => props.progress} / ${(props) => props.count});
     height: 4px;
     z-index: 2;
-    background-color: #25c2a0;
+    background: var(--ifm-bui-gradient);
   }
   &::after {
     content: "";
@@ -65,7 +45,7 @@ const Wrapper = styled.div<{ progress: number; count: number }>`
     position: absolute;
     width: 80%;
     height: 4px;
-    background-color: #fff;
+    background-color: var(--ifm-bui-divider-color);
   }
 
   @media screen and (max-width: 400px) {
@@ -89,7 +69,7 @@ const Wrapper = styled.div<{ progress: number; count: number }>`
 const Circle = styled.div<{ title: string; count: number; index: number }>`
   width: 30px;
   height: 30px;
-  background: #fff;
+  background: var(--ifm-font-color-base);
   border-radius: 50%;
   position: absolute;
   z-index: 4;
@@ -121,7 +101,7 @@ const Circle = styled.div<{ title: string; count: number; index: number }>`
       if (props.index === 0) {
         data.top = `0%`;
       } else {
-        data.top = `${ (props.index * 100) / (props.count - 1)}%`;
+        data.top = `${(props.index * 100) / (props.count - 1)}%`;
       }
 
       return css(data as any);
@@ -130,7 +110,7 @@ const Circle = styled.div<{ title: string; count: number; index: number }>`
 `;
 
 const Card = styled.div`
-  background-color: #fff;
+  background-color: var(--ifm-bui-bg-secondary);
   width: 200px;
   min-height: 50px;
   border-radius: 40px;
@@ -146,7 +126,7 @@ const Card = styled.div`
   transition: all 0.3s linear;
   span {
     font-size: 10px;
-    color: #333;
+    color: var(--ifm-bui-text-secondary);
     padding-bottom: 5px;
   }
   &.up {
@@ -199,19 +179,28 @@ const Roadmap: FC<IRoadmapProps> = (props) => {
   }, [props.items]);
   return (
     <StyledSection>
-      <div className="titleHeader">Roadmap</div>
-      <Wrapper count={props.items.length - 1} progress={completedCount - 1}>
-        {props.items.map((item, index) => {
-          return (
-            <Circle title={item.title} count={props.items.length} index={index}>
-              <Card style={{ color: "#333" }} className={index % 2 === 0 ? "up" : "down"}>
-                {item.title}
-                {item.description && <span className="itemDescription">({item.description})</span>}
-              </Card>
-            </Circle>
-          );
-        })}
-      </Wrapper>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="d-flex align-items-center justify-content-center">
+              <Heading>Roadmap</Heading>
+            </div>
+            <Wrapper count={props.items.length - 1} progress={completedCount - 1}>
+              {props.items.map((item, index) => {
+                return (
+                  <Circle title={item.title} count={props.items.length} index={index}>
+                    <Card className={index % 2 === 0 ? "up" : "down"}>
+                      {item.title}
+                      {item.description && <span className="itemDescription">({item.description})</span>}
+                    </Card>
+                  </Circle>
+                );
+              })}
+            </Wrapper>
+          
+          </div>
+        </div>
+      </div>
     </StyledSection>
   );
 };

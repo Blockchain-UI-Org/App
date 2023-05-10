@@ -14,9 +14,13 @@
   --ifm-color-primary: #2587bc;
   --ifm-navbar-background-color: #f6f9fa;
   --ifm-font-color-base: rgba(63, 63, 63, 1);
+
+  
   --ifm-text-button-color: rgba(255, 255, 255, 1);
   --ifm-bui-bg-secondary: #FFFFFF;
   --ifm-bui-text-secondary: rgba(125, 125, 125, 1);
+  --ifm-bui-divider-color: #DBDBDB;
+
   --ifm-navbar-shadow: none;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -35,8 +39,13 @@
   --ifm-navbar-background-color: #191919;
   --ifm-font-color-base: rgba(245, 245, 247, 1);
   --ifm-text-button-color: rgba(25, 25, 25, 1);
+
+
   --ifm-bui-bg-secondary: #202020;
   --ifm-bui-text-secondary: rgba(196, 196, 196, 1);
+  --ifm-bui-divider-color: #454545;
+
+
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;

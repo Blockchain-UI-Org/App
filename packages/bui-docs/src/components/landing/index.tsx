@@ -5,6 +5,7 @@ import GetStartedSection from "./getStarted";
 import { Container } from "./styled";
 import { Roadmap } from "../Roadmap";
 import CommunitySection from "./community";
+import { FAQSection } from "../FAQSection/FAQSection";
 
 
 const Landing = () => {
@@ -17,6 +18,8 @@ const Landing = () => {
       {/* <PartnersSection /> */}
   
       <FeaturesSection />
+
+      
       <Roadmap
         items={[
           { title: "Launch", description: "", completed: true },
@@ -33,6 +36,7 @@ const Landing = () => {
           { completed: false, title: "Drag n Drop", description: "No Code" },
         ]}
       />
+      <FAQSection />
       <ComponentsSection />
     </div>
   );
