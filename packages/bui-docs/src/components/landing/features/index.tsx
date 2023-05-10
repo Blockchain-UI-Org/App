@@ -28,7 +28,11 @@ const CardsData = [
 const FeaturesSection = () => {
   return (
     <div className="featureSection">
-      <Heading>Amazing Benefits</Heading>
+      <div className="container">
+        <div className="row">
+          <Heading>Amazing Benefits</Heading>
+        </div>
+      </div>
 
       <div className="container">
         <div className="row">

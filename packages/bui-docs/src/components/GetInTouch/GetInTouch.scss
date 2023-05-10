@@ -19,12 +19,18 @@
         font-size: 2.4rem;
         font-weight: 700;
         margin-bottom: 40px;
+        @media screen and (max-width: 768px) {
+            font-size: 1.6rem;
+        }
     }
     &__info {
         font-size: 1.6rem;
         display: flex;
         align-items: center;
         margin-bottom: 40px;
+        @media screen and (max-width: 768px) {
+            font-size: 1rem;
+        }
         span {
             margin-left: 10px;
         }

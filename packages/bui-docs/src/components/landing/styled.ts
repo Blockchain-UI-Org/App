@@ -106,9 +106,9 @@ export const Library = styled.div`
   // align-items: center;
   // justify-content: center;
   width: 100%;
-  padding: 50px 0px;
 
-  min-height: 600px;
+
+  /* min-height: 600px; */
   /* background-color: #000000; */
   // margin: 50px 100px;
 

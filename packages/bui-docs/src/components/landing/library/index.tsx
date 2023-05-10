@@ -63,7 +63,7 @@ export default function ComponentsSection({ ...other }) {
           </div>
         </div>
       </div>
-      <Library>
+      <Library className="sliderWrapper">
         <div style={{ marginTop: "50px", boxShadow: "initial" }}>
           <Slider ref={carouselRef} {...settings}>
             {showcase.map((app, index) => (

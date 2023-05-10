@@ -37,13 +37,13 @@ export default function FooterLayout({ style, links, logo, copyright }) {
         <div className="row py-5 justify-content-center">
           <div className="col-sm-6">
             <div className="row">
-              <div className="col-sm-3 d-flex justify-content-center">
+              <div className="col-sm-3 d-flex justify-content-center mb-2">
                 <Link className={"footer__link"} to={"/"}>Blockchain UI</Link>
               </div>
               {[...footer.links[0].items, ...FooterLinks].map((item) => {
                 if (item.href) {
                   return (
-                    <div className="col-sm-3 d-flex justify-content-center">
+                    <div className="col-sm-3 d-flex justify-content-center mb-2">
                       <a className={clsx("footer__link",item.className)} target="_blank" href={item.href}>
                         {item.label}
                       </a>
@@ -51,14 +51,14 @@ export default function FooterLayout({ style, links, logo, copyright }) {
                   );
                 }
                 return (
-                  <div className="col-sm-3 d-flex justify-content-center">
+                  <div className="col-sm-3 d-flex justify-content-center mb-2">
                     <Link className={clsx("footer__link",item.className)} target="_blank" href={item.href} to={item.to}>
                       {item.label}
                     </Link>
                   </div>
                 );
               })}
-              <div className="col-sm-3">
+              <div className="col-sm-3 d-flex justify-content-center">
                 {icons.map((item) => {
                   return (
                     <a className={clsx("footer__link",item.className)} target="_blank" href={item.href}>

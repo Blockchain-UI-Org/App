@@ -68,6 +68,12 @@ html, body {
   background-color: var(--ifm-navbar-background-color);
 }
 
+.container {
+  max-width: 1400px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .navbar.home {
   height: initial;
   box-shadow: none;

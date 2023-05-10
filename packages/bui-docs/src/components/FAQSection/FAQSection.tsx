@@ -51,8 +51,12 @@ const FAQ = (props: { ques: string; ans: string }) => {
 export const FAQSection = () => {
   return (
     <section className="faqSection">
-      <div className="d-flex justify-content-center">
-        <Heading>Popular <span className="gradient">Questions</span></Heading>
+      <div className="container">
+        <div className="row jusitify-content-center">
+          <Heading>
+            Popular <span className="gradient">Questions</span>
+          </Heading>
+        </div>
       </div>
 
       <div className="container">

@@ -9,7 +9,7 @@ export const GetInTouch = () => {
     <section className="getInTouch">
       <div className="container">
         <div className="row">
-          <div className="col-sm-6">
+          <div className="col-sm-6 mb-5">
             <div className="getInTouch__card">
               <div className="getInTouch__header">
                 <div className="getInTouch__subtitle">GET IN TOUCH</div>
@@ -32,7 +32,7 @@ export const GetInTouch = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-6">
+          <div className="col-sm-6 mb-5">
             <div className="getInTouch__card">
               <div className="getInTouch__header">
                 {" "}
@@ -41,11 +41,11 @@ export const GetInTouch = () => {
               </div>
               <div className="getInTouch__body">
                 <div className="row">
-                  <div className="col-md-8">
+                  <div className="col-md-8 mb-3 mb-md-0">
                     <GradientInput placeholder="YOUR EMAIL" />
                   </div>
-                  <div className="col-md-4">
-                    <GradientButton>Subscribe</GradientButton>
+                  <div className="col-md-4 ">
+                    <GradientButton className="w-100">Subscribe</GradientButton>
                   </div>
                 </div>
               </div>
