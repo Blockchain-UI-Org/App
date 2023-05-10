@@ -183,7 +183,7 @@ const Roadmap: FC<IRoadmapProps> = (props) => {
         <div className="row">
           <div className="col-12">
             <div className="d-flex align-items-center justify-content-center">
-              <Heading>Roadmap</Heading>
+              <Heading style={{ display: "Flex", justifyContent: "center" }}>Roadmap</Heading>
             </div>
             <Wrapper count={props.items.length - 1} progress={completedCount - 1}>
               {props.items.map((item, index) => {
@@ -197,7 +197,6 @@ const Roadmap: FC<IRoadmapProps> = (props) => {
                 );
               })}
             </Wrapper>
-          
           </div>
         </div>
       </div>
