@@ -30,7 +30,7 @@ const FeaturesSection = () => {
     <div className="featureSection">
       <div className="container">
         <div className="row">
-          <Heading>Amazing Benefits</Heading>
+          <Heading style={{ display: "Flex", justifyContent: "center" }}>Amazing Benefits</Heading>
         </div>
       </div>
 
