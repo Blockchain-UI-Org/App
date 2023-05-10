@@ -1,0 +1,41 @@
+.faqSection {
+  padding: 60px 0;
+
+  .gradient {
+    background: var(--ifm-bui-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .faq {
+    border-bottom: 2px solid var(--ifm-bui-divider-color);
+    &:first-of-type {
+      border-top: 2px solid var(--ifm-bui-divider-color);
+    }
+    position: relative;
+
+    &__title {
+      cursor: pointer;
+      max-width: 80%;
+      margin: 0;
+      padding: 30px 0;
+     
+      img {
+        position: absolute;
+        right: 0;
+        top: 28px;
+        // transform: translateY(-50%);
+        max-width: 32px;
+
+        transition: transform 0.3s linear;
+      }
+      &.active img {
+        transform: rotate(180deg);
+      }
+    }
+    &__content {
+      margin: 0;
+      padding-bottom: 40px;
+    }
+  }
+}

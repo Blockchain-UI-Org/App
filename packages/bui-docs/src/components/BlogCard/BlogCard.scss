@@ -1,0 +1,37 @@
+.contentWrapper {
+  padding: 40px 30px;
+
+  .upperTitle {
+    font-size: 24px;
+    line-height: 36px;
+    background: linear-gradient(90deg, #8bd6ff 0%, #9effff 50.31%, #d3bfff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .content {
+    font-weight: 400;
+    color: var(--ifm-font-color-base);
+    opacity: 0.8;
+  }
+
+  .authorWrapper {
+    padding-left: 20px;
+
+    .name {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: var(--ifm-font-color-base);
+    }
+
+    .date {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: #c4c4c4;
+    }
+  }
+}

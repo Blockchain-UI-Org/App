@@ -6,22 +6,21 @@
 
 /* You can override the default Infima variables here. */
 
-@import url('//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
 @import url(//fonts.googleapis.com/css?family=Public+Sans);
-
-
-
-body {
-  margin: 0;
-  background-color: #fbfbfd;
-  font-family: "Public Sans", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+@import url("//cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css");
 
 :root {
-  --ifm-color-primary: #2e8555;
+  --ifm-color-primary: #2587bc;
+  --ifm-navbar-background-color: #f6f9fa;
+  --ifm-font-color-base: rgba(63, 63, 63, 1);
+
+  
+  --ifm-text-button-color: rgba(255, 255, 255, 1);
+  --ifm-bui-bg-secondary: #FFFFFF;
+  --ifm-bui-text-secondary: rgba(125, 125, 125, 1);
+  --ifm-bui-divider-color: #DBDBDB;
+
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -29,24 +28,64 @@ body {
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
+  --ifm-bui-gradient: linear-gradient(90deg, #2587bc 0%, #27a0a0 52.4%, #8162c5 100%);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
+[data-theme="dark"] {
+  --ifm-color-primary: #2587bc;
+  --ifm-navbar-background-color: #191919;
+  --ifm-font-color-base: rgba(245, 245, 247, 1);
+  --ifm-text-button-color: rgba(25, 25, 25, 1);
+
+
+  --ifm-bui-bg-secondary: #202020;
+  --ifm-bui-text-secondary: rgba(196, 196, 196, 1);
+  --ifm-bui-divider-color: #454545;
+
+
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+  --ifm-bui-gradient: linear-gradient(90deg, #8bd6ff 0%, #9effff 50.31%, #d3bfff 100%);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+body {
+  margin: 0;  
+  font-family: "Public Sans", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+  color: var(--ifm-font-color-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-.navbar__items {
-  justify-content: center;
+}
+
+html, body {
+  background-color: var(--ifm-navbar-background-color);
+}
+
+.container {
+  max-width: 1400px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.navbar.home {
+  height: initial;
+  box-shadow: none;
+}
+.navbar--fixed-top.home {
+  position: relative;
+}
+.navbar__inner.home {
+  /* justify-content: center; */
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .external-link svg {
@@ -56,10 +95,22 @@ body {
 .twitter-icon {
   color: #00acee;
   font-size: 20px;
+  margin-right: 40px;
 }
 .twitter-icon:hover {
-  color: #00acee
+  color: #00acee;
 }
 .fa-github {
   font-size: 20px;
+}
+
+.footer {
+  background-color: var(--ifm-navbar-background-color);
+}
+
+.footer__link,.footer__copyright {
+  color: var( --ifm-font-color-base);
+}
+.footer__link:hover {
+  text-decoration: none;
 }

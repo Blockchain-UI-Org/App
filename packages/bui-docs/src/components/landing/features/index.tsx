@@ -1,52 +1,58 @@
 import React from "react";
-import { FeatureCard, Features } from "../styled";
+import { Heading } from "../../Heading/Heading";
+import "./Feature.scss";
+
+const CardsData = [
+  {
+    icon: "/img/speed.png",
+    title: "Speed",
+    description: "Faster development",
+  },
+  {
+    icon: "/img/solar.png",
+    title: "Cost",
+    description: "Save development costs.",
+  },
+  {
+    icon: "/img/outline.png",
+    title: "Simple",
+    description: "Easy-to-install and clear documentation.",
+  },
+  {
+    icon: "/img/people.png",
+    title: "Safe and Secure",
+    description: "Tested for vunerabilities.",
+  },
+];
 
 const FeaturesSection = () => {
   return (
-    <Features>
-      <div className="titleHeader" style={{color: "#333"}}>Amazing Benefits</div>
-
-      <div className="features">
-        <FeatureCard>
-          {" "}
-          {/* <div className="featureIcon">
-            <img src="/assets/feature1.svg" alt="simple_feature_icon" />
-          </div> */}
-          <div className="header">Speed</div>
-          <div className="description">Faster development</div>
-        </FeatureCard>
-        <FeatureCard>
-          {/* <div className="featureIcon">
-            <img src="/assets/feature1.svg" alt="simple_feature_icon" />
-          </div> */}
-          <div className="header">Cost</div>
-          <div className="description">Save development costs.</div>
-        </FeatureCard>
-        <FeatureCard>
-          {/* <div className="featureIcon">
-            <img src="/assets/feature1.svg" alt="simple_feature_icon" />
-          </div> */}
-          <div className="header">Simple</div>
-          <div className="description">Easy-to-install and clear documentation.</div>
-        </FeatureCard>
-        {/* <FeatureCard>
-          <div className="featureIcon">
-            <img src="/assets/feature1.svg" alt="simple_feature_icon" />
-          </div>
-          <div className="header">Customizable</div>
-          <div className="description">
-            It can be tailored to fit the specific needs of your application and across all major blockchains.
-          </div>
-        </FeatureCard> */}
-        <FeatureCard>
-          {/* <div className="featureIcon">
-            <img src="/assets/feature1.svg" alt="simple_feature_icon" />
-          </div> */}
-          <div className="header">Safe and Secure</div>
-          <div className="description">Tested for vunerabilities.</div>
-        </FeatureCard>
+    <div className="featureSection">
+      <div className="container">
+        <div className="row">
+          <Heading>Amazing Benefits</Heading>
+        </div>
       </div>
-    </Features>
+
+      <div className="container">
+        <div className="row">
+          {CardsData.map((data) => {
+            return (
+              <div className="col-md-3 mb-4 mb-md-0">
+                <div className="featureCard">
+                  {" "}
+                  <div className="featureIcon">
+                    <img src={data.icon} alt={data.title} />
+                  </div>
+                  <div className="header">{data.title}</div>
+                  <div className="description">{data.description}</div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
   );
 };
 

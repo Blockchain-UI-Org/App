@@ -1,0 +1,38 @@
+.getInTouch {
+    padding: 80px 0;
+    &__card {
+        padding: 50px 60px;
+        background-color: var(--ifm-bui-bg-secondary);
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    &__subtitle {
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: var( --ifm-bui-text-secondary);
+        margin-bottom: 20px;
+    }
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        @media screen and (max-width: 768px) {
+            font-size: 1.6rem;
+        }
+    }
+    &__info {
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        @media screen and (max-width: 768px) {
+            font-size: 1rem;
+        }
+        span {
+            margin-left: 10px;
+        }
+    }
+}
