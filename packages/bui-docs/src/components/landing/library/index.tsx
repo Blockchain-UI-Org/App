@@ -33,21 +33,23 @@ export default function ComponentsSection({ ...other }) {
     arrows: false,
     autoplay: true,
     infinite: true,
-    slidesToShow: 3,
+    className: "slider variable-width",
+    slidesToShow: 1,
+    variableWidth: true,
     slidesToScroll: 2,
-    responsive: [
-      {
-        breakpoint: 1500,
-        settings: {
-          className: "center",
-          centerMode: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-    ],
+    // responsive: [
+    //   {
+    //     breakpoint: 1500,
+    //     settings: {
+    //       className: "center",
+    //       centerMode: true,
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //       infinite: true,
+    //       dots: false,
+    //     },
+    //   },
+    // ],
     rtl: Boolean(theme.direction === "rtl"),
     beforeChange: (current: number, next: number) => setCurrentIndex(next),
   };
@@ -72,7 +74,7 @@ export default function ComponentsSection({ ...other }) {
           </Slider>
         </div>
       </Library>
-      <div className="container">
+      <div className="container libraySection">
         <div className="row justify-content-center">
           <div className="col-sm-6 d-flex flex-column align-items-center text-center">
             <h3>It’s time to bridge the digital and physical.</h3>
