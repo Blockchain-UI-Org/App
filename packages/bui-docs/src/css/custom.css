@@ -95,7 +95,7 @@ html, body {
 .twitter-icon {
   color: #00acee;
   font-size: 20px;
-  margin-right: 40px;
+  margin-right: 0;
 }
 .twitter-icon:hover {
   color: #00acee;
