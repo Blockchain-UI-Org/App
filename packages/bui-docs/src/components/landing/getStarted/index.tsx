@@ -31,7 +31,7 @@ const GetStartedSection = () => {
           </div>
           <div className="col-md-6 order-0 order-md-1">
             <div className="rightSection">
-              <img src="/img/mock-up.png" alt="iphone_mockup" />
+              <img src="/img/mock-up.svg" alt="iphone_mockup" />
             </div>
           </div>
         </div>

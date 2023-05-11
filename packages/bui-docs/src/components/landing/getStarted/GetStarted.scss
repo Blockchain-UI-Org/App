@@ -24,8 +24,8 @@
     position: relative;
     // overflow: hidden;
     img {
-      width: 100%;
-      height: 100%;
+      width: 160%;
+      height: 160%;
       max-width: 800px;
       object-fit: contain;
       position: absolute;
@@ -33,7 +33,7 @@
       right: 0;
       top: 0;
       object-position: right;
-      transform: scale(1.6) translateY(15%);
+      transform:  translateX(20%);
     }
     @media screen and (max-width: 768px) {
       margin-bottom: 60px;

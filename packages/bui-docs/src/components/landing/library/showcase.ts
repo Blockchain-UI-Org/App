@@ -6,13 +6,6 @@ export const showcase = [
     image: "/img/carousel/areaChart3.png",
   },
   {
-    id: "apple_card1",
-    title: "",
-    description: "",
-    image: "/img/ccWhite.svg",
-  },
-
-  {
     id: "NFT Cards",
     title: "",
     description: "",
