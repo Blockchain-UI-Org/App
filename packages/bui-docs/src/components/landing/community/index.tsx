@@ -12,13 +12,13 @@ const CommunitySection = () => {
           </div>
           <div className="col-md-8">
             <div className="d-flex flex-wrap   h-100">
-              <div className="flex-grow-1 pe-3 mb-4 mb-xl-0 ">
+              <div className="flex-grow-1 pe-sm-3  mb-4 mb-xl-0 ">
                 <div className="communityCard">
                   <h2 className="count">94</h2>
                   <h4 className="title">Weekly Downloads</h4>
                 </div>
               </div>
-              <div className="flex-grow-1 pe-3 mb-4 mb-xl-0 ">
+              <div className="flex-grow-1 pe-sm-3 mb-4 mb-xl-0 ">
                 <div className="communityCard">
                   <h2 className="count">26</h2>
                   <h4 className="title">Components</h4>
