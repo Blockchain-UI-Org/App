@@ -33,7 +33,7 @@
       right: 0;
       top: 0;
       object-position: right;
-      
+      transform: scale(1.6) translateY(15%);
     }
     @media screen and (max-width: 768px) {
       margin-bottom: 60px;
@@ -67,4 +67,12 @@
 
   
   }
+}
+
+.light-colormode-text {
+  color: rgba(37, 135, 188, 1);
+}
+
+.dark-colormode-text {
+  color: rgba(139, 214, 255, 1);
 }

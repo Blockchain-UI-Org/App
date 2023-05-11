@@ -1,4 +1,5 @@
 import { useHistory } from "@docusaurus/router";
+import {useColorMode} from "@docusaurus/theme-common"
 import React from "react";
 import { GradientButton } from "../../Button/GradientButton";
 import { Heading } from "../../Heading/Heading";
@@ -6,6 +7,7 @@ import "./GetStarted.scss";
 
 const GetStartedSection = () => {
   const history = useHistory();
+  const {colorMode} = useColorMode()
   return (
     <section className="getStarted">
       <div className="container">
@@ -13,7 +15,7 @@ const GetStartedSection = () => {
           <div className="col-md-5 order-1 order-md-0">
             <div className="leftSection">
               <Heading>
-                Create beautiful <span>Dapps</span> quickly.
+                Create beautiful <span className={`${colorMode}-colormode-text`}>Dapps</span> quickly.
               </Heading>
               <div className="description">
                 Blockchain UI is a simple, modular and accessible component library designed to help you build web3

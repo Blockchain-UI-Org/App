@@ -72,7 +72,7 @@ export default function ComponentsSection({ ...other }) {
           </Slider>
         </div>
       </Library>
-      <div className="container">
+      <div className="container libraySection">
         <div className="row justify-content-center">
           <div className="col-sm-6 d-flex flex-column align-items-center text-center">
             <h3>It’s time to bridge the digital and physical.</h3>

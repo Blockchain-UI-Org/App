@@ -41,10 +41,10 @@ export const GetInTouch = () => {
               </div>
               <div className="getInTouch__body">
                 <div className="row">
-                  <div className="col-md-8 mb-3 mb-md-0">
+                  <div className="col-xl-7 mb-3 mb-xl-0">
                     <GradientInput placeholder="YOUR EMAIL" />
                   </div>
-                  <div className="col-md-4 ">
+                  <div className="col-xl-5 ">
                     <GradientButton className="w-100">Subscribe</GradientButton>
                   </div>
                 </div>
