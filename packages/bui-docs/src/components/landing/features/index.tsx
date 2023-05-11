@@ -4,22 +4,22 @@ import "./Feature.scss";
 
 const CardsData = [
   {
-    icon: "/img/speed.png",
+    icon: "/img/speed-light.svg",
     title: "Speed",
     description: "Faster development",
   },
   {
-    icon: "/img/solar.png",
+    icon: "/img/solar-light.svg",
     title: "Cost",
     description: "Save development costs.",
   },
   {
-    icon: "/img/outline.png",
+    icon: "/img/outline-light.svg",
     title: "Simple",
     description: "Easy-to-install and clear documentation.",
   },
   {
-    icon: "/img/people.png",
+    icon: "/img/people-light.svg",
     title: "Safe and Secure",
     description: "Tested for vunerabilities.",
   },

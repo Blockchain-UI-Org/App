@@ -95,13 +95,26 @@ html, body {
 .twitter-icon {
   color: #00acee;
   font-size: 20px;
-  margin-right: 40px;
+  margin-right: 0;
 }
+
+
+.twitter-icon-footer {
+  color: #00acee;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
 .twitter-icon:hover {
   color: #00acee;
 }
 .fa-github {
   font-size: 20px;
+  color: var(--ifm-font-color-base);
+}
+
+.fa-github:hover, .twitter-icon-footer:hover {
+  text-decoration: none;
 }
 
 .footer {

@@ -14,7 +14,7 @@ const icons = [
   {
     href: "https://twitter.com/ui_blockchain",
     label: "",
-    className: "fa-brands fa-twitter twitter-icon",
+    className: "fa-brands fa-twitter twitter-icon-footer",
 
     "aria-label": "Twitter Page",
   },
@@ -61,7 +61,7 @@ export default function FooterLayout({ style, links, logo, copyright }) {
               <div className="col-sm-3 d-flex justify-content-center">
                 {icons.map((item) => {
                   return (
-                    <a className={clsx("footer__link",item.className)} target="_blank" href={item.href}>
+                    <a className={clsx(item.className)} target="_blank" href={item.href}>
                       {item.label}
                     </a>
                   );
