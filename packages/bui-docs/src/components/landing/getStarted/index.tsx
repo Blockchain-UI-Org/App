@@ -12,16 +12,18 @@ const GetStartedSection = () => {
     <section className="getStarted">
       <div className="container">
         <div className="row ">
-          <div className="col-md-5 order-1 order-md-0">
+          <div className="col-md-5 ">
             <div className="leftSection">
-              <Heading>
+              <Heading >
                 Create beautiful <span className={`${colorMode}-colormode-text`}>Dapps</span> quickly.
               </Heading>
               <div className="description">
                 Blockchain UI is a simple, modular and accessible component library designed to help you build web3
                 apps.
               </div>
-
+              <div className="rightSection d-md-none">
+              <img src="/img/mock-up.svg" alt="iphone_mockup" />
+            </div>
               <div className="contactUs">Beta release now available.</div>
 
               <GradientButton className="button" onClick={() => history.push("/docs/intro")}>
@@ -29,7 +31,7 @@ const GetStartedSection = () => {
               </GradientButton>
             </div>
           </div>
-          <div className="col-md-6 order-0 order-md-1">
+          <div className="col-md-6 d-none d-md-block ">
             <div className="rightSection">
               <img src="/img/mock-up.svg" alt="iphone_mockup" />
             </div>

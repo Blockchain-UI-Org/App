@@ -37,19 +37,20 @@ export default function ComponentsSection({ ...other }) {
     slidesToShow: 1,
     variableWidth: true,
     slidesToScroll: 2,
-    // responsive: [
-    //   {
-    //     breakpoint: 1500,
-    //     settings: {
-    //       className: "center",
-    //       centerMode: true,
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       infinite: true,
-    //       dots: false,
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 500,
+        settings: {
+          className: "center",
+          centerMode: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          variableWidth: false,
+          dots: false,
+        },
+      },
+    ],
     rtl: Boolean(theme.direction === "rtl"),
     beforeChange: (current: number, next: number) => setCurrentIndex(next),
   };
