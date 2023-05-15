@@ -8,7 +8,7 @@ const CommunitySection = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-4">
-            <Heading>Join a Community</Heading>
+            <Heading className="modifiedHeader">Join a Community</Heading>
           </div>
           <div className="col-md-8">
             <div className="d-flex flex-wrap   h-100">
