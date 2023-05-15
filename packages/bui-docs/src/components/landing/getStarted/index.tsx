@@ -22,7 +22,7 @@ const GetStartedSection = () => {
                 apps.
               </div>
               <div className="rightSection d-md-none">
-              <img src="/img/mock-up.svg" alt="iphone_mockup" />
+              <img src="/img/mock-up1.svg" alt="iphone_mockup" />
             </div>
               <div className="contactUs">Beta release now available.</div>
 
@@ -33,7 +33,7 @@ const GetStartedSection = () => {
           </div>
           <div className="col-md-6 d-none d-md-block ">
             <div className="rightSection">
-              <img src="/img/mock-up.svg" alt="iphone_mockup" />
+              <img src="/img/mock-up1.svg" alt="iphone_mockup" />
             </div>
           </div>
         </div>
