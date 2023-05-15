@@ -16,10 +16,6 @@
     z-index: 2;
     .button {
       margin-top: 60px;
-
-      @media screen and (max-width: 768px) {
-        margin-top: 160px;
-      }
     }
   }
   .rightSection {
@@ -56,6 +52,7 @@
     }
     @media screen and (max-width: 768px) {
       // margin-bottom: 60px;
+      display: none;
       margin-bottom: 60px;
       margin-top: 40px;
     }
@@ -83,10 +80,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
   }
 }
 
