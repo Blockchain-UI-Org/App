@@ -29,8 +29,10 @@ const FeaturesSection = () => {
   return (
     <div className="featureSection">
       <div className="container">
-        <div className="row">
-          <Heading style={{ display: "Flex", justifyContent: "center" }}>Amazing Benefits</Heading>
+        <div className="d-flex align-items-center justify-content-center">
+          <Heading style={{ display: "Flex", justifyContent: "center", textAlign:"center"}}>
+            Amazing Benefits
+          </Heading>
         </div>
       </div>
 
