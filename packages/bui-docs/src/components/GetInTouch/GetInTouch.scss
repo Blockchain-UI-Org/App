@@ -8,6 +8,10 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+
+        @media screen and (max-width: 768px) {
+            padding: 25px 25px;
+          }
     }
     &__subtitle {
         text-transform: uppercase;
