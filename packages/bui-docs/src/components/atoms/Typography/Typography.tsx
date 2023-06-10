@@ -21,6 +21,7 @@ const weightMapper = {
 interface ITypographyProps {
   color?: TextColorsProps;
   weight?: "normal" | "semibold";
+  opacity?: string;
 }
 
 export const Heading1 = styled("h1")<ITypographyProps>`
@@ -94,6 +95,7 @@ export const Heading4 = styled("h4")<ITypographyProps>`
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
+  opacity: ${({opacity}) => opacity || 1};
   margin-bottom: 0px;
   color: ${(props) => mapColor({ theme: props.theme, colorName: props.color || "primary-dark" })};
   @media (min-width: 576px) {
@@ -117,6 +119,7 @@ export const Heading5 = styled("h5")<ITypographyProps>`
   font-size: 14px;
   line-height: 1.2;
   margin-bottom: 0px;
+  opacity: ${({opacity}) => opacity || 1};
   color: ${(props) => mapColor({ theme: props.theme, colorName: props.color || "primary-dark" })};
   @media (min-width: 576px) {
     font-size: 14px;
@@ -129,5 +132,27 @@ export const Heading5 = styled("h5")<ITypographyProps>`
   }
   @media (min-width: 1200px) {
     font-size: 20px;
+  }
+`;
+
+export const Heading6 = styled("h6")<ITypographyProps>`
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: ${({ weight = "normal" }) => weightMapper[weight]};
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 0px;
+  color: ${(props) => mapColor({ theme: props.theme, colorName: props.color || "primary-dark" })};
+  @media (min-width: 576px) {
+    font-size: 12px;
+  }
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media (min-width: 992px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 16px;
   }
 `;

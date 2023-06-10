@@ -200,7 +200,7 @@ const Roadmap: FC<IRoadmapProps> = (props) => {
       <Wrapper count={props.items.length - 1} progress={completedCount - 1}>
         {props.items.map((item, index) => {
           return (
-            <Circle title={item.title} count={props.items.length} index={index}>
+            <Circle key={index} title={item.title} count={props.items.length} index={index}>
               <Card topHalt={index === 2} className={index % 2 === 0 ? "up" : "down"}>
                 <Heading4 style={{ whiteSpace: "nowrap" }}>{item.title}</Heading4>
                 {item.description && <Heading5 color="secondary-dark" style={{ whiteSpace: "nowrap" }}>({item.description})</Heading5>}

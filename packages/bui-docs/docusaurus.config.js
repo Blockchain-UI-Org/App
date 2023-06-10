@@ -88,6 +88,11 @@ const config = {
             className: "external-link",
           },
           {
+            to: "blog",
+            position: "left",
+            label: "Blog",
+          },
+          {
             href: "https://twitter.com/ui_blockchain",
             position: "right",
             className: "fa-brands fa-twitter twitter-icon",

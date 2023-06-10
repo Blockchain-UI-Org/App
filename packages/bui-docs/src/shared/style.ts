@@ -34,7 +34,7 @@ export const FieldsetHeadingWrapper = styled.div`
 
 export const GradientLine = styled.div<{ width?: number }>`
   /* margin-top: 40px; */
-  background: ${({theme}) => theme.default.gradientAccent};
+  background: ${({ theme }) => theme.default.gradientAccent};
   height: 2px;
   width: ${({ width }) => (width ? width + "px" : "100%")};
   @media ${device.tablet} {
@@ -49,3 +49,38 @@ export const GradientAccentText = styled.span`
   background-clip: text;
   text-fill-color: transparent;
 `;
+
+export const LayoutWrapper = styled.div`
+  height: 100%;
+  background-color: ${(props) => props.theme.primary.background};
+`;
+
+export const MainContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  min-height: 0px;
+  min-width: 0px;
+`;
+
+export const ResponsiveGrid = styled.div<{marginTop?: boolean | string}>`
+  display: grid;
+  grid-gap: 3rem;
+  margin-top: ${({marginTop}) => marginTop ? (marginTop === "string" ? marginTop : "3rem"): "0px"};
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* grid-template-columns: repeat(1, 1fr); */
+  /* Screen larger than 600px? 2 column */
+  /* @media (min-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
+  } */
+
+  /* Screen larger than 900px? 3 columns */
+  /* @media (min-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+`;
+

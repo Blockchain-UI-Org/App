@@ -11,19 +11,18 @@ import "slick-carousel/slick/slick-theme.css";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 import "react-lazy-load-image-component/src/effects/black-and-white.css";
+import { LayoutWrapper } from "../shared/style";
+import { Blog } from "../components/blog";
 
-/** Add global background color for whole page.. */
-export const Wrapper = styled.div`
-  height: 100%;
-  background-color: ${(props) => props.theme.primary.background};
-`;
-export default function Home(): JSX.Element {
+export interface BlogPageProps {}
+
+export default function BlogPage(props: BlogPageProps) {
   return (
     <ThemeProvider>
       <Layout description="A component library for decentralized applications <head />">
-        <Wrapper>
-          <Landing />
-        </Wrapper>
+        <LayoutWrapper>
+          <Blog />
+        </LayoutWrapper>
       </Layout>
     </ThemeProvider>
   );

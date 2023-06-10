@@ -15,11 +15,11 @@ const ChipContainer = styled.div<{ selected?: boolean }>`
   text-align: center;
   width: fit-content;
   position: relative;
-  ${({ selected }) =>
+  ${({ selected, theme }) =>
     selected &&
     `
     &::before {
-      background: linear-gradient(90deg, #8bd6ff 0%, #9effff 50.31%, #d3bfff 100%);
+      background: ${theme.default.gradientAccent};
       -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
       mask-composite: exclude;

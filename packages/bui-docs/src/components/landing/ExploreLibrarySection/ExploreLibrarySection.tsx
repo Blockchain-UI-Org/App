@@ -3,8 +3,7 @@ import styled from "styled-components";
 import { Heading1 } from "../../atoms/Typography";
 import { GradientAccentText } from "@site/src/shared/style";
 import { FieldsetHeading } from "../../atoms/FieldsetHeading";
-import { Chip } from "../../atoms/Chip/Chip";
-import { LibraryOptionsFlexContainerWrapper } from "./style";
+import { SelectableChipTabs } from "../../molecules/SelectableChipTabs/SelectableChipTabs";
 
 export interface IExploreLibrarySectionProps {}
 
@@ -19,16 +18,12 @@ export function ExploreLibrarySection(props: IExploreLibrarySectionProps) {
           EXPLORE OUR <GradientAccentText>LIBRARY</GradientAccentText>
         </Heading1>
       </FieldsetHeading>
-      <LibraryOptionsFlexContainerWrapper justifyContent="flex-end" >
-        {libraryOptions.map((option, index) => (
-          <Chip
-            key={index}
-            label={option}
-            selected={option === selectedOption}
-            onClick={() => setSelectedOption(option)}
-          />
-        ))}
-      </LibraryOptionsFlexContainerWrapper>
+      <SelectableChipTabs
+        items={libraryOptions}
+        value={selectedOption}
+        onChange={(value) => setSelectedOption(value)}
+        justifyContent="flex-end"
+      />
     </div>
   );
 }
